@@ -1,0 +1,138 @@
+body{
+	margin:0px;
+	padding:0px;
+	#background-color:#E6E6E6;
+}
+.anasayfa_Main{
+	width:1800px;
+	height:100%;
+	float:left;
+}
+.anasayfa_Header{
+	width:100%;
+	float:left;
+	margin:25px 0 0 0;
+}
+.anasayfa_Body{
+	width:100%;
+	float:left;
+	margin:20 0 0 0;
+}
+.anasayfa_Footer{
+	margin:20 0 0 0;
+	width:100%;
+	float:left;
+}
+.header_Bolum{
+	width:50%;
+	height:110px;
+	float:left;
+	margin:0 0 10 0;
+}
+
+@media screen and (max-width: 1400px) {
+
+  .anasayfa_Main{
+	width:1200px;
+  }
+  .header_Bolum {
+	float:none;
+    width:100%;
+	height:90px;
+  }
+  .header_Bolum .header_Picture{
+	margin-right:47%;
+  }
+  .header_Bolum .header_Text{
+	width:100%;
+    text-align:center;
+	margin:0;
+  }
+  .header_Button{
+	float:left;
+  }   
+
+}
+/*@media screen and (max-width: 1024px) {
+  .header_Button a{
+	float:left;
+  }
+
+}*/
+.header_Picture{
+	width:110px;
+	height:110px;
+	float:right;
+	margin:0 110 0 0;
+}
+.header_Text{
+	font-size:42px;
+	float:left;
+	width:520px;
+	font-family:Calibri;
+	margin:27 0 0 -90;
+}
+.header_line{
+	width:80%;
+	height:2px;
+	color:balck;
+	background-color:black;
+	margin:auto;
+}
+.header_Button{
+	width:100%;
+	margin:14px;
+}
+.header_Button a{
+	padding-top:15px;
+	padding-bottom:15px;
+	padding-right:60px;
+	padding-left:60px;
+	font-family:Calibri;
+	color:black;
+	font-weight:bold;
+	font-size:30px;
+	border:1px solid black;
+	text-decoration: none;	
+}
+
+.body_Bolumler{
+	
+}
+
+.body_Bolum{
+	width:1100px;
+	border:1px solid black;
+	margin-right:auto;
+	margin-left:auto;
+	margin-top:20px;
+}
+.body_Resim{
+	width:250px;
+	height:250px;
+	float:left;
+	margin:0 0 0 40px;
+}
+.body_Yazi{
+	float:left;
+	width:600px;
+}
+.body_Button1{
+	float:left;
+	padding:20px;
+	border:1px solid black;
+	color:black;
+	text-decoration: none;	
+	font-family:Calibri;
+	color:black;
+	font-weight:bold;
+	font-size:20px;
+}
+
+.footer_Bolumler{
+	width:90%;
+	height:190px;
+	border-top:1px solid black;
+	margin:auto;
+	text-align:center;
+}
