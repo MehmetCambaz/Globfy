@@ -136,3 +136,74 @@ body{
 	margin:auto;
 	text-align:center;
 }
+.sablonSecim_Ekran{
+	width:90%;
+	margin:auto;
+}
+.sablonSecim_Ust{
+	float:left;
+	width:100%;
+	border-bottom:2px solid black;
+	margin:10 0 15 0;
+	text-align:center;	
+}
+.sablonSecim_Sablonlar{
+	float:left;
+	width:100%;
+}
+.sablonSecim_SablonPanel{
+
+}
+.sablonSecim_Alt{
+	width:100%;
+	float:left;
+	text-align:right;
+	margin:40 0 0 0;
+}
+.sablonSecim_Alt .gecisButton{
+	background-color:gray;
+	color:white;
+	font-family:Calibri;
+	font-size:28px;
+}
+.editor_Ekran{
+	width:90%;
+	margin:auto;
+}
+.editor_Onizleme{
+	float:left;
+	width:80%;
+	height:100%;
+	border:1px solid black;
+}
+.editor_TapContent{
+	float:left;
+	width:19.5%;
+    height:100%;
+	border:1px solid black;
+}
+.editor_tab {
+    overflow: hidden;
+}
+.editor_tab button {
+    background-color: #8D8D8D;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 0px;
+    transition: 0.3s;
+    font-size: 17px;
+    color:white;
+	width:50%;
+}
+.editor_tab button:hover {
+    background-color: #6D6D6D;
+}
+.editor_tab button.active {
+    background-color: #6D6D6D;
+}
+.editor_tabcontent {
+    display: none;
+    padding: 6px 12px;
+}

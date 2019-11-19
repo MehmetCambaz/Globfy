@@ -13,7 +13,7 @@
 <tr>
 <td> <img src="Desing/Pictures/anasayfa_tasarim.png" class="body_Resim"/> </td>
 <td> <h1 class="body_Yazi">Ücretsiz Web Sitenizi Hemen Yapmaya Başlayabilirsiniz...</h1> </td>
-<td> <a href="#" class="body_Button1">BAŞLA</a> </td></tr>
+<td> <a href="index.php?sayfa=sablonSecim" class="body_Button1">BAŞLA</a> </td></tr>
 </table>
 </div>
 <div class="body_Bolum">
@@ -35,3 +35,7 @@
 </div>
 </body>
 </html>
+
+<?php
+
+?>
