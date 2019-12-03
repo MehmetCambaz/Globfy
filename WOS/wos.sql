@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Anamakine: 127.0.0.1
--- Üretim Zamanı: 02 Ara 2019, 15:55:38
+-- Üretim Zamanı: 03 Ara 2019, 21:01:51
 -- Sunucu sürümü: 10.3.15-MariaDB
 -- PHP Sürümü: 7.3.6
 
@@ -81,7 +81,33 @@ INSERT INTO `canli_destek` (`id`, `kullanici_adi`, `kullanici_yazi`, `tarih`, `o
 (139, 'abdulcabbar', '', '2019-12-02 15:33:26', 18),
 (140, 'abdulcabbar', 'lplplpğlğp', '2019-12-02 15:33:33', 18),
 (141, 'abdulcabbaraassddfgh', 'popokpok', '2019-12-02 15:33:42', 19),
-(142, 'abdulcabbara', 'pkpokpk', '2019-12-02 15:33:52', 20);
+(142, 'abdulcabbara', 'pkpokpk', '2019-12-02 15:33:52', 20),
+(143, 'ali', 'bashgsahdxwm', '2019-12-02 16:11:34', 21),
+(144, 'ali', 'asdasdasd', '2019-12-02 16:36:16', 21),
+(145, 'ali', 'asasdasd', '2019-12-02 16:37:02', 21),
+(146, 'ali', 'jhjhvjhvjh', '2019-12-02 16:42:54', 21),
+(147, 'memo', 'asdfg', '2019-12-02 20:35:09', 22),
+(148, 'memo', 'opdapdap', '2019-12-02 20:35:23', 22),
+(149, 'memo', 'saasasas', '2019-12-02 20:38:14', 22),
+(150, 'memo', '<sclzxlvz', '2019-12-02 20:45:00', 22),
+(151, 'memo', 'kfgkgf', '2019-12-02 20:45:03', 22),
+(152, 'memo', 'rrtrt', '2019-12-02 20:52:52', 22),
+(153, 'ahmet', 'asdasdasd', '2019-12-03 08:40:57', 23),
+(154, 'ahmet', 'asdasdasd', '2019-12-03 08:48:42', 23),
+(155, 'adasdasd', 'asdasd', '2019-12-03 08:56:00', 24),
+(156, 'adasdasd', 'asdasd', '2019-12-03 09:11:20', 24),
+(157, 'adasdasd', 'asdasdasd', '2019-12-03 09:14:37', 24),
+(158, 'adasdasd', 'erer', '2019-12-03 09:16:33', 24),
+(159, 'adasdasd', 'asdasdasd', '2019-12-03 09:17:01', 24),
+(160, 'adasdasd', 'enes', '2019-12-03 09:17:44', 24),
+(161, 'adasdasd', 'eeeee', '2019-12-03 09:18:04', 24),
+(162, 'denemeson', '', '2019-12-03 09:19:08', 25),
+(163, 'denemeson', 'asdadsads', '2019-12-03 09:19:11', 25),
+(164, 'enes', '', '2019-12-03 09:59:51', 26),
+(165, 'enes', 'sdasdasdad', '2019-12-03 09:59:57', 26),
+(166, 'enes', 'asasd', '2019-12-03 10:00:15', 26),
+(167, 'ali', 'jsalkjaf', '2019-12-03 20:56:45', 27),
+(168, 'ali', 'kmklmlkml', '2019-12-03 20:56:55', 27);
 
 -- --------------------------------------------------------
 
@@ -113,7 +139,23 @@ INSERT INTO `canli_destek_cevap` (`id`, `oturum`, `date`, `cevap`) VALUES
 (16, 16, '2019-12-02 14:54:08', 'asdasdasd'),
 (17, 15, '2019-12-02 14:56:07', 'asdasdasd'),
 (18, 2, '2019-12-02 15:18:24', 'sdasdasdasd'),
-(19, 17, '2019-12-02 15:25:11', 'asdasdasd');
+(19, 17, '2019-12-02 15:25:11', 'asdasdasd'),
+(20, 21, '2019-12-02 16:11:56', 'wedwedewwed'),
+(21, 21, '2019-12-02 16:36:57', 'asdasdasd'),
+(22, 23, '2019-12-03 08:41:11', 'asdasdasdasd'),
+(23, 24, '2019-12-03 09:11:04', 'asdasdasd'),
+(24, 24, '2019-12-03 09:11:15', 'erer'),
+(25, 0, '2019-12-03 09:14:52', 'asdasd'),
+(26, 0, '2019-12-03 09:15:02', 'asdasd'),
+(27, 0, '2019-12-03 09:15:30', 'asdasd'),
+(28, 0, '2019-12-03 09:15:52', 'asdasd'),
+(29, 22, '2019-12-03 09:16:23', 'asdasd'),
+(30, 24, '2019-12-03 09:16:27', 'asdasd'),
+(31, 24, '2019-12-03 09:16:38', 'brtbtb'),
+(32, 24, '2019-12-03 09:17:09', 'asdasdads'),
+(33, 25, '2019-12-03 09:19:40', 'ertertetr'),
+(34, 26, '2019-12-03 10:00:18', 'asdasdasd'),
+(35, 27, '2019-12-03 20:57:58', 'lkmlkmlm');
 
 -- --------------------------------------------------------
 
@@ -193,13 +235,13 @@ ALTER TABLE `sablonlar`
 -- Tablo için AUTO_INCREMENT değeri `canli_destek`
 --
 ALTER TABLE `canli_destek`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=143;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=169;
 
 --
 -- Tablo için AUTO_INCREMENT değeri `canli_destek_cevap`
 --
 ALTER TABLE `canli_destek_cevap`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
 
 --
 -- Tablo için AUTO_INCREMENT değeri `sablonlar`

@@ -35,7 +35,6 @@ else{
 }
 else{
 	include('body.php');
-
 }
 
 ?>
