@@ -1,40 +1,6 @@
-<html>
-<head>
-<title>WoS | Web Site Oluşturma Sistemi</title>
-<script language="JavaScript">
-
-</script>
-
-</head>
-<body>
-<div class="canliDestekAdmin_Ekran">
-<div class="canliDestekAdmin_Konusma">
-<div class="canliDestekAdmin_Pencere">
-<div class="canliDestekAdmin_Mesajlar">
 <?php
 include 'mysql_connect.php';
-$sql4 = "SELECT kullanici_adi,kullanici_yazi,oturum,tarih FROM canli_destek order by tarih desc";
-			$sorgu4 = $baglanti->query($sql4);
-			echo '<table border="0px">';
-			$oturum="";
-			while($sonuc4=mysqli_fetch_assoc($sorgu4) )
-			{
-				$tut=$oturum;
-				$oturum=$sonuc4['oturum'];
-				if($tut!=$oturum)
-				echo '<tr><td style="background-color:blue; color:white;"><b style="margin:0 5 0 5;">'.$sonuc4['kullanici_adi'].'</b></td><td><div style="border:1px solid black; width:140px; padding:5 0 0 0; overflow: hidden; height:25px;"><b style="margin:0 5 0 5;  font-weight:normal;">'.$sonuc4['kullanici_yazi'].'</a></div></td><td><div style=" width:60px; text-align:center; padding:5 0 0 0; height:25px;"><a style="" href="http://localhost:8080/WOS/index.php?sayfa=canlidestek_admin&oturum='.$oturum.'">Cevapla</a></div></td></tr>';
-
-			}
-			echo '</table>';
-
-
-?>
-</div>
-<div class="canliDestekAdmin_Pencere_cevapver">
-<div class="canliDestekAdmin_Pencere_cevap">
-<?php
-if(isset($_GET['oturum']))
-{
+if(!empty($_COOKIE["oturum_id"])){
 
 	/*$oturum_id=$_GET['oturum'];
 	$sql5="select canli_destek_cevap.cevap,canli_destek.kullanici_adi,canli_destek.kullanici_yazi,canli_destek.tarih,canli_destek_cevap.date from canli_destek_cevap,canli_destek where canli_destek_cevap.oturum='$oturum_id' OR canli_destek.oturum='$oturum_id'";
@@ -84,7 +50,8 @@ if(isset($_GET['oturum']))
 			   }				   
 			}
 		echo '</table>';*/
-		$oturum_id=$_GET['oturum'];
+
+		$oturum_id=$_COOKIE["oturum_id"];
 		$kullanici_yazi="";
 		$sql4 = "select ad,yazi,dt,ot from(
 		select kullanici_adi ad,kullanici_yazi yazi, tarih dt, oturum ot from canli_destek
@@ -106,32 +73,6 @@ if(isset($_GET['oturum']))
 			}
 		}	
 		echo '</table>';		
-}
-?>
-</div>
-<div class="canliDestekAdmin_Pencere_cevapyaz">
-<form method="POST">
-<input type="text" name="admin_yazi" class="canliDestek_admin_Yazi_textbox"/>
-<input type="submit" name="gonder_admin" class="canliDestek_admin_Yazi_button"/>
-</form>
-</div>
-</div>
-</div>
-</div>
-</div>
-</body>
-</html>
-<?php
-if(isset($_POST['gonder_admin'])){
-	$date = date('Y-m-d H:i:s');
-	$oturum_id=$_GET['oturum'];
-	$cevabim = $_POST['admin_yazi'];
-	echo $date;
-	echo $oturum_id;
-	echo $cevabim;
-		$sqlkayit = "INSERT INTO canli_destek_cevap values(NULL,'$oturum_id','$date','$cevabim')";
-		mysqli_query($baglanti,$sqlkayit);
-		header('Location:'.$_SERVER['HTTP_REFERER']);
 }
 
 ?>

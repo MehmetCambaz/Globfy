@@ -207,3 +207,108 @@ body{
     display: none;
     padding: 6px 12px;
 }
+.canliDestek_Ekran{
+	width:90%;
+	margin:auto;
+}
+.canliDestek_Konusma{
+	width:100%;
+	height:90%;
+	border:1px solid black;
+	padding-top:80px;
+}
+.canliDestek_Pencere{
+	width:80%;
+	height:500px;
+	 overflow-y: scroll;	
+	margin:auto;
+	border:1px solid black;
+
+}
+.canliDestek_Yazi{
+	width:80%;
+	height:80px;
+	margin:auto;
+	border:1px solid black;
+}
+.canliDestek_Yazi_textbox{
+	margin:10 5 0 10;
+	width:87%;
+	height:60px;
+}
+.canliDestek_Yazi_button{
+	margin:10 10 0 0;
+	width:9%;
+	height:60px;
+}
+.canliDestek_Kullanici{
+	width:80%;
+	margin:auto;
+	height:50px;
+	
+}
+.canliDestek_Kullanici_textbox{
+	width:160px;
+	height:40px;
+	
+}
+.canliDestekAdmin_Ekran{
+	width:90%;
+	margin:auto;
+}
+.canliDestekAdmin_Konusma{
+	width:100%;
+	height:90%;
+	border:1px solid black;
+	padding-top:80px;
+}
+.canliDestekAdmin_Pencere{
+	width:80%;
+	height:800px;
+
+	margin:auto;
+
+
+}
+.canliDestekAdmin_Mesajlar{
+	width:40%;
+	height:800px;
+	 overflow-y: scroll;	
+	float:left;
+	border:1px solid black;
+}
+.canliDestekAdmin_Pencere_cevapver{
+	width:58%;
+	height:800px;
+
+	float:left;
+}
+.canliDestekAdmin_Pencere_cevap{
+	width:100%;
+	height:718px;
+	 overflow-y: scroll;	
+	margin:auto;
+	border:1px solid black;
+}
+.canliDestekAdmin_Pencere_cevapyaz{
+		width:100%;
+	height:80px;
+	
+	margin:auto;
+	border:1px solid black;
+}
+.canliDestek_admin_Yazi_textbox{
+		margin:10 5 0 10;
+	width:87%;
+	height:60px;
+}
+.canliDestek_admin_Yazi_button{
+		margin:10 10 0 0;
+	width:9%;
+	height:60px;
+}
+
+
+
+
+

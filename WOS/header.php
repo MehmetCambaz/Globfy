@@ -8,7 +8,7 @@
 <body>
 
 <div class="header_Bolum">
-<img src="Desing/Pictures/logo.png" class="header_Picture"/>
+<a href="index.php?sayfa=body"><img src="Desing/Pictures/logo.png" class="header_Picture"/></a>
 </div>
 <div class="header_Bolum">
 <h1 class="header_Text">Web Site Oluşturma Sistemi</h1>

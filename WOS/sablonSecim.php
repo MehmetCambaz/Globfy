@@ -1,9 +1,13 @@
 <?php
+include 'mysql_connect.php';
 if(isset($_POST['EditorGecis'])){
   $secimRadio="";
   
   if (!empty($_POST["secimRadio"])) {
-	header ("Refresh: 0; url=index.php?sayfa=editor");
+	  $id=$_POST["secimRadio"];
+	  echo $id;
+	  $_SESSION["secilenSablon"]=$id;
+	  header ("Refresh: 0; url=index.php?sayfa=editor");
   }
 }
 ?>
@@ -23,14 +27,22 @@ if(isset($_POST['EditorGecis'])){
 			<div class="sablonSecim_SablonPanel">		
 			
 			<?php
-			$i=1;
+			
+			foreach($baglanti->query('select sablon_id,sablon_adi,sablon_resim from sablonlar') as $row){
+			echo '<table border="0px" style="float:left; margin:0 5 15 11;"><tr><td>';
+			echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['sablon_resim'] ).'" width="300px" height="300px"/>';
+			echo '</td><tr>
+			<tr><td><center><input type="radio" name="secimRadio" value="'.$row['sablon_id'].'"/>Seç</center></td></tr>
+			</table>';
+			}
+			/*$i=1; // mysql olmadan veri çekme
 			while ( $i<=15 ){
 			echo '<table border="0px" style="float:left; margin:0 5 15 11;">
 			<tr><td><img src="Desing/Pictures/Sablon/sablon'.$i.'.png" width="300px" height="300px"/></td><tr>
 			<tr><td><center><input type="radio" name="secimRadio" value="sablon'.$i.'"/>Seç</center></td></tr>
 			</table>';
 			$i=$i+1;
-			}
+			}*/
 			?>
 			
 			</div>

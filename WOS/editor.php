@@ -15,13 +15,34 @@ function openPage(evt, page) {
     document.getElementById(page).style.display = "block";
     evt.currentTarget.className += " active";
 }
-//document.getElementById("defaultOpen").click();
+document.getElementById("defaultOpen").onclick();
 </script>
 </head>
 <body>
 <div class="editor_Ekran">
 <div class="editor_Onizleme">
 Önizleme
+<?php 
+include 'mysql_connect.php';
+$sablon_id=$_SESSION["secilenSablon"];
+echo '<br/>';
+echo "Seçilen Şablon ID: ".$sablon_id;
+/*foreach($baglanti->query('select sablon_id,sablon_adi,sablon_resim,sablon_kod from sablonlar') as $row){
+	echo $row['sablon_kod'];
+}*/
+?>
+<div style="width:100%; margin:auto; height:90%; overflow-y:scroll; ">
+<?php
+/*foreach($baglanti->query('select sablon_id,sablon_adi,sablon_resim,sablon_kod from sablonlar where sablon_id='$_SESSION["secilenSablon"]'') as $row){
+	echo $row['sablon_kod'];
+}*/
+	$sorgu = $baglanti->query('select sablon_id,sablon_adi,sablon_resim,sablon_kod from sablonlar where sablon_id='.$_SESSION["secilenSablon"].'');
+	while($sonuc=mysqli_fetch_assoc($sorgu) )
+	{
+		echo $sonuc["sablon_kod"];
+	}
+?>
+</div>
 </div>
 <div class="editor_TapContent">
 

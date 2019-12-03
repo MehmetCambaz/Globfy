@@ -1,18 +1,30 @@
 <html>
 <head>
 <title>WoS | Web Site Oluşturma Sistemi</title>
-<script language="JavaScript">
+<script src="http://code.jquery.com/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script>
+
+$(document).ready(function() {
+        $("#canliDestekAdmin_Mesajlar").load("ajax.adminmesajlar.php");
+});
+setInterval(function() {$("#canliDestekAdmin_Mesajlar").load('ajax.adminmesajlar.php');}, 1000);
+
+$(document).ready(function() {
+			$("#canliDestekAdmin_Pencere_cevap").load("ajax.adminmesajyaz.php");
+});
+setInterval(function() {$("#canliDestekAdmin_Pencere_cevap").load('ajax.adminmesajyaz.php');}, 1000);
 
 </script>
-
 </head>
 <body>
+
 <div class="canliDestekAdmin_Ekran">
 <div class="canliDestekAdmin_Konusma">
 <div class="canliDestekAdmin_Pencere">
-<div class="canliDestekAdmin_Mesajlar">
+<div class="canliDestekAdmin_Mesajlar" id="canliDestekAdmin_Mesajlar">
 <?php
 include 'mysql_connect.php';
+/*
 $sql4 = "SELECT kullanici_adi,kullanici_yazi,oturum,tarih FROM canli_destek order by tarih desc";
 			$sorgu4 = $baglanti->query($sql4);
 			echo '<table border="0px">';
@@ -26,16 +38,15 @@ $sql4 = "SELECT kullanici_adi,kullanici_yazi,oturum,tarih FROM canli_destek orde
 
 			}
 			echo '</table>';
-
+*/
 
 ?>
 </div>
 <div class="canliDestekAdmin_Pencere_cevapver">
-<div class="canliDestekAdmin_Pencere_cevap">
+<div class="canliDestekAdmin_Pencere_cevap" id="canliDestekAdmin_Pencere_cevap">
 <?php
-if(isset($_GET['oturum']))
+/*if(isset($_GET['oturum']))
 {
-
 	/*$oturum_id=$_GET['oturum'];
 	$sql5="select canli_destek_cevap.cevap,canli_destek.kullanici_adi,canli_destek.kullanici_yazi,canli_destek.tarih,canli_destek_cevap.date from canli_destek_cevap,canli_destek where canli_destek_cevap.oturum='$oturum_id' OR canli_destek.oturum='$oturum_id'";
 	$sorgu5 = $baglanti->query($sql5);
@@ -84,7 +95,7 @@ if(isset($_GET['oturum']))
 			   }				   
 			}
 		echo '</table>';*/
-		$oturum_id=$_GET['oturum'];
+		/*$oturum_id=$_GET['oturum'];
 		$kullanici_yazi="";
 		$sql4 = "select ad,yazi,dt,ot from(
 		select kullanici_adi ad,kullanici_yazi yazi, tarih dt, oturum ot from canli_destek
@@ -105,8 +116,8 @@ if(isset($_GET['oturum']))
 
 			}
 		}	
-		echo '</table>';		
-}
+		echo '</table>';	
+}*/	
 ?>
 </div>
 <div class="canliDestekAdmin_Pencere_cevapyaz">
@@ -121,6 +132,7 @@ if(isset($_GET['oturum']))
 </div>
 </body>
 </html>
+
 <?php
 if(isset($_POST['gonder_admin'])){
 	$date = date('Y-m-d H:i:s');
@@ -132,6 +144,10 @@ if(isset($_POST['gonder_admin'])){
 		$sqlkayit = "INSERT INTO canli_destek_cevap values(NULL,'$oturum_id','$date','$cevabim')";
 		mysqli_query($baglanti,$sqlkayit);
 		header('Location:'.$_SERVER['HTTP_REFERER']);
+}
+if(isset($_GET['oturum']))
+{
+	setcookie('oturum_id',$_GET['oturum'],time()+86400);
 }
 
 ?>
