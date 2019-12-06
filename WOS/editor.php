@@ -74,7 +74,7 @@ include 'onizleme.php';
 </div>
 
 <div id="Kompanent" class="editor_tabcontent">
- <?php include 'onizleme.php'; ?>
+
 </div>
 
 </div>
