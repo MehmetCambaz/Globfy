@@ -8,10 +8,10 @@ include 'mysql_connect.php';
 
 <script>
 $(document).ready(function() {
-
         $("#canliDestek_Pencere").load("ajax.kullanicimesaj.php");
 });
 setInterval(function() {$("#canliDestek_Pencere").load('ajax.kullanicimesaj.php');}, 1000);
+
 </script>
 
 </head>
@@ -65,7 +65,7 @@ if(empty($_SESSION["Kullaniciadi"])){
 <div class="canliDestek_Yazi">
 
 <input type="text" name="kullanici_yazi" class="canliDestek_Yazi_textbox"/>
-<input type="submit" name="gonder" class="canliDestek_Yazi_button"/>
+<input type="submit" id="gonder" name="gonder" class="canliDestek_Yazi_button"/>
 
 </div>
 </div>
@@ -119,11 +119,6 @@ if(isset($_POST['gonder'])){
 			}
 		}
 		
-		
-		echo $kullanici_yazi;
-		echo $kullanici_adi;
-		echo $date;
-		echo $sayi;
 		$sqlkayit = "INSERT INTO canli_destek values(NULL,'$kullanici_adi', '$kullanici_yazi','$date','$sayi')";
 		mysqli_query($baglanti,$sqlkayit);
 		header('Location:'.$_SERVER['HTTP_REFERER']);

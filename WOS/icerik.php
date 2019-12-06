@@ -1,0 +1,27 @@
+<?php
+include 'mysql_connect.php';
+
+	if(!empty($_COOKIE["secilenkompanent"])){
+		$gelen=$_COOKIE["secilenkompanent"];
+		$sql4 = "SELECT id,tur,kompanent_icerik FROM kompanentler where tur='$gelen'";
+			$sorgu4 = $baglanti->query($sql4);
+			$oturum="";
+			echo '<table border="0px" width="100%">';
+			echo '<tr><td><h1 style="text-align:center;">Kompanentler</h1></td></tr>';
+			while($sonuc4=mysqli_fetch_assoc($sorgu4) )
+			{
+				echo '<tr><td style="background-color:gray; height:60px; text-align:center;"><a href="http://localhost:8080/WOS/index.php?sayfa=editor&ekle='.$sonuc4['id'].'" style="text-decoration:none; color:white;">'.$sonuc4['kompanent_icerik'].'</a></td></tr>';
+			}
+			echo '</table>';
+	}else{
+		echo "YOK";
+	}
+
+	if(isset($_GET['ekle'])){
+		$id=$_GET['ekle'];
+		setcookie("ekle",$id,time()+86954);
+		//header('Location:'.$_SERVER['HTTP_REFERER']);
+
+	}
+?>
+
