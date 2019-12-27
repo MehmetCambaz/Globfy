@@ -1,0 +1,1 @@
+<div style="background-color:gray; text-align:center; width:100%; height:100%;"><h1>Left Banner</h1></div>

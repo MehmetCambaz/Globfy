@@ -1,0 +1,1 @@
+<div style="background-color:blue; width:100%; height:100%; text-align:center;"><h1>Context</h1></div>
