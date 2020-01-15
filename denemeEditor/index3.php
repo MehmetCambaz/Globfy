@@ -40,7 +40,7 @@
 }
 
 </style>
-<script language="JavaScript">
+<script language="JavaScript"> // Tab geçiş sol div
 function openPage(evt, page) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("editor_tabcontent");
@@ -59,7 +59,7 @@ document.getElementById("defaultOpen").onclick();
 <script src="http://code.jquery.com/jquery-1.9.1.min.js" type="text/javascript"></script>
 
 <script>
-$(document).ready(function() {
+$(document).ready(function() {  //Tab divlerin güncellemesi
         $("#Kompanent").load("icerik.php");
 		$("#Ayar").load("ayar.php");
 		//$("#onizleme").load("yenidosya.php");
@@ -112,6 +112,7 @@ setInterval(function() {$("#Ayar").load('ayar.php');}, 1000);
 
 if(isset($_GET['ekle'])){
 	$id=$_GET['ekle'];
+
 	setcookie("ekle",$id,time()+86954);
 	header('Location:'.$_SERVER['HTTP_REFERER']);
 
@@ -121,16 +122,30 @@ if(isset($_GET['AyarGecis'])){
      'openPage(event, "Ayar");',
      '</script>';
 	 $id2=$_GET['AyarGecis'];
-	 setcookie("AyarGecis",$id2,time()+86954);
+	 $_SESSION["lagaluga"]=$id2;
 
 	 
 }
 
-if(isset($_POST['ayar'])){
+
+if(isset($_GET["denemeayar"])){
 	
 	//setcookie("ekle","Enes",time()+86954);
 	$gelen=$_COOKIE["secilenkompanent"];
-	$sayi=$_POST['ayar'];
+	$sayi=$_GET["denemeayar"];
+
+
+if( $gelen == "header" ) {
+	echo $gelen;
+		$dt2 = fopen('header.php', 'w+');
+		$sorgu = $baglanti->query('select id,kompanent_icerik,tur,komp_ayar,komp_kod from kompanentler where id='.$sayi.'');
+			while($sonuc=mysqli_fetch_assoc($sorgu) )
+			{
+				$style=$sonuc["komp_kod"];
+				
+			}
+		fwrite($dt2, $style);
+		fclose($dt2);
 //$sayfa=$gelen.''.$sayi;
 $sayfa=$gelen;
 
@@ -147,7 +162,6 @@ $degisecek = '<script type="text/javascript">
 
 		$oku=file_get_contents("sablon3.php");
 
-
 		if(strstr($oku,$degisecek)){
 $path_to_file = 'sablon3.php';
 $file_contents = file_get_contents($path_to_file);
@@ -155,22 +169,75 @@ $file_contents = file_get_contents($path_to_file);
 $file_contents = str_replace($degisecek,$kodlar,$file_contents);
 
 file_put_contents($path_to_file,$file_contents);
+
+
 		}else if(strstr($oku,$kodlar)){
-			
-			
+						
 		}else{
 
-		
 $dt = fopen('sablon3.php', 'a');
 fwrite($dt, $kodlar);
 fclose($dt);
 
+
 		}
 
-
 	header('Location:'.$_SERVER['HTTP_REFERER']);
+}else{
+
+	//$sayfa=$gelen.''.$sayi;
 
 
+$kodlar = '<script type="text/javascript">
+     $(document).ready(function() {
+        $("#'.$gelen.'").load("'.$gelen.'.php");
+});
+     </script>';
+$degisecek = '<script type="text/javascript">
+     $(document).ready(function() {
+        $("#'.$gelen.'").load("bos.php");
+});
+     </script>';
+
+		$oku=file_get_contents("sablon3.php");
+$dt2 = fopen(''.$gelen.'.php', 'a');
+$sorgu = $baglanti->query('select id,kompanent_icerik,tur,komp_ayar,komp_kod from kompanentler where id='.$sayi.'');
+	while($sonuc=mysqli_fetch_assoc($sorgu) )
+	{
+		$path=$sonuc["komp_kod"];
+		
+	}
+fwrite($dt2, $path);
+fclose($dt2);
+		if(strstr($oku,$degisecek)){
+$path_to_file = 'sablon3.php';
+$file_contents = file_get_contents($path_to_file);
+   
+$file_contents = str_replace($degisecek,$kodlar,$file_contents);
+
+file_put_contents($path_to_file,$file_contents);
+
+
+
+
+
+
+		}else if(strstr($oku,$kodlar)){
+						
+		}else{
+
+$dt = fopen('sablon3.php', 'a');
+fwrite($dt, $kodlar);
+$sayfa=$gelen;
+
+
+
+fclose($dt);	
+	}
+
+	//header('Location:'.$_SERVER['HTTP_REFERER']);
+	
+}
 
 }
 if(isset($_POST['gerial'])){
