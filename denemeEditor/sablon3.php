@@ -27,19 +27,6 @@
 			</td>  
         </tr>
    </table>
-<script type="text/javascript">
-     $(document).ready(function() {
-        $("#header").load("header.php");
-});
-     </script><script type="text/javascript">
-     $(document).ready(function() {
-        $("#content").load("content.php");
-});
-     </script><script type="text/javascript">
-     $(document).ready(function() {
-        $("#leftbanner").load("leftbanner.php");
-});
-     </script>
 	 
 	 </body>
 	 </html>

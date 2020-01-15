@@ -1,1 +1,0 @@
-<div style="background-color:red; width:100%; height:100%; float:left; text-align:center;"><h1>Header2</h1></div>
