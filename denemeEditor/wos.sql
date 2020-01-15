@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Anamakine: 127.0.0.1
--- Üretim Zamanı: 15 Oca 2020, 14:36:13
+-- Üretim Zamanı: 15 Oca 2020, 16:01:27
 -- Sunucu sürümü: 10.3.15-MariaDB
 -- PHP Sürümü: 7.3.6
 
@@ -196,24 +196,25 @@ CREATE TABLE `kompanentler` (
   `kompanent_icerik` varchar(2000) COLLATE utf8mb4_turkish_ci NOT NULL,
   `tur` varchar(2000) COLLATE utf8mb4_turkish_ci NOT NULL,
   `komp_ayar` varchar(2000) COLLATE utf8mb4_turkish_ci NOT NULL,
-  `komp_kod` varchar(2000) COLLATE utf8mb4_turkish_ci NOT NULL
+  `komp_kod` varchar(2000) COLLATE utf8mb4_turkish_ci NOT NULL,
+  `komp_pic` varchar(200) COLLATE utf8mb4_turkish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_turkish_ci;
 
 --
 -- Tablo döküm verisi `kompanentler`
 --
 
-INSERT INTO `kompanentler` (`id`, `kompanent_icerik`, `tur`, `komp_ayar`, `komp_kod`) VALUES
-(2, 'Header1', 'header', '<a href=\"?denemeayar=2\">EKLE</a>', '<div style=\"background-color:orange; width:100%; height:100%; float:left; text-align:center;\"><h1>Header1</h1></div>\r\n'),
-(3, 'Header2', 'header', '<a href=\"?denemeayar=3\">EKLE</a>', '<div style=\"background-color:red; width:100%; height:100%; float:left; text-align:center;\"><h1>Header2</h1></div>'),
-(4, 'Header3', 'header', '<a href=\"?denemeayar=4\">EKLE</a>', '<div style=\"background-color:yellow; width:100%; height:100%; float:left; text-align:center;\"><h1>Header3</h1></div>'),
-(5, 'Content1', 'content', '<a href=\"?denemeayar=5\">EKLE</a>', '<div style=\"position:relative; margin:auto; width:500px;\">\r\n<table border=\"0px\" cellpadding=\"10\">\r\n<tr>\r\n<td>\r\n<img src=\"ktu.png\" width=\"200px\" height=\"200px\" style=\"\"/>\r\n</td>\r\n<td><h3>asdasdasdasdasdasdasdasdasdasdasdasdasdasdasd</br>asdasdasdasdasdasdasd</h3></td>\r\n</tr>\r\n</table>\r\n</div>\r\n'),
-(6, 'Content2', 'content', '<a href=\"?denemeayar=6\">EKLE</a>', '<div style=\"position:relative; margin:auto; width:1000px;\">\r\n<table border=\"0px\" cellpadding=\"10\">\r\n<tr>\r\n<td>\r\n<h3>\r\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\r\n</h3>\r\n</td>\r\n</tr>\r\n</table>\r\n</div>\r\n'),
-(7, 'Content3', 'content', '<a href=\"?denemeayar=7\">EKLE</a>', '<div style=\"position:relative; margin:auto;\">\r\n<table border=\"0px\" cellpadding=\"10\">\r\n<tr>\r\n<td>\r\n<img src=\"ktu.png\" width=\"200px\" height=\"200px\" style=\"\"/>\r\n</td>\r\n<td>\r\n<img src=\"ktu.png\" width=\"200px\" height=\"200px\" style=\"\"/>\r\n</td>\r\n<td>\r\n<img src=\"ktu.png\" width=\"200px\" height=\"200px\" style=\"\"/>\r\n</td>\r\n<td>\r\n<img src=\"ktu.png\" width=\"200px\" height=\"200px\" style=\"\"/>\r\n</td>\r\n</tr>\r\n</table>\r\n</div>\r\n'),
-(8, 'Footer1', 'footer', '', ''),
-(9, 'Left Banner1', 'leftbanner', '<a href=\"?denemeayar=9\">EKLE</a>', '<div style=\"background-color:green; width:100%; height:70px; float:left; text-align:center;\"><h1>leftbanner1</h1></div>'),
-(10, 'Left Banner2', 'leftbanner', '<a href=\"?denemeayar=10\">EKLE</a>', '<div style=\"background-color:red; width:100%; height:70px; float:left; text-align:center;\"><h1>leftbanner2</h1></div>'),
-(11, 'Header4', 'header', '<a href=\"?denemeayar=11\">EKLE</a>', '<div style=\"background-color:pink; width:100%; height:100%; float:left; text-align:center;\"><h1>Header4</h1></div>');
+INSERT INTO `kompanentler` (`id`, `kompanent_icerik`, `tur`, `komp_ayar`, `komp_kod`, `komp_pic`) VALUES
+(2, 'Header1', 'header', '<a href=\"?denemeayar=2\">EKLE</a>', '<div style=\"background-color:orange; width:100%; height:100%; float:left; text-align:center;\"><h1>Header1</h1></div>\r\n', 'komp/header1.png'),
+(3, 'Header2', 'header', '<a href=\"?denemeayar=3\">EKLE</a>', '<div style=\"background-color:red; width:100%; height:100%; float:left; text-align:center;\"><h1>Header2</h1></div>', 'komp/header2.png'),
+(4, 'Header3', 'header', '<a href=\"?denemeayar=4\">EKLE</a>', '<div style=\"background-color:yellow; width:100%; height:100%; float:left; text-align:center;\"><h1>Header3</h1></div>', 'komp/header3.png'),
+(5, 'Content1', 'content', '<a href=\"?denemeayar=5\">EKLE</a>', '<div style=\"position:relative; margin:auto; width:500px;\">\r\n<table border=\"0px\" cellpadding=\"10\">\r\n<tr>\r\n<td>\r\n<img src=\"ktu.png\" width=\"200px\" height=\"200px\" style=\"\"/>\r\n</td>\r\n<td><h3>asdasdasdasdasdasdasdasdasdasdasdasdasdasdasd</br>asdasdasdasdasdasdasd</h3></td>\r\n</tr>\r\n</table>\r\n</div>\r\n', 'komp/content1.png'),
+(6, 'Content2', 'content', '<a href=\"?denemeayar=6\">EKLE</a>', '<div style=\"position:relative; margin:auto; width:1000px;\">\r\n<table border=\"0px\" cellpadding=\"10\">\r\n<tr>\r\n<td>\r\n<h3>\r\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\r\n</h3>\r\n</td>\r\n</tr>\r\n</table>\r\n</div>\r\n', 'komp/content2.png'),
+(7, 'Content3', 'content', '<a href=\"?denemeayar=7\">EKLE</a>', '<div style=\"position:relative; margin:auto;\">\r\n<table border=\"0px\" cellpadding=\"10\">\r\n<tr>\r\n<td>\r\n<img src=\"ktu.png\" width=\"200px\" height=\"200px\" style=\"\"/>\r\n</td>\r\n<td>\r\n<img src=\"ktu.png\" width=\"200px\" height=\"200px\" style=\"\"/>\r\n</td>\r\n<td>\r\n<img src=\"ktu.png\" width=\"200px\" height=\"200px\" style=\"\"/>\r\n</td>\r\n<td>\r\n<img src=\"ktu.png\" width=\"200px\" height=\"200px\" style=\"\"/>\r\n</td>\r\n</tr>\r\n</table>\r\n</div>\r\n', 'komp/content3.png'),
+(8, 'Footer1', 'footer', '', '', 'komp/footer1.png'),
+(9, 'Left Banner1', 'leftbanner', '<a href=\"?denemeayar=9\">EKLE</a>', '<div style=\"background-color:green; width:100%; height:70px; float:left; text-align:center;\"><h1>leftbanner1</h1></div>', 'komp/leftbar1.png'),
+(10, 'Left Banner2', 'leftbanner', '<a href=\"?denemeayar=10\">EKLE</a>', '<div style=\"background-color:red; width:100%; height:70px; float:left; text-align:center;\"><h1>leftbanner2</h1></div>', 'komp/leftbar2.png'),
+(11, 'Header4', 'header', '<a href=\"?denemeayar=11\">EKLE</a>', '<div style=\"background-color:pink; width:100%; height:100%; float:left; text-align:center;\"><h1>Header4</h1></div>', 'komp/header4.png');
 
 -- --------------------------------------------------------
 

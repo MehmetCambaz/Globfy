@@ -3,7 +3,7 @@ include 'mysql_connect.php';
 
 	if(!empty($_COOKIE["secilenkompanent"])){
 		$gelen=$_COOKIE["secilenkompanent"];
-		$sql4 = "SELECT id,tur,kompanent_icerik FROM kompanentler where tur='$gelen'";
+		$sql4 = "SELECT id,tur,kompanent_icerik,komp_pic FROM kompanentler where tur='$gelen'";
 			$sorgu4 = $baglanti->query($sql4);
 			$oturum="";
 			echo '<table border="0px" width="100%">';
@@ -11,9 +11,10 @@ include 'mysql_connect.php';
 			
 			while($sonuc4=mysqli_fetch_assoc($sorgu4) )
 			{
-				echo '<tr><td style="background-color:gray; height:60px; text-align:center;"><a href="?AyarGecis='.$sonuc4['id'].'" style="text-decoration:none; color:white;">'.$sonuc4['kompanent_icerik'].'</a></td></tr>';
+				echo '<tr><td style="background-color:gray; height:90px; margin:10 0 10 0; text-align:center;"><a href="?AyarGecis='.$sonuc4['id'].'" style="text-decoration:none; color:white;"><img src="'.$sonuc4['komp_pic'].'" width="100%" height="100%"  style="margin:0 0 0 0;"/></a></td></tr>';
 			}
 			echo '</table>';
+
 	}else{
 		echo "YOK";
 	}

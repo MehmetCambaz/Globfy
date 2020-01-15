@@ -7,5 +7,6 @@ $sorgu = $baglanti->query('select id,kompanent_icerik,tur,komp_ayar,komp_kod fro
 	{
 		echo $sonuc["komp_ayar"];
 	}
+
 ?>
 

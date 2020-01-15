@@ -27,6 +27,7 @@
     font-size: 17px;
     color:white;
 	width:50%;
+	
 }
 .editor_tab button:hover {
     background-color: #6D6D6D;
@@ -41,7 +42,7 @@
 
 </style>
 <script language="JavaScript"> // Tab geçiş sol div
-function openPage(evt, page) {
+function openPage(evt, page, a) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("editor_tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
@@ -52,6 +53,7 @@ function openPage(evt, page) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
     document.getElementById(page).style.display = "block";
+	document.getElementById(a).click();
     evt.currentTarget.className += " active";
 }
 document.getElementById("defaultOpen").onclick();
@@ -81,15 +83,15 @@ setInterval(function() {$("#Ayar").load('ayar.php');}, 1000);
 <input type="submit" name="gerial" value="Geri Al"/>
 </form>
 </div>
-	<div class="onizleme" id="onizleme" onclick="openPage(event, 'Kompanent')">
+	<div class="onizleme" id="onizleme" onclick="openPage(event, 'Kompanent', 'tablink_komp')">
 		<?php include 'onizleme.php'; ?>
    </div>
 
 <div class="editor_TapContent">
 
 <div class="editor_tab">
-  <button class="editor_tablinks" onclick="openPage(event, 'Ayar')">Ayarlar</button>
-  <button class="editor_tablinks" onclick="openPage(event, 'Kompanent')">Kompanentler</button>
+  <button class="editor_tablinks" id="tablink_ayar" onclick="openPage(event, 'Ayar', 'tablink_ayar')">Ayarlar</button>
+  <button class="editor_tablinks" id="tablink_komp" onclick="openPage(event, 'Kompanent', 'tablink_komp')">Kompanentler</button>
 </div>
 
 <div id="Ayar" id="ayar" class="editor_tabcontent">
@@ -119,7 +121,7 @@ if(isset($_GET['ekle'])){
 }
 if(isset($_GET['AyarGecis'])){
 	echo '<script type="text/javascript">',
-     'openPage(event, "Ayar");',
+     'openPage(event, "Ayar", "tablink_ayar");',
      '</script>';
 	 $id2=$_GET['AyarGecis'];
 	 $_SESSION["lagaluga"]=$id2;
@@ -183,6 +185,7 @@ fclose($dt);
 		}
 
 	header('Location:'.$_SERVER['HTTP_REFERER']);
+
 }else{
 
 	//$sayfa=$gelen.''.$sayi;
@@ -235,8 +238,8 @@ $sayfa=$gelen;
 fclose($dt);	
 	}
 
-	//header('Location:'.$_SERVER['HTTP_REFERER']);
-	
+	header('Location:'.$_SERVER['HTTP_REFERER']);
+
 }
 
 }

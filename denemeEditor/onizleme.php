@@ -5,10 +5,13 @@
     </style>
 	
 	<script src="http://code.jquery.com/jquery-1.9.1.min.js" type="text/javascript"></script>
+
 <?php 
+
 if(isset($_COOKIE["secilenkompanent"]) and isset($_COOKIE["ekle"])){
 	$ekle=$_COOKIE["ekle"];
 	$gelen=$_COOKIE["secilenkompanent"];
+
 }
 else{
 	$gelen="asd";
@@ -23,6 +26,7 @@ $sorgu = $baglanti->query('select sablon_id,sablon_adi,sablon_resim,sablon_kod f
 		$path=$sonuc["sablon_kod"];
 		include $path;
 	}
+
 ?>
 
 
@@ -40,6 +44,7 @@ $("#data td").click(function() {
 function myFunction(param) {
 $(document).ready(function () {
   createCookie("secilenkompanent", param, "10");
+
 });
 }
 function createCookie(name, value, days) {
