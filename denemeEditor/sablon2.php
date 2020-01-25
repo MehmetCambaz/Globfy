@@ -1,56 +1,47 @@
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+</head>
+<body>
 <table class="data" id="data" border="1" cellspacing="1" height="100%" width="100%">
         <tr height="20%">
             <td id="header" colspan="5">
 			<div id="header">
-				<?php 
-					if($gelen == "header"){
-						echo $ekle;
-					}
-					else{
-						echo "Tıkla ve Ekle (Header)";
-					}
-				?>
+<p style="text-align:center;">Tıkla ve Düzenle</p>
+
 			</div>
 			</td>
         </tr>
 		 <tr>
 			<td id="content" >
 			<div id="content">
-			<?php 
-				if($gelen == "content"){
-						echo $ekle;
-					}
-					else{
-						echo "Tıkla ve Ekle (content)";
-					}
-				?>
+<p style="text-align:center;">Tıkla ve Düzenle</p>
+
 			</div>
 			</td>
 			<td id="content">
 			<div id="content">
-				<?php 
-					if($gelen == "content"){
-						echo $ekle;
-					}
-					else{
-						echo "Tıkla ve Ekle (Content)";
-					}
-				?>
+<p style="text-align:center;">Tıkla ve Düzenle</p>
+
 			</div>
 			</td>  
         </tr>
 		<tr height="20%">
             <td id="footer" colspan="5">
 			<div id="footer">
-				<?php 
-					if($gelen == "footer"){
-						echo $ekle;
-					}
-					else{
-						echo "Tıkla ve Ekle (Footer)";
-					}
-				?>
+<p style="text-align:center;">Tıkla ve Düzenle</p>
+
 			</div>
 			</td>
         </tr>
    </table>
+</body>
+</html><script type="text/javascript">
+     $(document).ready(function() {
+        $("#header").load("header.php");
+});
+     </script><script type="text/javascript">
+     $(document).ready(function() {
+        $("#content").load("content.php");
+});
+     </script>

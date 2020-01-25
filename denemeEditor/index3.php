@@ -1,5 +1,4 @@
-
-
+<?php?>
 <html>
 <head>
 <title>WoS | Web Site Oluşturma Sistemi</title>
@@ -10,7 +9,7 @@
 .editor_TapContent{
 	float:left;
 	width:19.5%;
-    height:100%;
+  height:100%;
 	border:1px solid black;
 }
 .editor_tab {
@@ -39,7 +38,6 @@
     display: none;
     padding: 6px 12px;
 }
-
 </style>
 <script language="JavaScript"> // Tab geçiş sol div
 function openPage(evt, page, a) {
@@ -62,13 +60,13 @@ document.getElementById("defaultOpen").onclick();
 
 <script>
 $(document).ready(function() {  //Tab divlerin güncellemesi
-        $("#Kompanent").load("icerik.php");
+    $("#Kompanent").load("icerik.php");
 		$("#Ayar").load("ayar.php");
 		//$("#onizleme").load("yenidosya.php");
 
 });
 setInterval(function() {$("#Kompanent").load('icerik.php');}, 1000);
-setInterval(function() {$("#Ayar").load('ayar.php');}, 1000);
+//setInterval(function() {$("#Ayar").load('ayar.php');}, 1000000);
 //setInterval(function() {$("#onizleme").load('yenidosya.php');}, 1000);
 
 
@@ -76,39 +74,37 @@ setInterval(function() {$("#Ayar").load('ayar.php');}, 1000);
 
 </head>
 <body>
-<div class="page3_tumsayfa" >
+<div class="page3_tumsayfa">
+<!--  <div style="width:100%; float:left;"> //Geri alma bölümü!
+    <form method="post">
+     <input type="submit" name="gerial" value="Geri Al"/>
+    </form>
+  </div>  -->
 
-<div style="width:100%;height:60px; float:left;">
-<form method="post">
-<input type="submit" name="gerial" value="Geri Al"/>
-</form>
-</div>
 	<div class="onizleme" id="onizleme" onclick="openPage(event, 'Kompanent', 'tablink_komp')">
 		<?php include 'onizleme.php'; ?>
-   </div>
+  </div>
 
-<div class="editor_TapContent">
+  <div class="editor_TapContent">
 
-<div class="editor_tab">
-  <button class="editor_tablinks" id="tablink_ayar" onclick="openPage(event, 'Ayar', 'tablink_ayar')">Ayarlar</button>
-  <button class="editor_tablinks" id="tablink_komp" onclick="openPage(event, 'Kompanent', 'tablink_komp')">Kompanentler</button>
+    <div class="editor_tab">
+      <button class="editor_tablinks" id="tablink_ayar" onclick="openPage(event, 'Ayar', 'tablink_ayar')">Ayarlar</button>
+      <button class="editor_tablinks" id="tablink_komp" onclick="openPage(event, 'Kompanent', 'tablink_komp')">Kompanentler</button>
+    </div>
+
+    <div id="Ayar" id="ayar" class="editor_tabcontent">
+      <h3>Ayarlar</h3>
+    </div>
+
+    <div id="Kompanent" class="editor_tabcontent">
+    </div>
+
+  </div>
+
 </div>
-
-<div id="Ayar" id="ayar" class="editor_tabcontent">
-  <h3>Ayarlar</h3>
-</div>
-
-<div id="Kompanent" class="editor_tabcontent">
-
-</div>
-
-</div>
-</div>
-
 
 </body>
 </html>
-
 
 <?php
 
@@ -147,7 +143,52 @@ if( $gelen == "header" ) {
 				
 			}
 		fwrite($dt2, $style);
-		fclose($dt2);
+    fclose($dt2);
+    $dosya=''.$gelen.'.php';
+$dt2 = fopen($dosya, "r");
+if(filesize($dosya)>0)
+   {
+      $eski = fread($dt2, filesize($dosya));
+   }
+   fclose($dt);
+    
+ 
+$veri="<?php ";
+if (isset($_COOKIE['sayfaEkle'])) {
+  $islemim=$_SESSION["yapilan_islemler"];
+  $_SESSION["yapilan_islemler"]=$islemim+1;
+  $bir=[];
+  $iki=[];
+  $a=0;
+  foreach ($_COOKIE['sayfaEkle'] as $name => $value) {
+    $name = htmlspecialchars($name);
+    $value = htmlspecialchars($value);
+    $yazilacakicerik='$'.$name.$_SESSION["yapilan_islemler"].'="'.$value.'";';
+
+    $degisecekicerik=$name.'.';
+    $yenigelecek=$name.$_SESSION["yapilan_islemler"].'.';
+    array_push($bir,$degisecekicerik);
+    array_push($iki,$yenigelecek);
+
+    
+    $veri.= $yazilacakicerik;
+  }
+
+
+  for($i=0;$i<count($bir);$i++){
+    $eski= str_replace($bir[$i],$iki[$i], $eski);
+  }
+
+
+ $veri.=" ?>\n";
+}
+
+
+$yeni=$veri.$eski;
+
+$dt3=fopen($dosya,"w");
+$yaz=fwrite($dt3, $yeni);
+fclose($dt3);
 //$sayfa=$gelen.''.$sayi;
 $sayfa=$gelen;
 
@@ -212,6 +253,51 @@ $sorgu = $baglanti->query('select id,kompanent_icerik,tur,komp_ayar,komp_kod fro
 	}
 fwrite($dt2, $path);
 fclose($dt2);
+$dosya=''.$gelen.'.php';
+$dt2 = fopen($dosya, "r");
+if(filesize($dosya)>0)
+   {
+      $eski = fread($dt2, filesize($dosya));
+   }
+   fclose($dt);
+    
+ 
+$veri="<?php ";
+if (isset($_COOKIE['sayfaEkle'])) {
+  $islemim=$_SESSION["yapilan_islemler"];
+  $_SESSION["yapilan_islemler"]=$islemim+1;
+  $bir=[];
+  $iki=[];
+  $a=0;
+  foreach ($_COOKIE['sayfaEkle'] as $name => $value) {
+    $name = htmlspecialchars($name);
+    $value = htmlspecialchars($value);
+    $yazilacakicerik='$'.$name.$_SESSION["yapilan_islemler"].'="'.$value.'";';
+
+    $degisecekicerik=$name.'.';
+    $yenigelecek=$name.$_SESSION["yapilan_islemler"].'.';
+    array_push($bir,$degisecekicerik);
+    array_push($iki,$yenigelecek);
+
+    
+    $veri.= $yazilacakicerik;
+  }
+
+
+  for($i=0;$i<count($bir);$i++){
+    $eski= str_replace($bir[$i],$iki[$i], $eski);
+  }
+
+
+ $veri.=" ?>\n";
+}
+
+
+$yeni=$veri.$eski;
+
+$dt3=fopen($dosya,"w");
+$yaz=fwrite($dt3, $yeni);
+fclose($dt3);
 		if(strstr($oku,$degisecek)){
 $path_to_file = 'sablon3.php';
 $file_contents = file_get_contents($path_to_file);
@@ -266,7 +352,6 @@ file_put_contents($path_to_file,$file_contents);
 header('Location:'.$_SERVER['HTTP_REFERER']);
 
 }
-
 
 ?>
 

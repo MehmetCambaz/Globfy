@@ -11,7 +11,10 @@ include 'mysql_connect.php';
 			
 			while($sonuc4=mysqli_fetch_assoc($sorgu4) )
 			{
-				echo '<tr><td style="background-color:gray; height:90px; margin:10 0 10 0; text-align:center;"><a href="?AyarGecis='.$sonuc4['id'].'" style="text-decoration:none; color:white;"><img src="'.$sonuc4['komp_pic'].'" width="100%" height="100%"  style="margin:0 0 0 0;"/></a></td></tr>';
+				echo '<tr><td cellpadding="20" style="background-color:; height:90px; margin:10 0 10 0; text-align:center;">
+				<a href="?AyarGecis='.$sonuc4['id'].'" style="text-decoration:none; color:white;">
+				<img src="'.$sonuc4['komp_pic'].'" width="100%" height="100%"  style="margin:0 0 0 0;"/>
+				</a></td></tr>';
 			}
 			echo '</table>';
 
