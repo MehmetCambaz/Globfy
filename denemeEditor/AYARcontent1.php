@@ -14,5 +14,7 @@ setcookie("sayfaEkle[content1_resim]",$deger2,time()+3600);
 setcookie("sayfaEkle[content1_arkaplan]",$deger3,time()+3600);
 
 
-header("Location: index3.php?denemeayar=5");
+header("Location: index3.php?KompanentEkle=5"); //sayfayı yenileyip veritabanından hangi id li kompanentin kodlarını
+                                                // çekeceğini anasayfaya 'KompanentEkle' ile gönderiyorum! 
+                                                //index3.php de de bunu okuyup işlem yapıyorum!
 ?>

@@ -21,5 +21,7 @@ setcookie("sayfaEkle[leftbar2_link3]",$deger4,time()+3600);
 setcookie("sayfaEkle[leftbar2_link4]",$deger5,time()+3600);
 
 
-header("Location: index3.php?denemeayar=10");
+header("Location: index3.php?KompanentEkle=10");//sayfayı yenileyip veritabanından hangi id li kompanentin kodlarını
+// çekeceğini anasayfaya 'KompanentEkle' ile gönderiyorum! 
+//index3.php de de bunu okuyup işlem yapıyorum!
 ?>
