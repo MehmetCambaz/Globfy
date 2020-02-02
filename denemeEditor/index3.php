@@ -76,12 +76,12 @@ setInterval(function() {$("#Kompanent").load('kompanent.php');}, 1000); //sadece
     
       <div style="width:10%; float:left;">
         <form method="post"> <!-- Geri Alma işlemi FORM u! -->
-        <input type="submit" name="gerial" value="Geri Al" style="width:80px; height:40px; background-color:gray; color:white; margin:10 0 0 10;"/>
+          <input type="submit" name="gerial" value="Geri Al" style="width:80px; height:40px; background-color:gray; color:white; margin:10 0 0 10;"/>
         </form>
       </div> 
       <div style="width:80%; float:left; text-align:center;"><h2>Web Site Oluşturma Sistemi</h2></div>
       <div style="width:10%; float:left;">
-        <form method="post" style="float:right;"> <!-- Önizleme işlemi FORM u! -->
+        <form method="post" style="float:right;" action="verilecek/index.php" target="_blank"> <!-- Önizleme işlemi FORM u! -->
           <input type="submit" name="onizle" value="Önizleme" style="width:80px; height:40px; background-color:gray; color:white; margin:10 10 0 0;"/>
         </form>
       </div> 
@@ -126,7 +126,7 @@ setInterval(function() {$("#Kompanent").load('kompanent.php');}, 1000); //sadece
     if( $secilenBolum == "header" ) { //Tek bölüm olan sayfaları bu if in altında ki işlemler uygulanacak!
     
       $dt = fopen($secilenBolum.'.php', 'w+'); //sayfayı w+ ile açıyorum, içeriği silip yeniden yazmak için. Tek sayfa olduğu için!
-      
+      $dt_onizleme = fopen('verilecek/'.$secilenBolum.'.php', 'w+');
       $sorgu = $baglanti->query('select id,kompanent_icerik,tur,komp_ayar,komp_kod from kompanentler where id='.$secilenKompanent_ID.'');
         while($sonuc=mysqli_fetch_assoc($sorgu) )
         {
@@ -149,19 +149,25 @@ setInterval(function() {$("#Kompanent").load('kompanent.php');}, 1000); //sadece
             color:white;
             ">Tıkla ve Düzenle</div></div>';
 
-      $gelentasarim=$tiklaveduzenlekodu.$gelentasarim; //php dosyaları hariç sayfaya yazacağım içerik!
+      $gelentasarim2=$tiklaveduzenlekodu.$gelentasarim; //php dosyaları hariç sayfaya yazacağım içerik!
 
-      fwrite($dt, $gelentasarim); // php dosyaları hariç olan veriyi ilk yazdırdım!
+      fwrite($dt, $gelentasarim2); // php dosyaları hariç olan veriyi ilk yazdırdım!
       fclose($dt);
+      fwrite($dt_onizleme, $gelentasarim); 
+      fclose($dt_onizleme);
 
       $dosya=$secilenBolum.'.php';
+      $dosya_onizleme='verilecek/'.$secilenBolum.'.php';
       $dt2 = fopen($dosya, "r"); // sayfayı tekrar açıyorum! ayar sayfasından gelecekleri eklemek için!
+      $dt2_onizleme = fopen($dosya_onizleme, "r");
 
       if(filesize($dosya)>0) //okumak için açtığım dosyanın içeriğini okuyorum!
       {
         $eski = fread($dt2, filesize($dosya)); //dosya içeriği 'eski' değerinin içerisinde!
+        $eski_onizleme = fread($dt2_onizleme, filesize($dosya_onizleme));
       }
       fclose($dt2);
+      fclose($dt2_onizleme);
       
   
       $veri="<?php "; //ayar sayfasından gelen verileri tek tek okuyup dökümana php değişkenlerini yazdırmaya başladığım yer!
@@ -178,6 +184,7 @@ setInterval(function() {$("#Kompanent").load('kompanent.php');}, 1000); //sadece
 
           $degisecekicerik=$name.'.';
           $yenigelecek=$name.$_SESSION["yapilan_islemler"].'.';
+          $eski_onizleme= str_replace($degisecekicerik,$yenigelecek, $eski_onizleme);
           $eski= str_replace($degisecekicerik,$yenigelecek, $eski); //Bu 3 satırdada dosyanın içindeki veritabanından gelen örnek değişken adını
                                                                     //alıp yerine son işlem değeri ile birleştirdiğim değişken adını yazdırıyorum!
                                                                     //dosyanın içini açıp bul ve değiştir yapıyorum!
@@ -190,10 +197,15 @@ setInterval(function() {$("#Kompanent").load('kompanent.php');}, 1000); //sadece
 
 
       $yeni=$veri.$eski; //yeni değişkeninin başına php değişken satırını ekleyip altınada veritabanından gelen değeri ekleyorum!
+      $yeni_onizleme=$veri.$eski_onizleme;
 
       $dt3=fopen($dosya,"w");
       $yaz=fwrite($dt3, $yeni); //dosyayı yazdırıyorum!
       fclose($dt3);
+      $dt3_onizleme=fopen($dosya_onizleme,"w");
+      $yaz_onizleme=fwrite($dt3_onizleme, $yeni_onizleme); 
+      fclose($dt3_onizleme);
+
       $sayfa=$secilenBolum;
 
       $kodlar = '<script type="text/javascript"> 
@@ -203,9 +215,15 @@ setInterval(function() {$("#Kompanent").load('kompanent.php');}, 1000); //sadece
                 </script>'; //Anasayfadaki uygun div in içine çağıralacak dosyanın javascript ile çağıralacak kod!
                 
       $oku=file_get_contents("sablon3.php"); //anasayfam!
+      $oku_onizleme=file_get_contents("verilecek/index.php");
 
       if(!strstr($oku,$kodlar)){ //eklenecek kodun anasayfada olup olmadığını kontrol ediyorum, yoksa dosyayı açıp anasayfayanın sonuna ekliyorum!
         $dt3 = fopen('sablon3.php', 'a'); 
+        fwrite($dt3, $kodlar);
+        fclose($dt3);
+      }
+      if(!strstr($oku_onizleme,$kodlar)){
+        $dt3 = fopen('verilecek/index.php', 'a'); 
         fwrite($dt3, $kodlar);
         fclose($dt3);
       }
@@ -216,6 +234,7 @@ setInterval(function() {$("#Kompanent").load('kompanent.php');}, 1000); //sadece
     else{ //sayfa tek bölümlü değile bu aşağıdaki işlemleri yapıyorum!
 
       $dt4 = fopen(''.$secilenBolum.'.php', 'a'); //çok bölümlü sayfalar için gelen sayfayı açıp sonuna ekleme yapmak için 'a' ile dosyayı açıyorum.
+      $dt4_onizleme = fopen('verilecek/'.$secilenBolum.'.php', 'a');
 
       $sorgu = $baglanti->query('select id,kompanent_icerik,tur,komp_ayar,komp_kod from kompanentler where id='.$secilenKompanent_ID.'');
         while($sonuc=mysqli_fetch_assoc($sorgu) )
@@ -224,14 +243,24 @@ setInterval(function() {$("#Kompanent").load('kompanent.php');}, 1000); //sadece
         }
       fwrite($dt4, $gelentasarim2); //okduduğum içeriği dosyanın sonuna ekledim.
       fclose($dt4);
+      fwrite($dt4_onizleme, $gelentasarim2);
+      fclose($dt4_onizleme);
 
       $dosya=''.$secilenBolum.'.php';
+      $dosya_onizleme='verilecek/'.$secilenBolum.'.php';
+
       $dt5 = fopen($dosya, "r");
       if(filesize($dosya)>0)
       {
         $eski = fread($dt5, filesize($dosya)); //dosyayı tekrar açıp okudum!
       }
       fclose($dt5);
+      $dt5_onizleme = fopen($dosya_onizleme, "r");
+      if(filesize($dosya_onizleme)>0)
+      {
+        $eski_onizleme = fread($dt5_onizleme, filesize($dosya_onizleme));
+      }
+      fclose($dt5_onizleme);
           
       
       $veri="<?php "; //dosyanın içerisine ekleyeceğim php satırını hazırlamaya başlıyorum.
@@ -247,6 +276,7 @@ setInterval(function() {$("#Kompanent").load('kompanent.php');}, 1000); //sadece
 
           $degisecekicerik=$name.'.';
           $yenigelecek=$name.$_SESSION["yapilan_islemler"].'.';
+          $eski_onizleme= str_replace($degisecekicerik,$yenigelecek, $eski_onizleme);
           $eski= str_replace($degisecekicerik,$yenigelecek, $eski);//Bu 3 satırdada dosyanın içindeki veritabanından gelen örnek değişken adını
                                                                    //alıp yerine son işlem değeri ile birleştirdiğim değişken adını yazdırıyorum!
                                                                    //dosyanın içini açıp bul ve değiştir yapıyorum!
@@ -258,10 +288,14 @@ setInterval(function() {$("#Kompanent").load('kompanent.php');}, 1000); //sadece
       }
 
       $yeni=$veri.$eski; //yeni değişkeninin başına php değişken satırını ekleyip altınada veritabanından gelen değeri ekleyorum!
+      $yeni_onizleme=$veri.$eski_onizleme;
 
       $dt5=fopen($dosya,"w");
       $yaz=fwrite($dt5, $yeni);
       fclose($dt5);
+      $dt5_onizleme=fopen($dosya_onizleme,"w");
+      $yaz_onizleme=fwrite($dt5_onizleme, $yeni_onizleme);
+      fclose($dt5_onizleme);
 
       $kodlar = '<script type="text/javascript">
           $(document).ready(function() {
@@ -270,9 +304,17 @@ setInterval(function() {$("#Kompanent").load('kompanent.php');}, 1000); //sadece
           </script>'; //Anasayfadaki uygun div in içine çağıralacak dosyanın javascript ile çağıralacak kod!
     
       $oku=file_get_contents("sablon3.php");
+      $oku_onizleme=file_get_contents("verilecek/index.php");
+
       
       if(!strstr($oku,$kodlar)){  //eklenecek kodun anasayfada olup olmadığını kontrol ediyorum, yoksa dosyayı açıp anasayfayanın sonuna ekliyorum!
         $dt = fopen('sablon3.php', 'a');
+        fwrite($dt, $kodlar);
+        $sayfa=$secilenBolum;
+        fclose($dt);
+      }
+      if(!strstr($oku_onizleme,$kodlar)){ 
+        $dt = fopen('verilecek/index.php', 'a');
         fwrite($dt, $kodlar);
         $sayfa=$secilenBolum;
         fclose($dt);
@@ -284,10 +326,6 @@ setInterval(function() {$("#Kompanent").load('kompanent.php');}, 1000); //sadece
   }
 
   if(isset($_POST['gerial'])){ //geri al butonuna basıldığında yapılacaklar
-    //Kodlar yazılacak!
-  }
-
-  if(isset($_POST['onizleme'])){ //onizleme butonuna basıldığında yapılacaklar
     //Kodlar yazılacak!
   }
 
@@ -303,14 +341,29 @@ setInterval(function() {$("#Kompanent").load('kompanent.php');}, 1000); //sadece
   }
 
   function kullaniciTeslim_sayfalari($dosyaadi){
+
     if (!file_exists('verilecek')) {  //klasör kontrol, yoksa oluşturulur!
       mkdir('verilecek', 0777, true);
     }
+
     $file = "verilecek/".$dosyaadi.".php";  //dosya kontrol, yoksa oluşturulur!
     if(!is_file($file)){
       $filecreate = fopen("verilecek/".$dosyaadi.".php", 'w+') or die("Can't create file");
     } //Bu yukarıdaki bölüm konuştuğumuz harici bir önizleme sayfası için gerekli dosyaların oluşturulmasını sağlıyor, şuan birşey eklemiyoruz!
+
+    include 'mysql_connect.php';
+    $sorgu = $baglanti->query('select sablon_id,sablon_tasarimkodu from sablonlar where sablon_id=3');
+    $fileindexdosyasi = "verilecek/index.php";
+	  while($sonuc=mysqli_fetch_assoc($sorgu) )
+	  {
+      if(!is_file($fileindexdosyasi)){
+        $filecreate2 = fopen("verilecek/index.php", 'w') or die("Can't create file");
+        $fileindexyaz=fwrite($filecreate2, $sonuc["sablon_tasarimkodu"]);
+        fclose($filecreate2);
+      }
+	  }
   }
+  
 ?>
 
 <script> //Burada kullanıcının seçtiği tasarımdaki ekleme yapacağı bölüme(header,content,..) tıkladığı anda tıkladığı bölümün adını cookie atan

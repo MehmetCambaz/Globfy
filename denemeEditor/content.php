@@ -17,4 +17,3 @@ font-weight:bold;
 font-family:calibri;
 color:white;
 ">Tıkla ve Düzenle</div></div>
-

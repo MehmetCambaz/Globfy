@@ -1,4 +1,3 @@
-<div style="border:0px solid black;">
 <div style="position:relative; width:100%;">
 <div style="width:60%;
 
