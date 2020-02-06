@@ -101,6 +101,7 @@ setInterval(function() {$("#Kompanent").load('kompanent.php');}, 1000); //sadece
       </div>
 
       <div id="Kompanent" class="editor_tabcontent"> <!-- Kompanent sayfası açılıyor! -->
+      
       </div>
 
     </div>
@@ -198,6 +199,14 @@ setInterval(function() {$("#Kompanent").load('kompanent.php');}, 1000); //sadece
 
       $yeni=$veri.$eski; //yeni değişkeninin başına php değişken satırını ekleyip altınada veritabanından gelen değeri ekleyorum!
       $yeni_onizleme=$veri.$eski_onizleme;
+      
+      $logVeri=$yeni;
+      $logKayit = fopen('log.txt', 'a');
+      fwrite($logKayit,"|--|");
+      fwrite($logKayit,"header|**|");
+      fwrite($logKayit,$logVeri);
+    
+      fclose($logKayit);
 
       $dt3=fopen($dosya,"w");
       $yaz=fwrite($dt3, $yeni); //dosyayı yazdırıyorum!
@@ -236,7 +245,7 @@ setInterval(function() {$("#Kompanent").load('kompanent.php');}, 1000); //sadece
       $dt4 = fopen(''.$secilenBolum.'.php', 'a'); //çok bölümlü sayfalar için gelen sayfayı açıp sonuna ekleme yapmak için 'a' ile dosyayı açıyorum.
       $dt4_onizleme = fopen('verilecek/'.$secilenBolum.'.php', 'a');
 
-      $sorgu = $baglanti->query('select id,kompanent_icerik,tur,komp_ayar,komp_kod from kompanentler where id='.$secilenKompanent_ID.'');
+      /*$sorgu = $baglanti->query('select id,kompanent_icerik,tur,komp_ayar,komp_kod from kompanentler where id='.$secilenKompanent_ID.'');
         while($sonuc=mysqli_fetch_assoc($sorgu) )
         {
           $gelentasarim2=$sonuc["komp_kod"];   
@@ -244,7 +253,7 @@ setInterval(function() {$("#Kompanent").load('kompanent.php');}, 1000); //sadece
       fwrite($dt4, $gelentasarim2); //okduduğum içeriği dosyanın sonuna ekledim.
       fclose($dt4);
       fwrite($dt4_onizleme, $gelentasarim2);
-      fclose($dt4_onizleme);
+      fclose($dt4_onizleme);*/
 
       $dosya=''.$secilenBolum.'.php';
       $dosya_onizleme='verilecek/'.$secilenBolum.'.php';
@@ -261,7 +270,13 @@ setInterval(function() {$("#Kompanent").load('kompanent.php');}, 1000); //sadece
         $eski_onizleme = fread($dt5_onizleme, filesize($dosya_onizleme));
       }
       fclose($dt5_onizleme);
-          
+      
+      $sorgu = $baglanti->query('select id,kompanent_icerik,tur,komp_ayar,komp_kod from kompanentler where id='.$secilenKompanent_ID.'');
+        while($sonuc=mysqli_fetch_assoc($sorgu) )
+        {
+          $gelentasarim2=$sonuc["komp_kod"];   
+        }
+      
       
       $veri="<?php "; //dosyanın içerisine ekleyeceğim php satırını hazırlamaya başlıyorum.
       if (isset($_COOKIE['sayfaEkle'])) {
@@ -276,19 +291,19 @@ setInterval(function() {$("#Kompanent").load('kompanent.php');}, 1000); //sadece
 
           $degisecekicerik=$name.'.';
           $yenigelecek=$name.$_SESSION["yapilan_islemler"].'.';
-          $eski_onizleme= str_replace($degisecekicerik,$yenigelecek, $eski_onizleme);
+          /*$eski_onizleme= str_replace($degisecekicerik,$yenigelecek, $eski_onizleme);
           $eski= str_replace($degisecekicerik,$yenigelecek, $eski);//Bu 3 satırdada dosyanın içindeki veritabanından gelen örnek değişken adını
                                                                    //alıp yerine son işlem değeri ile birleştirdiğim değişken adını yazdırıyorum!
-                                                                   //dosyanın içini açıp bul ve değiştir yapıyorum!
-
+                                                                   //dosyanın içini açıp bul ve değiştir yapıyorum!*/
+          $gelentasarim2=str_replace($degisecekicerik,$yenigelecek, $gelentasarim2);
           $veri.= $yazilacakicerik;
         }
 
       $veri.=" ?>\n"; //döngüden çıkıp bütün değişkenleri de içinde bulunduran php satırını tamamlıyorum! 
       }
-
-      $yeni=$veri.$eski; //yeni değişkeninin başına php değişken satırını ekleyip altınada veritabanından gelen değeri ekleyorum!
-      $yeni_onizleme=$veri.$eski_onizleme;
+      
+      $yeni=$eski.$veri.$gelentasarim2; //yeni değişkeninin başına php değişken satırını ekleyip altınada veritabanından gelen değeri ekleyorum!
+      $yeni_onizleme=$eski_onizleme.$veri.$gelentasarim2;
 
       $dt5=fopen($dosya,"w");
       $yaz=fwrite($dt5, $yeni);
@@ -296,6 +311,14 @@ setInterval(function() {$("#Kompanent").load('kompanent.php');}, 1000); //sadece
       $dt5_onizleme=fopen($dosya_onizleme,"w");
       $yaz_onizleme=fwrite($dt5_onizleme, $yeni_onizleme);
       fclose($dt5_onizleme);
+
+      $logVeri=$veri.$gelentasarim2;
+      $logKayit = fopen('log.txt', 'a');
+      fwrite($logKayit,"|--|");
+      fwrite($logKayit,$secilenBolum."|**|");
+      fwrite($logKayit,$logVeri);
+    
+      fclose($logKayit);
 
       $kodlar = '<script type="text/javascript">
           $(document).ready(function() {
@@ -326,7 +349,59 @@ setInterval(function() {$("#Kompanent").load('kompanent.php');}, 1000); //sadece
   }
 
   if(isset($_POST['gerial'])){ //geri al butonuna basıldığında yapılacaklar
-    //Kodlar yazılacak!
+    
+    $logOku=file_get_contents("log.txt");
+    $logFile=fopen('log.txt','w');
+    $logLine=explode("|--|",$logOku);
+
+    $i=count($logLine);
+
+    $secilenBolum=$_COOKIE["secilenkompanent"];
+
+    for($j=$i-1;$j>=0;$j--){
+      $alinanBolum=explode("|**|",$logLine[$j]);
+
+      if("$alinanBolum[0]"=="$secilenBolum"){
+
+        $logOku=str_replace("|--|".$logLine[$j],"",$logOku);
+
+        $silinecekSayfaAdi=$secilenBolum.'.php';
+        $silenecekSayfaIcerik=file_get_contents($silinecekSayfaAdi);
+        $silinecekSayfa=fopen($silinecekSayfaAdi,'w');
+        $silenecekSayfaIcerik=str_replace("$alinanBolum[1]","",$silenecekSayfaIcerik);
+        fwrite($silinecekSayfa,$silenecekSayfaIcerik);
+
+        $onizlemesilinecekSayfaAdi='verilecek/'.$secilenBolum.'.php';
+        $onizlemesilenecekSayfaIcerik=file_get_contents($onizlemesilinecekSayfaAdi);
+        $onizlemesilinecekSayfa=fopen($onizlemesilinecekSayfaAdi,'w');
+        $onizlemesilenecekSayfaIcerik=str_replace("$alinanBolum[1]","",$onizlemesilenecekSayfaIcerik);
+        fwrite($onizlemesilinecekSayfa,$onizlemesilenecekSayfaIcerik);
+
+        break;
+      }
+    }
+    if("$secilenBolum"=="header"){
+      $kodlar = '<script type="text/javascript"> 
+                  $(document).ready(function() {
+                  $("#'.$secilenBolum.'").load("'.$secilenBolum.'.php");
+                  });
+                </script>';
+                
+      $okuAnasayfa=file_get_contents("sablon3.php"); //anasayfam!
+      $anasayfa=fopen('sablon3.php','w');
+      $okuAnasayfa=str_replace("$kodlar","",$okuAnasayfa);
+      fwrite($anasayfa,$okuAnasayfa);
+
+      $onizlemeokuAnasayfa=file_get_contents("verilecek/index.php"); //onizleme anasayfam!
+      $onizlemeanasayfa=fopen('verilecek/index.php','w');
+      $onizlemeokuAnasayfa=str_replace("$kodlar","",$onizlemeokuAnasayfa);
+      fwrite($onizlemeanasayfa,$onizlemeokuAnasayfa);
+    }
+
+    fwrite($logFile,$logOku);
+
+    header('Location:'.$_SERVER['HTTP_REFERER']);
+
   }
 
 ?>
