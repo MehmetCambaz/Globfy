@@ -23,20 +23,20 @@ if(isset($_POST['submit'])){
                 $fileDestination = $fileName;
 
 
-                if(!file_exists("resimler")) {
-                  $olustur = mkdir("resimler");
+                if(!file_exists("editorsayfalari/resimler")) {
+                  $olustur = mkdir("editorsayfalari/resimler");
                 }
                 
                 
-                if(!file_exists("verilecek")) {
-                  $olustur = mkdir("verilecek");
+                if(!file_exists("kullanicisayfalari")) {
+                  $olustur = mkdir("kullanicisayfalari");
                 }
-                if(!file_exists("verilecek/resimler")) {
-                  $olustur = mkdir("verilecek/resimler");
+                if(!file_exists("kullanicisayfalari/resimler")) {
+                  $olustur = mkdir("kullanicisayfalari/resimler");
                 }
 
-                move_uploaded_file($fileTmpName, "resimler/".$fileDestination);
-                copy("resimler/".$fileDestination,"verilecek/resimler/".$fileDestination);
+                move_uploaded_file($fileTmpName, "editorsayfalari/resimler/".$fileDestination);
+                copy("editorsayfalari/resimler/".$fileDestination,"kullanicisayfalari/resimler/".$fileDestination);
            
 
 

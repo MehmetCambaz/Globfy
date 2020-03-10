@@ -33,15 +33,15 @@
                   }
                   
                   
-                  if(!file_exists("verilecek")) {
-                    $olustur = mkdir("verilecek");
+                  if(!file_exists("kullanicisayfalari")) {
+                    $olustur = mkdir("kullanicisayfalari");
                   }
-                  if(!file_exists("verilecek/resimler")) {
-                    $olustur = mkdir("verilecek/resimler");
+                  if(!file_exists("kullanicisayfalari/resimler")) {
+                    $olustur = mkdir("kullanicisayfalari/resimler");
                   }
   
                   move_uploaded_file($fileTmpName, "resimler/".$fileDestination);
-                  copy("resimler/".$fileDestination,"verilecek/resimler/".$fileDestination);
+                  copy("resimler/".$fileDestination,"kullanicisayfalari/resimler/".$fileDestination);
               }else{
                   echo "Resim fazla büyük !";
                   $txt = "Resim fazla büyük !\n";

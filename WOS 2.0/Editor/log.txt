@@ -31,4 +31,2947 @@
 </tr>
 </table>
 </center>
+</div>|--|header|**|<?php $header1_yazi1="asd";$header1_arkaplan1="yellow";$header1_resim1="IMG_20170823_150750.jpg"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header1_arkaplan1.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<tr>
+<td>
+<center>
+<?php echo '<img src="resimler/'.$header1_resim1.'" width="250px" height="250px" style=""/>'; ?>
+</center>
+</td></tr><tr>
+<td>
+<center>
+<?php echo '<h1>'.$header1_yazi1.'</h1>'; ?>
+</center>
+</td>
+</tr>
+</table>
+</center>
+</div>|--|header|**|<?php $header1_yazi2="asd";$header1_arkaplan2="yellow";$header1_resim2="IMG_20170822_152420.jpg"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header1_arkaplan2.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<tr>
+<td>
+<center>
+<?php echo '<img src="resimler/'.$header1_resim2.'" width="250px" height="250px" style=""/>'; ?>
+</center>
+</td></tr><tr>
+<td>
+<center>
+<?php echo '<h1>'.$header1_yazi2.'</h1>'; ?>
+</center>
+</td>
+</tr>
+</table>
+</center>
+</div>|--|header|**|<?php $header1_yazi3="asd";$header1_arkaplan3="yellow";$header1_resim3="6aab96e0-ecb9-4160-9eca-e26728952e4a_12.jpg"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header1_arkaplan3.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<tr>
+<td>
+<center>
+<?php echo '<img src="resimler/'.$header1_resim3.'" width="250px" height="250px" style=""/>'; ?>
+</center>
+</td></tr><tr>
+<td>
+<center>
+<?php echo '<h1>'.$header1_yazi3.'</h1>'; ?>
+</center>
+</td>
+</tr>
+</table>
+</center>
+</div>|--|header|**|<?php $header1_yazi4="asd";$header1_arkaplan4="yellow";$header1_resim4="IMG_20170823_150752.jpg"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header1_arkaplan4.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<tr>
+<td>
+<center>
+<?php echo '<img src="resimler/'.$header1_resim4.'" width="250px" height="250px" style=""/>'; ?>
+</center>
+</td></tr><tr>
+<td>
+<center>
+<?php echo '<h1>'.$header1_yazi4.'</h1>'; ?>
+</center>
+</td>
+</tr>
+</table>
+</center>
+</div>|--|header|**|<?php $header1_yazi5="asd";$header1_arkaplan5="yellow";$header1_resim5="IMG_20170823_150752.jpg"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header1_arkaplan5.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<tr>
+<td>
+<center>
+<?php echo '<img src="resimler/'.$header1_resim5.'" width="250px" height="250px" style=""/>'; ?>
+</center>
+</td></tr><tr>
+<td>
+<center>
+<?php echo '<h1>'.$header1_yazi5.'</h1>'; ?>
+</center>
+</td>
+</tr>
+</table>
+</center>
+</div>|--|header|**|<?php $header1_yazi6="asd";$header1_arkaplan6="yellow";$header1_resim6="IMG_20170822_152426.jpg"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header1_arkaplan6.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<tr>
+<td>
+<center>
+<?php echo '<img src="resimler/'.$header1_resim6.'" width="250px" height="250px" style=""/>'; ?>
+</center>
+</td></tr><tr>
+<td>
+<center>
+<?php echo '<h1>'.$header1_yazi6.'</h1>'; ?>
+</center>
+</td>
+</tr>
+</table>
+</center>
+</div>|--|header|**|<?php $header1_yazi12="asd";$header1_arkaplan12="yellow";$header1_resim12="2312.jpg"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header1_arkaplan12.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<tr>
+<td>
+<center>
+<?php echo '<img src="resimler/'.$header1_resim12.'" width="250px" height="250px" style=""/>'; ?>
+</center>
+</td></tr><tr>
+<td>
+<center>
+<?php echo '<h1>'.$header1_yazi12.'</h1>'; ?>
+</center>
+</td>
+</tr>
+</table>
+</center>
+</div>|--|header|**|<?php $header1_yazi13="lasdl";$header1_arkaplan13="blue";$header1_resim13="414.jpg"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header1_arkaplan13.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<tr>
+<td>
+<center>
+<?php echo '<img src="resimler/'.$header1_resim13.'" width="250px" height="250px" style=""/>'; ?>
+</center>
+</td></tr><tr>
+<td>
+<center>
+<?php echo '<h1>'.$header1_yazi13.'</h1>'; ?>
+</center>
+</td>
+</tr>
+</table>
+</center>
+</div>|--|header|**|<?php $header1_yazi14="lasdl";$header1_arkaplan14="blue";$header1_resim14="414.jpg";$content1_yazim14="ssssssssssssssssasdasdasdasdasdasdasdasdsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss";$content1_resim14="409.jpg";$content1_arkaplan14="yellow";$content1_yazim_rengi14="yellow"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$content1_arkaplan14.';">'; ?> <center> <table border="0px" cellpadding="10"> <tr> <td> <?php echo '<img src="resimler/'.$content1_resim14.'" width="200px" height="200px" style=""/>'; ?> </td> <td style="word-wrap:break-word;"><h3><?php echo '<a style="color:'.$content1_yazim_rengi14.';">'.$content1_yazim14.'</a>'; ?></h3></td> </tr> </table> </center> </div>|--|header|**|<?php $header1_yazi15="asd";$header1_arkaplan15="yellow";$header1_resim15="2312.jpg"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header1_arkaplan15.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<tr>
+<td>
+<center>
+<?php echo '<img src="resimler/'.$header1_resim15.'" width="250px" height="250px" style=""/>'; ?>
+</center>
+</td></tr><tr>
+<td>
+<center>
+<?php echo '<h1>'.$header1_yazi15.'</h1>'; ?>
+</center>
+</td>
+</tr>
+</table>
+</center>
+</div>|--|header|**|<?php $header1_yazi19="asd";$header1_arkaplan19="yellow";$header1_resim19="6aab96e0-ecb9-4160-9eca-e26728952e4a_12.jpg"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header1_arkaplan19.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<tr>
+<td>
+<center>
+<?php echo '<img src="resimler/'.$header1_resim19.'" width="250px" height="250px" style=""/>'; ?>
+</center>
+</td></tr><tr>
+<td>
+<center>
+<?php echo '<h1>'.$header1_yazi19.'</h1>'; ?>
+</center>
+</td>
+</tr>
+</table>
+</center>
+</div>|--|header|**|<?php $header1_yazi28="asd";$header1_arkaplan28="yellow";$header1_resim28="2312.jpg"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header1_arkaplan28.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<tr>
+<td>
+<center>
+<?php echo '<img src="resimler/'.$header1_resim28.'" width="250px" height="250px" style=""/>'; ?>
+</center>
+</td></tr><tr>
+<td>
+<center>
+<?php echo '<h1>'.$header1_yazi28.'</h1>'; ?>
+</center>
+</td>
+</tr>
+</table>
+</center>
+</div>|--|content2|**|<?php $header1_yazi29="asd";$header1_arkaplan29="yellow";$header1_resim29="2312.jpg";$content1_yazim29="ssssssssssssssssasdasdasdasdasdasdasdasdsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss";$content1_resim29="2312.jpg";$content1_arkaplan29="blue";$content1_yazim_rengi29="yellow"; ?>
+<?php echo '<div style="background-color:'.$content1_arkaplan29.';">'; ?> <center> <table border="0px" cellpadding="10"> <tr> <td> <?php echo '<img src="resimler/'.$content1_resim29.'" width="200px" height="200px" style=""/>'; ?> </td> <td style="word-wrap:break-word;"><h3><?php echo '<a style="color:'.$content1_yazim_rengi29.';">'.$content1_yazim29.'</a>'; ?></h3></td> </tr> </table> </center> </div>|--|content1|**|<?php $content2_yazim30="sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaöööööööööööööööööööööööööööööööööööööööööööööööddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd";$content2_arkaplan30="yellow"; ?>
+<?php echo '<div style="background-color:'.$content2_arkaplan30.'; word-wrap:break-word;">'; ?>
+<center>
+<h3>
+<?php echo '<div style="word-wrap:break-word;"><h2>'.$content2_yazim30.'</h2></div>'; ?>
+</h3>
+
+</center>
+</div>
+|--|content2|**|<?php $content2_yazim31="sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaöööööööööööööööööööööööööööööööööööööööööööööööddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd";$content2_arkaplan31="yellow";$content1_yazim31="ssssssssssssssssasdasdasdasdasdasdasdasdsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss";$content1_resim31="2312.jpg";$content1_arkaplan31="blue";$content1_yazim_rengi31="yellow"; ?>
+<?php echo '<div style="background-color:'.$content1_arkaplan31.';">'; ?> <center> <table border="0px" cellpadding="10"> <tr> <td> <?php echo '<img src="resimler/'.$content1_resim31.'" width="200px" height="200px" style=""/>'; ?> </td> <td style="word-wrap:break-word;"><h3><?php echo '<a style="color:'.$content1_yazim_rengi31.';">'.$content1_yazim31.'</a>'; ?></h3></td> </tr> </table> </center> </div>|--|header|**|<?php $header2_yazi32="ilerisd";$header2_yazi232="asd";$header2_yazi332="asdasdasdasd";$header2_arkaplan32="red";$header2_resim32="414.jpg"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header2_arkaplan32.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<td> <?php echo '<img src="resimler/'.$header2_resim32.'" width="250px" height="250px" style=""/>'; ?>   </td>
+<td>    </td>
+<td>    </td>
+<td>    </td>
+<td> <?php echo '<h1>'.$header2_yazi32.'</h1>'; ?>   </td>
+<td> <?php echo '<h1>'.$header2_yazi232.'</h1>'; ?>   </td>
+<td> <?php echo '<h1>'.$header2_yazi332.'</h1>'; ?>   </td>
+</table>
+</center>
+</div>|--|header|**|<?php $header1_yazi35="asd";$header1_arkaplan35="yellow";$header1_resim35="2312.jpg"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header1_arkaplan35.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<tr>
+<td>
+<center>
+<?php echo '<img src="resimler/'.$header1_resim35.'" width="250px" height="250px" style=""/>'; ?>
+</center>
+</td></tr><tr>
+<td>
+<center>
+<?php echo '<h1>'.$header1_yazi35.'</h1>'; ?>
+</center>
+</td>
+</tr>
+</table>
+</center>
+</div>|--|content2|**|<?php $content2_yazim36="sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaöööööööööööööööööööööööööööööööööööööööööööööööddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd";$content2_arkaplan36="yellow"; ?>
+<?php echo '<div style="background-color:'.$content2_arkaplan36.'; word-wrap:break-word;">'; ?>
+<center>
+<h3>
+<?php echo '<div style="word-wrap:break-word;"><h2>'.$content2_yazim36.'</h2></div>'; ?>
+</h3>
+
+</center>
+</div>
+|--|content2|**|<?php $content2_yazim37="sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaöööööööööööööööööööööööööööööööööööööööööööööööddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd";$content2_arkaplan37="yellow";$content1_yazim37="ssssssssssssssssasdasdasdasdasdasdasdasdsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss";$content1_resim37="2312.jpg";$content1_arkaplan37="blue";$content1_yazim_rengi37="yellow"; ?>
+<?php echo '<div style="background-color:'.$content1_arkaplan37.';">'; ?> <center> <table border="0px" cellpadding="10"> <tr> <td> <?php echo '<img src="resimler/'.$content1_resim37.'" width="200px" height="200px" style=""/>'; ?> </td> <td style="word-wrap:break-word;"><h3><?php echo '<a style="color:'.$content1_yazim_rengi37.';">'.$content1_yazim37.'</a>'; ?></h3></td> </tr> </table> </center> </div>|--|content2|**|<?php $content2_yazim38="sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaöööööööööööööööööööööööööööööööööööööööööööööööddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd";$content2_arkaplan38="yellow";$content1_yazim38="ssssssssssssssssasdasdasdasdasdasdasdasdsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss";$content1_arkaplan38="blue";$content1_yazim_rengi38="yellow";$content1_resim38="6aab96e0-ecb9-4160-9eca-e26728952e4a_12.jpg"; ?>
+<?php echo '<div style="background-color:'.$content1_arkaplan38.';">'; ?> <center> <table border="0px" cellpadding="10"> <tr> <td> <?php echo '<img src="resimler/'.$content1_resim38.'" width="200px" height="200px" style=""/>'; ?> </td> <td style="word-wrap:break-word;"><h3><?php echo '<a style="color:'.$content1_yazim_rengi38.';">'.$content1_yazim38.'</a>'; ?></h3></td> </tr> </table> </center> </div>|--|header|**|<?php $header2_yazi39="asdasd";$header2_yazi239="asdasdasd";$header2_yazi339="asdasdasdasd";$header2_arkaplan39="red";$header2_resim39="414.jpg"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header2_arkaplan39.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<td> <?php echo '<img src="resimler/'.$header2_resim39.'" width="250px" height="250px" style=""/>'; ?>   </td>
+<td>    </td>
+<td>    </td>
+<td>    </td>
+<td> <?php echo '<h1>'.$header2_yazi39.'</h1>'; ?>   </td>
+<td> <?php echo '<h1>'.$header2_yazi239.'</h1>'; ?>   </td>
+<td> <?php echo '<h1>'.$header2_yazi339.'</h1>'; ?>   </td>
+</table>
+</center>
+</div>|--|header|**|<?php $header2_yazi40="asdasd";$header2_yazi240="asdasdasd";$header2_yazi340="asdasdasdasd";$header2_arkaplan40="red";$header2_resim40="2312.jpg"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header2_arkaplan40.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<td> <?php echo '<img src="resimler/'.$header2_resim40.'" width="250px" height="250px" style=""/>'; ?>   </td>
+<td>    </td>
+<td>    </td>
+<td>    </td>
+<td> <?php echo '<h1><a href="indexEditor.php?iletisim">'.$header2_yazi40.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1>'.$header2_yazi240.'</h1>'; ?>   </td>
+<td> <?php echo '<h1>'.$header2_yazi340.'</h1>'; ?>   </td>
+</table>
+</center>
+</div>|--|content2|**|<?php $header2_yazi41="asdasd";$header2_yazi241="asdasdasd";$header2_yazi341="asdasdasdasd";$header2_arkaplan41="red";$header2_resim41="2312.jpg";$content1_yazim41="ssssssssssssssssasdasdasdasdasdasdasdasdsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss";$content1_resim41="2312.jpg";$content1_arkaplan41="blue";$content1_yazim_rengi41="yellow"; ?>
+<?php echo '<div style="background-color:'.$content1_arkaplan41.';">'; ?> <center> <table border="0px" cellpadding="10"> <tr> <td> <?php echo '<img src="resimler/'.$content1_resim41.'" width="200px" height="200px" style=""/>'; ?> </td> <td style="word-wrap:break-word;"><h3><?php echo '<a style="color:'.$content1_yazim_rengi41.';">'.$content1_yazim41.'</a>'; ?></h3></td> </tr> </table> </center> </div>|--|content1|**|<?php $header2_yazi42="asdasd";$header2_yazi242="asdasdasd";$header2_yazi342="asdasdasdasd";$header2_arkaplan42="red";$header2_resim42="2312.jpg";$content1_yazim42="ssssssssssssssssasdasdasdasdasdasdasdasdsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss";$content1_arkaplan42="blue";$content1_yazim_rengi42="yellow";$content1_resim42="414.jpg"; ?>
+<?php echo '<div style="background-color:'.$content1_arkaplan42.';">'; ?> <center> <table border="0px" cellpadding="10"> <tr> <td> <?php echo '<img src="resimler/'.$content1_resim42.'" width="200px" height="200px" style=""/>'; ?> </td> <td style="word-wrap:break-word;"><h3><?php echo '<a style="color:'.$content1_yazim_rengi42.';">'.$content1_yazim42.'</a>'; ?></h3></td> </tr> </table> </center> </div>|--|header|**|<?php $header2_yazi43="asdasd";$header2_yazi243="asdasdasd";$header2_yazi343="asdasdasdasd";$header2_arkaplan43="red";$header2_resim43="2312.jpg"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header2_arkaplan43.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<td> <?php echo '<img src="resimler/'.$header2_resim43.'" width="250px" height="250px" style=""/>'; ?>   </td>
+<td>    </td>
+<td>    </td>
+<td>    </td>
+<td> <?php echo '<h1><a href="indexEditor.php?iletisim">'.$header2_yazi43.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1>'.$header2_yazi243.'</h1>'; ?>   </td>
+<td> <?php echo '<h1>'.$header2_yazi343.'</h1>'; ?>   </td>
+</table>
+</center>
+</div>|--|content2|**|<?php $header2_yazi44="asdasd";$header2_yazi244="asdasdasd";$header2_yazi344="asdasdasdasd";$header2_arkaplan44="red";$header2_resim44="2312.jpg";$content1_yazim44="ssssssssssssssssasdasdasdasdasdasdasdasdsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss";$content1_resim44="2312.jpg";$content1_arkaplan44="blue";$content1_yazim_rengi44="yellow"; ?>
+<?php echo '<div style="background-color:'.$content1_arkaplan44.';">'; ?> <center> <table border="0px" cellpadding="10"> <tr> <td> <?php echo '<img src="resimler/'.$content1_resim44.'" width="200px" height="200px" style=""/>'; ?> </td> <td style="word-wrap:break-word;"><h3><?php echo '<a style="color:'.$content1_yazim_rengi44.';">'.$content1_yazim44.'</a>'; ?></h3></td> </tr> </table> </center> </div>|--|header|**|<?php $header2_yazi45="asdasd";$header2_yazi245="asdasdasd";$header2_yazi345="asdasdasdasd";$header2_arkaplan45="red";$header2_resim45="414.jpg"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header2_arkaplan45.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<td> <?php echo '<img src="resimler/'.$header2_resim45.'" width="250px" height="250px" style=""/>'; ?>   </td>
+<td>    </td>
+<td>    </td>
+<td>    </td>
+<td> <?php echo '<h1><a href="indexEditor.php?iletisim">'.$header2_yazi45.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1>'.$header2_yazi245.'</h1>'; ?>   </td>
+<td> <?php echo '<h1>'.$header2_yazi345.'</h1>'; ?>   </td>
+</table>
+</center>
+</div>|--|content1|**|<?php $header2_yazi46="asdasd";$header2_yazi246="asdasdasd";$header2_yazi346="asdasdasdasd";$header2_arkaplan46="red";$header2_resim46="414.jpg";$content1_yazim46="ssssssssssssssssasdasdasdasdasdasdasdasdsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss";$content1_resim46="2312.jpg";$content1_arkaplan46="yellow";$content1_yazim_rengi46="yellow"; ?>
+<?php echo '<div style="background-color:'.$content1_arkaplan46.';">'; ?> <center> <table border="0px" cellpadding="10"> <tr> <td> <?php echo '<img src="resimler/'.$content1_resim46.'" width="200px" height="200px" style=""/>'; ?> </td> <td style="word-wrap:break-word;"><h3><?php echo '<a style="color:'.$content1_yazim_rengi46.';">'.$content1_yazim46.'</a>'; ?></h3></td> </tr> </table> </center> </div>|--|content2|**|<?php $header2_yazi47="asdasd";$header2_yazi247="asdasdasd";$header2_yazi347="asdasdasdasd";$header2_arkaplan47="red";$header2_resim47="414.jpg";$content1_yazim47="ssssssssssssssssasdasdasdasdasdasdasdasdsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss";$content1_resim47="2312.jpg";$content1_yazim_rengi47="yellow";$content1_arkaplan47="blue"; ?>
+<?php echo '<div style="background-color:'.$content1_arkaplan47.';">'; ?> <center> <table border="0px" cellpadding="10"> <tr> <td> <?php echo '<img src="resimler/'.$content1_resim47.'" width="200px" height="200px" style=""/>'; ?> </td> <td style="word-wrap:break-word;"><h3><?php echo '<a style="color:'.$content1_yazim_rengi47.';">'.$content1_yazim47.'</a>'; ?></h3></td> </tr> </table> </center> </div>|--|header|**|<?php $header1_yazi48="asd";$header1_arkaplan48="yellow";$header1_resim48="2312.jpg"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header1_arkaplan48.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<tr>
+<td>
+<center>
+<?php echo '<img src="resimler/'.$header1_resim48.'" width="250px" height="250px" style=""/>'; ?>
+</center>
+</td></tr><tr>
+<td>
+<center>
+<?php echo '<h1>'.$header1_yazi48.'</h1>'; ?>
+</center>
+</td>
+</tr>
+</table>
+</center>
+</div>|--|header|**|<?php $header2_yazi49="asdasd";$header2_yazi249="asdasdasd";$header2_yazi349="asdasdasdasd";$header2_arkaplan49="red";$header2_resim49="2312.jpg"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header2_arkaplan49.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<td> <?php echo '<img src="resimler/'.$header2_resim49.'" width="250px" height="250px" style=""/>'; ?>   </td>
+<td>    </td>
+<td>    </td>
+<td>    </td>
+<td> <?php echo '<h1><a href="indexEditor.php?iletisim">'.$header2_yazi49.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1>'.$header2_yazi249.'</h1>'; ?>   </td>
+<td> <?php echo '<h1>'.$header2_yazi349.'</h1>'; ?>   </td>
+</table>
+</center>
+</div>|--|content1|**|<?php $header2_yazi50="asdasd";$header2_yazi250="asdasdasd";$header2_yazi350="asdasdasdasd";$header2_arkaplan50="red";$header2_resim50="2312.jpg";$content1_yazim50="ssssssssssssssssasdasdasdasdasdasdasdasdsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss";$content1_resim50="2312.jpg";$content1_arkaplan50="blue";$content1_yazim_rengi50="yellow"; ?>
+<?php echo '<div style="background-color:'.$content1_arkaplan50.';">'; ?> <center> <table border="0px" cellpadding="10"> <tr> <td> <?php echo '<img src="resimler/'.$content1_resim50.'" width="200px" height="200px" style=""/>'; ?> </td> <td style="word-wrap:break-word;"><h3><?php echo '<a style="color:'.$content1_yazim_rengi50.';">'.$content1_yazim50.'</a>'; ?></h3></td> </tr> </table> </center> </div>|--|header|**|<?php $header1_yazi51="asd";$header1_arkaplan51="yellow";$header1_resim51="414.jpg"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header1_arkaplan51.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<tr>
+<td>
+<center>
+<?php echo '<img src="resimler/'.$header1_resim51.'" width="250px" height="250px" style=""/>'; ?>
+</center>
+</td></tr><tr>
+<td>
+<center>
+<?php echo '<h1>'.$header1_yazi51.'</h1>'; ?>
+</center>
+</td>
+</tr>
+</table>
+</center>
+</div>|--|content2|**|<?php $header1_yazi52="asd";$header1_arkaplan52="yellow";$header1_resim52="414.jpg";$content1_yazim52="ssssssssssssssssasdasdasdasdasdasdasdasdsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss";$content1_resim52="2312.jpg";$content1_arkaplan52="blue";$content1_yazim_rengi52="yellow"; ?>
+<?php echo '<div style="background-color:'.$content1_arkaplan52.';">'; ?> <center> <table border="0px" cellpadding="10"> <tr> <td> <?php echo '<img src="resimler/'.$content1_resim52.'" width="200px" height="200px" style=""/>'; ?> </td> <td style="word-wrap:break-word;"><h3><?php echo '<a style="color:'.$content1_yazim_rengi52.';">'.$content1_yazim52.'</a>'; ?></h3></td> </tr> </table> </center> </div>|--|header|**|<?php $header1_yazi53="asd";$header1_arkaplan53="yellow";$header1_resim53="414.jpg";$content1_resim53="2312.jpg";$content1_arkaplan53="blue";$content1_yazim_rengi53="yellow";$content1_yazim53="Enes Döngez"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$content1_arkaplan53.';">'; ?> <center> <table border="0px" cellpadding="10"> <tr> <td> <?php echo '<img src="resimler/'.$content1_resim53.'" width="200px" height="200px" style=""/>'; ?> </td> <td style="word-wrap:break-word;"><h3><?php echo '<a style="color:'.$content1_yazim_rengi53.';">'.$content1_yazim53.'</a>'; ?></h3></td> </tr> </table> </center> </div>|--|content2|**|<?php $header1_yazi54="asd";$header1_arkaplan54="yellow";$header1_resim54="414.jpg";$content1_resim54="2312.jpg";$content1_arkaplan54="blue";$content1_yazim_rengi54="yellow";$content1_yazim54="ssssssssssssssssasdasdasdasdasdasdasdasdsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss"; ?>
+<?php echo '<div style="background-color:'.$content1_arkaplan54.';">'; ?> <center> <table border="0px" cellpadding="10"> <tr> <td> <?php echo '<img src="resimler/'.$content1_resim54.'" width="200px" height="200px" style=""/>'; ?> </td> <td style="word-wrap:break-word;"><h3><?php echo '<a style="color:'.$content1_yazim_rengi54.';">'.$content1_yazim54.'</a>'; ?></h3></td> </tr> </table> </center> </div>|--|content1|**|<?php $content2_yazim55="sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaöööööööööööööööööööööööööööööööööööööööööööööööddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd";$content2_arkaplan55="yellow"; ?>
+<?php echo '<div style="background-color:'.$content2_arkaplan55.'; word-wrap:break-word;">'; ?>
+<center>
+<h3>
+<?php echo '<div style="word-wrap:break-word;"><h2>'.$content2_yazim55.'</h2></div>'; ?>
+</h3>
+
+</center>
+</div>
+|--|content1|**|<?php $content2_yazim56="sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaöööööööööööööööööööööööööööööööööööööööööööööööddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd";$content2_arkaplan56="blue"; ?>
+<?php echo '<div style="background-color:'.$content2_arkaplan56.'; word-wrap:break-word;">'; ?>
+<center>
+<h3>
+<?php echo '<div style="word-wrap:break-word;"><h2>'.$content2_yazim56.'</h2></div>'; ?>
+</h3>
+
+</center>
+</div>
+|--|content2|**|<?php $content2_yazim57="sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaöööööööööööööööööööööööööööööööööööööööööööööööddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd";$content2_arkaplan57="yellow"; ?>
+<?php echo '<div style="background-color:'.$content2_arkaplan57.'; word-wrap:break-word;">'; ?>
+<center>
+<h3>
+<?php echo '<div style="word-wrap:break-word;"><h2>'.$content2_yazim57.'</h2></div>'; ?>
+</h3>
+
+</center>
+</div>
+|--|header|**|<?php $header2_yazi58="asdasd";$header2_yazi258="asdasdasd";$header2_yazi358="asdasdasdasd";$header2_arkaplan58="red";$header2_resim58="2312.jpg"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header2_arkaplan58.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<td> <?php echo '<img src="resimler/'.$header2_resim58.'" width="250px" height="250px" style=""/>'; ?>   </td>
+<td>    </td>
+<td>    </td>
+<td>    </td>
+<td> <?php echo '<h1><a href="indexEditor.php?iletisim">'.$header2_yazi58.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1>'.$header2_yazi258.'</h1>'; ?>   </td>
+<td> <?php echo '<h1>'.$header2_yazi358.'</h1>'; ?>   </td>
+</table>
+</center>
+</div>|--|header|**|<?php $header1_yazi59="asd";$header1_arkaplan59="yellow";$header1_resim59="2312.jpg"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header1_arkaplan59.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<tr>
+<td>
+<center>
+<?php echo '<img src="resimler/'.$header1_resim59.'" width="250px" height="250px" style=""/>'; ?>
+</center>
+</td></tr><tr>
+<td>
+<center>
+<?php echo '<h1>'.$header1_yazi59.'</h1>'; ?>
+</center>
+</td>
+</tr>
+</table>
+</center>
+</div>|--|content2|**|<?php $header1_yazi60="asd";$header1_arkaplan60="yellow";$header1_resim60="2312.jpg";$content1_yazim60="ssssssssssssssssasdasdasdasdasdasdasdasdsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss";$content1_resim60="2312.jpg";$content1_arkaplan60="blue";$content1_yazim_rengi60="yellow"; ?>
+<?php echo '<div style="background-color:'.$content1_arkaplan60.';">'; ?> <center> <table border="0px" cellpadding="10"> <tr> <td> <?php echo '<img src="resimler/'.$content1_resim60.'" width="200px" height="200px" style=""/>'; ?> </td> <td style="word-wrap:break-word;"><h3><?php echo '<a style="color:'.$content1_yazim_rengi60.';">'.$content1_yazim60.'</a>'; ?></h3></td> </tr> </table> </center> </div>|--|content1|**|<?php $header1_yazi61="asd";$header1_arkaplan61="yellow";$header1_resim61="2312.jpg";$content1_yazim61="ssssssssssssssssasdasdasdasdasdasdasdasdsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss";$content1_resim61="2312.jpg";$content1_yazim_rengi61="yellow";$content1_arkaplan61="green"; ?>
+<?php echo '<div style="background-color:'.$content1_arkaplan61.';">'; ?> <center> <table border="0px" cellpadding="10"> <tr> <td> <?php echo '<img src="resimler/'.$content1_resim61.'" width="200px" height="200px" style=""/>'; ?> </td> <td style="word-wrap:break-word;"><h3><?php echo '<a style="color:'.$content1_yazim_rengi61.';">'.$content1_yazim61.'</a>'; ?></h3></td> </tr> </table> </center> </div>|--|header|**|<?php $header2_yazi62="asdasd";$header2_yazi262="asdasdasd";$header2_yazi362="asdasdasdasd";$header2_arkaplan62="red";$header2_resim62="2312.jpg"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header2_arkaplan62.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<td> <?php echo '<img src="resimler/'.$header2_resim62.'" width="250px" height="250px" style=""/>'; ?>   </td>
+<td>    </td>
+<td>    </td>
+<td>    </td>
+<td> <?php echo '<h1><a href="index.php?sayfa=iletisim">'.$header2_yazi62.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1>'.$header2_yazi262.'</h1>'; ?>   </td>
+<td> <?php echo '<h1>'.$header2_yazi362.'</h1>'; ?>   </td>
+</table>
+</center>
+</div>|--|content|**|<?php $header2_yazi63="asdasd";$header2_yazi263="asdasdasd";$header2_yazi363="asdasdasdasd";$header2_arkaplan63="red";$header2_resim63="2312.jpg";$content1_yazim63="ssssssssssssssssasdasdasdasdasdasdasdasdsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss";$content1_resim63="414.jpg";$content1_arkaplan63="blue";$content1_yazim_rengi63="yellow"; ?>
+<?php echo '<div style="background-color:'.$content1_arkaplan63.';">'; ?> <center> <table border="0px" cellpadding="10"> <tr> <td> <?php echo '<img src="resimler/'.$content1_resim63.'" width="200px" height="200px" style=""/>'; ?> </td> <td style="word-wrap:break-word;"><h3><?php echo '<a style="color:'.$content1_yazim_rengi63.';">'.$content1_yazim63.'</a>'; ?></h3></td> </tr> </table> </center> </div>|--|content|**|<?php $header2_yazi64="asdasd";$header2_yazi264="asdasdasd";$header2_yazi364="asdasdasdasd";$header2_arkaplan64="red";$header2_resim64="2312.jpg";$content1_yazim64="ssssssssssssssssasdasdasdasdasdasdasdasdsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss";$content1_arkaplan64="blue";$content1_yazim_rengi64="yellow";$content1_resim64="2312.jpg"; ?>
+<?php echo '<div style="background-color:'.$content1_arkaplan64.';">'; ?> <center> <table border="0px" cellpadding="10"> <tr> <td> <?php echo '<img src="resimler/'.$content1_resim64.'" width="200px" height="200px" style=""/>'; ?> </td> <td style="word-wrap:break-word;"><h3><?php echo '<a style="color:'.$content1_yazim_rengi64.';">'.$content1_yazim64.'</a>'; ?></h3></td> </tr> </table> </center> </div>|--|header|**|<?php $header2_yazi68="asdasd";$header2_yazi268="asdasdasd";$header2_yazi368="asdasdasdasd";$header2_arkaplan68="red";$header2_resim68="2312.jpg"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header2_arkaplan68.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<td> <?php echo '<img src="resimler/'.$header2_resim68.'" width="250px" height="250px" style=""/>'; ?>   </td>
+<td>    </td>
+<td>    </td>
+<td>    </td>
+<td> <?php echo '<h1><a href="index.php?sayfa=iletisim">'.$header2_yazi68.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1>'.$header2_yazi268.'</h1>'; ?>   </td>
+<td> <?php echo '<h1>'.$header2_yazi368.'</h1>'; ?>   </td>
+</table>
+</center>
+</div>|--|content|**|<?php $header1_yazi69="asd";$header1_arkaplan69="yellow";$header1_resim69="414.jpg"; ?>
+<?php echo '<div style="background-color:'.$header1_arkaplan69.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<tr>
+<td>
+<center>
+<?php echo '<img src="resimler/'.$header1_resim69.'" width="250px" height="250px" style=""/>'; ?>
+</center>
+</td></tr><tr>
+<td>
+<center>
+<?php echo '<h1>'.$header1_yazi69.'</h1>'; ?>
+</center>
+</td>
+</tr>
+</table>
+</center>
+</div>|--|header|**|<?php $header2_yazi70="asdasd";$header2_yazi270="asdasdasd";$header2_yazi370="asdasdasdasd";$header2_arkaplan70="red";$header2_resim70="2312.jpg"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header2_arkaplan70.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<td> <?php echo '<img src="resimler/'.$header2_resim70.'" width="250px" height="250px" style=""/>'; ?>   </td>
+<td>    </td>
+<td>    </td>
+<td>    </td>
+<td> <?php echo '<h1><a href="index.php?sayfa=iletisim">'.$header2_yazi70.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1>'.$header2_yazi270.'</h1>'; ?>   </td>
+<td> <?php echo '<h1>'.$header2_yazi370.'</h1>'; ?>   </td>
+</table>
+</center>
+</div>|--|content|**|<?php $header2_yazi71="asdasd";$header2_yazi271="asdasdasd";$header2_yazi371="asdasdasdasd";$header2_arkaplan71="red";$header2_resim71="2312.jpg";$content1_yazim71="Enes Döngez";$content1_resim71="414.jpg";$content1_arkaplan71="blue";$content1_yazim_rengi71="yellow"; ?>
+<?php echo '<div style="background-color:'.$content1_arkaplan71.';">'; ?> <center> <table border="0px" cellpadding="10"> <tr> <td> <?php echo '<img src="resimler/'.$content1_resim71.'" width="200px" height="200px" style=""/>'; ?> </td> <td style="word-wrap:break-word;"><h3><?php echo '<a style="color:'.$content1_yazim_rengi71.';">'.$content1_yazim71.'</a>'; ?></h3></td> </tr> </table> </center> </div>|--|header|**|<?php $header1_yazi72="asd";$header1_arkaplan72="yellow";$header1_resim72="414.jpg"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header1_arkaplan72.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<tr>
+<td>
+<center>
+<?php echo '<img src="resimler/'.$header1_resim72.'" width="250px" height="250px" style=""/>'; ?>
+</center>
+</td></tr><tr>
+<td>
+<center>
+<?php echo '<h1>'.$header1_yazi72.'</h1>'; ?>
+</center>
+</td>
+</tr>
+</table>
+</center>
+</div>|--|header|**|<?php $header1_yazi73="asd";$header1_arkaplan73="yellow";$header1_resim73="2312.jpg"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header1_arkaplan73.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<tr>
+<td>
+<center>
+<?php echo '<img src="resimler/'.$header1_resim73.'" width="250px" height="250px" style=""/>'; ?>
+</center>
+</td></tr><tr>
+<td>
+<center>
+<?php echo '<h1>'.$header1_yazi73.'</h1>'; ?>
+</center>
+</td>
+</tr>
+</table>
+</center>
+</div>|--|header|**|<?php $header2_yazi74="asdasd";$header2_yazi274="asdasdasd";$header2_yazi374="asdasdasdasd";$header2_arkaplan74="red";$header2_resim74="414.jpg"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header2_arkaplan74.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<td> <?php echo '<img src="resimler/'.$header2_resim74.'" width="250px" height="250px" style=""/>'; ?>   </td>
+<td>    </td>
+<td>    </td>
+<td>    </td>
+<td> <?php echo '<h1><a href="index.php?sayfa=iletisim">'.$header2_yazi74.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1>'.$header2_yazi274.'</h1>'; ?>   </td>
+<td> <?php echo '<h1>'.$header2_yazi374.'</h1>'; ?>   </td>
+</table>
+</center>
+</div>|--|content|**|<?php $header2_yazi75="asdasd";$header2_yazi275="asdasdasd";$header2_yazi375="asdasdasdasd";$header2_arkaplan75="red";$header2_resim75="414.jpg";$content1_yazim75="Enes Döngez";$content1_resim75="414.jpg";$content1_arkaplan75="blue";$content1_yazim_rengi75="yellow"; ?>
+<?php echo '<div style="background-color:'.$content1_arkaplan75.';">'; ?> <center> <table border="0px" cellpadding="10"> <tr> <td> <?php echo '<img src="resimler/'.$content1_resim75.'" width="200px" height="200px" style=""/>'; ?> </td> <td style="word-wrap:break-word;"><h3><?php echo '<a style="color:'.$content1_yazim_rengi75.';">'.$content1_yazim75.'</a>'; ?></h3></td> </tr> </table> </center> </div>|--|leftbanner|**|<?php $leftbar2_arkaplan76="blue";$leftbar2_link176="asd";$leftbar2_link276="lsdşf";$leftbar2_link376="şldfgoerp";$leftbar2_link476="lsdvömsdvöçmsçdv"; ?>
+<?php echo '<div style="font-size:30px; background-color:'.$leftbar2_arkaplan76.'">'; ?>
+<center>
+<ul>
+<?php 
+echo '<li>'.$leftbar2_link176.'</li>'; 
+echo '<li>'.$leftbar2_link276.'</li>';
+echo '<li>'.$leftbar2_link376.'</li>'; 
+echo '<li>'.$leftbar2_link476.'</li>'; 
+?>
+</ul>
+</center>
+</div>|--|content1|**|<?php $leftbar2_arkaplan77="blue";$leftbar2_link177="asd";$leftbar2_link277="lsdşf";$leftbar2_link377="şldfgoerp";$leftbar2_link477="lsdvömsdvöçmsçdv";$content1_yazim77="Enes Döngez";$content1_resim77="2312.jpg";$content1_arkaplan77="blue";$content1_yazim_rengi77="yellow"; ?>
+<?php echo '<div style="background-color:'.$content1_arkaplan77.';">'; ?> <center> <table border="0px" cellpadding="10"> <tr> <td> <?php echo '<img src="resimler/'.$content1_resim77.'" width="200px" height="200px" style=""/>'; ?> </td> <td style="word-wrap:break-word;"><h3><?php echo '<a style="color:'.$content1_yazim_rengi77.';">'.$content1_yazim77.'</a>'; ?></h3></td> </tr> </table> </center> </div>|--|header|**|<?php $header1_yazi78="asd";$header1_arkaplan78="yellow";$header1_resim78="2312.jpg"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header1_arkaplan78.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<tr>
+<td>
+<center>
+<?php echo '<img src="resimler/'.$header1_resim78.'" width="250px" height="250px" style=""/>'; ?>
+</center>
+</td></tr><tr>
+<td>
+<center>
+<?php echo '<h1>'.$header1_yazi78.'</h1>'; ?>
+</center>
+</td>
+</tr>
+</table>
+</center>
+</div>|--|leftbanner|**|<?php $leftbar1_arkaplan79="yellow";$leftbar1_linkrenk79="blue";$leftbar1_link179="asd";$leftbar1_link279="asdasd";$leftbar1_link379="asdasdasd";$leftbar1_link479="asdasdasdasd"; ?>
+<?php echo '<div style="background-color:'.$leftbar1_arkaplan79.';">'; ?>
+<center>
+<table border="0" width="90%" style="text-align:center; font-size:30px;">
+<?php 
+echo '<tr style="background-color:'.$leftbar1_linkrenk79.';"><td>'.$leftbar1_link179.'</td></tr>';
+echo '<tr style="background-color:'.$leftbar1_linkrenk79.';"><td>'.$leftbar1_link279.'</td></tr>';
+echo '<tr style="background-color:'.$leftbar1_linkrenk79.';"><td>'.$leftbar1_link379.'</td></tr>';
+echo '<tr style="background-color:'.$leftbar1_linkrenk79.';"><td>'.$leftbar1_link479.'</td></tr>';
+?>
+</table>
+</center>
+</div>|--|header|**|<?php $header1_yazi80="asd";$header1_arkaplan80="yellow";$header1_resim80="2312.jpg"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header1_arkaplan80.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<tr>
+<td>
+<center>
+<?php echo '<img src="resimler/'.$header1_resim80.'" width="250px" height="250px" style=""/>'; ?>
+</center>
+</td></tr><tr>
+<td>
+<center>
+<?php echo '<h1>'.$header1_yazi80.'</h1>'; ?>
+</center>
+</td>
+</tr>
+</table>
+</center>
+</div>|--|content1|**|<?php $header1_yazi81="asd";$header1_arkaplan81="yellow";$header1_resim81="2312.jpg";$content1_yazim81="Enes Döngez";$content1_resim81="2312.jpg";$content1_arkaplan81="blue";$content1_yazim_rengi81="yellow"; ?>
+<?php echo '<div style="background-color:'.$content1_arkaplan81.';">'; ?> <center> <table border="0px" cellpadding="10"> <tr> <td> <?php echo '<img src="resimler/'.$content1_resim81.'" width="200px" height="200px" style=""/>'; ?> </td> <td style="word-wrap:break-word;"><h3><?php echo '<a style="color:'.$content1_yazim_rengi81.';">'.$content1_yazim81.'</a>'; ?></h3></td> </tr> </table> </center> </div>|--|leftbanner|**|<?php $leftbar1_arkaplan82="yellow";$leftbar1_linkrenk82="blue";$leftbar1_link182="asd";$leftbar1_link282="asdasd";$leftbar1_link382="asdasdasd";$leftbar1_link482="asdasdasdasd"; ?>
+<?php echo '<div style="background-color:'.$leftbar1_arkaplan82.';">'; ?>
+<center>
+<table border="0" width="90%" style="text-align:center; font-size:30px;">
+<?php 
+echo '<tr style="background-color:'.$leftbar1_linkrenk82.';"><td>'.$leftbar1_link182.'</td></tr>';
+echo '<tr style="background-color:'.$leftbar1_linkrenk82.';"><td>'.$leftbar1_link282.'</td></tr>';
+echo '<tr style="background-color:'.$leftbar1_linkrenk82.';"><td>'.$leftbar1_link382.'</td></tr>';
+echo '<tr style="background-color:'.$leftbar1_linkrenk82.';"><td>'.$leftbar1_link482.'</td></tr>';
+?>
+</table>
+</center>
+</div>|--|header|**|<?php $header2_yazi83="asdasd";$header2_yazi283="asdasdasd";$header2_yazi383="asdasdasdasd";$header2_arkaplan83="red";$header2_resim83="409.jpg"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header2_arkaplan83.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<td> <?php echo '<img src="resimler/'.$header2_resim83.'" width="250px" height="250px" style=""/>'; ?>   </td>
+<td>    </td>
+<td>    </td>
+<td>    </td>
+<td> <?php echo '<h1><a href="index.php?sayfa=iletisim">'.$header2_yazi83.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1>'.$header2_yazi283.'</h1>'; ?>   </td>
+<td> <?php echo '<h1>'.$header2_yazi383.'</h1>'; ?>   </td>
+</table>
+</center>
+</div>|--|header|**|<?php $header2_yazi84="İletişim";$header2_yazi284="Hakkımızda";$header2_yazi384="İndir";$header2_arkaplan84="yellow";$header2_resim84="414.jpg"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header2_arkaplan84.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<td> <?php echo '<a href="index.php"><img src="resimler/'.$header2_resim84.'" width="250px" height="250px" style=""/></a>'; ?>   </td>
+<td>    </td>
+<td>    </td>
+<td>    </td>
+<td> <?php echo '<h1><a href="index.php?sayfa='.$header2_yazilink.'">'.$header2_yazi84.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="index.php?sayfa='.$header2_yazilink2.'">'.$header2_yazi284.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="index.php?sayfa='.$header2_yazilink3.'">'.$header2_yazi384.'</a></h1>'; ?>   </td>
+</table>
+</center>
+</div>|--|header|**|<?php $header2_yazi85="İletişim";$header2_yazi285="Hakkımızda";$header2_yazi385="İndir";$header2_yazilink85="iletisim";$header2_yazilink285="hakkimizda";$header2_yazilink385="indir";$header2_arkaplan85="yellow";$header2_resim85="414.jpg"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header2_arkaplan85.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<td> <?php echo '<a href="index.php"><img src="resimler/'.$header2_resim85.'" width="250px" height="250px" style=""/></a>'; ?>   </td>
+<td>    </td>
+<td>    </td>
+<td>    </td>
+<td> <?php echo '<h1><a href="index.php?sayfa='.$header2_yazilink85.'">'.$header2_yazi85.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="index.php?sayfa='.$header2_yazilink285.'">'.$header2_yazi285.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="index.php?sayfa='.$header2_yazilink385.'">'.$header2_yazi385.'</a></h1>'; ?>   </td>
+</table>
+</center>
+</div>|--|content1|**|<?php $header2_yazi86="İletişim";$header2_yazi286="Hakkımızda";$header2_yazi386="İndir";$header2_yazilink86="iletisim";$header2_yazilink286="hakkimizda";$header2_yazilink386="indir";$header2_arkaplan86="yellow";$header2_resim86="414.jpg";$content1_yazim86="ssssssssssssssssasdasdasdasdasdasdasdasdsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss";$content1_resim86="414.jpg";$content1_arkaplan86="blue";$content1_yazim_rengi86="yellow"; ?>
+<?php echo '<div style="background-color:'.$content1_arkaplan86.';">'; ?> <center> <table border="0px" cellpadding="10"> <tr> <td> <?php echo '<img src="resimler/'.$content1_resim86.'" width="200px" height="200px" style=""/>'; ?> </td> <td style="word-wrap:break-word;"><h3><?php echo '<a style="color:'.$content1_yazim_rengi86.';">'.$content1_yazim86.'</a>'; ?></h3></td> </tr> </table> </center> </div>|--|content1|**|<?php $content2_yazim87="sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaöööööööööööööööööööööööööööööööööööööööööööööööddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd";$content2_arkaplan87="yellow"; ?>
+<?php echo '<div style="background-color:'.$content2_arkaplan87.'; word-wrap:break-word;">'; ?>
+<center>
+<h3>
+<?php echo '<div style="word-wrap:break-word;"><h2>'.$content2_yazim87.'</h2></div>'; ?>
+</h3>
+
+</center>
+</div>
+|--|content1|**|<?php $content2_yazim88="sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaöööööööööööööööööööööööööööööööööööööööööööööööddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd";$content2_arkaplan88="yellow";$content1_yazim88="ssssssssssssssssasdasdasdasdasdasdasdasdsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss";$content1_resim88="2312.jpg";$content1_arkaplan88="blue";$content1_yazim_rengi88="blue"; ?>
+<?php echo '<div style="background-color:'.$content1_arkaplan88.';">'; ?> <center> <table border="0px" cellpadding="10"> <tr> <td> <?php echo '<img src="resimler/'.$content1_resim88.'" width="200px" height="200px" style=""/>'; ?> </td> <td style="word-wrap:break-word;"><h3><?php echo '<a style="color:'.$content1_yazim_rengi88.';">'.$content1_yazim88.'</a>'; ?></h3></td> </tr> </table> </center> </div>|--|leftbanner|**|<?php $leftbar1_arkaplan89="yellow";$leftbar1_linkrenk89="blue";$leftbar1_link189="asd";$leftbar1_link289="asdasd";$leftbar1_link389="asdasdasd";$leftbar1_link489="asdasdasdasd"; ?>
+<?php echo '<div style="background-color:'.$leftbar1_arkaplan89.';">'; ?>
+<center>
+<table border="0" width="90%" style="text-align:center; font-size:30px;">
+<?php 
+echo '<tr style="background-color:'.$leftbar1_linkrenk89.';"><td>'.$leftbar1_link189.'</td></tr>';
+echo '<tr style="background-color:'.$leftbar1_linkrenk89.';"><td>'.$leftbar1_link289.'</td></tr>';
+echo '<tr style="background-color:'.$leftbar1_linkrenk89.';"><td>'.$leftbar1_link389.'</td></tr>';
+echo '<tr style="background-color:'.$leftbar1_linkrenk89.';"><td>'.$leftbar1_link489.'</td></tr>';
+?>
+</table>
+</center>
+</div>|--|leftbanner|**|<?php $leftbar1_arkaplan90="yellow";$leftbar1_linkrenk90="blue";$leftbar1_link190="asd";$leftbar1_link290="asdasd";$leftbar1_link390="asdasdasd";$leftbar1_link490="asdasdasdasd"; ?>
+<?php echo '<div style="background-color:'.$leftbar1_arkaplan90.';">'; ?>
+<center>
+<table border="0" width="90%" style="text-align:center; font-size:30px;">
+<?php 
+echo '<tr style="background-color:'.$leftbar1_linkrenk90.';"><td>'.$leftbar1_link190.'</td></tr>';
+echo '<tr style="background-color:'.$leftbar1_linkrenk90.';"><td>'.$leftbar1_link290.'</td></tr>';
+echo '<tr style="background-color:'.$leftbar1_linkrenk90.';"><td>'.$leftbar1_link390.'</td></tr>';
+echo '<tr style="background-color:'.$leftbar1_linkrenk90.';"><td>'.$leftbar1_link490.'</td></tr>';
+?>
+</table>
+</center>
+</div>|--|header|**|<?php $header2_yazi91="İletişim";$header2_yazi291="Hakkımızda";$header2_yazi391="İndir";$header2_yazilink91="iletisim";$header2_yazilink291="hakkimizda";$header2_yazilink391="indir";$header2_arkaplan91="yellow";$header2_resim91="409.jpg"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header2_arkaplan91.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<td> <?php echo '<a href="index.php"><img src="resimler/'.$header2_resim91.'" width="250px" height="250px" style=""/></a>'; ?>   </td>
+<td>    </td>
+<td>    </td>
+<td>    </td>
+<td> <?php echo '<h1><a href="index.php?sayfa='.$header2_yazilink91.'">'.$header2_yazi91.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="index.php?sayfa='.$header2_yazilink291.'">'.$header2_yazi291.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="index.php?sayfa='.$header2_yazilink391.'">'.$header2_yazi391.'</a></h1>'; ?>   </td>
+</table>
+</center>
+</div>|--|content|**|<?php $content1_yazim92="Enes";$content1_resim92="2312.jpg";$content1_arkaplan92="blue";$content1_yazim_rengi92="yellow"; ?>
+<?php echo '<div style="background-color:'.$content1_arkaplan92.';">'; ?> <center> <table border="0px" cellpadding="10"> <tr> <td> <?php echo '<img src="resimler/'.$content1_resim92.'" width="200px" height="200px" style=""/>'; ?> </td> <td style="word-wrap:break-word;"><h3><?php echo '<a style="color:'.$content1_yazim_rengi92.';">'.$content1_yazim92.'</a>'; ?></h3></td> </tr> </table> </center> </div>|--|header|**|<?php $header1_yazi93="asd";$header1_arkaplan93="yellow";$header1_resim93="414.jpg"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header1_arkaplan93.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<tr>
+<td>
+<center>
+<?php echo '<img src="resimler/'.$header1_resim93.'" width="250px" height="250px" style=""/>'; ?>
+</center>
+</td></tr><tr>
+<td>
+<center>
+<?php echo '<h1>'.$header1_yazi93.'</h1>'; ?>
+</center>
+</td>
+</tr>
+</table>
+</center>
+</div>|--|header|**|<?php $header2_yazi94="asdasd";$header2_yazi294="asdasdasd";$header2_yazi394="asdasdasdasd";$header2_yazilink94="iletisim";$header2_yazilink294="hakkimizda";$header2_yazilink394="indir";$header2_arkaplan94="red";$header2_resim94="409.jpg"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header2_arkaplan94.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<td> <?php echo '<a href="index.php"><img src="resimler/'.$header2_resim94.'" width="250px" height="250px" style=""/></a>'; ?>   </td>
+<td>    </td>
+<td>    </td>
+<td>    </td>
+<td> <?php echo '<h1><a href="index.php?sayfa='.$header2_yazilink94.'">'.$header2_yazi94.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="index.php?sayfa='.$header2_yazilink294.'">'.$header2_yazi294.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="index.php?sayfa='.$header2_yazilink394.'">'.$header2_yazi394.'</a></h1>'; ?>   </td>
+</table>
+</center>
+</div>|--|content1|**|<?php $header2_yazi95="asdasd";$header2_yazi295="asdasdasd";$header2_yazi395="asdasdasdasd";$header2_yazilink95="iletisim";$header2_yazilink295="hakkimizda";$header2_yazilink395="indir";$header2_arkaplan95="red";$header2_resim95="409.jpg";$content1_yazim95="ssssssssssssssssasdasdasdasdasdasdasdasdsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss";$content1_resim95="2312.jpg";$content1_arkaplan95="blue";$content1_yazim_rengi95="yellow"; ?>
+<?php echo '<div style="background-color:'.$content1_arkaplan95.';">'; ?> <center> <table border="0px" cellpadding="10"> <tr> <td> <?php echo '<img src="resimler/'.$content1_resim95.'" width="200px" height="200px" style=""/>'; ?> </td> <td style="word-wrap:break-word;"><h3><?php echo '<a style="color:'.$content1_yazim_rengi95.';">'.$content1_yazim95.'</a>'; ?></h3></td> </tr> </table> </center> </div>|--|content1|**|<?php $header2_yazi96="asdasd";$header2_yazi296="asdasdasd";$header2_yazi396="asdasdasdasd";$header2_yazilink96="iletisim";$header2_yazilink296="hakkimizda";$header2_yazilink396="indir";$header2_arkaplan96="red";$header2_resim96="409.jpg";$content1_yazim96="ssssssssssssssssasdasdasdasdasdasdasdasdsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss";$content1_yazim_rengi96="yellow";$content1_resim96="414.jpg";$content1_arkaplan96="black"; ?>
+<?php echo '<div style="background-color:'.$content1_arkaplan96.';">'; ?> <center> <table border="0px" cellpadding="10"> <tr> <td> <?php echo '<img src="resimler/'.$content1_resim96.'" width="200px" height="200px" style=""/>'; ?> </td> <td style="word-wrap:break-word;"><h3><?php echo '<a style="color:'.$content1_yazim_rengi96.';">'.$content1_yazim96.'</a>'; ?></h3></td> </tr> </table> </center> </div>|--|leftbanner|**|<?php $leftbar1_arkaplan97="yellow";$leftbar1_linkrenk97="blue";$leftbar1_link197="asd";$leftbar1_link297="asdasd";$leftbar1_link397="asdasdasd";$leftbar1_link497="asdasdasdasd"; ?>
+<?php echo '<div style="background-color:'.$leftbar1_arkaplan97.';">'; ?>
+<center>
+<table border="0" width="90%" style="text-align:center; font-size:30px;">
+<?php 
+echo '<tr style="background-color:'.$leftbar1_linkrenk97.';"><td>'.$leftbar1_link197.'</td></tr>';
+echo '<tr style="background-color:'.$leftbar1_linkrenk97.';"><td>'.$leftbar1_link297.'</td></tr>';
+echo '<tr style="background-color:'.$leftbar1_linkrenk97.';"><td>'.$leftbar1_link397.'</td></tr>';
+echo '<tr style="background-color:'.$leftbar1_linkrenk97.';"><td>'.$leftbar1_link497.'</td></tr>';
+?>
+</table>
+</center>
+</div>|--|header|**|<?php $header2_yazi98="asdasd";$header2_yazi298="asdasdasd";$header2_yazi398="asdasdasdasd";$header2_yazilink98="iletisim";$header2_yazilink298="hakkimizda";$header2_yazilink398="indir";$header2_arkaplan98="red";$header2_resim98="414.jpg"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header2_arkaplan98.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<td> <?php echo '<a href="index.php"><img src="resimler/'.$header2_resim98.'" width="250px" height="250px" style=""/></a>'; ?>   </td>
+<td>    </td>
+<td>    </td>
+<td>    </td>
+<td> <?php echo '<h1><a href="index.php?sayfa='.$header2_yazilink98.'">'.$header2_yazi98.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="index.php?sayfa='.$header2_yazilink298.'">'.$header2_yazi298.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="index.php?sayfa='.$header2_yazilink398.'">'.$header2_yazi398.'</a></h1>'; ?>   </td>
+</table>
+</center>
+</div>|--|content|**|<?php $header2_yazi99="asdasd";$header2_yazi299="asdasdasd";$header2_yazi399="asdasdasdasd";$header2_yazilink99="iletisim";$header2_yazilink299="hakkimizda";$header2_yazilink399="indir";$header2_arkaplan99="red";$header2_resim99="414.jpg";$content1_yazim99="Enes Döngez";$content1_resim99="2312.jpg";$content1_arkaplan99="blue";$content1_yazim_rengi99="yellow"; ?>
+<?php echo '<div style="background-color:'.$content1_arkaplan99.';">'; ?> <center> <table border="0px" cellpadding="10"> <tr> <td> <?php echo '<img src="resimler/'.$content1_resim99.'" width="200px" height="200px" style=""/>'; ?> </td> <td style="word-wrap:break-word;"><h3><?php echo '<a style="color:'.$content1_yazim_rengi99.';">'.$content1_yazim99.'</a>'; ?></h3></td> </tr> </table> </center> </div>|--|content1|**|<?php $header2_yazi100="asdasd";$header2_yazi2100="asdasdasd";$header2_yazi3100="asdasdasdasd";$header2_yazilink100="iletisim";$header2_yazilink2100="hakkimizda";$header2_yazilink3100="indir";$header2_arkaplan100="red";$header2_resim100="414.jpg";$content1_arkaplan100="blue";$content1_yazim_rengi100="yellow";$content1_yazim100="ssssssssssssssssasdasdasdasdasdasdasdasdsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss";$content1_resim100="414.jpg"; ?>
+<?php echo '<div style="background-color:'.$content1_arkaplan100.';">'; ?> <center> <table border="0px" cellpadding="10"> <tr> <td> <?php echo '<img src="resimler/'.$content1_resim100.'" width="200px" height="200px" style=""/>'; ?> </td> <td style="word-wrap:break-word;"><h3><?php echo '<a style="color:'.$content1_yazim_rengi100.';">'.$content1_yazim100.'</a>'; ?></h3></td> </tr> </table> </center> </div>|--|header|**|<?php $header2_yazi101="İletişim";$header2_yazi2101="Hakkımızda";$header2_yazi3101="İndir";$header2_yazilink101="iletisim";$header2_yazilink2101="hakkimizda";$header2_yazilink3101="indir";$header2_arkaplan101="yellow";$header2_resim101="2312.jpg"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header2_arkaplan101.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<td> <?php echo '<a href="index.php"><img src="resimler/'.$header2_resim101.'" width="250px" height="250px" style=""/></a>'; ?>   </td>
+<td>    </td>
+<td>    </td>
+<td>    </td>
+<td> <?php echo '<h1><a href="index.php?sayfa='.$header2_yazilink101.'">'.$header2_yazi101.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="index.php?sayfa='.$header2_yazilink2101.'">'.$header2_yazi2101.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="index.php?sayfa='.$header2_yazilink3101.'">'.$header2_yazi3101.'</a></h1>'; ?>   </td>
+</table>
+</center>
+</div>|--|header|**|<?php $header2_yazi102="İletişim";$header2_yazi2102="Hakkımızda";$header2_yazi3102="İndir";$header2_yazilink102="iletisim";$header2_yazilink2102="hakkimizda";$header2_yazilink3102="indir";$header2_arkaplan102="yellow";$header2_resim102="2312.jpg"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header2_arkaplan102.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<td> <?php echo '<a href="index.php"><img src="resimler/'.$header2_resim102.'" width="250px" height="250px" style=""/></a>'; ?>   </td>
+<td>    </td>
+<td>    </td>
+<td>    </td>
+<td> <?php echo '<h1><a href="index.php?sayfa='.$header2_yazilink102.'">'.$header2_yazi102.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="index.php?sayfa='.$header2_yazilink2102.'">'.$header2_yazi2102.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="index.php?sayfa='.$header2_yazilink3102.'">'.$header2_yazi3102.'</a></h1>'; ?>   </td>
+</table>
+</center>
+</div>|--|header|**|<?php $header2_yazi103="asdasd";$header2_yazi2103="asdasdasd";$header2_yazi3103="asdasdasdasd";$header2_yazilink103="iletisim";$header2_yazilink2103="hakkimizda";$header2_yazilink3103="indir";$header2_arkaplan103="red";$header2_resim103="414.jpg"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header2_arkaplan103.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<td> <?php echo '<a href="index.php"><img src="resimler/'.$header2_resim103.'" width="250px" height="250px" style=""/></a>'; ?>   </td>
+<td>    </td>
+<td>    </td>
+<td>    </td>
+<td> <?php echo '<h1><a href="index.php?sayfa='.$header2_yazilink103.'">'.$header2_yazi103.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="index.php?sayfa='.$header2_yazilink2103.'">'.$header2_yazi2103.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="index.php?sayfa='.$header2_yazilink3103.'">'.$header2_yazi3103.'</a></h1>'; ?>   </td>
+</table>
+</center>
+</div>|--|leftbanner|**|<?php $leftbar1_arkaplan104="yellow";$leftbar1_linkrenk104="blue";$leftbar1_link1104="asd";$leftbar1_link2104="asdasd";$leftbar1_link3104="asdasdasd";$leftbar1_link4104="asdasdasdasd"; ?>
+<?php echo '<div style="background-color:'.$leftbar1_arkaplan104.';">'; ?>
+<center>
+<table border="0" width="90%" style="text-align:center; font-size:30px;">
+<?php 
+echo '<tr style="background-color:'.$leftbar1_linkrenk104.';"><td>'.$leftbar1_link1104.'</td></tr>';
+echo '<tr style="background-color:'.$leftbar1_linkrenk104.';"><td>'.$leftbar1_link2104.'</td></tr>';
+echo '<tr style="background-color:'.$leftbar1_linkrenk104.';"><td>'.$leftbar1_link3104.'</td></tr>';
+echo '<tr style="background-color:'.$leftbar1_linkrenk104.';"><td>'.$leftbar1_link4104.'</td></tr>';
+?>
+</table>
+</center>
+</div>|--|header|**|<?php $header2_yazi105="İletişim";$header2_yazi2105="Hakkımızda";$header2_yazi3105="İndir";$header2_yazilink105="iletisim";$header2_yazilink2105="hakkimizda";$header2_yazilink3105="indir";$header2_arkaplan105="yellow";$header2_resim105="2312.jpg"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header2_arkaplan105.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<td> <?php echo '<a href="?sayfa=content"><img src="resimler/'.$header2_resim105.'" width="250px" height="250px" style=""/></a>'; ?>   </td>
+<td>    </td>
+<td>    </td>
+<td>    </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink105.'">'.$header2_yazi105.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink2105.'">'.$header2_yazi2105.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink3105.'">'.$header2_yazi3105.'</a></h1>'; ?>   </td>
+</table>
+</center>
+</div>|--|content1|**|<?php $header2_yazi106="İletişim";$header2_yazi2106="Hakkımızda";$header2_yazi3106="İndir";$header2_yazilink106="iletisim";$header2_yazilink2106="hakkimizda";$header2_yazilink3106="indir";$header2_arkaplan106="yellow";$header2_resim106="2312.jpg";$content1_yazim106="ssssssssssssssssasdasdasdasdasdasdasdasdsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss";$content1_resim106="409.jpg";$content1_arkaplan106="blue";$content1_yazim_rengi106="yellow"; ?>
+<?php echo '<div style="background-color:'.$content1_arkaplan106.';">'; ?> <center> <table border="0px" cellpadding="10"> <tr> <td> <?php echo '<img src="resimler/'.$content1_resim106.'" width="200px" height="200px" style=""/>'; ?> </td> <td style="word-wrap:break-word;"><h3><?php echo '<a style="color:'.$content1_yazim_rengi106.';">'.$content1_yazim106.'</a>'; ?></h3></td> </tr> </table> </center> </div>|--|content1|**|<?php $header2_yazi107="İletişim";$header2_yazi2107="Hakkımızda";$header2_yazi3107="İndir";$header2_yazilink107="iletisim";$header2_yazilink2107="hakkimizda";$header2_yazilink3107="indir";$header2_arkaplan107="yellow";$header2_resim107="2312.jpg";$content1_yazim107="ssssssssssssssssasdasdasdasdasdasdasdasdsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss";$content1_resim107="409.jpg";$content1_arkaplan107="blue";$content1_yazim_rengi107="yellow"; ?>
+<?php echo '<div style="background-color:'.$content1_arkaplan107.';">'; ?> <center> <table border="0px" cellpadding="10"> <tr> <td> <?php echo '<img src="resimler/'.$content1_resim107.'" width="200px" height="200px" style=""/>'; ?> </td> <td style="word-wrap:break-word;"><h3><?php echo '<a style="color:'.$content1_yazim_rengi107.';">'.$content1_yazim107.'</a>'; ?></h3></td> </tr> </table> </center> </div>|--|leftbanner|**|<?php $leftbar1_arkaplan108="yellow";$leftbar1_linkrenk108="blue";$leftbar1_link1108="asd";$leftbar1_link2108="asdasd";$leftbar1_link3108="asdasdasd";$leftbar1_link4108="asdasdasdasd"; ?>
+<?php echo '<div style="background-color:'.$leftbar1_arkaplan108.';">'; ?>
+<center>
+<table border="0" width="90%" style="text-align:center; font-size:30px;">
+<?php 
+echo '<tr style="background-color:'.$leftbar1_linkrenk108.';"><td>'.$leftbar1_link1108.'</td></tr>';
+echo '<tr style="background-color:'.$leftbar1_linkrenk108.';"><td>'.$leftbar1_link2108.'</td></tr>';
+echo '<tr style="background-color:'.$leftbar1_linkrenk108.';"><td>'.$leftbar1_link3108.'</td></tr>';
+echo '<tr style="background-color:'.$leftbar1_linkrenk108.';"><td>'.$leftbar1_link4108.'</td></tr>';
+?>
+</table>
+</center>
+</div>|--|header|**|<?php $header2_yazi109="asdasd";$header2_yazi2109="asdasdasd";$header2_yazi3109="İndir";$header2_yazilink109="iletisim";$header2_yazilink2109="hakkimizda";$header2_yazilink3109="indir";$header2_arkaplan109="red";$header2_resim109="409.jpg"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header2_arkaplan109.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<td> <?php echo '<a href="?sayfa=content"><img src="resimler/'.$header2_resim109.'" width="250px" height="250px" style=""/></a>'; ?>   </td>
+<td>    </td>
+<td>    </td>
+<td>    </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink109.'">'.$header2_yazi109.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink2109.'">'.$header2_yazi2109.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink3109.'">'.$header2_yazi3109.'</a></h1>'; ?>   </td>
+</table>
+</center>
+</div>|--|content1|**|<?php $header2_yazi110="asdasd";$header2_yazi2110="asdasdasd";$header2_yazi3110="İndir";$header2_yazilink110="iletisim";$header2_yazilink2110="hakkimizda";$header2_yazilink3110="indir";$header2_arkaplan110="red";$header2_resim110="409.jpg";$content1_yazim110="Enes Döngez";$content1_resim110="409.jpg";$content1_arkaplan110="blue";$content1_yazim_rengi110="yellow"; ?>
+<?php echo '<div style="background-color:'.$content1_arkaplan110.';">'; ?> <center> <table border="0px" cellpadding="10"> <tr> <td> <?php echo '<img src="resimler/'.$content1_resim110.'" width="200px" height="200px" style=""/>'; ?> </td> <td style="word-wrap:break-word;"><h3><?php echo '<a style="color:'.$content1_yazim_rengi110.';">'.$content1_yazim110.'</a>'; ?></h3></td> </tr> </table> </center> </div>|--|leftbanner|**|<?php $leftbar1_arkaplan111="yellow";$leftbar1_linkrenk111="blue";$leftbar1_link1111="asd";$leftbar1_link2111="asdasd";$leftbar1_link3111="asdasdasd";$leftbar1_link4111="asdasdasdasd"; ?>
+<?php echo '<div style="background-color:'.$leftbar1_arkaplan111.';">'; ?>
+<center>
+<table border="0" width="90%" style="text-align:center; font-size:30px;">
+<?php 
+echo '<tr style="background-color:'.$leftbar1_linkrenk111.';"><td>'.$leftbar1_link1111.'</td></tr>';
+echo '<tr style="background-color:'.$leftbar1_linkrenk111.';"><td>'.$leftbar1_link2111.'</td></tr>';
+echo '<tr style="background-color:'.$leftbar1_linkrenk111.';"><td>'.$leftbar1_link3111.'</td></tr>';
+echo '<tr style="background-color:'.$leftbar1_linkrenk111.';"><td>'.$leftbar1_link4111.'</td></tr>';
+?>
+</table>
+</center>
+</div>|--|content1|**|<?php $leftbar1_arkaplan112="yellow";$leftbar1_linkrenk112="blue";$leftbar1_link1112="asd";$leftbar1_link2112="asdasd";$leftbar1_link3112="asdasdasd";$leftbar1_link4112="asdasdasdasd";$content1_yazim112="ssssssssssssssssasdasdasdasdasdasdasdasasdasdasdasdasdasdasdasddsssssssssssssssssssssssssssssssssasdasdasdasdasdasdasdasasdasdasdasdasdasdasdasddsssssssssssssssssasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss";$content1_resim112="2312.jpg";$content1_arkaplan112="blue";$content1_yazim_rengi112="yellow"; ?>
+<?php echo '<div style="background-color:'.$content1_arkaplan112.';">'; ?> <center> <table border="0px" cellpadding="10"> <tr> <td> <?php echo '<img src="resimler/'.$content1_resim112.'" width="200px" height="200px" style=""/>'; ?> </td> <td style="word-wrap:break-word;"><h3><?php echo '<a style="color:'.$content1_yazim_rengi112.';">'.$content1_yazim112.'</a>'; ?></h3></td> </tr> </table> </center> </div>|--|header|**|<?php $header2_yazi113="asdasd";$header2_yazi2113="Hakkımızda";$header2_yazi3113="asdasdasdasd";$header2_yazilink113="iletisim";$header2_yazilink2113="hakkimizda";$header2_yazilink3113="indir";$header2_arkaplan113="yellow";$header2_resim113="414.jpg"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header2_arkaplan113.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<td> <?php echo '<a href="?sayfa=content"><img src="resimler/'.$header2_resim113.'" width="250px" height="250px" style=""/></a>'; ?>   </td>
+<td>    </td>
+<td>    </td>
+<td>    </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink113.'">'.$header2_yazi113.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink2113.'">'.$header2_yazi2113.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink3113.'">'.$header2_yazi3113.'</a></h1>'; ?>   </td>
+</table>
+</center>
+</div>|--|content1|**|<?php $header2_yazi114="asdasd";$header2_yazi2114="Hakkımızda";$header2_yazi3114="asdasdasdasd";$header2_yazilink114="iletisim";$header2_yazilink2114="hakkimizda";$header2_yazilink3114="indir";$header2_arkaplan114="yellow";$header2_resim114="414.jpg";$content1_yazim114="ssssssssssssssssasdasdasdasdasdasdasdasasdasdasdasdasdasdasdasddsssssssssssssssssssssssssssssssssasdasdasdasdasdasdasdasasdasdasdasdasdasdasdasddsssssssssssssssssasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss";$content1_resim114="414.jpg";$content1_arkaplan114="blue";$content1_yazim_rengi114="yellow"; ?>
+<?php echo '<div style="background-color:'.$content1_arkaplan114.';">'; ?> <center> <table border="0px" cellpadding="10"> <tr> <td> <?php echo '<img src="resimler/'.$content1_resim114.'" width="200px" height="200px" style=""/>'; ?> </td> <td style="word-wrap:break-word;"><h3><?php echo '<a style="color:'.$content1_yazim_rengi114.';">'.$content1_yazim114.'</a>'; ?></h3></td> </tr> </table> </center> </div>|--|leftbanner|**|<?php $leftbar1_arkaplan115="yellow";$leftbar1_linkrenk115="blue";$leftbar1_link1115="asd";$leftbar1_link2115="asdasd";$leftbar1_link3115="asdasdasd";$leftbar1_link4115="asdasdasdasd"; ?>
+<?php echo '<div style="background-color:'.$leftbar1_arkaplan115.';">'; ?>
+<center>
+<table border="0" width="90%" style="text-align:center; font-size:30px;">
+<?php 
+echo '<tr style="background-color:'.$leftbar1_linkrenk115.';"><td>'.$leftbar1_link1115.'</td></tr>';
+echo '<tr style="background-color:'.$leftbar1_linkrenk115.';"><td>'.$leftbar1_link2115.'</td></tr>';
+echo '<tr style="background-color:'.$leftbar1_linkrenk115.';"><td>'.$leftbar1_link3115.'</td></tr>';
+echo '<tr style="background-color:'.$leftbar1_linkrenk115.';"><td>'.$leftbar1_link4115.'</td></tr>';
+?>
+</table>
+</center>
+</div>|--|header|**|<?php $header2_yazi116="asdasd";$header2_yazi2116="Hakkımızda";$header2_yazi3116="İndir";$header2_yazilink116="iletisim";$header2_yazilink2116="hakkimizda";$header2_yazilink3116="indir";$header2_arkaplan116="red";$header2_resim116="409.jpg"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header2_arkaplan116.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<td> <?php echo '<a href="?sayfa=content"><img src="resimler/'.$header2_resim116.'" width="250px" height="250px" style=""/></a>'; ?>   </td>
+<td>    </td>
+<td>    </td>
+<td>    </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink116.'">'.$header2_yazi116.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink2116.'">'.$header2_yazi2116.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink3116.'">'.$header2_yazi3116.'</a></h1>'; ?>   </td>
+</table>
+</center>
+</div>|--|header|**|<?php $header2_yazi117="asdasd";$header2_yazi2117="asdasdasd";$header2_yazi3117="asdasdasdasd";$header2_yazilink117="iletisim";$header2_yazilink2117="hakkimizda";$header2_yazilink3117="indir";$header2_arkaplan117="red";$header2_resim117="409.jpg"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header2_arkaplan117.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<td> <?php echo '<a href="?sayfa=content"><img src="resimler/'.$header2_resim117.'" width="250px" height="250px" style=""/></a>'; ?>   </td>
+<td>    </td>
+<td>    </td>
+<td>    </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink117.'">'.$header2_yazi117.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink2117.'">'.$header2_yazi2117.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink3117.'">'.$header2_yazi3117.'</a></h1>'; ?>   </td>
+</table>
+</center>
+</div>|--|content1|**|<?php $header2_yazi118="asdasd";$header2_yazi2118="asdasdasd";$header2_yazi3118="asdasdasdasd";$header2_yazilink118="iletisim";$header2_yazilink2118="hakkimizda";$header2_yazilink3118="indir";$header2_arkaplan118="red";$header2_resim118="409.jpg";$content1_yazim118="ssssssssssssssssasdasdasdasdasdasdasdasdsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss";$content1_resim118="2312.jpg";$content1_arkaplan118="blue";$content1_yazim_rengi118="yellow"; ?>
+<?php echo '<div style="background-color:'.$content1_arkaplan118.';">'; ?> <center> <table border="0px" cellpadding="10"> <tr> <td> <?php echo '<img src="resimler/'.$content1_resim118.'" width="200px" height="200px" style=""/>'; ?> </td> <td style="word-wrap:break-word;"><h3><?php echo '<a style="color:'.$content1_yazim_rengi118.';">'.$content1_yazim118.'</a>'; ?></h3></td> </tr> </table> </center> </div>|--|leftbanner|**|<?php $leftbar1_arkaplan119="yellow";$leftbar1_linkrenk119="blue";$leftbar1_link1119="asd";$leftbar1_link2119="asdasd";$leftbar1_link3119="asdasdasd";$leftbar1_link4119="asdasdasdasd"; ?>
+<?php echo '<div style="background-color:'.$leftbar1_arkaplan119.';">'; ?>
+<center>
+<table border="0" width="90%" style="text-align:center; font-size:30px;">
+<?php 
+echo '<tr style="background-color:'.$leftbar1_linkrenk119.';"><td>'.$leftbar1_link1119.'</td></tr>';
+echo '<tr style="background-color:'.$leftbar1_linkrenk119.';"><td>'.$leftbar1_link2119.'</td></tr>';
+echo '<tr style="background-color:'.$leftbar1_linkrenk119.';"><td>'.$leftbar1_link3119.'</td></tr>';
+echo '<tr style="background-color:'.$leftbar1_linkrenk119.';"><td>'.$leftbar1_link4119.'</td></tr>';
+?>
+</table>
+</center>
+</div>|--|content1|**|<?php $leftbar1_arkaplan120="yellow";$leftbar1_linkrenk120="blue";$leftbar1_link1120="asd";$leftbar1_link2120="asdasd";$leftbar1_link3120="asdasdasd";$leftbar1_link4120="asdasdasdasd";$content1_yazim120="asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdssssssssssssssasdasdasdasdasdssssssssssssss";$content1_resim120="2312.jpg";$content1_arkaplan120="blue";$content1_yazim_rengi120="yellow"; ?>
+<?php echo '<div style="background-color:'.$content1_arkaplan120.';">'; ?> <center> <table border="0px" cellpadding="10"> <tr> <td> <?php echo '<img src="resimler/'.$content1_resim120.'" width="200px" height="200px" style=""/>'; ?> </td> <td style="word-wrap:break-word;"><h3><?php echo '<a style="color:'.$content1_yazim_rengi120.';">'.$content1_yazim120.'</a>'; ?></h3></td> </tr> </table> </center> </div>|--|header|**|<?php $header2_yazi121="asdasd";$header2_yazi2121="asdasdasd";$header2_yazi3121="asdasdasdasd";$header2_yazilink121="iletisim";$header2_yazilink2121="hakkimizda";$header2_yazilink3121="indir";$header2_arkaplan121="red";$header2_resim121="2312.jpg"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header2_arkaplan121.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<td> <?php echo '<a href="?sayfa=content"><img src="resimler/'.$header2_resim121.'" width="250px" height="250px" style=""/></a>'; ?>   </td>
+<td>    </td>
+<td>    </td>
+<td>    </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink121.'">'.$header2_yazi121.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink2121.'">'.$header2_yazi2121.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink3121.'">'.$header2_yazi3121.'</a></h1>'; ?>   </td>
+</table>
+</center>
+</div>|--|content1|**|<?php $header2_yazi122="asdasd";$header2_yazi2122="asdasdasd";$header2_yazi3122="asdasdasdasd";$header2_yazilink122="iletisim";$header2_yazilink2122="hakkimizda";$header2_yazilink3122="indir";$header2_arkaplan122="red";$header2_resim122="2312.jpg";$content1_yazim122="ssssssssssssssssasdasdasdasdasdasdasdasdsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss";$content1_resim122="2312.jpg";$content1_arkaplan122="blue";$content1_yazim_rengi122="yellow"; ?>
+<?php echo '<div style="background-color:'.$content1_arkaplan122.';">'; ?> <center> <table border="0px" cellpadding="10"> <tr> <td> <?php echo '<img src="resimler/'.$content1_resim122.'" width="200px" height="200px" style=""/>'; ?> </td> <td style="word-wrap:break-word;"><h3><?php echo '<a style="color:'.$content1_yazim_rengi122.';">'.$content1_yazim122.'</a>'; ?></h3></td> </tr> </table> </center> </div>|--|leftbanner|**|<?php $leftbar1_arkaplan123="yellow";$leftbar1_linkrenk123="blue";$leftbar1_link1123="asd";$leftbar1_link2123="asdasd";$leftbar1_link3123="asdasdasd";$leftbar1_link4123="asdasdasdasd"; ?>
+<?php echo '<div style="background-color:'.$leftbar1_arkaplan123.';">'; ?>
+<center>
+<table border="0" width="90%" style="text-align:center; font-size:30px;">
+<?php 
+echo '<tr style="background-color:'.$leftbar1_linkrenk123.';"><td>'.$leftbar1_link1123.'</td></tr>';
+echo '<tr style="background-color:'.$leftbar1_linkrenk123.';"><td>'.$leftbar1_link2123.'</td></tr>';
+echo '<tr style="background-color:'.$leftbar1_linkrenk123.';"><td>'.$leftbar1_link3123.'</td></tr>';
+echo '<tr style="background-color:'.$leftbar1_linkrenk123.';"><td>'.$leftbar1_link4123.'</td></tr>';
+?>
+</table>
+</center>
+</div>|--|leftbanner|**|<?php $leftbar1_arkaplan124="yellow";$leftbar1_linkrenk124="blue";$leftbar1_link1124="asd";$leftbar1_link2124="asdasd";$leftbar1_link3124="asdasdasd";$leftbar1_link4124="asdasdasdasd"; ?>
+<?php echo '<div style="background-color:'.$leftbar1_arkaplan124.';">'; ?>
+<center>
+<table border="0" width="90%" style="text-align:center; font-size:30px;">
+<?php 
+echo '<tr style="background-color:'.$leftbar1_linkrenk124.';"><td>'.$leftbar1_link1124.'</td></tr>';
+echo '<tr style="background-color:'.$leftbar1_linkrenk124.';"><td>'.$leftbar1_link2124.'</td></tr>';
+echo '<tr style="background-color:'.$leftbar1_linkrenk124.';"><td>'.$leftbar1_link3124.'</td></tr>';
+echo '<tr style="background-color:'.$leftbar1_linkrenk124.';"><td>'.$leftbar1_link4124.'</td></tr>';
+?>
+</table>
+</center>
+</div>|--|header|**|<?php $header2_yazi125="İletişim";$header2_yazi2125="Hakkımızda";$header2_yazi3125="İndir";$header2_yazilink125="iletisim";$header2_yazilink2125="hakkimizda";$header2_yazilink3125="indir";$header2_arkaplan125="yellow";$header2_resim125="2312.jpg"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header2_arkaplan125.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<td> <?php echo '<a href="?sayfa=content"><img src="resimler/'.$header2_resim125.'" width="250px" height="250px" style=""/></a>'; ?>   </td>
+<td>    </td>
+<td>    </td>
+<td>    </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink125.'">'.$header2_yazi125.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink2125.'">'.$header2_yazi2125.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink3125.'">'.$header2_yazi3125.'</a></h1>'; ?>   </td>
+</table>
+</center>
+</div>|--|header|**|<?php $header2_yazi126="asdasd";$header2_yazi2126="Hakkımızda";$header2_yazi3126="İndir";$header2_yazilink126="iletisim";$header2_yazilink2126="hakkimizda";$header2_yazilink3126="indir";$header2_arkaplan126="red";$header2_resim126="2312.jpg"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header2_arkaplan126.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<td> <?php echo '<a href="?sayfa=content"><img src="resimler/'.$header2_resim126.'" width="250px" height="250px" style=""/></a>'; ?>   </td>
+<td>    </td>
+<td>    </td>
+<td>    </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink126.'">'.$header2_yazi126.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink2126.'">'.$header2_yazi2126.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink3126.'">'.$header2_yazi3126.'</a></h1>'; ?>   </td>
+</table>
+</center>
+</div>|--|header|**|<?php $header2_yazi127="asdasd";$header2_yazi2127="asdasdasd";$header2_yazi3127="asdasdasdasd";$header2_yazilink127="iletisim";$header2_yazilink2127="hakkimizda";$header2_yazilink3127="indir";$header2_arkaplan127="red";$header2_resim127="409.jpg"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header2_arkaplan127.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<td> <?php echo '<a href="?sayfa=content"><img src="resimler/'.$header2_resim127.'" width="250px" height="250px" style=""/></a>'; ?>   </td>
+<td>    </td>
+<td>    </td>
+<td>    </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink127.'">'.$header2_yazi127.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink2127.'">'.$header2_yazi2127.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink3127.'">'.$header2_yazi3127.'</a></h1>'; ?>   </td>
+</table>
+</center>
+</div>|--|header|**|<?php $header2_yazi128="asdasd";$header2_yazi2128="asdasdasd";$header2_yazi3128="asdasdasdasd";$header2_yazilink128="iletisim";$header2_yazilink2128="hakkimizda";$header2_yazilink3128="indir";$header2_arkaplan128="red";$header2_resim128="6aab96e0-ecb9-4160-9eca-e26728952e4a_12.jpg"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header2_arkaplan128.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<td> <?php echo '<a href="?sayfa=content"><img src="resimler/'.$header2_resim128.'" width="250px" height="250px" style=""/></a>'; ?>   </td>
+<td>    </td>
+<td>    </td>
+<td>    </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink128.'">'.$header2_yazi128.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink2128.'">'.$header2_yazi2128.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink3128.'">'.$header2_yazi3128.'</a></h1>'; ?>   </td>
+</table>
+</center>
+</div>|--|content|**|<?php $header2_yazi129="asdasd";$header2_yazi2129="asdasdasd";$header2_yazi3129="asdasdasdasd";$header2_yazilink129="iletisim";$header2_yazilink2129="hakkimizda";$header2_yazilink3129="indir";$header2_arkaplan129="red";$header2_resim129="6aab96e0-ecb9-4160-9eca-e26728952e4a_12.jpg";$content1_yazim129="ssssssssssssssssasdasdasdasdasdasdasdasdsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss";$content1_resim129="414.jpg";$content1_arkaplan129="blue";$content1_yazim_rengi129="yellow"; ?>
+<?php echo '<div style="background-color:'.$content1_arkaplan129.';">'; ?> <center> <table border="0px" cellpadding="10"> <tr> <td> <?php echo '<img src="resimler/'.$content1_resim129.'" width="200px" height="200px" style=""/>'; ?> </td> <td style="word-wrap:break-word;"><h3><?php echo '<a style="color:'.$content1_yazim_rengi129.';">'.$content1_yazim129.'</a>'; ?></h3></td> </tr> </table> </center> </div>|--|header|**|<?php $header2_yazi130="asdasd";$header2_yazi2130="Hakkımızda";$header2_yazi3130="İndir";$header2_yazilink130="iletisim";$header2_yazilink2130="hakkimizda";$header2_yazilink3130="indir";$header2_arkaplan130="red";$header2_resim130="2312.jpg"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header2_arkaplan130.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<td> <?php echo '<a href="?sayfa=content"><img src="resimler/'.$header2_resim130.'" width="250px" height="250px" style=""/></a>'; ?>   </td>
+<td>    </td>
+<td>    </td>
+<td>    </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink130.'">'.$header2_yazi130.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink2130.'">'.$header2_yazi2130.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink3130.'">'.$header2_yazi3130.'</a></h1>'; ?>   </td>
+</table>
+</center>
+</div>|--|header|**|<?php $header2_yazi131="asdasd";$header2_yazi2131="Hakkımızda";$header2_yazi3131="İndir";$header2_yazilink131="iletisim";$header2_yazilink2131="hakkimizda";$header2_yazilink3131="indir";$header2_arkaplan131="yellow";$header2_resim131="2312.jpg"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header2_arkaplan131.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<td> <?php echo '<a href="?sayfa=content"><img src="resimler/'.$header2_resim131.'" width="250px" height="250px" style=""/></a>'; ?>   </td>
+<td>    </td>
+<td>    </td>
+<td>    </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink131.'">'.$header2_yazi131.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink2131.'">'.$header2_yazi2131.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink3131.'">'.$header2_yazi3131.'</a></h1>'; ?>   </td>
+</table>
+</center>
+</div>|--|content1|**|<?php $header2_yazi132="asdasd";$header2_yazi2132="Hakkımızda";$header2_yazi3132="İndir";$header2_yazilink132="iletisim";$header2_yazilink2132="hakkimizda";$header2_yazilink3132="indir";$header2_arkaplan132="yellow";$header2_resim132="2312.jpg";$content1_yazim132="ssssssssssssssssasdasdasdasdasdasdasdasdsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss";$content1_resim132="409.jpg";$content1_arkaplan132="blue";$content1_yazim_rengi132="yellow"; ?>
+<?php echo '<div style="background-color:'.$content1_arkaplan132.';">'; ?> <center> <table border="0px" cellpadding="10"> <tr> <td> <?php echo '<img src="resimler/'.$content1_resim132.'" width="200px" height="200px" style=""/>'; ?> </td> <td style="word-wrap:break-word;"><h3><?php echo '<a style="color:'.$content1_yazim_rengi132.';">'.$content1_yazim132.'</a>'; ?></h3></td> </tr> </table> </center> </div>|--|leftbanner|**|<?php $leftbar1_arkaplan133="yellow";$leftbar1_linkrenk133="blue";$leftbar1_link1133="asd";$leftbar1_link2133="asdasd";$leftbar1_link3133="asdasdasd";$leftbar1_link4133="asdasdasdasd"; ?>
+<?php echo '<div style="background-color:'.$leftbar1_arkaplan133.';">'; ?>
+<center>
+<table border="0" width="90%" style="text-align:center; font-size:30px;">
+<?php 
+echo '<tr style="background-color:'.$leftbar1_linkrenk133.';"><td>'.$leftbar1_link1133.'</td></tr>';
+echo '<tr style="background-color:'.$leftbar1_linkrenk133.';"><td>'.$leftbar1_link2133.'</td></tr>';
+echo '<tr style="background-color:'.$leftbar1_linkrenk133.';"><td>'.$leftbar1_link3133.'</td></tr>';
+echo '<tr style="background-color:'.$leftbar1_linkrenk133.';"><td>'.$leftbar1_link4133.'</td></tr>';
+?>
+</table>
+</center>
+</div>|--|content_|**|<?php $leftbar1_arkaplan134="yellow";$leftbar1_linkrenk134="blue";$leftbar1_link1134="asd";$leftbar1_link2134="asdasd";$leftbar1_link3134="asdasdasd";$leftbar1_link4134="asdasdasdasd";$content1_yazim134="ssssssssssssssssasdasdasdasdasdasdasdasdsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss";$content1_resim134="414.jpg";$content1_arkaplan134="blue";$content1_yazim_rengi134="yellow"; ?>
+<?php echo '<div style="background-color:'.$content1_arkaplan134.';">'; ?> <center> <table border="0px" cellpadding="10"> <tr> <td> <?php echo '<img src="resimler/'.$content1_resim134.'" width="200px" height="200px" style=""/>'; ?> </td> <td style="word-wrap:break-word;"><h3><?php echo '<a style="color:'.$content1_yazim_rengi134.';">'.$content1_yazim134.'</a>'; ?></h3></td> </tr> </table> </center> </div>|--|content_|**|<?php $leftbar1_arkaplan135="yellow";$leftbar1_linkrenk135="blue";$leftbar1_link1135="asd";$leftbar1_link2135="asdasd";$leftbar1_link3135="asdasdasd";$leftbar1_link4135="asdasdasdasd";$content1_yazim135="asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdssssssssssssssasdasdasdasdasdssssssssssssss";$content1_resim135="1b90336f-2b79-4266-83bf-d3c6d7f5a6d9_5.jpg";$content1_arkaplan135="red";$content1_yazim_rengi135="green"; ?>
+<?php echo '<div style="background-color:'.$content1_arkaplan135.';">'; ?> <center> <table border="0px" cellpadding="10"> <tr> <td> <?php echo '<img src="resimler/'.$content1_resim135.'" width="200px" height="200px" style=""/>'; ?> </td> <td style="word-wrap:break-word;"><h3><?php echo '<a style="color:'.$content1_yazim_rengi135.';">'.$content1_yazim135.'</a>'; ?></h3></td> </tr> </table> </center> </div>|--|content_|**|<?php $leftbar1_arkaplan136="yellow";$leftbar1_linkrenk136="blue";$leftbar1_link1136="asd";$leftbar1_link2136="asdasd";$leftbar1_link3136="asdasdasd";$leftbar1_link4136="asdasdasdasd";$content1_yazim136="asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdssssssssssssssasdasdasdasdasdssssssssssssss";$content1_resim136="d0c2737b82a5f8da.jpg";$content1_arkaplan136="black";$content1_yazim_rengi136="white"; ?>
+<?php echo '<div style="background-color:'.$content1_arkaplan136.';">'; ?> <center> <table border="0px" cellpadding="10"> <tr> <td> <?php echo '<img src="resimler/'.$content1_resim136.'" width="200px" height="200px" style=""/>'; ?> </td> <td style="word-wrap:break-word;"><h3><?php echo '<a style="color:'.$content1_yazim_rengi136.';">'.$content1_yazim136.'</a>'; ?></h3></td> </tr> </table> </center> </div>|--|content_|**|<?php $leftbar1_arkaplan137="yellow";$leftbar1_linkrenk137="blue";$leftbar1_link1137="asd";$leftbar1_link2137="asdasd";$leftbar1_link3137="asdasdasd";$leftbar1_link4137="asdasdasdasd";$content1_yazim137="ssssssssssssssssasdasdasdasdasdasdasdasdsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss";$content1_resim137="2312.jpg";$content1_arkaplan137="green";$content1_yazim_rengi137="yellow"; ?>
+<?php echo '<div style="background-color:'.$content1_arkaplan137.';">'; ?> <center> <table border="0px" cellpadding="10"> <tr> <td> <?php echo '<img src="resimler/'.$content1_resim137.'" width="200px" height="200px" style=""/>'; ?> </td> <td style="word-wrap:break-word;"><h3><?php echo '<a style="color:'.$content1_yazim_rengi137.';">'.$content1_yazim137.'</a>'; ?></h3></td> </tr> </table> </center> </div>|--|header|**|<?php $header2_yazi138="asdasd";$header2_yazi2138="asdasdasd";$header2_yazi3138="İndir";$header2_yazilink138="iletisim";$header2_yazilink2138="hakkimizda";$header2_yazilink3138="indir";$header2_arkaplan138="yellow";$header2_resim138="2312.jpg"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header2_arkaplan138.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<td> <?php echo '<a href="?sayfa=content"><img src="resimler/'.$header2_resim138.'" width="250px" height="250px" style=""/></a>'; ?>   </td>
+<td>    </td>
+<td>    </td>
+<td>    </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink138.'">'.$header2_yazi138.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink2138.'">'.$header2_yazi2138.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink3138.'">'.$header2_yazi3138.'</a></h1>'; ?>   </td>
+</table>
+</center>
+</div>|--|content_|**|<?php $header2_yazi139="asdasd";$header2_yazi2139="asdasdasd";$header2_yazi3139="İndir";$header2_yazilink139="iletisim";$header2_yazilink2139="hakkimizda";$header2_yazilink3139="indir";$header2_arkaplan139="yellow";$header2_resim139="2312.jpg";$content1_yazim139="ssssssssssssssssasdasdasdasdasdasdasdasdsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss";$content1_resim139="2312.jpg";$content1_arkaplan139="blue";$content1_yazim_rengi139="yellow"; ?>
+<?php echo '<div style="background-color:'.$content1_arkaplan139.';">'; ?> <center> <table border="0px" cellpadding="10"> <tr> <td> <?php echo '<img src="resimler/'.$content1_resim139.'" width="200px" height="200px" style=""/>'; ?> </td> <td style="word-wrap:break-word;"><h3><?php echo '<a style="color:'.$content1_yazim_rengi139.';">'.$content1_yazim139.'</a>'; ?></h3></td> </tr> </table> </center> </div>|--|content_|**|<?php $header2_yazi140="asdasd";$header2_yazi2140="asdasdasd";$header2_yazi3140="İndir";$header2_yazilink140="iletisim";$header2_yazilink2140="hakkimizda";$header2_yazilink3140="indir";$header2_arkaplan140="yellow";$header2_resim140="2312.jpg";$content1_yazim140="ssssssssssssssssasdasdasdasdasdasdasdasdsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss";$content1_resim140="2312.jpg";$content1_yazim_rengi140="yellow";$content1_arkaplan140="green"; ?>
+<?php echo '<div style="background-color:'.$content1_arkaplan140.';">'; ?> <center> <table border="0px" cellpadding="10"> <tr> <td> <?php echo '<img src="resimler/'.$content1_resim140.'" width="200px" height="200px" style=""/>'; ?> </td> <td style="word-wrap:break-word;"><h3><?php echo '<a style="color:'.$content1_yazim_rengi140.';">'.$content1_yazim140.'</a>'; ?></h3></td> </tr> </table> </center> </div>|--|content_|**|<?php $header2_yazi141="asdasd";$header2_yazi2141="asdasdasd";$header2_yazi3141="İndir";$header2_yazilink141="iletisim";$header2_yazilink2141="hakkimizda";$header2_yazilink3141="indir";$header2_arkaplan141="yellow";$header2_resim141="2312.jpg";$content1_yazim_rengi141="yellow";$content1_yazim141="asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdssssssssssssssasdasdasdasdasdssssssssssssss";$content1_resim141="6aab96e0-ecb9-4160-9eca-e26728952e4a_12.jpg";$content1_arkaplan141="black"; ?>
+<?php echo '<div style="background-color:'.$content1_arkaplan141.';">'; ?> <center> <table border="0px" cellpadding="10"> <tr> <td> <?php echo '<img src="resimler/'.$content1_resim141.'" width="200px" height="200px" style=""/>'; ?> </td> <td style="word-wrap:break-word;"><h3><?php echo '<a style="color:'.$content1_yazim_rengi141.';">'.$content1_yazim141.'</a>'; ?></h3></td> </tr> </table> </center> </div>|--|header|**|<?php $header1_yazi1="Enes Döngez";$header1_arkaplan1="yellow";$header1_resim1="assd.jpg"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header1_arkaplan1.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<tr>
+<td>
+<center>
+<?php echo '<img src="resimler/'.$header1_resim1.'" width="250px" height="250px" style=""/>'; ?>
+</center>
+</td></tr><tr>
+<td>
+<center>
+<?php echo '<h1>'.$header1_yazi1.'</h1>'; ?>
+</center>
+</td>
+</tr>
+</table>
+</center>
+</div>|--|content1|**|<?php $header1_yazi2="Enes Döngez";$header1_arkaplan2="yellow";$header1_resim2="assd.jpg";$content1_yazim2="ssssssssssssssssasdasdasdasdasdasdasdasdsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss";$content1_resim2="414.jpg";$content1_arkaplan2="blue";$content1_yazim_rengi2="yellow"; ?>
+<?php echo '<div style="background-color:'.$content1_arkaplan2.';">'; ?> <center> <table border="0px" cellpadding="10"> <tr> <td> <?php echo '<img src="resimler/'.$content1_resim2.'" width="200px" height="200px" style=""/>'; ?> </td> <td style="word-wrap:break-word;"><h3><?php echo '<a style="color:'.$content1_yazim_rengi2.';">'.$content1_yazim2.'</a>'; ?></h3></td> </tr> </table> </center> </div>|--|leftbanner|**|<?php $leftbar1_arkaplan3="yellow";$leftbar1_linkrenk3="blue";$leftbar1_link13="asd";$leftbar1_link23="asdasd";$leftbar1_link33="asdasdasd";$leftbar1_link43="asdasdasdasd"; ?>
+<?php echo '<div style="background-color:'.$leftbar1_arkaplan3.';">'; ?>
+<center>
+<table border="0" width="90%" style="text-align:center; font-size:30px;">
+<?php 
+echo '<tr style="background-color:'.$leftbar1_linkrenk3.';"><td>'.$leftbar1_link13.'</td></tr>';
+echo '<tr style="background-color:'.$leftbar1_linkrenk3.';"><td>'.$leftbar1_link23.'</td></tr>';
+echo '<tr style="background-color:'.$leftbar1_linkrenk3.';"><td>'.$leftbar1_link33.'</td></tr>';
+echo '<tr style="background-color:'.$leftbar1_linkrenk3.';"><td>'.$leftbar1_link43.'</td></tr>';
+?>
+</table>
+</center>
+</div>|--|header|**|<?php $header2_yazi4="İletişim";$header2_yazi24="Hakkımızda";$header2_yazi34="asdasdasdasd";$header2_yazilink4="iletisim";$header2_yazilink24="hakkimizda";$header2_yazilink34="indir";$header2_arkaplan4="red";$header2_resim4="414.jpg"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header2_arkaplan4.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<td> <?php echo '<a href="?sayfa=content"><img src="resimler/'.$header2_resim4.'" width="250px" height="250px" style=""/></a>'; ?>   </td>
+<td>    </td>
+<td>    </td>
+<td>    </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink4.'">'.$header2_yazi4.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink24.'">'.$header2_yazi24.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink34.'">'.$header2_yazi34.'</a></h1>'; ?>   </td>
+</table>
+</center>
+</div>|--|content_|**|<?php $header2_yazi5="İletişim";$header2_yazi25="Hakkımızda";$header2_yazi35="asdasdasdasd";$header2_yazilink5="iletisim";$header2_yazilink25="hakkimizda";$header2_yazilink35="indir";$header2_arkaplan5="red";$header2_resim5="414.jpg";$content1_yazim5="ssssssssssssssssasdasdasdasdasdasdasdasdsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss";$content1_resim5="2312.jpg";$content1_arkaplan5="blue";$content1_yazim_rengi5="yellow"; ?>
+<?php echo '<div style="background-color:'.$content1_arkaplan5.';">'; ?> <center> <table border="0px" cellpadding="10"> <tr> <td> <?php echo '<img src="resimler/'.$content1_resim5.'" width="200px" height="200px" style=""/>'; ?> </td> <td style="word-wrap:break-word;"><h3><?php echo '<a style="color:'.$content1_yazim_rengi5.';">'.$content1_yazim5.'</a>'; ?></h3></td> </tr> </table> </center> </div>|--|content_|**|<?php $content3_resim6="ktu";$content3_resim26="ktu";$content3_resim36="ktu";$content3_resim46="ktu";$content3_resim56="ktu";$content3_arkaplan6="pink"; ?>
+<?php echo '<div style="background-color:'.$content3_arkaplan6.'; margin:auto;">'; ?>
+<center>
+<table border="0px" cellpadding="10">
+<tr>
+<td>
+<?php echo '<img src="'.$content3_resim6.'.png" width="200px" height="200px" style=""/>'; ?>
+</td>
+<td>
+<?php echo '<img src="'.$content3_resim6.'.png" width="200px" height="200px" style=""/>'; ?>
+</td>
+<td>
+<?php echo '<img src="'.$content3_resim6.'.png" width="200px" height="200px" style=""/>'; ?>
+</td>
+<td>
+<?php echo '<img src="'.$content3_resim6.'.png" width="200px" height="200px" style=""/>'; ?>
+</td>
+</tr>
+</table>
+</center>
+</div>
+|--|content_|**|<?php $content3_resim7="ktu";$content3_resim27="ktu";$content3_resim37="ktu";$content3_resim47="ktu";$content3_resim57="ktu";$content3_arkaplan7="pink";$content1_yazim7="ssssssssssssssssasdasdasdasdasdasdasdasasdasdasdasdasdasdasdasddsssssssssssssssssssssssssssssssssasdasdasdasdasdasdasdasasdasdasdasdasdasdasdasddsssssssssssssssssasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss";$content1_resim7="3021-Yeniceri.jpg";$content1_arkaplan7="black";$content1_yazim_rengi7="yellow"; ?>
+<?php echo '<div style="background-color:'.$content1_arkaplan7.';">'; ?> <center> <table border="0px" cellpadding="10"> <tr> <td> <?php echo '<img src="resimler/'.$content1_resim7.'" width="200px" height="200px" style=""/>'; ?> </td> <td style="word-wrap:break-word;"><h3><?php echo '<a style="color:'.$content1_yazim_rengi7.';">'.$content1_yazim7.'</a>'; ?></h3></td> </tr> </table> </center> </div>|--|content_|**|<?php $content3_resim8="ktu";$content3_resim28="ktu";$content3_resim38="ktu";$content3_resim48="ktu";$content3_resim58="ktu";$content3_arkaplan8="pink";$content1_yazim_rengi8="yellow";$content1_yazim8="ssssssssssssssssasdasdasdasdasdasdasdasdsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss";$content1_resim8="409.jpg";$content1_arkaplan8="blue"; ?>
+<?php echo '<div style="background-color:'.$content1_arkaplan8.';">'; ?> <center> <table border="0px" cellpadding="10"> <tr> <td> <?php echo '<img src="resimler/'.$content1_resim8.'" width="200px" height="200px" style=""/>'; ?> </td> <td style="word-wrap:break-word;"><h3><?php echo '<a style="color:'.$content1_yazim_rengi8.';">'.$content1_yazim8.'</a>'; ?></h3></td> </tr> </table> </center> </div>|--|content_|**|<?php $content2_yazim9="sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaöööööööööööööööööööööööööööööööööööööööööööööööddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd";$content2_arkaplan9="yellow"; ?>
+<?php echo '<div style="background-color:'.$content2_arkaplan9.'; word-wrap:break-word;">'; ?>
+<center>
+<h3>
+<?php echo '<div style="word-wrap:break-word;"><h2>'.$content2_yazim9.'</h2></div>'; ?>
+</h3>
+
+</center>
+</div>
+|--|header|**|<?php $header2_yazi10="asdasd";$header2_yazi210="asdasdasd";$header2_yazi310="asdasdasdasd";$header2_yazilink10="iletisim";$header2_yazilink210="hakkimizda";$header2_yazilink310="indir";$header2_arkaplan10="red";$header2_resim10="2312.jpg"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header2_arkaplan10.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<td> <?php echo '<a href="?sayfa=content"><img src="resimler/'.$header2_resim10.'" width="250px" height="250px" style=""/></a>'; ?>   </td>
+<td>    </td>
+<td>    </td>
+<td>    </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink10.'">'.$header2_yazi10.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink210.'">'.$header2_yazi210.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink310.'">'.$header2_yazi310.'</a></h1>'; ?>   </td>
+</table>
+</center>
+</div>|--|leftbanner|**|<?php $leftbar1_arkaplan11="yellow";$leftbar1_linkrenk11="blue";$leftbar1_link111="asd";$leftbar1_link211="asdasd";$leftbar1_link311="asdasdasd";$leftbar1_link411="asdasdasdasd"; ?>
+<?php echo '<div style="background-color:'.$leftbar1_arkaplan11.';">'; ?>
+<center>
+<table border="0" width="90%" style="text-align:center; font-size:30px;">
+<?php 
+echo '<tr style="background-color:'.$leftbar1_linkrenk11.';"><td>'.$leftbar1_link111.'</td></tr>';
+echo '<tr style="background-color:'.$leftbar1_linkrenk11.';"><td>'.$leftbar1_link211.'</td></tr>';
+echo '<tr style="background-color:'.$leftbar1_linkrenk11.';"><td>'.$leftbar1_link311.'</td></tr>';
+echo '<tr style="background-color:'.$leftbar1_linkrenk11.';"><td>'.$leftbar1_link411.'</td></tr>';
+?>
+</table>
+</center>
+</div>|--|content1|**|<?php $leftbar1_arkaplan12="yellow";$leftbar1_linkrenk12="blue";$leftbar1_link112="asd";$leftbar1_link212="asdasd";$leftbar1_link312="asdasdasd";$leftbar1_link412="asdasdasdasd";$content1_yazim12="ssssssssssssssssasdasdasdasdasdasdasdasdsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss";$content1_resim12="414.jpg";$content1_arkaplan12="blue";$content1_yazim_rengi12="yellow"; ?>
+<?php echo '<div style="background-color:'.$content1_arkaplan12.';">'; ?> <center> <table border="0px" cellpadding="10"> <tr> <td> <?php echo '<img src="resimler/'.$content1_resim12.'" width="200px" height="200px" style=""/>'; ?> </td> <td style="word-wrap:break-word;"><h3><?php echo '<a style="color:'.$content1_yazim_rengi12.';">'.$content1_yazim12.'</a>'; ?></h3></td> </tr> </table> </center> </div>|--|content_iletisim|**|<?php $leftbar1_arkaplan13="yellow";$leftbar1_linkrenk13="blue";$leftbar1_link113="asd";$leftbar1_link213="asdasd";$leftbar1_link313="asdasdasd";$leftbar1_link413="asdasdasdasd";$content1_yazim13="ssssssssssssssssasdasdasdasdasdasdasdasdsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss";$content1_arkaplan13="blue";$content1_yazim_rengi13="yellow";$content1_resim13="2312.jpg"; ?>
+<?php echo '<div style="background-color:'.$content1_arkaplan13.';">'; ?> <center> <table border="0px" cellpadding="10"> <tr> <td> <?php echo '<img src="resimler/'.$content1_resim13.'" width="200px" height="200px" style=""/>'; ?> </td> <td style="word-wrap:break-word;"><h3><?php echo '<a style="color:'.$content1_yazim_rengi13.';">'.$content1_yazim13.'</a>'; ?></h3></td> </tr> </table> </center> </div>|--|content_hakkimizda|**|<?php $leftbar1_arkaplan14="yellow";$leftbar1_linkrenk14="blue";$leftbar1_link114="asd";$leftbar1_link214="asdasd";$leftbar1_link314="asdasdasd";$leftbar1_link414="asdasdasdasd";$content1_yazim14="ssssssssssssssssasdasdasdasdasdasdasdasdsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss";$content1_arkaplan14="blue";$content1_yazim_rengi14="yellow";$content1_resim14="2312.jpg"; ?>
+<?php echo '<div style="background-color:'.$content1_arkaplan14.';">'; ?> <center> <table border="0px" cellpadding="10"> <tr> <td> <?php echo '<img src="resimler/'.$content1_resim14.'" width="200px" height="200px" style=""/>'; ?> </td> <td style="word-wrap:break-word;"><h3><?php echo '<a style="color:'.$content1_yazim_rengi14.';">'.$content1_yazim14.'</a>'; ?></h3></td> </tr> </table> </center> </div>|--|content_hakkimizda|**|<?php $leftbar1_arkaplan15="yellow";$leftbar1_linkrenk15="blue";$leftbar1_link115="asd";$leftbar1_link215="asdasd";$leftbar1_link315="asdasdasd";$leftbar1_link415="asdasdasdasd";$content1_yazim15="ssssssssssssssssasdasdasdasdasdasdasdasdsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss";$content1_resim15="409.jpg";$content1_arkaplan15="black";$content1_yazim_rengi15="white"; ?>
+<?php echo '<div style="background-color:'.$content1_arkaplan15.';">'; ?> <center> <table border="0px" cellpadding="10"> <tr> <td> <?php echo '<img src="resimler/'.$content1_resim15.'" width="200px" height="200px" style=""/>'; ?> </td> <td style="word-wrap:break-word;"><h3><?php echo '<a style="color:'.$content1_yazim_rengi15.';">'.$content1_yazim15.'</a>'; ?></h3></td> </tr> </table> </center> </div>|--|header|**|<?php $header2_yazi16="asdasd";$header2_yazi216="asdasdasd";$header2_yazi316="asdasdasdasd";$header2_yazilink16="iletisim";$header2_yazilink216="hakkimizda";$header2_yazilink316="indir";$header2_arkaplan16="red";$header2_resim16="2312.jpg"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header2_arkaplan16.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<td> <?php echo '<a href="?sayfa=content"><img src="resimler/'.$header2_resim16.'" width="250px" height="250px" style=""/></a>'; ?>   </td>
+<td>    </td>
+<td>    </td>
+<td>    </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink16.'">'.$header2_yazi16.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink216.'">'.$header2_yazi216.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink316.'">'.$header2_yazi316.'</a></h1>'; ?>   </td>
+</table>
+</center>
+</div>|--|content_indir|**|<?php $header1_yazi17="asd";$header1_arkaplan17="yellow";$header1_resim17="assd.jpg"; ?>
+<?php echo '<div style="background-color:'.$header1_arkaplan17.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<tr>
+<td>
+<center>
+<?php echo '<img src="resimler/'.$header1_resim17.'" width="250px" height="250px" style=""/>'; ?>
+</center>
+</td></tr><tr>
+<td>
+<center>
+<?php echo '<h1>'.$header1_yazi17.'</h1>'; ?>
+</center>
+</td>
+</tr>
+</table>
+</center>
+</div>|--|header|**|<?php $header2_yazi18="asdasd";$header2_yazi218="asdasdasd";$header2_yazi318="asdasdasdasd";$header2_yazilink18="iletisim";$header2_yazilink218="hakkimizda";$header2_yazilink318="indir";$header2_arkaplan18="red";$header2_resim18="2312.jpg"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header2_arkaplan18.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<td> <?php echo '<a href="?sayfa=content"><img src="resimler/'.$header2_resim18.'" width="250px" height="250px" style=""/></a>'; ?>   </td>
+<td>    </td>
+<td>    </td>
+<td>    </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink18.'">'.$header2_yazi18.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink218.'">'.$header2_yazi218.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink318.'">'.$header2_yazi318.'</a></h1>'; ?>   </td>
+</table>
+</center>
+</div>|--|header|**|<?php $header2_yazi19="asdasd";$header2_yazi219="asdasdasd";$header2_yazi319="asdasdasdasd";$header2_yazilink19="iletisim";$header2_yazilink219="hakkimizda";$header2_yazilink319="indir";$header2_arkaplan19="red";$header2_resim19="2312.jpg"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header2_arkaplan19.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<td> <?php echo '<a href="?sayfa=content"><img src="resimler/'.$header2_resim19.'" width="250px" height="250px" style=""/></a>'; ?>   </td>
+<td>    </td>
+<td>    </td>
+<td>    </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink19.'">'.$header2_yazi19.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink219.'">'.$header2_yazi219.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink319.'">'.$header2_yazi319.'</a></h1>'; ?>   </td>
+</table>
+</center>
+</div>|--|header|**|<?php $header2_yazi20="asdasd";$header2_yazi220="asdasdasd";$header2_yazi320="asdasdasdasd";$header2_yazilink20="iletisim";$header2_yazilink220="hakkimizda";$header2_yazilink320="indir";$header2_arkaplan20="red";$header2_resim20="2312.jpg"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header2_arkaplan20.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<td> <?php echo '<a href="?sayfa=content"><img src="resimler/'.$header2_resim20.'" width="250px" height="250px" style=""/></a>'; ?>   </td>
+<td>    </td>
+<td>    </td>
+<td>    </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink20.'">'.$header2_yazi20.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink220.'">'.$header2_yazi220.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink320.'">'.$header2_yazi320.'</a></h1>'; ?>   </td>
+</table>
+</center>
+</div>|--|header|**|<?php $header1_yazi21="asd";$header1_arkaplan21="yellow";$header1_resim21="2312.jpg"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header1_arkaplan21.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<tr>
+<td>
+<center>
+<?php echo '<img src="resimler/'.$header1_resim21.'" width="250px" height="250px" style=""/>'; ?>
+</center>
+</td></tr><tr>
+<td>
+<center>
+<?php echo '<h1>'.$header1_yazi21.'</h1>'; ?>
+</center>
+</td>
+</tr>
+</table>
+</center>
+</div>|--|header|**|<?php $header2_yazi22="asdasd";$header2_yazi222="asdasdasd";$header2_yazi322="asdasdasdasd";$header2_yazilink22="iletisim";$header2_yazilink222="hakkimizda";$header2_yazilink322="indir";$header2_arkaplan22="red";$header2_resim22="2312.jpg"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header2_arkaplan22.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<td> <?php echo '<a href="?sayfa=content"><img src="resimler/'.$header2_resim22.'" width="250px" height="250px" style=""/></a>'; ?>   </td>
+<td>    </td>
+<td>    </td>
+<td>    </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink22.'">'.$header2_yazi22.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink222.'">'.$header2_yazi222.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink322.'">'.$header2_yazi322.'</a></h1>'; ?>   </td>
+</table>
+</center>
+</div>|--|header|**|<?php $header2_yazi23="asdasd";$header2_yazi223="asdasdasd";$header2_yazi323="asdasdasdasd";$header2_yazilink23="iletisim";$header2_yazilink223="hakkimizda";$header2_yazilink323="indir";$header2_arkaplan23="red";$header2_resim23="414.jpg"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header2_arkaplan23.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<td> <?php echo '<a href="?sayfa=content"><img src="resimler/'.$header2_resim23.'" width="250px" height="250px" style=""/></a>'; ?>   </td>
+<td>    </td>
+<td>    </td>
+<td>    </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink23.'">'.$header2_yazi23.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink223.'">'.$header2_yazi223.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink323.'">'.$header2_yazi323.'</a></h1>'; ?>   </td>
+</table>
+</center>
+</div>|--|content2|**|<?php $header2_yazi24="asdasd";$header2_yazi224="asdasdasd";$header2_yazi324="asdasdasdasd";$header2_yazilink24="iletisim";$header2_yazilink224="hakkimizda";$header2_yazilink324="indir";$header2_arkaplan24="red";$header2_resim24="414.jpg";$content1_yazim24="ssssssssssssssssasdasdasdasdasdasdasdasdsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss";$content1_resim24="414.jpg";$content1_arkaplan24="blue";$content1_yazim_rengi24="blue"; ?>
+<?php echo '<div style="background-color:'.$content1_arkaplan24.';">'; ?> <center> <table border="0px" cellpadding="10"> <tr> <td> <?php echo '<img src="resimler/'.$content1_resim24.'" width="200px" height="200px" style=""/>'; ?> </td> <td style="word-wrap:break-word;"><h3><?php echo '<a style="color:'.$content1_yazim_rengi24.';">'.$content1_yazim24.'</a>'; ?></h3></td> </tr> </table> </center> </div>|--|content1|**|<?php $header2_yazi25="asdasd";$header2_yazi225="asdasdasd";$header2_yazi325="asdasdasdasd";$header2_yazilink25="iletisim";$header2_yazilink225="hakkimizda";$header2_yazilink325="indir";$header2_arkaplan25="red";$header2_resim25="414.jpg";$content1_resim25="414.jpg";$content1_arkaplan25="blue";$content1_yazim25="ssssssssssssssssasdasdasdasdasdasdasdasasdasdasdasdasdasdasdasddsssssssssssssssssssssssssssssssssasdasdasdasdasdasdasdasasdasdasdasdasdasdasdasddsssssssssssssssssasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss";$content1_yazim_rengi25="yellow"; ?>
+<?php echo '<div style="background-color:'.$content1_arkaplan25.';">'; ?> <center> <table border="0px" cellpadding="10"> <tr> <td> <?php echo '<img src="resimler/'.$content1_resim25.'" width="200px" height="200px" style=""/>'; ?> </td> <td style="word-wrap:break-word;"><h3><?php echo '<a style="color:'.$content1_yazim_rengi25.';">'.$content1_yazim25.'</a>'; ?></h3></td> </tr> </table> </center> </div>|--|content_iletisim|**|<?php $header2_yazi26="asdasd";$header2_yazi226="asdasdasd";$header2_yazi326="asdasdasdasd";$header2_yazilink26="iletisim";$header2_yazilink226="hakkimizda";$header2_yazilink326="indir";$header2_arkaplan26="red";$header2_resim26="414.jpg";$content1_resim26="414.jpg";$content1_arkaplan26="blue";$content1_yazim_rengi26="yellow";$content1_yazim26="ssssssssssssssssasdasdasdasdasdasdasdasdsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss"; ?>
+<?php echo '<div style="background-color:'.$content1_arkaplan26.';">'; ?> <center> <table border="0px" cellpadding="10"> <tr> <td> <?php echo '<img src="resimler/'.$content1_resim26.'" width="200px" height="200px" style=""/>'; ?> </td> <td style="word-wrap:break-word;"><h3><?php echo '<a style="color:'.$content1_yazim_rengi26.';">'.$content1_yazim26.'</a>'; ?></h3></td> </tr> </table> </center> </div>|--|content_iletisim|**|<?php $header2_yazi27="asdasd";$header2_yazi227="asdasdasd";$header2_yazi327="asdasdasdasd";$header2_yazilink27="iletisim";$header2_yazilink227="hakkimizda";$header2_yazilink327="indir";$header2_arkaplan27="red";$header2_resim27="414.jpg";$content1_yazim27="ssssssssssssssssasdasdasdasdasdasdasdasasdasdasdasdasdasdasdasddsssssssssssssssssssssssssssssssssasdasdasdasdasdasdasdasasdasdasdasdasdasdasdasddsssssssssssssssssasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss";$content1_resim27="2312.jpg";$content1_arkaplan27="black";$content1_yazim_rengi27="white"; ?>
+<?php echo '<div style="background-color:'.$content1_arkaplan27.';">'; ?> <center> <table border="0px" cellpadding="10"> <tr> <td> <?php echo '<img src="resimler/'.$content1_resim27.'" width="200px" height="200px" style=""/>'; ?> </td> <td style="word-wrap:break-word;"><h3><?php echo '<a style="color:'.$content1_yazim_rengi27.';">'.$content1_yazim27.'</a>'; ?></h3></td> </tr> </table> </center> </div>|--|content_hakkimizda|**|<?php $header2_yazi28="asdasd";$header2_yazi228="asdasdasd";$header2_yazi328="asdasdasdasd";$header2_yazilink28="iletisim";$header2_yazilink228="hakkimizda";$header2_yazilink328="indir";$header2_arkaplan28="red";$header2_resim28="414.jpg";$content1_yazim28="ssssssssssssssssasdasdasdasdasdasdasdasasdasdasdasdasdasdasdasddsssssssssssssssssssssssssssssssssasdasdasdasdasdasdasdasasdasdasdasdasdasdasdasddsssssssssssssssssasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss";$content1_resim28="414.jpg";$content1_arkaplan28="red";$content1_yazim_rengi28="blue"; ?>
+<?php echo '<div style="background-color:'.$content1_arkaplan28.';">'; ?> <center> <table border="0px" cellpadding="10"> <tr> <td> <?php echo '<img src="resimler/'.$content1_resim28.'" width="200px" height="200px" style=""/>'; ?> </td> <td style="word-wrap:break-word;"><h3><?php echo '<a style="color:'.$content1_yazim_rengi28.';">'.$content1_yazim28.'</a>'; ?></h3></td> </tr> </table> </center> </div>|--|content_indir|**|<?php $header2_yazi29="asdasd";$header2_yazi229="asdasdasd";$header2_yazi329="asdasdasdasd";$header2_yazilink29="iletisim";$header2_yazilink229="hakkimizda";$header2_yazilink329="indir";$header2_arkaplan29="red";$header2_resim29="414.jpg";$content1_yazim29="ssssssssssssssssasdasdasdasdasdasdasdasasdasdasdasdasdasdasdasddsssssssssssssssssssssssssssssssssasdasdasdasdasdasdasdasasdasdasdasdasdasdasdasddsssssssssssssssssasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss";$content1_resim29="414.jpg";$content1_arkaplan29="blue";$content1_yazim_rengi29="yellow"; ?>
+<?php echo '<div style="background-color:'.$content1_arkaplan29.';">'; ?> <center> <table border="0px" cellpadding="10"> <tr> <td> <?php echo '<img src="resimler/'.$content1_resim29.'" width="200px" height="200px" style=""/>'; ?> </td> <td style="word-wrap:break-word;"><h3><?php echo '<a style="color:'.$content1_yazim_rengi29.';">'.$content1_yazim29.'</a>'; ?></h3></td> </tr> </table> </center> </div>|--|header|**|<?php $header2_yazi30="asdasd";$header2_yazi230="asdasdasd";$header2_yazi330="asdasdasdasd";$header2_yazilink30="iletisim";$header2_yazilink230="hakkimizda";$header2_yazilink330="indir";$header2_arkaplan30="red";$header2_resim30="2312.jpg"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header2_arkaplan30.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<td> <?php echo '<a href="?sayfa=content"><img src="resimler/'.$header2_resim30.'" width="250px" height="250px" style=""/></a>'; ?>   </td>
+<td>    </td>
+<td>    </td>
+<td>    </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink30.'">'.$header2_yazi30.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink230.'">'.$header2_yazi230.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink330.'">'.$header2_yazi330.'</a></h1>'; ?>   </td>
+</table>
+</center>
+</div>|--|content2|**|<?php $header2_yazi31="asdasd";$header2_yazi231="asdasdasd";$header2_yazi331="asdasdasdasd";$header2_yazilink31="iletisim";$header2_yazilink231="hakkimizda";$header2_yazilink331="indir";$header2_arkaplan31="red";$header2_resim31="2312.jpg";$content1_yazim31="ssssssssssssssssasdasdasdasdasdasdasdasdsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss";$content1_resim31="414.jpg";$content1_arkaplan31="blue";$content1_yazim_rengi31="yellow"; ?>
+<?php echo '<div style="background-color:'.$content1_arkaplan31.';">'; ?> <center> <table border="0px" cellpadding="10"> <tr> <td> <?php echo '<img src="resimler/'.$content1_resim31.'" width="200px" height="200px" style=""/>'; ?> </td> <td style="word-wrap:break-word;"><h3><?php echo '<a style="color:'.$content1_yazim_rengi31.';">'.$content1_yazim31.'</a>'; ?></h3></td> </tr> </table> </center> </div>|--|content1|**|<?php $header2_yazi32="asdasd";$header2_yazi232="asdasdasd";$header2_yazi332="asdasdasdasd";$header2_yazilink32="iletisim";$header2_yazilink232="hakkimizda";$header2_yazilink332="indir";$header2_arkaplan32="red";$header2_resim32="2312.jpg";$content1_yazim32="ssssssssssssssssasdasdasdasdasdasdasdasdsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss";$content1_arkaplan32="blue";$content1_yazim_rengi32="yellow";$content1_resim32="2312.jpg"; ?>
+<?php echo '<div style="background-color:'.$content1_arkaplan32.';">'; ?> <center> <table border="0px" cellpadding="10"> <tr> <td> <?php echo '<img src="resimler/'.$content1_resim32.'" width="200px" height="200px" style=""/>'; ?> </td> <td style="word-wrap:break-word;"><h3><?php echo '<a style="color:'.$content1_yazim_rengi32.';">'.$content1_yazim32.'</a>'; ?></h3></td> </tr> </table> </center> </div>|--|content_iletisim|**|<?php $content3_resim33="ktu";$content3_resim233="ktu";$content3_resim333="ktu";$content3_resim433="ktu";$content3_resim533="ktu";$content3_arkaplan33="pink"; ?>
+<?php echo '<div style="background-color:'.$content3_arkaplan33.'; margin:auto;">'; ?>
+<center>
+<table border="0px" cellpadding="10">
+<tr>
+<td>
+<?php echo '<img src="'.$content3_resim33.'.png" width="200px" height="200px" style=""/>'; ?>
+</td>
+<td>
+<?php echo '<img src="'.$content3_resim33.'.png" width="200px" height="200px" style=""/>'; ?>
+</td>
+<td>
+<?php echo '<img src="'.$content3_resim33.'.png" width="200px" height="200px" style=""/>'; ?>
+</td>
+<td>
+<?php echo '<img src="'.$content3_resim33.'.png" width="200px" height="200px" style=""/>'; ?>
+</td>
+</tr>
+</table>
+</center>
+</div>
+|--|content_hakkimizda|**|<?php $content3_resim34="ktu";$content3_resim234="ktu";$content3_resim334="ktu";$content3_resim434="ktu";$content3_resim534="ktu";$content3_arkaplan34="pink";$content1_yazim34="ssssssssssssssssasdasdasdasdasdasdasdasdsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss";$content1_resim34="2312.jpg";$content1_arkaplan34="blue";$content1_yazim_rengi34="yellow"; ?>
+<?php echo '<div style="background-color:'.$content1_arkaplan34.';">'; ?> <center> <table border="0px" cellpadding="10"> <tr> <td> <?php echo '<img src="resimler/'.$content1_resim34.'" width="200px" height="200px" style=""/>'; ?> </td> <td style="word-wrap:break-word;"><h3><?php echo '<a style="color:'.$content1_yazim_rengi34.';">'.$content1_yazim34.'</a>'; ?></h3></td> </tr> </table> </center> </div>|--|content_indir|**|<?php $content2_yazim35="sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaöööööööööööööööööööööööööööööööööööööööööööööööddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd";$content2_arkaplan35="yellow"; ?>
+<?php echo '<div style="background-color:'.$content2_arkaplan35.'; word-wrap:break-word;">'; ?>
+<center>
+<h3>
+<?php echo '<div style="word-wrap:break-word;"><h2>'.$content2_yazim35.'</h2></div>'; ?>
+</h3>
+
+</center>
+</div>
+|--|content_indir|**|<?php $content2_yazim36="sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaöööööööööööööööööööööööööööööööööööööööööööööööddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd";$content2_arkaplan36="yellow"; ?>
+<?php echo '<div style="background-color:'.$content2_arkaplan36.'; word-wrap:break-word;">'; ?>
+<center>
+<h3>
+<?php echo '<div style="word-wrap:break-word;"><h2>'.$content2_yazim36.'</h2></div>'; ?>
+</h3>
+
+</center>
+</div>
+|--|content_indir|**|<?php $content2_yazim37="sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaöööööööööööööööööööööööööööööööööööööööööööööööddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd";$content2_arkaplan37="yellow"; ?>
+<?php echo '<div style="background-color:'.$content2_arkaplan37.'; word-wrap:break-word;">'; ?>
+<center>
+<h3>
+<?php echo '<div style="word-wrap:break-word;"><h2>'.$content2_yazim37.'</h2></div>'; ?>
+</h3>
+
+</center>
+</div>
+|--|content_indir|**|<?php $content2_yazim38="sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaöööööööööööööööööööööööööööööööööööööööööööööööddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd";$content2_arkaplan38="yellow"; ?>
+<?php echo '<div style="background-color:'.$content2_arkaplan38.'; word-wrap:break-word;">'; ?>
+<center>
+<h3>
+<?php echo '<div style="word-wrap:break-word;"><h2>'.$content2_yazim38.'</h2></div>'; ?>
+</h3>
+
+</center>
+</div>
+|--|header|**|<?php $header2_yazi1="asdasd";$header2_yazi21="asdasdasd";$header2_yazi31="asdasdasdasd";$header2_yazilink1="iletisim";$header2_yazilink21="hakkimizda";$header2_yazilink31="indir";$header2_arkaplan1="red";$header2_resim1="IMG-20191115-WA0002.jpg"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header2_arkaplan1.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<td> <?php echo '<a href="?sayfa=content"><img src="resimler/'.$header2_resim1.'" width="250px" height="250px" style=""/></a>'; ?>   </td>
+<td>    </td>
+<td>    </td>
+<td>    </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink1.'">'.$header2_yazi1.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink21.'">'.$header2_yazi21.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink31.'">'.$header2_yazi31.'</a></h1>'; ?>   </td>
+</table>
+</center>
+</div>|--|header|**|<?php $header2_yazi2="asdasd";$header2_yazi22="asdasdasd";$header2_yazi32="asdasdasdasd";$header2_yazilink2="iletisim";$header2_yazilink22="hakkimizda";$header2_yazilink32="indir";$header2_arkaplan2="red";$header2_resim2="bb.png"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header2_arkaplan2.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<td> <?php echo '<a href="?sayfa=content"><img src="resimler/'.$header2_resim2.'" width="250px" height="250px" style=""/></a>'; ?>   </td>
+<td>    </td>
+<td>    </td>
+<td>    </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink22.'">'.$header2_yazi22.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink22.'">'.$header2_yazi22.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink32.'">'.$header2_yazi32.'</a></h1>'; ?>   </td>
+</table>
+</center>
+</div>|--|content_hakkimizda|**|<?php $content2_yazim3="sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaöööööööööööööööööööööööööööööööööööööööööööööööddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd";$content2_arkaplan3="yellow"; ?>
+<?php echo '<div style="background-color:'.$content2_arkaplan3.'; word-wrap:break-word;">'; ?>
+<center>
+<h3>
+<?php echo '<div style="word-wrap:break-word;"><h2>'.$content2_yazim3.'</h2></div>'; ?>
+</h3>
+
+</center>
+</div>
+|--|content_indir|**|<?php $content2_yazim4="sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaöööööööööööööööööööööööööööööööööööööööööööööööddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd";$content2_arkaplan4="yellow";$content1_yazim4="ssssssssssssssssasdasdasdasdasdasdasdasdsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss";$content1_resim4="bb.png";$content1_arkaplan4="blue";$content1_yazim_rengi4="yellow"; ?>
+<?php echo '<div style="background-color:'.$content1_arkaplan4.';">'; ?> <center> <table border="0px" cellpadding="10"> <tr> <td> <?php echo '<img src="resimler/'.$content1_resim4.'" width="200px" height="200px" style=""/>'; ?> </td> <td style="word-wrap:break-word;"><h3><?php echo '<a style="color:'.$content1_yazim_rengi4.';">'.$content1_yazim4.'</a>'; ?></h3></td> </tr> </table> </center> </div>|--|content_iletisim|**|<?php $content2_yazim5="sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaöööööööööööööööööööööööööööööööööööööööööööööööddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd";$content2_arkaplan5="yellow"; ?>
+<?php echo '<div style="background-color:'.$content2_arkaplan5.'; word-wrap:break-word;">'; ?>
+<center>
+<h3>
+<?php echo '<div style="word-wrap:break-word;"><h2>'.$content2_yazim5.'</h2></div>'; ?>
+</h3>
+
+</center>
+</div>
+|--|header|**|<?php $header2_yazi6="asdasd";$header2_yazi26="asdasdasd";$header2_yazi36="asdasdasdasd";$header2_yazilink6="iletisim";$header2_yazilink26="hakkimizda";$header2_yazilink36="indir";$header2_arkaplan6="red";$header2_resim6="aa.png"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header2_arkaplan6.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<td> <?php echo '<a href="?sayfa=content"><img src="resimler/'.$header2_resim6.'" width="250px" height="250px" style=""/></a>'; ?>   </td>
+<td>    </td>
+<td>    </td>
+<td>    </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink6.'">'.$header2_yazi6.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink26.'">'.$header2_yazi26.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink36.'">'.$header2_yazi36.'</a></h1>'; ?>   </td>
+</table>
+</center>
+</div>|--|content_iletisim|**|<?php $content2_yazim7="sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaöööööööööööööööööööööööööööööööööööööööööööööööddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd";$content2_arkaplan7="yellow"; ?>
+<?php echo '<div style="background-color:'.$content2_arkaplan7.'; word-wrap:break-word;">'; ?>
+<center>
+<h3>
+<?php echo '<div style="word-wrap:break-word;"><h2>'.$content2_yazim7.'</h2></div>'; ?>
+</h3>
+
+</center>
+</div>
+|--|content_hakkimizda|**|<?php $content3_resim8="ktu";$content3_resim28="ktu";$content3_resim38="ktu";$content3_resim48="ktu";$content3_resim58="ktu";$content3_arkaplan8="pink"; ?>
+<?php echo '<div style="background-color:'.$content3_arkaplan8.'; margin:auto;">'; ?>
+<center>
+<table border="0px" cellpadding="10">
+<tr>
+<td>
+<?php echo '<img src="'.$content3_resim8.'.png" width="200px" height="200px" style=""/>'; ?>
+</td>
+<td>
+<?php echo '<img src="'.$content3_resim8.'.png" width="200px" height="200px" style=""/>'; ?>
+</td>
+<td>
+<?php echo '<img src="'.$content3_resim8.'.png" width="200px" height="200px" style=""/>'; ?>
+</td>
+<td>
+<?php echo '<img src="'.$content3_resim8.'.png" width="200px" height="200px" style=""/>'; ?>
+</td>
+</tr>
+</table>
+</center>
+</div>
+|--|content_indir|**|<?php $content3_resim9="ktu";$content3_resim29="ktu";$content3_resim39="ktu";$content3_resim49="ktu";$content3_resim59="ktu";$content3_arkaplan9="pink";$content1_yazim9="ssssssssssssssssasdasdasdasdasdasdasdasdsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss";$content1_resim9="dfdfg.png";$content1_arkaplan9="blue";$content1_yazim_rengi9="yellow"; ?>
+<?php echo '<div style="background-color:'.$content1_arkaplan9.';">'; ?> <center> <table border="0px" cellpadding="10"> <tr> <td> <?php echo '<img src="resimler/'.$content1_resim9.'" width="200px" height="200px" style=""/>'; ?> </td> <td style="word-wrap:break-word;"><h3><?php echo '<a style="color:'.$content1_yazim_rengi9.';">'.$content1_yazim9.'</a>'; ?></h3></td> </tr> </table> </center> </div>|--|header|**|<?php $header2_yazi1="asdasd";$header2_yazi21="asdad";$header2_yazi31="asdasda";$header2_yazilink1="adsasd";$header2_yazilink21="asdasd";$header2_yazilink31="asdasd";$header2_arkaplan1="sdasd";$header2_resim1="logo-app.png"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header2_arkaplan1.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<td> <?php echo '<a href="?sayfa=content"><img src="resimler/'.$header2_resim1.'" width="250px" height="250px" style=""/></a>'; ?>   </td>
+<td>    </td>
+<td>    </td>
+<td>    </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink1.'">'.$header2_yazi1.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink21.'">'.$header2_yazi21.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink31.'">'.$header2_yazi31.'</a></h1>'; ?>   </td>
+</table>
+</center>
+</div>|--|content_adsasd|**|<?php $content2_yazim2="asdasd";$content2_arkaplan2="asdasd"; ?>
+<?php echo '<div style="background-color:'.$content2_arkaplan2.'; word-wrap:break-word;">'; ?>
+<center>
+<h3>
+<?php echo '<div style="word-wrap:break-word;"><h2>'.$content2_yazim2.'</h2></div>'; ?>
+</h3>
+
+</center>
+</div>
+|--|content_asdasd|**|<?php $content2_yazim3="asdasd";$content2_arkaplan3="asdasd";$content1_yazim3="asdasd";$content1_resim3="purepng.com-macbookmacbooknotebookcomputersapple-inmacbook-familyapple-laptops-1701528361515cmsnm.png";$content1_arkaplan3="green";$content1_yazim_rengi3="red"; ?>
+<?php echo '<div style="background-color:'.$content1_arkaplan3.';">'; ?> <center> <table border="0px" cellpadding="10"> <tr> <td> <?php echo '<img src="resimler/'.$content1_resim3.'" width="200px" height="200px" style=""/>'; ?> </td> <td style="word-wrap:break-word;"><h3><?php echo '<a style="color:'.$content1_yazim_rengi3.';">'.$content1_yazim3.'</a>'; ?></h3></td> </tr> </table> </center> </div>|--|content_asdasd|**|<?php $content2_yazim4="asdasd";$content2_arkaplan4="asdasd";$content1_yazim4="asdsad";$content1_resim4="logo-app.png";$content1_arkaplan4="red";$content1_yazim_rengi4="green"; ?>
+<?php echo '<div style="background-color:'.$content1_arkaplan4.';">'; ?> <center> <table border="0px" cellpadding="10"> <tr> <td> <?php echo '<img src="resimler/'.$content1_resim4.'" width="200px" height="200px" style=""/>'; ?> </td> <td style="word-wrap:break-word;"><h3><?php echo '<a style="color:'.$content1_yazim_rengi4.';">'.$content1_yazim4.'</a>'; ?></h3></td> </tr> </table> </center> </div>|--|header|**|<?php $header2_yazi10="asdasd";$header2_yazi210="asdasdasd";$header2_yazi310="asdasdasdasd";$header2_yazilink10="iletisim";$header2_yazilink210="hakkimizda";$header2_yazilink310="indir";$header2_arkaplan10="red";$header2_resim10="aa.png"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header2_arkaplan10.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<td> <?php echo '<a href="?sayfa=content"><img src="resimler/'.$header2_resim10.'" width="250px" height="250px" style=""/></a>'; ?>   </td>
+<td>    </td>
+<td>    </td>
+<td>    </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink10.'">'.$header2_yazi10.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink210.'">'.$header2_yazi210.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink310.'">'.$header2_yazi310.'</a></h1>'; ?>   </td>
+</table>
+</center>
+</div>|--|header|**|<?php $header2_yazi11="asdasd";$header2_yazi211="asdasdasd";$header2_yazi311="asdasdasdasd";$header2_yazilink11="iletisim";$header2_yazilink211="hakkimizda";$header2_yazilink311="indir";$header2_arkaplan11="red";$header2_resim11="aa.png"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header2_arkaplan11.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<td> <?php echo '<a href="?sayfa=content"><img src="resimler/'.$header2_resim11.'" width="250px" height="250px" style=""/></a>'; ?>   </td>
+<td>    </td>
+<td>    </td>
+<td>    </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink11.'">'.$header2_yazi11.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink211.'">'.$header2_yazi211.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink311.'">'.$header2_yazi311.'</a></h1>'; ?>   </td>
+</table>
+</center>
+</div>|--|content_hakkimizda|**|<?php $header2_yazi12="asdasd";$header2_yazi212="asdasdasd";$header2_yazi312="asdasdasdasd";$header2_yazilink12="iletisim";$header2_yazilink212="hakkimizda";$header2_yazilink312="indir";$header2_arkaplan12="red";$header2_resim12="aa.png";$content1_yazim12="Enes Döngez";$content1_resim12="aa.png";$content1_arkaplan12="blue";$content1_yazim_rengi12="yellow"; ?>
+<?php echo '<div style="background-color:'.$content1_arkaplan12.';">'; ?> <center> <table border="0px" cellpadding="10"> <tr> <td> <?php echo '<img src="resimler/'.$content1_resim12.'" width="200px" height="200px" style=""/>'; ?> </td> <td style="word-wrap:break-word;"><h3><?php echo '<a style="color:'.$content1_yazim_rengi12.';">'.$content1_yazim12.'</a>'; ?></h3></td> </tr> </table> </center> </div>|--|header|**|<?php $header2_yazi1="asd";$header2_yazi21="asd";$header2_yazi31="sd";$header2_yazilink1="asd";$header2_yazilink21="sd";$header2_yazilink31="as";$header2_arkaplan1="as";$header2_resim1="asd.png"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header2_arkaplan1.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<td> <?php echo '<a href="?sayfa=content"><img src="resimler/'.$header2_resim1.'" width="250px" height="250px" style=""/></a>'; ?>   </td>
+<td>    </td>
+<td>    </td>
+<td>    </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink1.'">'.$header2_yazi1.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink21.'">'.$header2_yazi21.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink31.'">'.$header2_yazi31.'</a></h1>'; ?>   </td>
+</table>
+</center>
+</div>|--|header|**|<?php $header2_yazi13="asdasd";$header2_yazi213="sdf";$header2_yazi313="tyhytj";$header2_yazilink13="df";$header2_yazilink213="rgtrt";$header2_yazilink313="tjtyj";$header2_arkaplan13="red";$header2_resim13="aa.png"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header2_arkaplan13.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<td> <?php echo '<a href="?sayfa=content"><img src="resimler/'.$header2_resim13.'" width="250px" height="250px" style=""/></a>'; ?>   </td>
+<td>    </td>
+<td>    </td>
+<td>    </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink13.'">'.$header2_yazi13.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink213.'">'.$header2_yazi213.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink313.'">'.$header2_yazi313.'</a></h1>'; ?>   </td>
+</table>
+</center>
+</div>|--|header|**|<?php $header2_yazi14="asdasd";$header2_yazi214="asdasdasd";$header2_yazi314="asdasdasdasd";$header2_yazilink14="iletisim";$header2_yazilink214="hakkimizda";$header2_yazilink314="indir";$header2_arkaplan14="red";$header2_resim14="aa.png"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header2_arkaplan14.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<td> <?php echo '<a href="?sayfa=content"><img src="resimler/'.$header2_resim14.'" width="250px" height="250px" style=""/></a>'; ?>   </td>
+<td>    </td>
+<td>    </td>
+<td>    </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink14.'">'.$header2_yazi14.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink214.'">'.$header2_yazi214.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink314.'">'.$header2_yazi314.'</a></h1>'; ?>   </td>
+</table>
+</center>
+</div>|--|header|**|<?php $header2_yazi15="asdasd";$header2_yazi215="asdasdasd";$header2_yazi315="asdasdasdasd";$header2_yazilink15="iletisim";$header2_yazilink215="hakkimizda";$header2_yazilink315="indir";$header2_arkaplan15="red";$header2_resim15="aa.png"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header2_arkaplan15.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<td> <?php echo '<a href="?sayfa=content"><img src="resimler/'.$header2_resim15.'" width="250px" height="250px" style=""/></a>'; ?>   </td>
+<td>    </td>
+<td>    </td>
+<td>    </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink15.'">'.$header2_yazi15.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink215.'">'.$header2_yazi215.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink315.'">'.$header2_yazi315.'</a></h1>'; ?>   </td>
+</table>
+</center>
+</div>|--|header|**|<?php $header2_yazi16="asdasd";$header2_yazi216="asdasdasd";$header2_yazi316="asdasdasdasd";$header2_yazilink16="iletisim";$header2_yazilink216="hakkimizda";$header2_yazilink316="indir";$header2_arkaplan16="red";$header2_resim16="bb.png"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header2_arkaplan16.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<td> <?php echo '<a href="?sayfa=content"><img src="resimler/'.$header2_resim16.'" width="250px" height="250px" style=""/></a>'; ?>   </td>
+<td>    </td>
+<td>    </td>
+<td>    </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink16.'">'.$header2_yazi16.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink216.'">'.$header2_yazi216.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink316.'">'.$header2_yazi316.'</a></h1>'; ?>   </td>
+</table>
+</center>
+</div>|--|header|**|<?php $header2_yazi17="asdasd";$header2_yazi217="asdasdasd";$header2_yazi317="asdasdasdasd";$header2_yazilink17="iletisim";$header2_yazilink217="hakkimizda";$header2_yazilink317="indir";$header2_arkaplan17="red";$header2_resim17="aa.png"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header2_arkaplan17.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<td> <?php echo '<a href="?sayfa=content"><img src="resimler/'.$header2_resim17.'" width="250px" height="250px" style=""/></a>'; ?>   </td>
+<td>    </td>
+<td>    </td>
+<td>    </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink17.'">'.$header2_yazi17.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink217.'">'.$header2_yazi217.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink317.'">'.$header2_yazi317.'</a></h1>'; ?>   </td>
+</table>
+</center>
+</div>|--|content1|**|<?php $header2_yazi18="asdasd";$header2_yazi218="asdasdasd";$header2_yazi318="asdasdasdasd";$header2_yazilink18="iletisim";$header2_yazilink218="hakkimizda";$header2_yazilink318="indir";$header2_arkaplan18="red";$header2_resim18="bb.png"; ?>
+<?php echo '<div style="background-color:'.$header2_arkaplan18.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<td> <?php echo '<a href="?sayfa=content"><img src="resimler/'.$header2_resim18.'" width="250px" height="250px" style=""/></a>'; ?>   </td>
+<td>    </td>
+<td>    </td>
+<td>    </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink18.'">'.$header2_yazi18.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink218.'">'.$header2_yazi218.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink318.'">'.$header2_yazi318.'</a></h1>'; ?>   </td>
+</table>
+</center>
+</div>|--|header|**|<?php $header2_yazi19="asdasd";$header2_yazi219="asdasdasd";$header2_yazi319="asdasdasdasd";$header2_yazilink19="iletisim";$header2_yazilink219="hakkimizda";$header2_yazilink319="indir";$header2_arkaplan19="red";$header2_resim19="bb.png"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header2_arkaplan19.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<td> <?php echo '<a href="?sayfa=content"><img src="resimler/'.$header2_resim19.'" width="250px" height="250px" style=""/></a>'; ?>   </td>
+<td>    </td>
+<td>    </td>
+<td>    </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink19.'">'.$header2_yazi19.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink219.'">'.$header2_yazi219.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink319.'">'.$header2_yazi319.'</a></h1>'; ?>   </td>
+</table>
+</center>
+</div>|--|header|**|<?php $header2_yazi20="asdasd";$header2_yazi220="asdasdasd";$header2_yazi320="asdasdasdasd";$header2_yazilink20="iletisim";$header2_yazilink220="hakkimizda";$header2_yazilink320="indir";$header2_arkaplan20="red";$header2_resim20="aa.png"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header2_arkaplan20.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<td> <?php echo '<a href="?sayfa=content"><img src="resimler/'.$header2_resim20.'" width="250px" height="250px" style=""/></a>'; ?>   </td>
+<td>    </td>
+<td>    </td>
+<td>    </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink20.'">'.$header2_yazi20.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink220.'">'.$header2_yazi220.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink320.'">'.$header2_yazi320.'</a></h1>'; ?>   </td>
+</table>
+</center>
+</div>|--|header|**|<?php $header2_yazi21="asdasd";$header2_yazi221="asdasdasd";$header2_yazi321="asdasdasdasd";$header2_yazilink21="iletisim";$header2_yazilink221="hakkimizda";$header2_yazilink321="indir";$header2_arkaplan21="red";$header2_resim21="aa.png"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header2_arkaplan21.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<td> <?php echo '<a href="?sayfa=content"><img src="resimler/'.$header2_resim21.'" width="250px" height="250px" style=""/></a>'; ?>   </td>
+<td>    </td>
+<td>    </td>
+<td>    </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink21.'">'.$header2_yazi21.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink221.'">'.$header2_yazi221.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink321.'">'.$header2_yazi321.'</a></h1>'; ?>   </td>
+</table>
+</center>
+</div>|--|header|**|<?php $header2_yazi22="asdasd";$header2_yazi222="asdasdasd";$header2_yazi322="asdasdasdasd";$header2_yazilink22="iletisim";$header2_yazilink222="hakkimizda";$header2_yazilink322="indir";$header2_arkaplan22="red";$header2_resim22="aa.png"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header2_arkaplan22.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<td> <?php echo '<a href="?sayfa=content"><img src="resimler/'.$header2_resim22.'" width="250px" height="250px" style=""/></a>'; ?>   </td>
+<td>    </td>
+<td>    </td>
+<td>    </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink22.'">'.$header2_yazi22.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink222.'">'.$header2_yazi222.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink322.'">'.$header2_yazi322.'</a></h1>'; ?>   </td>
+</table>
+</center>
+</div>|--|header|**|<?php $header2_yazi23="asdasd";$header2_yazi223="asdasdasd";$header2_yazi323="asdasdasdasd";$header2_yazilink23="iletisim";$header2_yazilink223="hakkimizda";$header2_yazilink323="indir";$header2_arkaplan23="red";$header2_resim23="aa.png"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header2_arkaplan23.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<td> <?php echo '<a href="?sayfa=content"><img src="resimler/'.$header2_resim23.'" width="250px" height="250px" style=""/></a>'; ?>   </td>
+<td>    </td>
+<td>    </td>
+<td>    </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink23.'">'.$header2_yazi23.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink223.'">'.$header2_yazi223.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink323.'">'.$header2_yazi323.'</a></h1>'; ?>   </td>
+</table>
+</center>
+</div>|--|header|**|<?php $header2_yazi24="asdasd";$header2_yazi224="asdasdasd";$header2_yazi324="asdasdasdasd";$header2_yazilink24="iletisim";$header2_yazilink224="hakkimizda";$header2_yazilink324="indir";$header2_arkaplan24="red";$header2_resim24="aa.png"; ?>
+<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:10%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:35px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;
+            ">Tıkla ve Düzenle</div></div><?php echo '<div style="background-color:'.$header2_arkaplan24.';">'; ?>
+<center>
+<table border="0px" cellpadding="20">
+<td> <?php echo '<a href="?sayfa=content"><img src="resimler/'.$header2_resim24.'" width="250px" height="250px" style=""/></a>'; ?>   </td>
+<td>    </td>
+<td>    </td>
+<td>    </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink24.'">'.$header2_yazi24.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink224.'">'.$header2_yazi224.'</a></h1>'; ?>   </td>
+<td> <?php echo '<h1><a href="?sayfa='.$header2_yazilink324.'">'.$header2_yazi324.'</a></h1>'; ?>   </td>
+</table>
+</center>
 </div>

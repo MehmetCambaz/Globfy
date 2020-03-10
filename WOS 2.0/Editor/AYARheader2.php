@@ -33,15 +33,15 @@
                   }
                   
                   
-                  if(!file_exists("verilecek")) {
-                    $olustur = mkdir("verilecek");
+                  if(!file_exists("kullanicisayfalari")) {
+                    $olustur = mkdir("kullanicisayfalari");
                   }
-                  if(!file_exists("verilecek/resimler")) {
-                    $olustur = mkdir("verilecek/resimler");
+                  if(!file_exists("kullanicisayfalari/resimler")) {
+                    $olustur = mkdir("kullanicisayfalari/resimler");
                   }
   
                   move_uploaded_file($fileTmpName, "resimler/".$fileDestination);
-                  copy("resimler/".$fileDestination,"verilecek/resimler/".$fileDestination);
+                  copy("resimler/".$fileDestination,"kullanicisayfalari/resimler/".$fileDestination);
               }else{
                   echo "Resim fazla büyük !";
                   $txt = "Resim fazla büyük !\n";
@@ -66,14 +66,24 @@
 $deger1=$_POST["header2_yazi"];
 $deger2=$_POST["header2_yazi2"];
 $deger3=$_POST["header2_yazi3"];
+$deger6=$_POST["header2_yazilink"];
+$deger7=$_POST["header2_yazilink2"];
+$deger8=$_POST["header2_yazilink3"];
 $deger4=$_POST["header2_arkaplan"];
 $deger5=$_POST["header2_resim"];
 
 setcookie("sayfaEkle[header2_yazi]",$deger1,time()+3600);
 setcookie("sayfaEkle[header2_yazi2]",$deger2,time()+3600);
 setcookie("sayfaEkle[header2_yazi3]",$deger3,time()+3600);
+setcookie("sayfaEkle[header2_yazilink]",$deger6,time()+3600);
+setcookie("sayfaEkle[header2_yazilink2]",$deger7,time()+3600);
+setcookie("sayfaEkle[header2_yazilink3]",$deger8,time()+3600);
 setcookie("sayfaEkle[header2_arkaplan]",$deger4,time()+3600);
 setcookie("sayfaEkle[header2_resim]",$fileName,time()+3600);
+
+setcookie("iceriksayfasi[header2_yazilink]",$deger6,time()+3600*60);
+setcookie("iceriksayfasi[header2_yazilink2]",$deger7,time()+3600*60);
+setcookie("iceriksayfasi[header2_yazilink3]",$deger8,time()+3600*60);
 
 header("Location: editor.php?KompanentEkle=3");//sayfayı yenileyip veritabanından hangi id li kompanentin kodlarını
 // çekeceğini anasayfaya 'KompanentEkle' ile gönderiyorum! 
