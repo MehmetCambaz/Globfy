@@ -7,7 +7,7 @@ if(isset($_POST['EditorGecis'])){
   if (!empty($_POST["secimRadio"])) {
 	  $id=$_POST["secimRadio"];
 	  $_SESSION["secilenSablonID"]=$id;
-
+	  $kullaniciAdi = $_SESSION["Kullaniciadi"];
 	  /*if(!empty($_COOKIE["suankisayfam"])){
 		  $value=$_COOKIE["suankisayfam"];
 		  setcookie("suankisayfam",$value,time()-1564);
@@ -15,27 +15,26 @@ if(isset($_POST['EditorGecis'])){
 	  if(empty($_COOKIE["suankisayfamANA"])){
 	  	setcookie("suankisayfamANA","Anasayfa",time()+1564);
 	  }
-	  	  
-	  
-	  if(file_exists("Editor/editorsayfalari")) 
+	
+	  if(file_exists("Editor/editorsayfalari_".$kullaniciAdi)) 
 	  {
-	 	 KlasorSil("Editor/editorsayfalari"); 
+	 	 KlasorSil("Editor/editorsayfalari_".$kullaniciAdi); 
 	  }
-	  if(file_exists("Editor/kullanicisayfalari")) 
+	  if(file_exists("Editor/kullanicisayfalari_".$kullaniciAdi)) 
 	  {
-	 	 KlasorSil("Editor/kullanicisayfalari"); 
+	 	 KlasorSil("Editor/kullanicisayfalari_".$kullaniciAdi); 
 	  }
 	 
 
 
 	  $onizlemeSayfasi=fopen('Editor/onizleme.php','w+');
       $code="<?php include 'mysql_connect.php';
-      include 'editorsayfalari/indexEditor.php'; ?>";
+      include 'editorsayfalari_$kullaniciAdi/indexEditor.php'; ?>";
       fwrite($onizlemeSayfasi,$code);
 	  fclose($onizlemeSayfasi);
 	  
-	  if(!file_exists("Editor/editorsayfalari")) {
-		$olustur = mkdir("Editor/editorsayfalari");
+	  if(!file_exists("Editor/editorsayfalari_".$kullaniciAdi)) {
+		$olustur = mkdir("Editor/editorsayfalari_".$kullaniciAdi);
 	  }
 	  $sorgu = $baglanti->query('select * from sablonlar where sablon_id='.$id.'');
 		while($sonuc=mysqli_fetch_assoc($sorgu) )
@@ -44,7 +43,7 @@ if(isset($_POST['EditorGecis'])){
 										//sayfanın konumuna include ediyorum!
 			
 		}
-		$dosya=fopen("Editor/editorsayfalari/indexEditor.php","w");
+		$dosya=fopen("Editor/editorsayfalari_".$kullaniciAdi."/indexEditor.php","w");
 		$yaz=fwrite($dosya,$code);
 		fclose($dosya);
 		$sorgu2=$baglanti->query('select * from sablon_sayfalari where sablon_id='.$id.'');
@@ -55,7 +54,7 @@ if(isset($_POST['EditorGecis'])){
 			$sayfa=$sonuc["sayfa_adi"];
 			
 
-			$dosya=fopen('Editor/editorsayfalari/'.$sayfa.'.php','w');
+			$dosya=fopen('Editor/editorsayfalari_'.$kullaniciAdi.'/'.$sayfa.'.php','w');
 			if($sonuc["kod"]!=null){
 				$yaz=fwrite($dosya,$sonuc["kod"]);
 				fclose($dosya);
@@ -125,7 +124,7 @@ if(isset($_POST['EditorGecis'])){
 			
 			foreach($baglanti->query('select sablon_id,sablon_adi,sablon_resim from sablonlar') as $row){
 			echo '<table border="0px" style="float:left; margin:0 5 15 11;"><tr><td>';
-			echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['sablon_resim'] ).'" width="300px" height="300px"/>';
+			echo '<img src="'.$row['sablon_resim'].'" width="300px" height="300px"/>';
 			echo '</td><tr>
 			<tr><td><center><input type="radio" name="secimRadio" value="'.$row['sablon_id'].'"/>Seç</center></td></tr>
 			</table>';

@@ -1,2 +1,2 @@
 <?php include 'mysql_connect.php';
-      include 'editorsayfalari/indexEditor.php'; ?>
+      include 'editorsayfalari_dene@a.com/indexEditor.php'; ?>

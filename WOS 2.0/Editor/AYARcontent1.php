@@ -1,6 +1,14 @@
 <?php
 
 if(isset($_POST['submit'])){
+    include 'mysql_connect.php';
+    $gelenkullaniciemail=$_SESSION["Kullaniciadi"];
+
+    $dosyaAdiEditor="editorsayfalari_$gelenkullaniciemail";
+    $dosyaAdiKullanici="kullanicisayfalari_$gelenkullaniciemail";
+    $dosyaAdiEditorResim="editorsayfalari_$gelenkullaniciemail/resimler";
+    $dosyaAdiKullaniciResim="kullanicisayfalari_$gelenkullaniciemail/resimler";
+
     $file = $_FILES['content1_resim'];
     
 
@@ -23,20 +31,20 @@ if(isset($_POST['submit'])){
                 $fileDestination = $fileName;
 
 
-                if(!file_exists("editorsayfalari/resimler")) {
-                  $olustur = mkdir("editorsayfalari/resimler");
+                if(!file_exists($dosyaAdiEditorResim)) {
+                  $olustur = mkdir($dosyaAdiEditorResim);
                 }
                 
                 
-                if(!file_exists("kullanicisayfalari")) {
-                  $olustur = mkdir("kullanicisayfalari");
+                if(!file_exists($dosyaAdiKullanici)) {
+                  $olustur = mkdir($dosyaAdiKullanici);
                 }
-                if(!file_exists("kullanicisayfalari/resimler")) {
-                  $olustur = mkdir("kullanicisayfalari/resimler");
+                if(!file_exists($dosyaAdiKullaniciResim)) {
+                  $olustur = mkdir($dosyaAdiKullaniciResim);
                 }
 
-                move_uploaded_file($fileTmpName, "editorsayfalari/resimler/".$fileDestination);
-                copy("editorsayfalari/resimler/".$fileDestination,"kullanicisayfalari/resimler/".$fileDestination);
+                move_uploaded_file($fileTmpName, $dosyaAdiEditorResim."/".$fileDestination);
+                copy($dosyaAdiEditorResim."/".$fileDestination,$dosyaAdiKullaniciResim."/".$fileDestination);
            
 
 

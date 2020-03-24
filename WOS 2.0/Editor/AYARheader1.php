@@ -1,4 +1,11 @@
 <?php 
+    include 'mysql_connect.php';
+    $gelenkullaniciemail=$_SESSION["Kullaniciadi"];
+
+    $dosyaAdiEditor="editorsayfalari_$gelenkullaniciemail";
+    $dosyaAdiKullanici="kullanicisayfalari_$gelenkullaniciemail";
+    $dosyaAdiEditorResim="editorsayfalari_$gelenkullaniciemail/resimler";
+    $dosyaAdiKullaniciResim="kullanicisayfalari_$gelenkullaniciemail/resimler";
 
     foreach ($_COOKIE['sayfaEkle'] as $name => $value) {
 
@@ -28,20 +35,22 @@
                   $fileNameNew = uniqid('', true).".".$fileActualExt;
                   $fileDestination = $fileName;
            
-                  if(!file_exists("resimler")) {
-                    $olustur = mkdir("resimler");
-                  }
-                  
-                  
-                  if(!file_exists("kullanicisayfalari")) {
-                    $olustur = mkdir("kullanicisayfalari");
-                  }
-                  if(!file_exists("kullanicisayfalari/resimler")) {
-                    $olustur = mkdir("kullanicisayfalari/resimler");
-                  }
-  
-                  move_uploaded_file($fileTmpName, "resimler/".$fileDestination);
-                  copy("resimler/".$fileDestination,"kullanicisayfalari/resimler/".$fileDestination);
+                
+                if(!file_exists($dosyaAdiEditorResim)) {
+                  $olustur = mkdir($dosyaAdiEditorResim);
+                }
+                
+                
+                if(!file_exists($dosyaAdiKullanici)) {
+                  $olustur = mkdir($dosyaAdiKullanici);
+                }
+                if(!file_exists($dosyaAdiKullaniciResim)) {
+                  $olustur = mkdir($dosyaAdiKullaniciResim);
+                }
+
+                move_uploaded_file($fileTmpName, $dosyaAdiEditorResim."/".$fileDestination);
+                copy($dosyaAdiEditorResim."/".$fileDestination,$dosyaAdiKullaniciResim."/".$fileDestination);
+
               }else{
                   echo "Resim fazla büyük !";
                   $txt = "Resim fazla büyük !\n";

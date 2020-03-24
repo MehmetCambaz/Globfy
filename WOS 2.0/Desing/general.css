@@ -85,20 +85,46 @@ body{
 	margin:14px;
 }
 .header_Button a{
-	padding-top:15px;
-	padding-bottom:15px;
-	padding-right:60px;
-	padding-left:60px;
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-right:40px;
+	padding-left:40px;
 	font-family:Calibri;
-	color:black;
+	background-color:black;
+	color:white;
 	font-weight:bold;
-	font-size:30px;
+	font-size:25px;
 	border:1px solid black;
 	text-decoration: none;	
-}
 
-.body_Bolumler{
-	
+
+}
+.header_Button .cikis{
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-right:40px;
+	padding-left:40px;
+	font-family:Calibri;
+	background-color:red;
+	color:white;
+	font-weight:bold;
+	font-size:25px;
+	border:1px solid red;
+	text-decoration: none;	
+	margin:0 0 0 4;
+}
+.header_Button .profil{
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-right:40px;
+	padding-left:40px;
+	font-family:Calibri;
+	background-color:green;
+	color:white;
+	font-weight:bold;
+	font-size:25px;
+	border:1px solid green;
+	text-decoration: none;	
 }
 
 .body_Bolum{
@@ -152,9 +178,7 @@ body{
 	float:left;
 	width:100%;
 }
-.sablonSecim_SablonPanel{
 
-}
 .sablonSecim_Alt{
 	width:100%;
 	float:left;
@@ -304,6 +328,61 @@ body{
 		margin:10 10 0 0;
 	width:9%;
 	height:60px;
+}
+.girisislem{
+	width:100%;
+	margin:auto;
+}
+.girisislem_giris{
+	float:left;
+	width:50%;
+	margin:50 0 0 0;
+}
+.girisislem_giris table{
+	border:1px solid gray;
+	font-family:Calibri;
+	font-size:20;
+	margin:0 0 0 90;
+}
+.girisislem_giris table td{
+	border:0px;
+	padding:20 40 0 40;
+
+}
+.girisislem_text{
+	width:420px;
+	height:35px;
+	font-size:15px;
+	text-indent: 5;
+}
+.girisislem_button{
+	width:95;
+	height:35;
+	background-color:#F0931C;
+	font-family:Calibri;
+	font-weight:bold;
+	font-size:20px;
+	color:#552F03;
+	border:1px solid #915000;
+	border-radius:5px;
+}
+.girisislem_kayit{
+	width:50%;
+	float:left;
+	margin:50 0 0 0;
+}
+
+.girisislem_kayit table{
+	border:1px solid gray;
+	font-family:Calibri;
+	font-size:20;
+	margin:0 90 0 0;
+
+}
+.girisislem_kayit table td{
+	border:0px;
+	padding:20 40 0 40;
+
 }
 
 

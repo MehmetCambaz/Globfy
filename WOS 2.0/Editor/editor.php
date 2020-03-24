@@ -70,6 +70,10 @@ setInterval(function() {$("#Kompanent").load('kompanent.php');}, 1000); //sadece
 
 </head>
 <body>
+<?php
+include 'mysql_connect.php';
+$gelenkullaniciemail=$_SESSION["Kullaniciadi"];
+?>
 <div class="page3_tumsayfa">
 
     <div class="onizleme" id="onizleme" onclick="openPage(event, 'Kompanent', 'tablink_komp')"> 
@@ -87,7 +91,9 @@ setInterval(function() {$("#Kompanent").load('kompanent.php');}, 1000); //sadece
         </form>   
       </div>
       <div style="width:13%; float:left;">
-        <form method="post"  action="kullanicisayfalari/index.php" target="_blank"> <!-- Önizleme işlemi FORM u! -->
+      <?php 
+        echo '<form method="post"  action="kullanicisayfalari_'.$gelenkullaniciemail.'/index.php" target="_blank">';
+      ?>
           <input type="submit" name="onizle" value="Önizleme" style="float:right;width:80px; height:40px;float:right; background-color:gray; color:white; margin:10 10 0 0;"/>
         </form>
 
@@ -120,6 +126,7 @@ setInterval(function() {$("#Kompanent").load('kompanent.php');}, 1000); //sadece
 </html>
 
 <?php
+$gelenkullaniciemail=$_SESSION["Kullaniciadi"];
   if(isset($_GET['AyarGecis'])){ //kompanentlere tıklanmışsa o kompanentin ayar sayfasını açıyor!
     ayarSayfasi_yonlendirme();
   }
@@ -134,8 +141,8 @@ setInterval(function() {$("#Kompanent").load('kompanent.php');}, 1000); //sadece
 
     if( $secilenBolum == "header" ) { //Tek bölüm olan sayfaları bu if in altında ki işlemler uygulanacak!
     
-      $dt = fopen('editorsayfalari/'.$secilenBolum.'.php', 'w+'); //sayfayı w+ ile açıyorum, içeriği silip yeniden yazmak için. Tek sayfa olduğu için!
-      $dt_onizleme = fopen('kullanicisayfalari/'.$secilenBolum.'.php', 'w+');
+      $dt = fopen('editorsayfalari_'.$gelenkullaniciemail.'/'.$secilenBolum.'.php', 'w+'); //sayfayı w+ ile açıyorum, içeriği silip yeniden yazmak için. Tek sayfa olduğu için!
+      $dt_onizleme = fopen('kullanicisayfalari_'.$gelenkullaniciemail.'/'.$secilenBolum.'.php', 'w+');
       $sorgu = $baglanti->query('select id,kompanent_icerik,tur,komp_ayar,komp_kod from kompanentler where id='.$secilenKompanent_ID.'');
         while($sonuc=mysqli_fetch_assoc($sorgu) )
         {
@@ -165,8 +172,8 @@ setInterval(function() {$("#Kompanent").load('kompanent.php');}, 1000); //sadece
       fwrite($dt_onizleme, $gelentasarim); 
       fclose($dt_onizleme);
 
-      $dosya='editorsayfalari/'.$secilenBolum.'.php';
-      $dosya_onizleme='kullanicisayfalari/'.$secilenBolum.'.php';
+      $dosya='editorsayfalari_'.$gelenkullaniciemail.'/'.$secilenBolum.'.php';
+      $dosya_onizleme='kullanicisayfalari_'.$gelenkullaniciemail.'/'.$secilenBolum.'.php';
       $dt2 = fopen($dosya, "r"); // sayfayı tekrar açıyorum! ayar sayfasından gelecekleri eklemek için!
       $dt2_onizleme = fopen($dosya_onizleme, "r");
 
@@ -250,8 +257,8 @@ setInterval(function() {$("#Kompanent").load('kompanent.php');}, 1000); //sadece
     }else if($secilenBolum == "content_"){
       $komp=$_COOKIE["secilenkompanentTAM"];
     
-      $dosya='editorsayfalari/'.$komp.'.php';
-      $dosya_onizleme='kullanicisayfalari/'.$komp.'.php';
+      $dosya='editorsayfalari_'.$gelenkullaniciemail.'/'.$komp.'.php';
+      $dosya_onizleme='kullanicisayfalari_'.$gelenkullaniciemail.'/'.$komp.'.php';
 
       $dt5 = fopen($dosya, "r");
       if(filesize($dosya)>0)
@@ -318,8 +325,8 @@ setInterval(function() {$("#Kompanent").load('kompanent.php');}, 1000); //sadece
 
     }else{ //sayfa tek bölümlü değile bu aşağıdaki işlemleri yapıyorum!
 
-      $dt4 = fopen('editorsayfalari/'.$secilenBolum.'.php', 'a'); //çok bölümlü sayfalar için gelen sayfayı açıp sonuna ekleme yapmak için 'a' ile dosyayı açıyorum.
-      $dt4_onizleme = fopen('kullanicisayfalari/'.$secilenBolum.'.php', 'a');
+      $dt4 = fopen('editorsayfalari_'.$gelenkullaniciemail.'/'.$secilenBolum.'.php', 'a'); //çok bölümlü sayfalar için gelen sayfayı açıp sonuna ekleme yapmak için 'a' ile dosyayı açıyorum.
+      $dt4_onizleme = fopen('kullanicisayfalari_'.$gelenkullaniciemail.'/'.$secilenBolum.'.php', 'a');
 
       /*$sorgu = $baglanti->query('select id,kompanent_icerik,tur,komp_ayar,komp_kod from kompanentler where id='.$secilenKompanent_ID.'');
         while($sonuc=mysqli_fetch_assoc($sorgu) )
@@ -331,8 +338,8 @@ setInterval(function() {$("#Kompanent").load('kompanent.php');}, 1000); //sadece
       fwrite($dt4_onizleme, $gelentasarim2);
       fclose($dt4_onizleme);*/
 
-      $dosya='editorsayfalari/'.$secilenBolum.'.php';
-      $dosya_onizleme='kullanicisayfalari/'.$secilenBolum.'.php';
+      $dosya='editorsayfalari_'.$gelenkullaniciemail.'/'.$secilenBolum.'.php';
+      $dosya_onizleme='kullanicisayfalari_'.$gelenkullaniciemail.'/'.$secilenBolum.'.php';
 
       $dt5 = fopen($dosya, "r");
       if(filesize($dosya)>0)
@@ -441,13 +448,13 @@ setInterval(function() {$("#Kompanent").load('kompanent.php');}, 1000); //sadece
 
         $logOku=str_replace("|--|".$logLine[$j],"",$logOku);
 
-        $silinecekSayfaAdi='editorsayfalari/'.$secilenBolum.'.php';
+        $silinecekSayfaAdi='editorsayfalari_'.$gelenkullaniciemail.'/'.$secilenBolum.'.php';
         $silenecekSayfaIcerik=file_get_contents($silinecekSayfaAdi);
         $silinecekSayfa=fopen($silinecekSayfaAdi,'w');
         $silenecekSayfaIcerik=str_replace("$alinanBolum[1]","",$silenecekSayfaIcerik);
         fwrite($silinecekSayfa,$silenecekSayfaIcerik);
 
-        $onizlemesilinecekSayfaAdi='kullanicisayfalari/'.$secilenBolum.'.php';
+        $onizlemesilinecekSayfaAdi='kullanicisayfalari_'.$gelenkullaniciemail.'/'.$secilenBolum.'.php';
         $onizlemesilenecekSayfaIcerik=file_get_contents($onizlemesilinecekSayfaAdi);
         $onizlemesilinecekSayfa=fopen($onizlemesilinecekSayfaAdi,'w');
         $onizlemesilenecekSayfaIcerik=str_replace("$alinanBolum[1]","",$onizlemesilenecekSayfaIcerik);
@@ -475,13 +482,13 @@ setInterval(function() {$("#Kompanent").load('kompanent.php');}, 1000); //sadece
       color:white;
       ">Tıkla ve Düzenle</div>';
                 
-      $okuAnasayfa=file_get_contents("editorsayfalari/header.php"); //anasayfam!
-      $anasayfa=fopen('editorsayfalari/header.php','w');
+      $okuAnasayfa=file_get_contents("editorsayfalari_'.$gelenkullaniciemail.'/header.php"); //anasayfam!
+      $anasayfa=fopen('editorsayfalari_'.$gelenkullaniciemail.'/header.php','w');
      // $okuAnasayfa=str_replace("$kodlar","",$okuAnasayfa);
       fwrite($anasayfa,$kodlar);
       
       //$onizlemeokuAnasayfa=file_get_contents("kullanicisayfalari/header.php"); //onizleme anasayfam!
-      $onizlemeanasayfa=fopen('kullanicisayfalari/header.php','w');
+      $onizlemeanasayfa=fopen('kullanicisayfalari_'.$gelenkullaniciemail.'/header.php','w');
       /*$onizlemeokuAnasayfa=str_replace("$kodlar","",$onizlemeokuAnasayfa);
       fwrite($onizlemeanasayfa,$onizlemeokuAnasayfa);*/
     }
@@ -494,8 +501,8 @@ setInterval(function() {$("#Kompanent").load('kompanent.php');}, 1000); //sadece
 
   if(isset($_POST['kilavuz_kaldir'])){
 
-    $anasayfaIcerik=file_get_contents('editorsayfalari/indexEditor.php');
-    $anasayfa=fopen('editorsayfalari/indexEditor.php','w');
+    $anasayfaIcerik=file_get_contents('editorsayfalari_'.$gelenkullaniciemail.'/indexEditor.php');
+    $anasayfa=fopen('editorsayfalari_'.$gelenkullaniciemail.'/indexEditor.php','w');
     $anasayfaIcerik=str_replace('class="data" border="1px"','class="data" border="0px"',$anasayfaIcerik);
     fwrite($anasayfa,$anasayfaIcerik);
     
@@ -505,8 +512,8 @@ setInterval(function() {$("#Kompanent").load('kompanent.php');}, 1000); //sadece
 
   if(isset($_POST['kilavuz_ekle'])){
 
-    $anasayfaIcerik=file_get_contents('editorsayfalari/indexEditor.php');
-    $anasayfa=fopen('editorsayfalari/indexEditor.php','w');
+    $anasayfaIcerik=file_get_contents('editorsayfalari_'.$gelenkullaniciemail.'/indexEditor.php');
+    $anasayfa=fopen('editorsayfalari_'.$gelenkullaniciemail.'/indexEditor.php','w');
     $anasayfaIcerik=str_replace('class="data" border="0px"','class="data" border="1px"',$anasayfaIcerik);
     fwrite($anasayfa,$anasayfaIcerik);
     
@@ -525,10 +532,10 @@ setInterval(function() {$("#Kompanent").load('kompanent.php');}, 1000); //sadece
 	  	setcookie("suankisayfamANA","Anasayfa",time()-1564);*/
 
 
-      $sayfam=fopen('editorsayfalari/'.$value.'.php','w');
-      $sayfam_onizleme=fopen('kullanicisayfalari/'.$value.'.php','w');
-      $sayfam2=fopen('editorsayfalari/content_'.$value.'.php','w');
-      $sayfam_onizleme2=fopen('kullanicisayfalari/content_'.$value.'.php','w');
+      $sayfam=fopen('editorsayfalari_'.$gelenkullaniciemail.'/'.$value.'.php','w');
+      $sayfam_onizleme=fopen('kullanicisayfalari_'.$gelenkullaniciemail.'/'.$value.'.php','w');
+      $sayfam2=fopen('editorsayfalari_'.$gelenkullaniciemail.'/content_'.$value.'.php','w');
+      $sayfam_onizleme2=fopen('kullanicisayfalari_'.$gelenkullaniciemail.'/content_'.$value.'.php','w');
 
       $path="<?php include 'content_".$value.".php'; ?>";
       $code_onizleme='<td id="content_'.$value.'" colspan="4" rowspan="4" valign="top" style="word-break:break-all; width:100%;">  
@@ -582,7 +589,7 @@ setInterval(function() {$("#Kompanent").load('kompanent.php');}, 1000); //sadece
       
       $onizlemeSayfasi=fopen('onizleme.php','w+');
       $code="<?php include 'mysql_connect.php';
-      include 'editorsayfalari/".$value.".php'; ?>";
+      include 'editorsayfalari_".$gelenkullaniciemail."/".$value.".php'; ?>";
       fwrite($onizlemeSayfasi,$code);
       fclose($onizlemeSayfasi);
       fclose($sayfam);
@@ -611,24 +618,26 @@ setInterval(function() {$("#Kompanent").load('kompanent.php');}, 1000); //sadece
   }
 
   function kullaniciTeslim_sayfalari($dosyaadi){
-
-    if (!file_exists('kullanicisayfalari')) {  //klasör kontrol, yoksa oluşturulur!
-      mkdir('kullanicisayfalari', 0777, true);
+    include 'mysql_connect.php';
+    $gelenkullaniciemail=$_SESSION["Kullaniciadi"];
+    $dosyaADI='kullanicisayfalari_'.$gelenkullaniciemail;
+    if (!file_exists($dosyaADI)) {  //klasör kontrol, yoksa oluşturulur!
+      mkdir($dosyaADI, 0777, true);
     }
 
-    $file = "kullanicisayfalari/".$dosyaadi.".php";  //dosya kontrol, yoksa oluşturulur!
+    $file = "kullanicisayfalari_".$gelenkullaniciemail."/".$dosyaadi.".php";  //dosya kontrol, yoksa oluşturulur!
     if(!is_file($file)){
-      $filecreate = fopen("kullanicisayfalari/".$dosyaadi.".php", 'w+') or die("Can't create file");
+      $filecreate = fopen("kullanicisayfalari_".$gelenkullaniciemail."/".$dosyaadi.".php", 'w+') or die("Can't create file");
     } //Bu yukarıdaki bölüm konuştuğumuz harici bir önizleme sayfası için gerekli dosyaların oluşturulmasını sağlıyor, şuan birşey eklemiyoruz!
 
     include 'mysql_connect.php';
 
     $sorgu = $baglanti->query('select * from sablonlar where sablon_id='.$_SESSION["secilenSablonID"].'');
-    $fileindexdosyasi = "kullanicisayfalari/index.php";
+    $fileindexdosyasi = "kullanicisayfalari_".$gelenkullaniciemail."/index.php";
 	  while($sonuc=mysqli_fetch_assoc($sorgu) )
 	  {
       if(!is_file($fileindexdosyasi)){
-        $filecreate2 = fopen("kullanicisayfalari/index.php", 'w') or die("Can't create file");
+        $filecreate2 = fopen("kullanicisayfalari_".$gelenkullaniciemail."/index.php", 'w') or die("Can't create file");
         $fileindexyaz=fwrite($filecreate2, $sonuc["sablon_tasarimkodu"]);
         fclose($filecreate2);
       }
@@ -637,9 +646,9 @@ setInterval(function() {$("#Kompanent").load('kompanent.php');}, 1000); //sadece
 		while($sonuc2=mysqli_fetch_assoc($sorgu2) )
 		{
       $sayfa=$sonuc2["sayfa_adi"];
-      if(!is_file('kullanicisayfalari/'.$sayfa.'.php')){
+      if(!is_file('kullanicisayfalari_'.$gelenkullaniciemail.'/'.$sayfa.'.php')){
 			
-      $dosya=fopen('kullanicisayfalari/'.$sayfa.'.php','w');
+      $dosya=fopen('kullanicisayfalari_'.$gelenkullaniciemail.'/'.$sayfa.'.php','w');
       if($sonuc2["kod_kullanici"]!=null){
 				$yaz=fwrite($dosya,$sonuc2["kod_kullanici"]);
 			}
