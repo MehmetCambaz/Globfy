@@ -8,6 +8,10 @@
 
 <!-- Bu aşağıdaki css her saniye güncellenen kompanent bölümüne ait harici css dosyasında çalışmıyor! -->
 <style type="text/css"> 
+body{
+ /* padding:0;
+  margin:0; */
+}
   .editor_TapContent{
       float:left;
       width:19.5%;
@@ -66,6 +70,11 @@ $(document).ready(function() {  //ayar,kompanent sayfalarının ajax ile çağı
 		$("#Ayar").load("ayar.php");
 });
 setInterval(function() {$("#Kompanent").load('kompanent.php');}, 1000); //sadece kompanent sayfası 1 saniyede bir tekrar çağırılıyor!
+
+document.getElementById("kilavuz_kaldir").value="New Button Text";
+function change(element) {
+    element.value = 'sub2';
+}
 </script>                                                            
 
 </head>
@@ -84,10 +93,18 @@ $gelenkullaniciemail=$_SESSION["Kullaniciadi"];
         </form>
       </div> 
       <div style="width:77%; margin:-20 0 0 0;float:left; text-align:center;">   
-        <h1><b>Web Site Oluşturma Sistemi</b></h1>
+        <h1><b style="text-shadow: 0 0 3px yellow, 0 0 5px blue; font-family:Calibri;">Web Site Oluşturma Sistemi</b></h1>
         <form method="post" style="margin:-30 0 5 0;"> <!-- Kılavuz çizgileri kaldırma formu! -->
-          <input type="submit" name="kilavuz_kaldir" value="Kılavuz Çizgi Kaldır" style="width:170px; height:40px; background-color:gray; color:white; margin:10 10 0 0;"/>
-          <input type="submit" name="kilavuz_ekle" value="Kılavuz Çizgi Ekle" style="width:170px; height:40px; background-color:gray; color:white; margin:10 10 0 0;"/>
+        <?php 
+        if(!empty($_COOKIE["kilavuz_cizgisi"])){
+          $buttonisimi=$_COOKIE["kilavuz_cizgisi"];
+          echo '<input type="submit" name="kilavuz_cizgisi" value="'.$buttonisimi.'" style="width:170px; height:40px; background-color:gray; color:white; margin:10 10 0 0;"/>';
+        }else{
+          echo '<input type="submit" name="kilavuz_cizgisi" value="Kılavuz Çizgi Kaldır" style="width:170px; height:40px; background-color:gray; color:white; margin:10 10 0 0;"/>';
+        }
+        ?>
+          <!--<input type="submit" name="kilavuz_kaldir" value="Kılavuz Çizgi Kaldır" style="width:170px; height:40px; background-color:gray; color:white; margin:10 10 0 0;"/>
+          <input type="submit" name="kilavuz_ekle" value="Kılavuz Çizgi Ekle" style="width:170px; height:40px; background-color:gray; color:white; margin:10 10 0 0;"/>-->
         </form>   
       </div>
       <div style="width:13%; float:left;">
@@ -97,7 +114,7 @@ $gelenkullaniciemail=$_SESSION["Kullaniciadi"];
           <input type="submit" name="onizle" value="Önizleme" style="float:right;width:80px; height:40px;float:right; background-color:gray; color:white; margin:10 10 0 0;"/>
         </form>
 
-        <a href="?sonraki_sayfa" style=" float:right; padding:5 8 5 8; text-decoration:none; font-size:18; border:0.5px solid #444444; background-color:#D00000; margin:10 10 10 0;color:white;">Sonraki Adıma Geç</a>
+        <a href="?sonraki_sayfa" style=" float:right; padding:4 8 5 8; text-decoration:none; font-family:Calibri; font-size:18; border:0.5px solid #D00000; background-color:#D00000; margin:10 10 10 0;color:white;">Sonraki Adıma Geç</a>
 
       </div> 
         <?php include 'onizleme.php'; ?> <!-- kullanıcının sayfası, editör sayfası çağırıldı -->
@@ -499,14 +516,37 @@ $gelenkullaniciemail=$_SESSION["Kullaniciadi"];
 
   }
 
-  if(isset($_POST['kilavuz_kaldir'])){
+  if(isset($_POST['kilavuz_cizgisi'])){
 
-    $anasayfaIcerik=file_get_contents('editorsayfalari_'.$gelenkullaniciemail.'/indexEditor.php');
-    $anasayfa=fopen('editorsayfalari_'.$gelenkullaniciemail.'/indexEditor.php','w');
-    $anasayfaIcerik=str_replace('class="data" border="1px"','class="data" border="0px"',$anasayfaIcerik);
-    fwrite($anasayfa,$anasayfaIcerik);
+    if(empty($_COOKIE["kilavuz_cizgisi"])){
+      $anasayfaIcerik=file_get_contents('editorsayfalari_'.$gelenkullaniciemail.'/indexEditor.php');
+      $anasayfa=fopen('editorsayfalari_'.$gelenkullaniciemail.'/indexEditor.php','w');
+      $anasayfaIcerik=str_replace('class="data" border="0px"','class="data" border="1px"',$anasayfaIcerik);
+      fwrite($anasayfa,$anasayfaIcerik);
+     
+      
+      setcookie("kilavuz_cizgisi","Kılavuz Çizgisi Ekle",time()+1*30*30*60);
+
+      header('Location:'.$_SERVER['HTTP_REFERER']);
+    }else{
+      $buttonisimiALT=$_COOKIE["kilavuz_cizgisi"];
+      if($buttonisimiALT=="Kılavuz Çizgisi Ekle"){
+        $anasayfaIcerik=file_get_contents('editorsayfalari_'.$gelenkullaniciemail.'/indexEditor.php');
+        $anasayfa=fopen('editorsayfalari_'.$gelenkullaniciemail.'/indexEditor.php','w');
+        $anasayfaIcerik=str_replace('class="data" border="0px"','class="data" border="1px"',$anasayfaIcerik);
+        fwrite($anasayfa,$anasayfaIcerik);
+        setcookie("kilavuz_cizgisi","Kılavuz Çizgisi Kaldır",time()+1*30*30*60);
+      }else{
+        $anasayfaIcerik=file_get_contents('editorsayfalari_'.$gelenkullaniciemail.'/indexEditor.php');
+        $anasayfa=fopen('editorsayfalari_'.$gelenkullaniciemail.'/indexEditor.php','w');
+        $anasayfaIcerik=str_replace('class="data" border="1px"','class="data" border="0px"',$anasayfaIcerik);
+        fwrite($anasayfa,$anasayfaIcerik);
+       
+        setcookie("kilavuz_cizgisi","Kılavuz Çizgisi Ekle",time()+1*30*30*60);
+      }
+      header('Location:'.$_SERVER['HTTP_REFERER']);
+    }
     
-    header('Location:'.$_SERVER['HTTP_REFERER']);
 
   }
 

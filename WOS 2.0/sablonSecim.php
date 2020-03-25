@@ -115,7 +115,7 @@ if(isset($_POST['EditorGecis'])){
 <form method="POST" target="_blank">
 	<div class="sablonSecim_Ekran">
 		<div class="sablonSecim_Ust">
-			<h3>Şablon Seçiniz</h3>
+			<h2 style="font-family:Calibri;">Şablon Seçim Ekranı</h2>
 		</div>
 		<div class="sablonSecim_Sablonlar">
 			<div class="sablonSecim_SablonPanel">		

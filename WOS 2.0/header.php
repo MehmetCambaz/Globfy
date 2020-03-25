@@ -3,6 +3,10 @@
 <title>WoS | Web Site Oluşturma Sistemi</title>
 <script language="JavaScript">
 
+function Alert() {
+  alert("Giriş Yapmanız Gerekmektedir!");
+}
+
 </script>
 </head>
 <body>
@@ -26,13 +30,13 @@
     if(!empty($_COOKIE["Kullaniciadi"])){
         echo '<a style="margin: 0 4 0 0;" href="index.php?sayfa=canlidestek">Canlı Destek</a>';
     }else{
-        echo '<a style="margin: 0 4 0 0;" href="index.php?sayfa=girisislem">Canlı Destek</a>';
+        echo '<a style="margin: 0 4 0 0;" onclick="Alert()" href="index.php?sayfa=girisislem">Canlı Destek</a>';
     }
      
     if(empty($_COOKIE["Kullaniciadi"])){
         echo '<a href="index.php?sayfa=girisislem">Giriş & Kayıt Ol</a>';
     }else{
-        echo '<a style="background-color:green; border:1px solid green;" href="index.php?sayfa=profil"">Profil</a>';
+        echo '<a class="profil" href="index.php?sayfa=profil"">Profil</a>';
         echo '<a class="cikis" href="index.php?sayfa=cikisislem"">Çıkış Yap</a>';
     }
 ?>

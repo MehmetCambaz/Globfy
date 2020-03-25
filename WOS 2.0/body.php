@@ -2,7 +2,9 @@
 <head>
 <title>WoS | Web Site Oluşturma Sistemi</title>
 <script language="JavaScript">
-
+function Alert() {
+  alert("Giriş Yapmanız Gerekmektedir!");
+}
 </script>
 
 </head>
@@ -17,7 +19,7 @@
     if(!empty($_COOKIE["Kullaniciadi"])){
         echo '<a href="index.php?sayfa=sablonSecim" class="body_Button1">BAŞLA</a>';
     }else{
-        echo '<a href="index.php?sayfa=girisislem" class="body_Button1">BAŞLA</a>';
+        echo '<a onclick="Alert()" href="index.php?sayfa=girisislem" class="body_Button1">BAŞLA</a>';
     }
 
     ?>        
