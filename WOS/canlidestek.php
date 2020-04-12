@@ -13,6 +13,8 @@ $(document).ready(function() {
 setInterval(function() {$("#canliDestek_Pencere").load('ajax.kullanicimesaj.php');}, 1000);
 
 </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 
 </head>
 <body>
@@ -22,14 +24,18 @@ setInterval(function() {$("#canliDestek_Pencere").load('ajax.kullanicimesaj.php'
 <div class="canliDestek_Kullanici">
 <?php
 include 'mysql_connect.php';
-if(empty($_SESSION["Kullaniciadi"])){
 
-	echo '<b>İsim: </b> <input type="text" value="" name="kullanici_adi" class="canliDestek_Kullanici_textbox"/>';
-	
-}else{
-	$ad=$_SESSION["Kullaniciadi"];
-echo '<b>İsim: </b> <input type="text" name="kullanici_adi" value="'.$ad.'" class="canliDestek_Kullanici_textbox"/>';
-}
+$email=$_SESSION["Kullaniciadi"];
+	$sql = "SELECT * FROM kullanicilar where email='$email'";
+    $sonuc = $baglanti->query($sql);
+    if ($sonuc->num_rows > 0) 
+    {
+        while($sorgu=mysqli_fetch_assoc($sonuc) )
+        {
+            $ad_soyad=$sorgu["ad"]." ".$sorgu["soyad"];
+		}
+	}
+echo '<b style="font-weight:normal;">Hoşgeldiniz </b><b style="font-size:20;">'.$ad_soyad.'</b>';
 ?>
 
 </div>
@@ -59,13 +65,13 @@ if(empty($_SESSION["Kullaniciadi"])){
 			   }
 			}
 		echo '</table>';
-}*/
-?>
+}
+*/?>
 </div>
 <div class="canliDestek_Yazi">
 
 <input type="text" name="kullanici_yazi" class="canliDestek_Yazi_textbox"/>
-<input type="submit" id="gonder" name="gonder" class="canliDestek_Yazi_button"/>
+<input type="submit" id="gonder" name="gonder" value="Gönder" class="canliDestek_Yazi_button"/>
 
 </div>
 </div>
@@ -76,7 +82,7 @@ if(empty($_SESSION["Kullaniciadi"])){
 
 <?php
 if(isset($_POST['gonder'])){
-		$kullanici_adi = $_POST['kullanici_adi'];
+		$kullanici_adi = $_SESSION["Kullaniciadi"];
 		$kullanici_yazi = $_POST['kullanici_yazi'];
 		$date = date('Y-m-d H:i:s');
 		$sayi=0;
@@ -92,7 +98,7 @@ if(isset($_POST['gonder'])){
 					$sayi=$sonuc["oturum"];
 				}
 				$sayi=$sayi+1;
-			$_SESSION["Oturum_Bilgisi"]=$sayi;			
+			//$_SESSION["Oturum_Bilgisi"]=$sayi;			
 		}
 		else{
 			if($_SESSION["Kullaniciadi"]==$kullanici_adi){
@@ -103,7 +109,7 @@ if(isset($_POST['gonder'])){
 				{
 					$sayi=$sonuc["oturum"];
 				}
-				$_SESSION["Oturum_Bilgisi"]=$sayi;	
+				//$_SESSION["Oturum_Bilgisi"]=$sayi;	
 				
 			}else{
 				$_SESSION["Kullaniciadi"]=$kullanici_adi;
@@ -115,13 +121,27 @@ if(isset($_POST['gonder'])){
 					$sayi=$sonuc["oturum"];
 				}
 				$sayi=$sayi+1;
-				$_SESSION["Oturum_Bilgisi"]=$sayi;	
+				//$_SESSION["Oturum_Bilgisi"]=$sayi;	
 			}
 		}
-		
-		$sqlkayit = "INSERT INTO canli_destek values(NULL,'$kullanici_adi', '$kullanici_yazi','$date','$sayi')";
+		$sql = "SELECT * FROM kullanicilar where email='$kullanici_adi' ";
+		$sonuc = $baglanti->query($sql);
+		if ($sonuc->num_rows > 0) 
+		{
+			while($sorgu=mysqli_fetch_assoc($sonuc) )
+			{
+			  $sayi=$sorgu["id"];
+			}
+		}
+		$_SESSION["Oturum_Bilgisi"]=$sayi;
+		setcookie("Oturum_Bilgisi",$sayi,time()+1*24*60*60*1000);
+		$sqlkayit = "INSERT INTO canli_destek values(NULL,'$ad_soyad', '$kullanici_yazi','$date','$sayi')";
 		mysqli_query($baglanti,$sqlkayit);
 		header('Location:'.$_SERVER['HTTP_REFERER']);
 
 }
 ?>
+
+<script>
+$("#canliDestek_Pencere").animate({ scrollTop: $('#canliDestek_Pencere').prop("scrollHeight")}, 900);
+</script>

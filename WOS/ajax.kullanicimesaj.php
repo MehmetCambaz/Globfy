@@ -1,6 +1,6 @@
 <?php
 include 'mysql_connect.php';
-if(empty($_SESSION["Kullaniciadi"])){
+if(empty($_SESSION["Kullaniciadi"]) || empty($_COOKIE["Oturum_Bilgisi"])){
 	
 }else{
 	$ad=$_SESSION["Kullaniciadi"];
@@ -17,9 +17,9 @@ if(empty($_SESSION["Kullaniciadi"])){
 			while($sonuc4=mysqli_fetch_assoc($sorgu4) )
 			{		
 			   if($sonuc4['ad']=="Admin"){		
-			    echo '<tr><td style="background-color:red; color:white;"><div style="width:110px; border:1px solid black; height:40px; padding-top:20px; text-align:center;">'.$sonuc4['ad'].'</div></td><td><div style="width:700px; height:40px; padding:20 0 0 10; border:1px solid black; ">'.$sonuc4['yazi'].'</div></td></tr>';
+			    echo '<tr><td style="background-color:red; color:white;"><div style="width:110px; border:1px solid black; height:40px; padding-top:20px; text-align:center;">'.$sonuc4['ad'].'</div></td><td><div style="width:700px; height:40px; padding:20 0 0 10; border:1px solid black; word-wrap:break-word; ">'.$sonuc4['yazi'].'</div></td></tr>';
 			   }else{
-				echo '<tr><td style="background-color:blue; color:white;"><div style="width:110px; border:1px solid black; height:40px; padding-top:20px; text-align:center;">'.$sonuc4['ad'].'</div></td><td><div style="width:700px; height:40px; padding:20 0 0 10; border:1px solid black; ">'.$sonuc4['yazi'].'</div></td></tr>';  
+				echo '<tr><td style="background-color:blue; color:white;"><div style="width:110px; border:1px solid black; height:40px; padding-top:20px; text-align:center;">'.$sonuc4['ad'].'</div></td><td><div style="width:700px; height:40px; padding:20 0 0 10; border:1px solid black; word-wrap:break-word; ">'.$sonuc4['yazi'].'</div></td></tr>';  
 			   }
 			}
 		echo '</table>';
