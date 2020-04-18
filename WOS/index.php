@@ -5,7 +5,16 @@
 <script language="JavaScript">
 
 </script>
+<style>
 
+body{
+
+background: url(wos_background.gif);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+ }
+</style>
 </head>
 <body>
 <div class="anasayfa_Main">

@@ -1,7 +1,6 @@
 body{
 	margin:0px;
 	padding:0px;
-	/*background-color:#E6E6E6;*/
 }
 .anasayfa_Main{
 	width:1800px;
@@ -63,14 +62,14 @@ body{
 	width:110px;
 	height:110px;
 	float:right;
-	margin:0 110 50 0;
+	margin:0 160 20 0;
 }
 .header_Text{
 	font-size:42px;
 	float:left;
 	width:520px;
 	font-family:Calibri;
-	margin:27 0 0 -90;
+	margin:27 0 0 -150;
 }
 .header_line{
 	width:50%;
@@ -96,6 +95,7 @@ body{
 	font-size:25px;
 	border:1px solid black;
 	text-decoration: none;	
+	border-radius: 5px;
 
 
 }
@@ -147,6 +147,7 @@ body{
 	margin-right:auto;
 	margin-left:auto;
 	margin-top:20px;
+	font-family:Calibri;
 }
 .body_Resim{
 	width:250px;
@@ -168,12 +169,13 @@ body{
 	color:black;
 	font-weight:bold;
 	font-size:20px;
+	border-radius: 30px;
 }
 
 .footer_Bolumler{
 	width:90%;
 	height:190px;
-	border-top:1px solid black;
+	border-top:2px solid black;
 	margin:auto;
 	text-align:center;
 }
@@ -475,7 +477,50 @@ body{
 	width:60%;
 }
 
+.footer_Bolumler_yazi{
+	color:black;
+	font-size:35;
+	font-family:Calibri;
+	font-weight: bold;
+	text-align: Center;
+	margin:30 0 0 0;
+	width:30%;
+}
+.footer_Bolumler_gonder{
+	text-align: Center;
+	margin:20 0 0 0;
+}
+.email_kullanici_anasayfa{
+	width:270px;
+	height:35px;
+	font-size: 17;
+	border-radius: 5px;
+	border:1px solid #000000;
+	text-indent: 7;
+}
+.email_kullanici_anasayfa_button{
 
+	background-color: #000000;
+	color: rgb(255, 255, 255);
+	font-size: 16px;
+	padding: 9px 20px;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+	text-align: center;
+
+}
+.email_kullanici_anasayfa_button:hover {
+	background-color:rgb(122, 122, 122);
+	color:black;
+  }
+.footer_Bolumler_alt{
+	margin:10 0 0 0;
+	padding:10 0 10 0;
+	text-decoration: underline;
+	font-size: 21;
+	font-family: Calibri;
+}
 
 
 

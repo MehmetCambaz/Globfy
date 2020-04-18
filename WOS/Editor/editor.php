@@ -121,7 +121,7 @@ $gelenkullaniciemail=$_SESSION["Kullaniciadi"];
 
     </div>
 
-    <div class="editor_TapContent"> <!-- Tap content sayfası, sol geçişli bölüm! -->
+    <div class="editor_TapContent" style="overflow-x: hidden; overflow-y: scroll;"> <!-- Tap content sayfası, sol geçişli bölüm! -->
 
       <div class="editor_tab">
         <button class="editor_tablinks" id="tablink_ayar" onclick="openPage(event, 'Ayar', 'tablink_ayar')">Ayarlar</button>
@@ -183,7 +183,9 @@ $gelenkullaniciemail=$_SESSION["Kullaniciadi"];
             ">Tıkla ve Düzenle</div></div>';
 
       $gelentasarim2=$tiklaveduzenlekodu.$gelentasarim; //php dosyaları hariç sayfaya yazacağım içerik!
-
+      $resimlerkalsoru='src="resimler/';
+      $yeniresimlerklasoru='src="editorsayfalari_'.$gelenkullaniciemail.'/resimler/';
+      $gelentasarim2=str_replace($resimlerkalsoru,$yeniresimlerklasoru,$gelentasarim2);  
       fwrite($dt, $gelentasarim2); // php dosyaları hariç olan veriyi ilk yazdırdım!
       fclose($dt);
       fwrite($dt_onizleme, $gelentasarim); 
@@ -297,7 +299,9 @@ $gelenkullaniciemail=$_SESSION["Kullaniciadi"];
             ">Tıkla ve Düzenle</div></div>';
 
       $gelentasarim2=$tiklaveduzenlekodu.$gelentasarim; //php dosyaları hariç sayfaya yazacağım içerik!
-
+      $resimlerkalsoru='src="resimler/';
+      $yeniresimlerklasoru='src="editorsayfalari_'.$gelenkullaniciemail.'/resimler/';
+      $gelentasarim2=str_replace($resimlerkalsoru,$yeniresimlerklasoru,$gelentasarim2); 
       fwrite($dt, $gelentasarim2); // php dosyaları hariç olan veriyi ilk yazdırdım!
       fclose($dt);
       fwrite($dt_onizleme, $gelentasarim); 
@@ -349,7 +353,7 @@ $gelenkullaniciemail=$_SESSION["Kullaniciadi"];
       $logVeri=$yeni;
       $logKayit = fopen('editorsayfalari_'.$gelenkullaniciemail.'/log.txt', 'a');
       fwrite($logKayit,"|--|");
-      fwrite($logKayit,"header|**|");
+      fwrite($logKayit,"$secilenBolum|**|");
       fwrite($logKayit,$logVeri);
     
       fclose($logKayit);
@@ -427,13 +431,19 @@ $gelenkullaniciemail=$_SESSION["Kullaniciadi"];
                                                                    //alıp yerine son işlem değeri ile birleştirdiğim değişken adını yazdırıyorum!
                                                                    //dosyanın içini açıp bul ve değiştir yapıyorum!*/
           $gelentasarim2=str_replace($degisecekicerik,$yenigelecek, $gelentasarim2);
+          $resimlerkalsoru='src="resimler/';
+          $yeniresimlerklasoru='src="editorsayfalari_'.$gelenkullaniciemail.'/resimler/';
+          $gelentasarimedit=str_replace($resimlerkalsoru,$yeniresimlerklasoru,$gelentasarim2); 
+ 
           $veri.= $yazilacakicerik;
         }
 
       $veri.=" ?>\n"; //döngüden çıkıp bütün değişkenleri de içinde bulunduran php satırını tamamlıyorum! 
       }
       
-      $yeni=$eski.$veri.$gelentasarim2; //yeni değişkeninin başına php değişken satırını ekleyip altınada veritabanından gelen değeri ekleyorum!
+      $yeni=$eski.$veri.$gelentasarimedit; //yeni değişkeninin başına php değişken satırını ekleyip altınada veritabanından gelen değeri ekleyorum!
+ 
+
       $yeni_onizleme=$eski_onizleme.$veri.$gelentasarim2;
 
       $dt5=fopen($dosya,"w");
@@ -443,7 +453,7 @@ $gelenkullaniciemail=$_SESSION["Kullaniciadi"];
       $yaz_onizleme=fwrite($dt5_onizleme, $yeni_onizleme);
       fclose($dt5_onizleme);
 
-      $logVeri=$veri.$gelentasarim2;
+      $logVeri=$veri.$gelentasarimedit;
       $logKayit = fopen('editorsayfalari_'.$gelenkullaniciemail.'/log.txt', 'a');
       fwrite($logKayit,"|--|");
       fwrite($logKayit,$komp."|**|");
@@ -509,13 +519,16 @@ $gelenkullaniciemail=$_SESSION["Kullaniciadi"];
                                                                    //alıp yerine son işlem değeri ile birleştirdiğim değişken adını yazdırıyorum!
                                                                    //dosyanın içini açıp bul ve değiştir yapıyorum!*/
           $gelentasarim2=str_replace($degisecekicerik,$yenigelecek, $gelentasarim2);
+          $resimlerkalsoru='src="resimler/';
+          $yeniresimlerklasoru='src="editorsayfalari_'.$gelenkullaniciemail.'/resimler/';
+          $gelentasarimedit=str_replace($resimlerkalsoru,$yeniresimlerklasoru,$gelentasarim2); 
           $veri.= $yazilacakicerik;
         }
 
       $veri.=" ?>\n"; //döngüden çıkıp bütün değişkenleri de içinde bulunduran php satırını tamamlıyorum! 
       }
       
-      $yeni=$eski.$veri.$gelentasarim2; //yeni değişkeninin başına php değişken satırını ekleyip altınada veritabanından gelen değeri ekleyorum!
+      $yeni=$eski.$veri.$gelentasarimedit; //yeni değişkeninin başına php değişken satırını ekleyip altınada veritabanından gelen değeri ekleyorum!
       $yeni_onizleme=$eski_onizleme.$veri.$gelentasarim2;
 
       $dt5=fopen($dosya,"w");
@@ -525,7 +538,7 @@ $gelenkullaniciemail=$_SESSION["Kullaniciadi"];
       $yaz_onizleme=fwrite($dt5_onizleme, $yeni_onizleme);
       fclose($dt5_onizleme);
 
-      $logVeri=$veri.$gelentasarim2;
+      $logVeri=$veri.$gelentasarimedit;
       $logKayit = fopen('editorsayfalari_'.$gelenkullaniciemail.'/log.txt', 'a');
       fwrite($logKayit,"|--|");
       fwrite($logKayit,$secilenBolum."|**|");
@@ -584,6 +597,10 @@ $gelenkullaniciemail=$_SESSION["Kullaniciadi"];
         $silenecekSayfaIcerik=str_replace("$alinanBolum[1]","",$silenecekSayfaIcerik);
         fwrite($silinecekSayfa,$silenecekSayfaIcerik);
 
+        $resimlerkalsoru='src="resimler/';
+        $yeniresimlerklasoru='src="editorsayfalari_'.$gelenkullaniciemail.'/resimler/';
+        $alinanBolum[1]=str_replace($yeniresimlerklasoru,$resimlerkalsoru,$alinanBolum[1]); 
+
         $onizlemesilinecekSayfaAdi='kullanicisayfalari_'.$gelenkullaniciemail.'/'.$secilenBolum.'.php';
         $onizlemesilenecekSayfaIcerik=file_get_contents($onizlemesilinecekSayfaAdi);
         $onizlemesilinecekSayfa=fopen($onizlemesilinecekSayfaAdi,'w');
@@ -593,8 +610,8 @@ $gelenkullaniciemail=$_SESSION["Kullaniciadi"];
         break;
       }
     }
-   
-    if($secilenBolum=="header"){
+   setcookie("secilmissunakikomp",$secilenBolum,time()+12154);
+    if($secilenBolum=="header" || $secilenBolum=="littleheader" || $secilenBolum=="bar1" || $secilenBolum=="bar2" || $secilenBolum=="bar3" || $secilenBolum=="bar4" || $secilenBolum=="bar5"){
       $kodlar=' <div style="position:relative; width:100%; cursor:point;">
       <div style="width:40%;
       padding:10 0 10 0;
@@ -611,14 +628,15 @@ $gelenkullaniciemail=$_SESSION["Kullaniciadi"];
       font-family:calibri;
       color:white;
       ">Tıkla ve Düzenle</div>';
-                
-      $okuAnasayfa=file_get_contents("editorsayfalari_'.$gelenkullaniciemail.'/header.php"); //anasayfam!
-      $anasayfa=fopen('editorsayfalari_'.$gelenkullaniciemail.'/header.php','w');
+         
+      $okuAnasayfa=file_get_contents("editorsayfalari_'.$gelenkullaniciemail.'/'.$secilenBolum.'.php"); //anasayfam!
+      $anasayfa=fopen('editorsayfalari_'.$gelenkullaniciemail.'/'.$secilenBolum.'.php','w');
      // $okuAnasayfa=str_replace("$kodlar","",$okuAnasayfa);
       fwrite($anasayfa,$kodlar);
       
       //$onizlemeokuAnasayfa=file_get_contents("kullanicisayfalari/header.php"); //onizleme anasayfam!
-      $onizlemeanasayfa=fopen('kullanicisayfalari_'.$gelenkullaniciemail.'/header.php','w');
+      $onizlemeanasayfa=fopen('kullanicisayfalari_'.$gelenkullaniciemail.'/'.$secilenBolum.'.php','w');
+
       /*$onizlemeokuAnasayfa=str_replace("$kodlar","",$onizlemeokuAnasayfa);
       fwrite($onizlemeanasayfa,$onizlemeokuAnasayfa);*/
     }

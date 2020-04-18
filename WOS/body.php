@@ -5,6 +5,19 @@
 function Alert() {
   alert("Giriş Yapmanız Gerekmektedir!");
 }
+
+function setVisibility() {
+  var x = document.getElementById("neden");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+window.onload = function() {
+    setVisibility();
+};
 </script>
 
 </head>
@@ -22,7 +35,6 @@ include 'mysql_connect.php';
     }else{
         echo '<a onclick="Alert()" href="index.php?sayfa=girisislem" class="body_Button1">BAŞLA</a>';
     }
-
     ?>        
 </td></tr>
 </table>
@@ -32,8 +44,11 @@ include 'mysql_connect.php';
 <tr>
 <td> <img src="Desing/Pictures/anasayfa_tasarim.png" class="body_Resim"/> </td>
 <td> <h1 class="body_Yazi">Neden Bir Web Sitesine Sahip Olmalıyız...</h1> </td>
-<td> <a href="#" class="body_Button1">ÖĞREN</a> </td></tr>
+<td> <button onclick="setVisibility()" style="background-color:#FBFBFB;" class="body_Button1">ÖĞREN</button> </td></tr>
 </table>
+<div id="neden" style="margin-left:270px; margin-top:-30px; width:70%; height:150px;" style={{visibility: this.state.visibility }}>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+</div>
 </div>
 <div class="body_Bolum">
 <table border="0px">

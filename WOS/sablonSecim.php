@@ -132,11 +132,49 @@ if(isset($_POST['EditorGecis'])){
 ?>
 <html>
 <head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <title>WoS | Web Site Oluşturma Sistemi</title>
-<script language="JavaScript">
+<style>
+.isHidden {
+  display: none; 
+}
+
+.label {
+  display: inline-block;
+  width: 275px;
+  height: 274px;
+  padding: 5px 10px;
+  margin-top:-309px;
+  margin-left:-8px;
+}
+
+input:checked + .label {  
+  border:10px solid;
+  border-color:green;
+  border-radius:10px;
+}
+
+.gecisButton {
+    position: fixed;
+    bottom: 20px;
+	right: 20px;
+	background-color:green;
+	font-family:Calibri;
+	font-size:28px; 
+	visibility: hidden;
+	border-radius:20px;
+}
+
+</style>
+<script>
+	$(document).ready(function() {
+    $('label').click(function() {
+        $('#show-me').css("visibility", "visible");
+    });
+    });
 </script>
 </head>
-<body>
+<body style="">
 <form method="POST" target="_blank">
 	<div class="sablonSecim_Ekran">
 		<div class="sablonSecim_Ust">
@@ -148,12 +186,15 @@ if(isset($_POST['EditorGecis'])){
 			<?php
 			
 			foreach($baglanti->query('select sablon_id,sablon_adi,sablon_resim from sablonlar') as $row){
-			echo '<table border="0px" style="float:left; margin:0 5 15 11;"><tr><td>';
-			echo '<img src="'.$row['sablon_resim'].'" width="300px" height="300px"/>';
-			echo '</td><tr>
-			<tr><td><center><input type="radio" name="secimRadio" value="'.$row['sablon_id'].'"/>Seç</center></td></tr>
-			</table>';
-			}
+				echo '<table border="0px" style="float:left; margin:0 5 15 11;"><tr><td>';
+				echo '<img src="'.$row['sablon_resim'].'" width="300px" height="300px"/>';
+				echo '</td><tr>
+				<tr><td><center><input id="radio_'.$row['sablon_resim'].'" class="radio isHidden" type="radio"  name="secimRadio" value="'.$row['sablon_id'].'">
+				<label for="radio_'.$row['sablon_resim'].'" class="label" ></label></center></td>
+				</tr>
+				</table>
+				';
+				}
 			/*$i=1; // mysql olmadan veri çekme
 			while ( $i<=15 ){
 			echo '<table border="0px" style="float:left; margin:0 5 15 11;">
@@ -174,7 +215,7 @@ if(isset($_POST['EditorGecis'])){
 			  }
 		}
 		?>
-		<input type="submit" class="gecisButton" value="Sonraki Adıma Geçiniz" name="EditorGecis"/>		
+		<input id="show-me" type="submit" class="gecisButton" value="Sonraki Adıma Geçiniz" name="EditorGecis"/>	
 		</div>
 	</div>
 	</form>
