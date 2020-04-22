@@ -522,5 +522,51 @@ body{
 	font-family: Calibri;
 }
 
+.hakkimizda_Bolumler{
+	width:1100px;
+	margin-right:auto;
+	margin-left:auto;
+	margin-top:20px;
+	font-family:Calibri;
+}
 
+.hakkimizda_Bolum{
+	width:1000px;
+	margin-right:auto;
+	margin-left:auto;
+	margin-top:20px;
+	font-family:Calibri;
+	height:400px;
+}
 
+.hakkimizda_Resim{
+	width:250px;
+	height:250px;
+	float:left;
+	margin:0 0 0 140px;
+	border-radius: 10px;
+}
+
+.hakkimizda_Resim_1{
+	width:250px;
+	height:250px;
+	float:left;
+	margin:0 0 0 50px;
+	border-radius: 10px;
+}
+
+textarea {
+	resize: none;
+}
+
+.iletisim_button{
+	width:95;
+	height:35;
+	background-color:green;
+	font-family:Calibri;
+	font-weight:bold;
+	font-size:20px;
+	color:white;
+	border:1px solid green;
+	border-radius:5px;
+}
