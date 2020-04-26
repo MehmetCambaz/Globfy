@@ -68,6 +68,7 @@ if(empty($_SESSION["Kullaniciadi"])){
 }
 */?>
 </div>
+
 <div class="canliDestek_Yazi">
 
 <input type="text" name="kullanici_yazi" class="canliDestek_Yazi_textbox"/>
@@ -143,5 +144,8 @@ if(isset($_POST['gonder'])){
 ?>
 
 <script>
-$("#canliDestek_Pencere").animate({ scrollTop: $('#canliDestek_Pencere').prop("scrollHeight")}, 900);
+$("#canliDestek_Pencere").animate({ scrollTop: 10000}, 3000);
+
 </script>
+
+

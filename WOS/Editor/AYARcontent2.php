@@ -5,7 +5,7 @@
       setcookie('sayfaEkle['.$name.']',$name,time()-3600); 
    
     }
-
+ 
 
 $deger1=$_POST["content2_yazim"];
 $deger2=$_POST["content2_arkaplan"];

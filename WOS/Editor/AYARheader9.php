@@ -13,6 +13,12 @@
    
     }
 
+    foreach ($_COOKIE['iceriksayfasi'] as $name => $value) {
+
+      setcookie('iceriksayfasi['.$name.']',$name,time()-3600); 
+   
+    }
+
     if(isset($_POST['sayfa_ekle'])){
       $file = $_FILES['header9_resim'];
       

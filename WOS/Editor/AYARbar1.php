@@ -13,6 +13,7 @@
    
     }
 
+
     if(isset($_POST['sayfa_ekle'])){
       $file = $_FILES['bar1_resim'];
       

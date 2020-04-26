@@ -12,6 +12,13 @@
       setcookie('sayfaEkle['.$name.']',$name,time()-3600); 
    
     }
+    foreach ($_COOKIE['iceriksayfasi'] as $name => $value) {
+
+      setcookie('iceriksayfasi['.$name.']',$name,time()-3600); 
+   
+    }
+
+
 
     if(isset($_POST['sayfa_ekle'])){
       $file = $_FILES['header2_resim'];
@@ -77,7 +84,7 @@ $deger3=$_POST["header2_yazi3"];
 $deger4=$_POST["header2_yazi4"];
 
 
-$deger4=$_POST["header2_arkaplan"];
+$deger6=$_POST["header2_arkaplan"];
 $deger5=$_POST["header2_resim"];
 
 setcookie("sayfaEkle[header2_yazi]",$deger1,time()+3600);
@@ -86,7 +93,7 @@ setcookie("sayfaEkle[header2_yazi3]",$deger3,time()+3600);
 setcookie("sayfaEkle[header2_yazi4]",$deger4,time()+3600);
 
 
-setcookie("sayfaEkle[header2_arkaplan]",$deger4,time()+3600);
+setcookie("sayfaEkle[header2_arkaplan]",$deger6,time()+3600);
 setcookie("sayfaEkle[header2_resim]",$fileName,time()+3600);
 
 setcookie("iceriksayfasi[header2_yazilink]",$deger1,time()+3600*60);

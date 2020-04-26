@@ -5,7 +5,7 @@ body{
 .anasayfa_Main{
 	width:1800px;
 	height:100%;
-	float:left;
+
 }
 .anasayfa_Header{
 	width:100%;
@@ -262,7 +262,8 @@ body{
 	width:100%;
 	height:90%;
 	border:1px solid black;
-	padding-top:80px;
+	padding:20 0 20 0;
+
 }
 .canliDestek_Pencere{
 	width:80%;
@@ -508,19 +509,21 @@ body{
 	cursor: pointer;
 	border-radius: 5px;
 	text-align: center;
+	margin:0 0 10 0;
 
 }
 .email_kullanici_anasayfa_button:hover {
-	background-color:rgb(122, 122, 122);
-	color:black;
+	background-color:#C10000;
+	color:white;
   }
 .footer_Bolumler_alt{
-	margin:10 0 0 0;
+	margin:0 0 0 0;
 	padding:10 0 10 0;
 	text-decoration: underline;
 	font-size: 21;
 	font-family: Calibri;
 }
+
 
 .hakkimizda_Bolumler{
 	width:1100px;
@@ -570,3 +573,29 @@ textarea {
 	border:1px solid green;
 	border-radius:5px;
 }
+.dosyateslim{
+	width:100%;
+	height:600px;
+	float:left;
+}
+.dosyateslim_ic{
+	margin:auto;
+}
+.dosyateslim_yazi{
+	float:left;
+	width:100%;
+	font-family:Calibri;
+}
+.dosyateslim_button{
+	float:left;
+	width:100%;
+}
+.dosyateslim_button_tasarim{
+	padding:10;
+	background-color:#007500 ;
+	color:white;
+	border:1px solid #007500;
+	font-size:24;
+	font-family:Calibri;
+}
+

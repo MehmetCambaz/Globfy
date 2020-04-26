@@ -1,5 +1,6 @@
 <html>
 <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="Desing/general.css" media="screen" rel="stylesheet" type="text/css">
 <title>WoS | Web Site Oluşturma Sistemi</title>
 <script language="JavaScript">
@@ -25,7 +26,8 @@ function Alert() {
 </table>
 <table class="nasilkullanilir_table">
     <tr>
-        <td class="nasilkullanilir_sag"><p><ul><li style="list-style-type: circle;">Web site oluşturmaya başlaya tıkladıktan sonra yapmanız gereken diğer önemli adım aşağıda da örnek olarak verdiğimiz şablon örneklerinden birini seçmektir.</li></ul></p>
+        <td class="nasilkullanilir_sag"><p><ul><li style="list-style-type: circle;">Web site oluşturmaya başlaya tıkladıktan sonra yapmanız gereken diğer önemli adım aşağıda da örnek olarak verdiğimiz şablon örneklerinden birinin üstüne tıklayıp seçmektir. Tıkladıktan
+        sonra sağ altta çıkan 'Sonraki Adıma Geçiniz' butonuna tıklamalısınız. </li></ul></p>
         </td>
         <td><img src="Desing/Pictures/NasilKullanilir/resim2.png"/></td>
     </tr>

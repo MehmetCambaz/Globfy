@@ -1,5 +1,6 @@
 <html>
 <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>WoS | Web Site Oluşturma Sistemi</title>
 <script language="JavaScript">
 
@@ -10,7 +11,6 @@ function Alert() {
 </script>
 </head>
 <body>
-
 <div class="header_Bolum">
 <a href="index.php?sayfa=body"><img src="Desing/Pictures/logo.png" class="header_Picture"/></a>
 </div>
@@ -45,6 +45,7 @@ include 'mysql_connect.php';
 ?>
 </center>
 </div>
+
 </body>
 </html>
 

@@ -13,6 +13,12 @@
    
     }
 
+    foreach ($_COOKIE['iceriksayfasi'] as $name => $value) {
+
+      setcookie('iceriksayfasi['.$name.']',$name,time()-3600); 
+   
+    }
+
 $deger1=$_POST["header7_yazi"];
 $deger2=$_POST["header7_yazi2"];
 $deger3=$_POST["header7_yazi3"];

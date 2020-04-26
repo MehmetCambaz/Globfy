@@ -6,6 +6,8 @@
    
     }
 
+ 
+
 
 $deger1=$_POST["leftbar2_arkaplan"];
 $deger2=$_POST["leftbar2_link1"];

@@ -24,8 +24,9 @@ if(isset($_POST['EditorGecis'])){
 	  {
 	 	 KlasorSil("Editor/kullanicisayfalari_".$kullaniciAdi); 
 	  }
-	 
-
+	  
+	  
+  
 
 	  $onizlemeSayfasi=fopen('Editor/onizleme.php','w+');
       $code="<?php include 'mysql_connect.php';
@@ -49,6 +50,7 @@ if(isset($_POST['EditorGecis'])){
 
 		$dosya2=fopen("Editor/editorsayfalari_".$kullaniciAdi."/log.txt","w");
 		fclose($dosya2);
+
 
 		$sorgu2=$baglanti->query('select * from sablon_sayfalari where sablon_id='.$id.'');
 		while($sonuc=mysqli_fetch_assoc($sorgu2) )
@@ -132,6 +134,7 @@ if(isset($_POST['EditorGecis'])){
 ?>
 <html>
 <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <title>WoS | Web Site Oluşturma Sistemi</title>
 <style>
@@ -158,11 +161,11 @@ input:checked + .label {
     position: fixed;
     bottom: 20px;
 	right: 20px;
-	background-color:green;
+	background-color:red;
 	font-family:Calibri;
 	font-size:28px; 
 	visibility: hidden;
-	border-radius:20px;
+	border-radius:0px;
 }
 
 </style>
@@ -211,11 +214,11 @@ input:checked + .label {
 		<?php 
 		if($_POST){
 			  if (empty($_POST["secimRadio"])) {
-				echo "*Şablon Seçmediniz!*";
+				
 			  }
 		}
 		?>
-		<input id="show-me" type="submit" class="gecisButton" value="Sonraki Adıma Geçiniz" name="EditorGecis"/>	
+		<input id="show-me" type="submit" class="gecisButton" value="Sonraki Adıma Geçiniz" name="EditorGecis" style="background-color:#C10000; cursor:pointer; margin:0 30 50 0; border:1px solid white;;"/>	
 		</div>
 	</div>
 	</form>

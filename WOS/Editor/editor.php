@@ -1,9 +1,9 @@
 <html>
 <head>
 <title>WoS | Web Site Oluşturma Sistemi</title>
-
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <script src="http://code.jquery.com/jquery-1.9.1.min.js" type="text/javascript"></script>
-
+<link rel="icon" href="..\Desing\Pictures\logo.ico" type="image/icon type">
 <link href="page3.css" rel="stylesheet" type="text/css"> <!-- Harici css dosyası bağlantısı! -->
 
 <!-- Bu aşağıdaki css her saniye güncellenen kompanent bölümüne ait harici css dosyasında çalışmıyor! -->
@@ -510,6 +510,7 @@ $gelenkullaniciemail=$_SESSION["Kullaniciadi"];
         foreach ($_COOKIE['sayfaEkle'] as $name => $value) {
           $name = htmlspecialchars($name);
           $value = htmlspecialchars($value);
+       
           $yazilacakicerik='$'.$name.$_SESSION["yapilan_islemler"].'="'.$value.'";'; //ayar sayfasından gelen cookieleri sayfaya ekle
 
           $degisecekicerik=$name.'.';
@@ -527,7 +528,26 @@ $gelenkullaniciemail=$_SESSION["Kullaniciadi"];
 
       $veri.=" ?>\n"; //döngüden çıkıp bütün değişkenleri de içinde bulunduran php satırını tamamlıyorum! 
       }
-      
+      if(isset($_COOKIE['galeriEkleme'])){
+        $gelenOturum=$_COOKIE['galeriEkleme'];
+
+        $degisbir='src="resimler/';
+        $degisiki='src="editorsayfalari_'.$gelenkullaniciemail.'/resimler/';
+        $gelenbir='src="resimler/galeri_'.$gelenOturum.'/';
+        $geleniki='src="editorsayfalari_'.$gelenkullaniciemail.'/resimler/galeri_'.$gelenOturum.'/';
+
+        $gelentasarim2=str_replace($degisbir,$gelenbir, $gelentasarim2);
+        $gelentasarimedit=str_replace($degisiki,$geleniki,$gelentasarimedit); 
+
+        $degisuc='aReflesh';
+        $gelenuc='aReflesh'.$gelenOturum;
+
+        $gelentasarim2=str_replace($degisuc,$gelenuc, $gelentasarim2);
+        $gelentasarimedit=str_replace($degisuc,$gelenuc,$gelentasarimedit); 
+
+        setcookie("galeriEkleme","asd",time()-3600);
+      }
+
       $yeni=$eski.$veri.$gelentasarimedit; //yeni değişkeninin başına php değişken satırını ekleyip altınada veritabanından gelen değeri ekleyorum!
       $yeni_onizleme=$eski_onizleme.$veri.$gelentasarim2;
 

@@ -12,6 +12,7 @@
      setcookie('sayfaEkle['.$name.']',$name,time()-3600); 
   
    }
+
 if(isset($_POST['sayfa_ekle'])){
     $file = $_FILES['content1_resim'];
     

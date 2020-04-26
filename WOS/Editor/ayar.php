@@ -31,6 +31,10 @@ padding:5;
 width:100%;
 height:100;
 }
+.ayar_select{
+width:100%;
+height:28;
+}
 
 
 

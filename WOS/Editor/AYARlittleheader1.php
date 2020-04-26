@@ -13,6 +13,7 @@
    
     }
 
+
 $deger1=$_POST["littleheader1_yazi"];
 $deger2=$_POST["littleheader1_yazi2"];
 $deger3=$_POST["littleheader1_yazi3"];

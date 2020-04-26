@@ -19,7 +19,7 @@ window.onload = function() {
     setVisibility();
 };
 </script>
-
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 </head>
 <body>
 <div class="body_Bolumler">
@@ -31,7 +31,7 @@ window.onload = function() {
 <td> <?php
 include 'mysql_connect.php';
     if(!empty($_SESSION["Kullaniciadi"])){
-        echo '<a href="index.php?sayfa=sablonSecim" class="body_Button1">BAŞLA</a>';
+        echo '<a href="index.php?sayfa=sablonSecim" style="background-color:#008000; border:1px solid #007500; color:white;" class="body_Button1">BAŞLA</a>';
     }else{
         echo '<a onclick="Alert()" href="index.php?sayfa=girisislem" class="body_Button1">BAŞLA</a>';
     }
