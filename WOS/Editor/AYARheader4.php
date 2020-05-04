@@ -77,24 +77,41 @@
   }
 
 $deger7=$_POST["header4_yazi"];
-$deger1=$_POST["header4_yazi1"];
-$deger2=$_POST["header4_yazi2"];
-$deger3=$_POST["header4_yazi3"];
+
+$deger1=$_POST["header4_1yazi"];
+$deger2=$_POST["header4_2yazi"];
+$deger3=$_POST["header4_3yazi"];
+$deger11=$_POST["header4_1link"];
+$deger22=$_POST["header4_2link"];
+$deger33=$_POST["header4_3link"];
+
 $deger4=$_POST["header4_yazirenk"];
 $deger5=$_POST["header4_resim"];
 
+$deger6=$_POST["header4_button"];
+if($deger6 == 1){
+  setcookie("sayfaEkle[header4_button]","#008CBA",time()+3600);
+}else if($deger6 == 2){
+  setcookie("sayfaEkle[header4_button]","#f44336",time()+3600);
+}else if($deger6 == 3){
+  setcookie("sayfaEkle[header4_button]","#555555",time()+3600);
+}
+
 setcookie("sayfaEkle[header4_yazi]",$deger7,time()+3600);
 
-setcookie("sayfaEkle[header4_yazi1]",$deger1,time()+3600);
-setcookie("sayfaEkle[header4_yazi2]",$deger2,time()+3600);
-setcookie("sayfaEkle[header4_yazi3]",$deger3,time()+3600);
+setcookie("sayfaEkle[header4_1yazi]",$deger1,time()+3600);
+setcookie("sayfaEkle[header4_2yazi]",$deger2,time()+3600);
+setcookie("sayfaEkle[header4_3yazi]",$deger3,time()+3600);
+setcookie("sayfaEkle[header4_1link]",$deger1,time()+3600);
+setcookie("sayfaEkle[header4_2link]",$deger2,time()+3600);
+setcookie("sayfaEkle[header4_3link]",$deger3,time()+3600);
 
 setcookie("sayfaEkle[header4_yazirenk]",$deger4,time()+3600);
 setcookie("sayfaEkle[header4_resim]","'resimler/".$fileName."'",time()+3600);
 
-setcookie("iceriksayfasi[header4_yazi1]",$deger1,time()+3600*60);
-setcookie("iceriksayfasi[header4_yazi2]",$deger2,time()+3600*60);
-setcookie("iceriksayfasi[header4_yazi3]",$deger3,time()+3600*60);
+setcookie("iceriksayfasi[header4_1link]",$deger11,time()+3600*60);
+setcookie("iceriksayfasi[header4_2link]",$deger22,time()+3600*60);
+setcookie("iceriksayfasi[header4_3link]",$deger33,time()+3600*60);
 
 
 header("Location: editor.php?KompanentEkle=11");//sayfayı yenileyip veritabanından hangi id li kompanentin kodlarını

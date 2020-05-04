@@ -440,6 +440,25 @@ $gelenkullaniciemail=$_SESSION["Kullaniciadi"];
 
       $veri.=" ?>\n"; //döngüden çıkıp bütün değişkenleri de içinde bulunduran php satırını tamamlıyorum! 
       }
+      if(isset($_COOKIE['galeriEkleme'])){
+        $gelenOturum=$_COOKIE['galeriEkleme'];
+
+        $degisbir='src="resimler/';
+        $degisiki='src="editorsayfalari_'.$gelenkullaniciemail.'/resimler/';
+        $gelenbir='src="resimler/galeri_'.$gelenOturum.'/';
+        $geleniki='src="editorsayfalari_'.$gelenkullaniciemail.'/resimler/galeri_'.$gelenOturum.'/';
+
+        $gelentasarim2=str_replace($degisbir,$gelenbir, $gelentasarim2);
+        $gelentasarimedit=str_replace($degisiki,$geleniki,$gelentasarimedit); 
+
+        $degisuc='aReflesh';
+        $gelenuc='aReflesh'.$gelenOturum;
+
+        $gelentasarim2=str_replace($degisuc,$gelenuc, $gelentasarim2);
+        $gelentasarimedit=str_replace($degisuc,$gelenuc,$gelentasarimedit); 
+
+        setcookie("galeriEkleme","asd",time()-3600);
+      }
       
       $yeni=$eski.$veri.$gelentasarimedit; //yeni değişkeninin başına php değişken satırını ekleyip altınada veritabanından gelen değeri ekleyorum!
  
@@ -777,10 +796,10 @@ $gelenkullaniciemail=$_SESSION["Kullaniciadi"];
 
      
       setcookie("iceriksayfasi[".$name."]",$value,time()-3600*60);
-      
-      $onizlemeSayfasi=fopen('onizleme.php','w+');
+   
+      $onizlemeSayfasi=fopen('editorsayfalari_'.$gelenkullaniciemail.'/wos_onizleme.php','w+');
       $code="<?php include 'mysql_connect.php';
-      include 'editorsayfalari_".$gelenkullaniciemail."/".$value.".php'; ?>";
+      include '".$value.".php'; ?>";
       fwrite($onizlemeSayfasi,$code);
       fclose($onizlemeSayfasi);
       fclose($sayfam);

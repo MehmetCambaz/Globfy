@@ -51,6 +51,11 @@ if(isset($_POST['EditorGecis'])){
 		$dosya2=fopen("Editor/editorsayfalari_".$kullaniciAdi."/log.txt","w");
 		fclose($dosya2);
 
+		$dosya3=fopen("Editor/editorsayfalari_".$kullaniciAdi."/wos_onizleme.php","w");
+		$code_onizleme="<?php include 'mysql_connect.php';
+		include 'indexEditor.php'; ?>";
+		$yaz=fwrite($dosya3,$code_onizleme);
+		fclose($dosya3);
 
 		$sorgu2=$baglanti->query('select * from sablon_sayfalari where sablon_id='.$id.'');
 		while($sonuc=mysqli_fetch_assoc($sorgu2) )

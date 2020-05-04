@@ -78,26 +78,45 @@
 
 
 $deger1=$_POST["header8_yazi"];
-$deger2=$_POST["header8_yazi2"];
-$deger3=$_POST["header8_yazi3"];
-$deger4=$_POST["header8_yazi4"];
+$deger2=$_POST["header8_1yazi"];
+$deger3=$_POST["header8_2yazi"];
+$deger4=$_POST["header8_3yazi"];
 
+$deger22=$_POST["header8_1link"];
+$deger33=$_POST["header8_2link"];
+$deger44=$_POST["header8_3link"];
 
-$deger4=$_POST["header8_arkaplan"];
+$deger6=$_POST["header8_arkaplan"];
 $deger5=$_POST["header8_resim"];
 
+$deger7=$_POST["header8_button"];
+
+if($deger7 == 1){
+  setcookie("sayfaEkle[header8_button]","#008CBA",time()+3600);
+}else if($deger7 == 2){
+  setcookie("sayfaEkle[header8_button]","#f44336",time()+3600);
+}else if($deger7 == 3){
+  setcookie("sayfaEkle[header8_button]","#555555",time()+3600);
+}
+
 setcookie("sayfaEkle[header8_yazi]",$deger1,time()+3600);
-setcookie("sayfaEkle[header8_yazi2]",$deger2,time()+3600);
-setcookie("sayfaEkle[header8_yazi3]",$deger3,time()+3600);
-setcookie("sayfaEkle[header8_yazi4]",$deger4,time()+3600);
+
+setcookie("sayfaEkle[header8_1yazi]",$deger2,time()+3600);
+setcookie("sayfaEkle[header8_2yazi]",$deger3,time()+3600);
+setcookie("sayfaEkle[header8_3yazi]",$deger4,time()+3600);
+setcookie("sayfaEkle[header8_1link]",$deger22,time()+3600);
+setcookie("sayfaEkle[header8_2link]",$deger33,time()+3600);
+setcookie("sayfaEkle[header8_3link]",$deger44,time()+3600);
 
 
-setcookie("sayfaEkle[header8_arkaplan]",$deger4,time()+3600);
+
+
+setcookie("sayfaEkle[header8_arkaplan]",$deger6,time()+3600);
 setcookie("sayfaEkle[header8_resim]",$fileName,time()+3600);
 
-setcookie("iceriksayfasi[header8_yazilink]",$deger1,time()+3600*60);
-setcookie("iceriksayfasi[header8_yazilink2]",$deger2,time()+3600*60);
-setcookie("iceriksayfasi[header8_yazilink3]",$deger3,time()+3600*60);
+setcookie("iceriksayfasi[header8_1link]",$deger22,time()+3600*60);
+setcookie("iceriksayfasi[header8_2link]",$deger33,time()+3600*60);
+setcookie("iceriksayfasi[header8_3link]",$deger44,time()+3600*60);
 
 header("Location: editor.php?KompanentEkle=29");//sayfayı yenileyip veritabanından hangi id li kompanentin kodlarını
 // çekeceğini anasayfaya 'KompanentEkle' ile gönderiyorum! 
