@@ -125,7 +125,7 @@ $gelenkullaniciemail=$_SESSION["Kullaniciadi"];
 
       <div class="editor_tab">
         <button class="editor_tablinks" id="tablink_ayar" onclick="openPage(event, 'Ayar', 'tablink_ayar')">Ayarlar</button>
-        <button class="editor_tablinks" id="tablink_komp" onclick="openPage(event, 'Kompanent', 'tablink_komp')">Kompanentler</button>
+        <button class="editor_tablinks" id="tablink_komp" onclick="openPage(event, 'Kompanent', 'tablink_komp')">Komponentler</button>
       </div>
 
       <div id="Ayar" id="ayar" class="editor_tabcontent"> <!-- Ayar sayfası açılıyor! -->
@@ -156,7 +156,7 @@ $gelenkullaniciemail=$_SESSION["Kullaniciadi"];
     
     kullaniciTeslim_sayfalari($secilenBolum); //kullanici sayfalari oluşturan fonksiyon.
 
-    if( $secilenBolum == "header" ) { //Tek bölüm olan sayfaları bu if in altında ki işlemler uygulanacak!
+    if( $secilenBolum == "header" || $secilenBolum == "footer") { //Tek bölüm olan sayfaları bu if in altında ki işlemler uygulanacak!
     
       $dt = fopen('editorsayfalari_'.$gelenkullaniciemail.'/'.$secilenBolum.'.php', 'w+'); //sayfayı w+ ile açıyorum, içeriği silip yeniden yazmak için. Tek sayfa olduğu için!
       $dt_onizleme = fopen('kullanicisayfalari_'.$gelenkullaniciemail.'/'.$secilenBolum.'.php', 'w+');
@@ -631,7 +631,7 @@ $gelenkullaniciemail=$_SESSION["Kullaniciadi"];
       }
     }
    setcookie("secilmissunakikomp",$secilenBolum,time()+12154);
-    if($secilenBolum=="header" || $secilenBolum=="littleheader" || $secilenBolum=="bar1" || $secilenBolum=="bar2" || $secilenBolum=="bar3" || $secilenBolum=="bar4" || $secilenBolum=="bar5"){
+    if($secilenBolum=="header" || $secilenBolum=="littleheader" || $secilenBolum=="bar1" || $secilenBolum=="bar2" || $secilenBolum=="bar3" || $secilenBolum=="bar4" || $secilenBolum=="bar5" || $secilenBolum=="footer"){
       $kodlar=' <div style="position:relative; width:100%; cursor:point;">
       <div style="width:40%;
       padding:10 0 10 0;

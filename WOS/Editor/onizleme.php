@@ -1,2 +1,4 @@
 <?php include 'mysql_connect.php';
-      include 'editorsayfalari_enesdongez@gmail.com/indexEditor.php'; ?>
+$kullanici=$_SESSION["Kullaniciadi"];
+setcookie("Kullanicim",$kullanici,time()+1547);
+      include 'editorsayfalari_'.$kullanici.'/indexEditor.php'; ?>

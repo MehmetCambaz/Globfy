@@ -28,11 +28,11 @@ if(isset($_POST['EditorGecis'])){
 	  
   
 
-	  $onizlemeSayfasi=fopen('Editor/onizleme.php','w+');
+	 /* $onizlemeSayfasi=fopen('Editor/onizleme.php','w+');
       $code="<?php include 'mysql_connect.php';
       include 'editorsayfalari_$kullaniciAdi/indexEditor.php'; ?>";
       fwrite($onizlemeSayfasi,$code);
-	  fclose($onizlemeSayfasi);
+	  fclose($onizlemeSayfasi);*/
 	  
 	  if(!file_exists("Editor/editorsayfalari_".$kullaniciAdi)) {
 		$olustur = mkdir("Editor/editorsayfalari_".$kullaniciAdi);

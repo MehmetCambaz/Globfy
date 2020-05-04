@@ -14,12 +14,21 @@ $dosyaAdiKullanici="kullanicisayfalari_$gelenkullaniciemail";
 $dosyaAdiEditorResim="editorsayfalari_$gelenkullaniciemail/resimler/galeri_$kelime2";
 $dosyaAdiKullaniciResim="kullanicisayfalari_$gelenkullaniciemail/resimler/galeri_$kelime2";
 
+$dosyaAdiEditorResim2="editorsayfalari_$gelenkullaniciemail/resimler";
+$dosyaAdiKullaniciResim2="kullanicisayfalari_$gelenkullaniciemail/resimler";
+
 foreach ($_COOKIE['sayfaEkle'] as $name => $value) {
 
   setcookie('sayfaEkle['.$name.']',$name,time()-3600); 
 
 }
+if(!file_exists($dosyaAdiEditorResim2)) {
+  $olustur = mkdir($dosyaAdiEditorResim2);
+}
 
+if(!file_exists($dosyaAdiKullaniciResim2)) {
+  $olustur = mkdir($dosyaAdiKullaniciResim2);
+}
 
 
 if(isset($_POST['sayfa_ekle'])){
