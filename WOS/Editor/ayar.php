@@ -12,7 +12,7 @@ font-size:18;
 
 }
 .ayar_textbox{
-width:100%;
+width:80%;
 
 font-family:Calibri;
 font-size:16;
@@ -28,11 +28,11 @@ border-bottom:1px solid black;
 padding:5;
 }
 .ayar_textarea{
-width:100%;
+width:80%;
 height:100;
 }
 .ayar_select{
-width:100%;
+width:80%;
 height:28;
 }
 

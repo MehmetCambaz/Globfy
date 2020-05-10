@@ -6,7 +6,7 @@ include 'mysql_connect.php';
 			$sorgu4 = $baglanti->query($sql4);
 			$oturum="";
 			echo '<table border="0px" width="100%">';
-			echo '<tr><td><h1 style="text-align:center;">Komponentler</h1></td></tr>';
+			echo '<tr><td><h1 style="text-align:center; font-family:Calibri;">'.mb_strtoupper($gelen).'</h1></td></tr>';
 			
 			while($sonuc4=mysqli_fetch_assoc($sorgu4) )
 			{

@@ -10,8 +10,7 @@
 <style>
 
 body{
-
-background: url(wos_background.gif);
+  background: url(wos_background.gif);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-attachment: fixed;

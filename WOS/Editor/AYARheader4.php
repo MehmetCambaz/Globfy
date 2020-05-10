@@ -81,9 +81,9 @@ $deger7=$_POST["header4_yazi"];
 $deger1=$_POST["header4_1yazi"];
 $deger2=$_POST["header4_2yazi"];
 $deger3=$_POST["header4_3yazi"];
-$deger11=$_POST["header4_1link"];
-$deger22=$_POST["header4_2link"];
-$deger33=$_POST["header4_3link"];
+$deger11=replace_tr($deger1);
+$deger22=replace_tr($deger2);
+$deger33=replace_tr($deger3);
 
 $deger4=$_POST["header4_yazirenk"];
 $deger5=$_POST["header4_resim"];
@@ -117,4 +117,14 @@ setcookie("iceriksayfasi[header4_3link]",$deger33,time()+3600*60);
 header("Location: editor.php?KompanentEkle=11");//sayfayı yenileyip veritabanından hangi id li kompanentin kodlarını
 // çekeceğini anasayfaya 'KompanentEkle' ile gönderiyorum! 
 //index3.php de de bunu okuyup işlem yapıyorum!
+?>
+
+<?php
+function replace_tr($text) {
+  $text = trim($text);
+  $search = array('Ç','ç','Ğ','ğ','ı','İ','Ö','ö','Ş','ş','Ü','ü',' ');
+  $replace = array('c','c','g','g','i','i','o','o','s','s','u','u','-');
+  $new_text = str_replace($search,$replace,$text);
+  return $new_text;
+} 
 ?>

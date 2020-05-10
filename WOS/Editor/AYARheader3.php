@@ -83,11 +83,11 @@ $deger3=$_POST["header3_3yazi"];
 $deger6=$_POST["header3_4yazi"];
 $deger7=$_POST["header3_5yazi"];
 
-$deger11=$_POST["header3_1link"];
-$deger22=$_POST["header3_2link"];
-$deger33=$_POST["header3_3link"];
-$deger66=$_POST["header3_4link"];
-$deger77=$_POST["header3_5link"];
+$deger11=replace_tr($deger1);
+$deger22=replace_tr($deger2);
+$deger33=replace_tr($deger3);
+$deger66=replace_tr($deger6);
+$deger77=replace_tr($deger7);
 
 $deger4=$_POST["header3_arkaplan"];
 $deger5=$_POST["header3_resim"];
@@ -100,6 +100,19 @@ if($deger8 == 1){
 }else if($deger8 == 3){
   setcookie("sayfaEkle[header3_button]","#555555",time()+3600);
 }
+
+if($_POST["header3_resim_daire"] == null)
+      $deger9=" ";
+else
+      $deger9=$_POST["header3_resim_daire"];
+
+if($_POST["header3_resim_gölge"] == null)
+      $deger10=" ";
+else
+      $deger10=$_POST["header3_resim_gölge"];
+      
+$deger14=$_POST["header3_resim_genislik"];
+$deger12=$_POST["header3_resim_yükseklik"];
 
 setcookie("sayfaEkle[header3_1yazi]",$deger1,time()+3600);
 setcookie("sayfaEkle[header3_2yazi]",$deger2,time()+3600);
@@ -122,7 +135,23 @@ setcookie("iceriksayfasi[header3_yazi3]",$deger33,time()+3600*60);
 setcookie("iceriksayfasi[header3_yazi4]",$deger66,time()+3600*60);
 setcookie("iceriksayfasi[header3_yazi5]",$deger77,time()+3600*60);
 
+setcookie("sayfaEkle[header3_resim_daire]",$deger9,time()+3600);
+setcookie("sayfaEkle[header3_resim_gölge]",$deger10,time()+3600);
+setcookie("sayfaEkle[header3_resim_genislik]",$deger14,time()+3600);
+setcookie("sayfaEkle[header3_resim_yükseklik]",$deger12,time()+3600);
+
+
 header("Location: editor.php?KompanentEkle=4");//sayfayı yenileyip veritabanından hangi id li kompanentin kodlarını
 // çekeceğini anasayfaya 'KompanentEkle' ile gönderiyorum! 
 //index3.php de de bunu okuyup işlem yapıyorum!
+?>
+
+<?php
+function replace_tr($text) {
+  $text = trim($text);
+  $search = array('Ç','ç','Ğ','ğ','ı','İ','Ö','ö','Ş','ş','Ü','ü',' ');
+  $replace = array('c','c','g','g','i','i','o','o','s','s','u','u','-');
+  $new_text = str_replace($search,$replace,$text);
+  return $new_text;
+} 
 ?>

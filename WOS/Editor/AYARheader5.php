@@ -1,3 +1,4 @@
+
 <?php 
   include 'mysql_connect.php';
   $gelenkullaniciemail=$_SESSION["Kullaniciadi"];
@@ -25,11 +26,11 @@ $deger3=$_POST["header5_3yazi"];
 $deger6=$_POST["header5_4yazi"];
 $deger7=$_POST["header5_5yazi"];
 
-$deger11=$_POST["header5_1link"];
-$deger22=$_POST["header5_2link"];
-$deger33=$_POST["header5_3link"];
-$deger66=$_POST["header5_4link"];
-$deger77=$_POST["header5_5link"];
+$deger11=replace_tr($deger1);
+$deger22=replace_tr($deger2);
+$deger33=replace_tr($deger3);
+$deger66=replace_tr($deger6);
+$deger77=replace_tr($deger7);
 
 $deger4=$_POST["header5_arkaplan"];
 
@@ -67,4 +68,14 @@ setcookie("iceriksayfasi[header5_5link]",$deger77,time()+3600*60);
 header("Location: editor.php?KompanentEkle=24");//sayfayı yenileyip veritabanından hangi id li kompanentin kodlarını
 // çekeceğini anasayfaya 'KompanentEkle' ile gönderiyorum! 
 //index3.php de de bunu okuyup işlem yapıyorum!
+?>
+
+<?php
+function replace_tr($text) {
+  $text = trim($text);
+  $search = array('Ç','ç','Ğ','ğ','ı','İ','Ö','ö','Ş','ş','Ü','ü',' ');
+  $replace = array('c','c','g','g','i','i','o','o','s','s','u','u','-');
+  $new_text = str_replace($search,$replace,$text);
+  return $new_text;
+} 
 ?>

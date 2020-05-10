@@ -43,6 +43,25 @@ body{
       display: none;
       padding: 6px 12px;
   }
+  	/* width */
+::-webkit-scrollbar {
+	width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+	background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+	background: #6D6D6D; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+	background: #555; 
+  }
 </style>
 
 <script language="JavaScript"> // ayar,kompanent geçiş için javascript kodları
@@ -89,7 +108,7 @@ $gelenkullaniciemail=$_SESSION["Kullaniciadi"];
     
       <div style="width:10%; float:left;">
         <form method="post"> <!-- Geri Alma işlemi FORM u! -->
-          <input type="submit" name="gerial" value="Geri Al" style="width:80px; height:40px; background-color:gray; color:white; margin:10 0 0 10;"/>
+          <input type="submit" name="gerial" value="Geri Al" title="Seçilen bölümdeki son işlemi geri alır." style="width:80px; cursor:pointer; height:40px; background-color:gray; color:white; margin:10 0 0 10;"/>
         </form>
       </div> 
       <div style="width:77%; margin:-20 0 0 0;float:left; text-align:center;">   
@@ -98,9 +117,9 @@ $gelenkullaniciemail=$_SESSION["Kullaniciadi"];
         <?php 
         if(!empty($_COOKIE["kilavuz_cizgisi"])){
           $buttonisimi=$_COOKIE["kilavuz_cizgisi"];
-          echo '<input type="submit" name="kilavuz_cizgisi" value="'.$buttonisimi.'" style="width:170px; height:40px; background-color:gray; color:white; margin:10 10 0 0;"/>';
+          echo '<input type="submit" name="kilavuz_cizgisi" value="'.$buttonisimi.'" style="width:170px; cursor:pointer;height:40px; background-color:gray; color:white; margin:10 10 0 0;"/>';
         }else{
-          echo '<input type="submit" name="kilavuz_cizgisi" value="Kılavuz Çizgi Kaldır" style="width:170px; height:40px; background-color:gray; color:white; margin:10 10 0 0;"/>';
+          echo '<input type="submit" name="kilavuz_cizgisi" value="Kılavuz Çizgi Kaldır" style=" cursor:pointer; width:170px; height:40px; background-color:gray; color:white; margin:10 10 0 0;"/>';
         }
         ?>
           <!--<input type="submit" name="kilavuz_kaldir" value="Kılavuz Çizgi Kaldır" style="width:170px; height:40px; background-color:gray; color:white; margin:10 10 0 0;"/>
@@ -111,10 +130,10 @@ $gelenkullaniciemail=$_SESSION["Kullaniciadi"];
       <?php 
         echo '<form method="post"  action="kullanicisayfalari_'.$gelenkullaniciemail.'/index.php" target="_blank">';
       ?>
-          <input type="submit" name="onizle" value="Önizleme" style="float:right;width:80px; height:40px;float:right; background-color:gray; color:white; margin:10 10 0 0;"/>
+          <input type="submit" name="onizle" value="Önizleme" style="float:right;width:80px; cursor:pointer; height:40px;float:right; background-color:gray; color:white; margin:10 10 0 0;"/>
         </form>
 
-        <a href="?sonraki_sayfa" style=" float:right; padding:4 8 5 8; text-decoration:none; font-family:Calibri; font-size:18; border:0.5px solid #D00000; background-color:#D00000; margin:10 10 10 0;color:white;">Sonraki Adıma Geç</a>
+        <a href="?sonraki_sayfa" style=" float:right; padding:4 8 5 8; text-decoration:none; font-family:Calibri; font-size:18; cursor:pointer; border:0.5px solid green; background-color:green; margin:10 10 10 0;color:white;">Sonraki Adıma Geç</a>
 
       </div> 
         <?php include 'onizleme.php'; ?> <!-- kullanıcının sayfası, editör sayfası çağırıldı -->
@@ -125,7 +144,7 @@ $gelenkullaniciemail=$_SESSION["Kullaniciadi"];
 
       <div class="editor_tab">
         <button class="editor_tablinks" id="tablink_ayar" onclick="openPage(event, 'Ayar', 'tablink_ayar')">Ayarlar</button>
-        <button class="editor_tablinks" id="tablink_komp" onclick="openPage(event, 'Kompanent', 'tablink_komp')">Komponentler</button>
+        <button class="editor_tablinks" id="tablink_komp" onclick="openPage(event, 'Kompanent', 'tablink_komp')">Bileşenler</button>
       </div>
 
       <div id="Ayar" id="ayar" class="editor_tabcontent"> <!-- Ayar sayfası açılıyor! -->
@@ -179,7 +198,7 @@ $gelenkullaniciemail=$_SESSION["Kullaniciadi"];
             font-size:35px;
             font-weight:bold;
             font-family:calibri;
-            color:white;
+            color:white;cursor:pointer;
             ">Tıkla ve Düzenle</div></div>';
 
       $gelentasarim2=$tiklaveduzenlekodu.$gelentasarim; //php dosyaları hariç sayfaya yazacağım içerik!
@@ -295,7 +314,7 @@ $gelenkullaniciemail=$_SESSION["Kullaniciadi"];
             font-size:35px;
             font-weight:bold;
             font-family:calibri;
-            color:white;
+            color:white;cursor:pointer;
             ">Tıkla ve Düzenle</div></div>';
 
       $gelentasarim2=$tiklaveduzenlekodu.$gelentasarim; //php dosyaları hariç sayfaya yazacağım içerik!
@@ -665,7 +684,7 @@ $gelenkullaniciemail=$_SESSION["Kullaniciadi"];
       font-size:35px;
       font-weight:bold;
       font-family:calibri;
-      color:white;
+      color:white;cursor:pointer;
       ">Tıkla ve Düzenle</div>';
          
       $okuAnasayfa=file_get_contents("editorsayfalari_'.$gelenkullaniciemail.'/'.$secilenBolum.'.php"); //anasayfam!
@@ -688,35 +707,39 @@ $gelenkullaniciemail=$_SESSION["Kullaniciadi"];
 
   if(isset($_POST['kilavuz_cizgisi'])){
 
-    if(empty($_COOKIE["kilavuz_cizgisi"])){
+    if($_COOKIE["kilavuz_cizgisi"] == ""){
       $anasayfaIcerik=file_get_contents('editorsayfalari_'.$gelenkullaniciemail.'/indexEditor.php');
       $anasayfa=fopen('editorsayfalari_'.$gelenkullaniciemail.'/indexEditor.php','w');
-      $anasayfaIcerik=str_replace('class="data" border="0px"','class="data" border="1px"',$anasayfaIcerik);
+      $anasayfaIcerik=str_replace('<table class="data" border="1px"','<table class="data" border="0px"',$anasayfaIcerik);
       fwrite($anasayfa,$anasayfaIcerik);
      
+      setcookie("kilavuz_cizgisi","Kılavuz Çizgisi Ekle",time()+30*30*60);
       
-      setcookie("kilavuz_cizgisi","Kılavuz Çizgisi Ekle",time()+1*30*30*60);
-
       header('Location:'.$_SERVER['HTTP_REFERER']);
     }else{
-      $buttonisimiALT=$_COOKIE["kilavuz_cizgisi"];
-      if($buttonisimiALT=="Kılavuz Çizgisi Ekle"){
+      $deger=$_COOKIE["kilavuz_cizgisi"];
+      if($deger=="Kılavuz Çizgisi Ekle"){
         $anasayfaIcerik=file_get_contents('editorsayfalari_'.$gelenkullaniciemail.'/indexEditor.php');
         $anasayfa=fopen('editorsayfalari_'.$gelenkullaniciemail.'/indexEditor.php','w');
-        $anasayfaIcerik=str_replace('class="data" border="0px"','class="data" border="1px"',$anasayfaIcerik);
+        $anasayfaIcerik=str_replace('<table class="data" border="0px"','<table class="data" border="1px"',$anasayfaIcerik);
         fwrite($anasayfa,$anasayfaIcerik);
-        setcookie("kilavuz_cizgisi","Kılavuz Çizgisi Kaldır",time()+1*30*30*60);
+       
+        setcookie("kilavuz_cizgisi","Kılavuz Çizgisi Kaldır",time()+30*30*60);
+        
+        header('Location:'.$_SERVER['HTTP_REFERER']);
       }else{
         $anasayfaIcerik=file_get_contents('editorsayfalari_'.$gelenkullaniciemail.'/indexEditor.php');
         $anasayfa=fopen('editorsayfalari_'.$gelenkullaniciemail.'/indexEditor.php','w');
-        $anasayfaIcerik=str_replace('class="data" border="1px"','class="data" border="0px"',$anasayfaIcerik);
+        $anasayfaIcerik=str_replace('<table class="data" border="1px"','<table class="data" border="0px"',$anasayfaIcerik);
         fwrite($anasayfa,$anasayfaIcerik);
        
-        setcookie("kilavuz_cizgisi","Kılavuz Çizgisi Ekle",time()+1*30*30*60);
+        setcookie("kilavuz_cizgisi","Kılavuz Çizgisi Ekle",time()+30*30*60);
+        
+        header('Location:'.$_SERVER['HTTP_REFERER']);
       }
-      header('Location:'.$_SERVER['HTTP_REFERER']);
+
     }
-    
+
 
   }
 
@@ -748,11 +771,52 @@ $gelenkullaniciemail=$_SESSION["Kullaniciadi"];
       $sayfam_onizleme2=fopen('kullanicisayfalari_'.$gelenkullaniciemail.'/content_'.$value.'.php','w');
 
       $path="<?php include 'content_".$value.".php'; ?>";
-      $code_onizleme='<td id="content_'.$value.'" colspan="4" rowspan="4" valign="top" style="word-break:break-all; width:100%;">  
+
+      $secilenSablon_ID=$_SESSION["secilenSablonID"];
+
+      if($secilenSablon_ID == 2){
+      $code_onizleme='<td id="content_'.$value.'" colspan="5" valign="top" style="word-break:break-all; width:100%;">  
               <div id="content_'.$value.'">          
               '.$path.'
               </div>         
             </td>';
+      }else if($secilenSablon_ID == 3 || $secilenSablon_ID == 6 || $secilenSablon_ID == 11){
+        $code_onizleme='<td id="content_'.$value.'" colspan="4" rowspan="4" valign="top" style="word-break:break-all; width:100%;">  
+              <div id="content_'.$value.'">          
+              '.$path.'
+              </div>         
+            </td>';
+      }else if($secilenSablon_ID == 4 || $secilenSablon_ID == 5 || $secilenSablon_ID == 8 ){
+        $code_onizleme='<td id="content_'.$value.'" colspan="6" valign="top" style="word-break:break-all; width:100%;">  
+              <div id="content_'.$value.'">          
+              '.$path.'
+              </div>         
+            </td>';
+      }else if($secilenSablon_ID == 9){
+        $code_onizleme='<td id="content_'.$value.'" colspan="3" rowspan="4" valign="top" style="word-break:break-all; width:100%;">  
+              <div id="content_'.$value.'">          
+              '.$path.'
+              </div>         
+            </td>';
+      }else if($secilenSablon_ID == 10 || $secilenSablon_ID == 12 || $secilenSablon_ID == 13){
+        $code_onizleme='<td id="content_'.$value.'" colspan="2" rowspan="4" valign="top" style="word-break:break-all; width:100%;">  
+              <div id="content_'.$value.'">          
+              '.$path.'
+              </div>         
+            </td>';
+      }else if($secilenSablon_ID == 14 || $secilenSablon_ID == 15){
+        $code_onizleme='<td id="content_'.$value.'" rowspan="4" valign="top" style="word-break:break-all;">  
+              <div id="content_'.$value.'">          
+              '.$path.'
+              </div>         
+            </td>';
+      }else{
+        $code_onizleme='<td id="content_'.$value.'"  valign="top" style="word-break:break-all; width:100%;">  
+        <div id="content_'.$value.'">          
+        '.$path.'
+        </div>         
+      </td>';
+      }
       $code='<html>
       <head>
       <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -789,7 +853,7 @@ $gelenkullaniciemail=$_SESSION["Kullaniciadi"];
       font-weight:bold;
       font-family:calibri;
       color:white;
-      
+      cursor:pointer;
       ">Tıkla ve Düzenle ('.$value.')</div></div>';
 
       fwrite($sayfam2,$ekstra);

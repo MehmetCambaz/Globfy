@@ -35,7 +35,7 @@ $email=$_SESSION["Kullaniciadi"];
             $ad_soyad=$sorgu["ad"]." ".$sorgu["soyad"];
 		}
 	}
-echo '<b style="font-weight:normal;">Hoşgeldiniz </b><b style="font-size:20;"><i>'.ucwords($ad_soyad).',</i></b>';
+echo '<b style="font-weight:normal;">Hoşgeldiniz </b><b style="font-size:20;"><i>'.ucwords($ad_soyad).'</i></b>';
 ?>
 
 </div>
