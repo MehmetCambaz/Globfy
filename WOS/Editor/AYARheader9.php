@@ -78,28 +78,76 @@
 
 
 $deger1=$_POST["header9_yazi"];
-$deger2=$_POST["header9_yazi2"];
-$deger3=$_POST["header9_yazi3"];
-$deger4=$_POST["header9_yazi4"];
+$deger2=$_POST["header9_1yazi"];
+$deger3=$_POST["header9_2yazi"];
+$deger4=$_POST["header9_3yazi"];
 
+$deger22=replace_tr($deger2);
+$deger33=replace_tr($deger3);
+$deger44=replace_tr($deger4);
 
-$deger4=$_POST["header9_arkaplan"];
+$deger6=$_POST["header9_arkaplan"];
 $deger5=$_POST["header9_resim"];
 
+$deger7=$_POST["header9_button"];
+
+if($deger7 == 1){
+  setcookie("sayfaEkle[header9_button]","#008CBA",time()+3600);
+}else if($deger7 == 2){
+  setcookie("sayfaEkle[header9_button]","#f44336",time()+3600);
+}else if($deger7 == 3){
+  setcookie("sayfaEkle[header9_button]","#555555",time()+3600);
+}
+
+$deger45=$_POST["header9_yazim_fontu"];
+$deger155=$_POST["header9_baslikrenk"];
+$deger65=$_POST["header9_resim_genislik"];
+$deger75=$_POST["header9_resim_yükseklik"];
+
+if($_POST["header9_resim_daire"] == null)
+      $deger51=" ";
+else
+      $deger51=$_POST["header9_resim_daire"];
+
+if($_POST["header9_resim_golge"] == null)
+      $deger81=" ";
+else
+      $deger81=$_POST["header9_resim_golge"];
+
 setcookie("sayfaEkle[header9_yazi]",$deger1,time()+3600);
-setcookie("sayfaEkle[header9_yazi2]",$deger2,time()+3600);
-setcookie("sayfaEkle[header9_yazi3]",$deger3,time()+3600);
-setcookie("sayfaEkle[header9_yazi4]",$deger4,time()+3600);
 
+setcookie("sayfaEkle[header9_1yazi]",$deger2,time()+3600);
+setcookie("sayfaEkle[header9_2yazi]",$deger3,time()+3600);
+setcookie("sayfaEkle[header9_3yazi]",$deger4,time()+3600);
+setcookie("sayfaEkle[header9_1link]",$deger22,time()+3600);
+setcookie("sayfaEkle[header9_2link]",$deger33,time()+3600);
+setcookie("sayfaEkle[header9_3link]",$deger44,time()+3600);
 
-setcookie("sayfaEkle[header9_arkaplan]",$deger4,time()+3600);
+setcookie("sayfaEkle[header9_yazim_fontu]",$deger45,time()+3600);
+setcookie("sayfaEkle[header9_baslikrenk]",$deger155,time()+3600);
+setcookie("sayfaEkle[header9_resim_genislik]",$deger65,time()+3600);
+setcookie("sayfaEkle[header9_resim_yükseklik]",$deger75,time()+3600);
+setcookie("sayfaEkle[header9_resim_daire]",$deger51,time()+3600);
+setcookie("sayfaEkle[header9_resim_golge]",$deger81,time()+3600);
+
+setcookie("sayfaEkle[header9_arkaplan]",$deger6,time()+3600);
 setcookie("sayfaEkle[header9_resim]",$fileName,time()+3600);
 
-setcookie("iceriksayfasi[header9_yazilink]",$deger1,time()+3600*60);
-setcookie("iceriksayfasi[header9_yazilink2]",$deger2,time()+3600*60);
-setcookie("iceriksayfasi[header9_yazilink3]",$deger3,time()+3600*60);
+setcookie("iceriksayfasi[header9_1link]",$deger22,time()+3600*60);
+setcookie("iceriksayfasi[header9_2link]",$deger33,time()+3600*60);
+setcookie("iceriksayfasi[header9_3link]",$deger44,time()+3600*60);
 
 header("Location: editor.php?KompanentEkle=30");//sayfayı yenileyip veritabanından hangi id li kompanentin kodlarını
 // çekeceğini anasayfaya 'KompanentEkle' ile gönderiyorum! 
 //index3.php de de bunu okuyup işlem yapıyorum!
+?>
+
+<?php
+function replace_tr($text) {
+  $text = trim($text);
+  $search = array('Ç','ç','Ğ','ğ','ı','İ','Ö','ö','Ş','ş','Ü','ü',' ');
+  $replace = array('c','c','g','g','i','i','o','o','s','s','u','u','-');
+  $new_text = str_replace($search,$replace,$text);
+  return $new_text;
+} 
 ?>

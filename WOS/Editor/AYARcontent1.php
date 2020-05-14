@@ -75,10 +75,36 @@ $deger1=$_POST["content1_yazim"];
 $deger2=$_POST["content1_resim"];
 $deger3=$_POST["content1_arkaplan"];
 $deger4=$_POST["content1_yazim_rengi"];
+
+$deger9=$_POST["content1_yazim_fontu"];
+$deger6=$_POST["content1_resim_genislik"];
+$deger7=$_POST["content1_resim_yükseklik"];
+
+if($_POST["content1_resim_daire"] == null)
+      $deger5=" ";
+else
+      $deger5=$_POST["content1_resim_daire"];
+
+if($_POST["content1_resim_golge"] == null)
+      $deger8=" ";
+else
+      $deger8=$_POST["content1_resim_golge"];
+      
+$deger11=$_POST["content1_yaziboyutu"];
+
+
+
 setcookie("sayfaEkle[content1_yazim]",$deger1,time()+3600);
 setcookie("sayfaEkle[content1_resim]",$fileName,time()+3600);
 setcookie("sayfaEkle[content1_arkaplan]",$deger3,time()+3600);
 setcookie("sayfaEkle[content1_yazim_rengi]",$deger4,time()+3600);
+
+setcookie("sayfaEkle[content1_yazim_fontu]",$deger9,time()+3600);
+setcookie("sayfaEkle[content1_resim_genislik]",$deger6,time()+3600);
+setcookie("sayfaEkle[content1_resim_yükseklik]",$deger7,time()+3600);
+setcookie("sayfaEkle[content1_resim_daire]",$deger5,time()+3600);
+setcookie("sayfaEkle[content1_resim_golge]",$deger8,time()+3600);
+setcookie("sayfaEkle[content1_yaziboyutu]",$deger11,time()+3600);
 
 header("Location: editor.php?KompanentEkle=5");
 

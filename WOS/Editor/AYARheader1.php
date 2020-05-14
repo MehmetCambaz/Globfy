@@ -78,20 +78,20 @@ $deger2=$_POST["header1_arkaplan"];
 $deger3=$_POST["header1_resim"];
 $deger4=$_POST["header1_yazim_fontu"];
 $deger15=$_POST["header1_yazim_renk"];
+$deger6=$_POST["header1_resim_genislik"];
+$deger7=$_POST["header1_resim_yükseklik"];
 
 if($_POST["header1_resim_daire"] == null)
       $deger5=" ";
 else
       $deger5=$_POST["header1_resim_daire"];
 
-if($_POST["header1_resim_gölge"] == null)
+if($_POST["header1_resim_golge"] == null)
       $deger8=" ";
 else
-      $deger8=$_POST["header1_resim_gölge"];
+      $deger8=$_POST["header1_resim_golge"];
       
-$deger6=$_POST["header1_resim_genislik"];
-$deger7=$_POST["header1_resim_yükseklik"];
-$deger8=$_POST["header1_resim_gölge"];
+
 
 
 setcookie("sayfaEkle[header1_yazi]",$deger1,time()+3600);
@@ -102,7 +102,7 @@ setcookie("sayfaEkle[header1_yazim_renk]",$deger15,time()+3600);
 setcookie("sayfaEkle[header1_resim_daire]",$deger5,time()+3600);
 setcookie("sayfaEkle[header1_resim_genislik]",$deger6,time()+3600);
 setcookie("sayfaEkle[header1_resim_yükseklik]",$deger7,time()+3600);
-setcookie("sayfaEkle[header1_resim_gölge]",$deger8,time()+3600);
+setcookie("sayfaEkle[header1_resim_golge]",$deger8,time()+3600);
 
 
 header("Location: editor.php?KompanentEkle=2");//sayfayı yenileyip veritabanından hangi id li kompanentin kodlarını

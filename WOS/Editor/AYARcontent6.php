@@ -75,12 +75,16 @@ $deger7=$_POST["content6_yazi"];
 
 $deger4=$_POST["content6_yazirenk"];
 $deger5=$_POST["content6_resim"];
+$deger42=$_POST["content6_yazim_fontu"];
+$deger53=$_POST["content6_yaziboyutu"];
 
 setcookie("sayfaEkle[content6_yazi]",$deger7,time()+3600);
 
 
 setcookie("sayfaEkle[content6_yazirenk]",$deger4,time()+3600);
 setcookie("sayfaEkle[content6_resim]","'resimler/".$fileName."'",time()+3600);
+setcookie("sayfaEkle[content6_yazim_fontu]",$deger42,time()+3600);
+setcookie("sayfaEkle[content6_yaziboyutu]",$deger53,time()+3600);
 
 
 

@@ -84,7 +84,7 @@ $deger3=$_POST["header2_3yazi"];
 
 
 
-$deger11=replace_tr($deger1);
+$deger111=replace_tr($deger1);
 $deger22=replace_tr($deger2);
 $deger33=replace_tr($deger3);
 
@@ -125,14 +125,14 @@ setcookie("sayfaEkle[header2_1yazi]",$deger1,time()+3600);
 setcookie("sayfaEkle[header2_2yazi]",$deger2,time()+3600);
 setcookie("sayfaEkle[header2_3yazi]",$deger3,time()+3600);
 
-setcookie("sayfaEkle[header2_1link]",$deger11,time()+3600);
+setcookie("sayfaEkle[header2_1link]",$deger111,time()+3600);
 setcookie("sayfaEkle[header2_2link]",$deger22,time()+3600);
 setcookie("sayfaEkle[header2_3link]",$deger33,time()+3600);
 
 setcookie("sayfaEkle[header2_arkaplan]",$deger6,time()+3600);
 setcookie("sayfaEkle[header2_resim]",$fileName,time()+3600);
 
-setcookie("iceriksayfasi[header2_1link]",$deger11,time()+3600*60);
+setcookie("iceriksayfasi[header2_1link]",$deger111,time()+3600*60);
 setcookie("iceriksayfasi[header2_2link]",$deger22,time()+3600*60);
 setcookie("iceriksayfasi[header2_3link]",$deger33,time()+3600*60);
 

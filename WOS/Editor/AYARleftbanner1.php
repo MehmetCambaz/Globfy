@@ -20,6 +20,8 @@ $deger9=$_POST["leftbar1_link2adres"];
 $deger10=$_POST["leftbar1_link3adres"];
 $deger11=$_POST["leftbar1_link4adres"];
 $deger7=$_POST["leftbar1_linkyazirenk"];
+$deger12=$_POST["leftbar1_yazim_fontu"];
+$deger13=$_POST["leftbar1_yaziboyutu"];
 
 
 
@@ -29,6 +31,8 @@ setcookie("sayfaEkle[leftbar1_link1]",$deger3,time()+3600);
 setcookie("sayfaEkle[leftbar1_link2]",$deger4,time()+3600);
 setcookie("sayfaEkle[leftbar1_link3]",$deger5,time()+3600);
 setcookie("sayfaEkle[leftbar1_link4]",$deger6,time()+3600);
+setcookie("sayfaEkle[leftbar1_yazim_fontu]",$deger12,time()+3600);
+setcookie("sayfaEkle[leftbar1_yaziboyutu]",$deger13,time()+3600);
 
 setcookie("sayfaEkle[leftbar1_link1adres]",$deger8,time()+3600);
 setcookie("sayfaEkle[leftbar1_link2adres]",$deger9,time()+3600);

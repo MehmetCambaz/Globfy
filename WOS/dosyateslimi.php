@@ -35,7 +35,7 @@ echo '<h2>Bizi tercih ettiğin için teşekkürler <i>'.ucwords($ad_soyad).',</i
 </div>
 <div class="dosyateslim_button">
 <form method="POST">
-<input type="submit" name="dosya_indir" class="dosyateslim_button_tasarim" value="İNDİR"/>
+<input type="submit" name="dosya_indir" class="dosyateslim_button_tasarim" value="İNDİR" style="cursor:pointer;"/>
 
 </form>
 </div>
@@ -49,9 +49,8 @@ echo '<h2>Bizi tercih ettiğin için teşekkürler <i>'.ucwords($ad_soyad).',</i
 </html>
 
 <?php
+son_islem_kayit($name);
 if(isset($_POST["dosya_indir"])){
-
-
     zip_download($name);
 }
 
@@ -59,14 +58,12 @@ function zip_download($name){
 	$dir = "Editor/kullanicisayfalari_".$name; 
 	$zip_file = "Editor/kullanicisayfalari_".$name."/wos.zip";
 
-	// Get real path for our folder
+	if(!is_file($zip_file)){
 	$rootPath = realpath($dir);
 
-	// Initialize archive object
 	$zip = new ZipArchive();
 	$zip->open($zip_file, ZipArchive::CREATE | ZipArchive::OVERWRITE);
 
-	// Create recursive directory iterator
 	/** @var SplFileInfo[] $files */
 	$files = new RecursiveIteratorIterator(
 		new RecursiveDirectoryIterator($rootPath),
@@ -75,28 +72,122 @@ function zip_download($name){
 
 	foreach ($files as $name => $file)
 	{
-		// Skip directories (they would be added automatically)
+
 		if (!$file->isDir())
 		{
-			// Get real and relative path for current file
+
 			$filePath = $file->getRealPath();
 			$relativePath = substr($filePath, strlen($rootPath) + 1);
 
-			// Add current file to archive
 			$zip->addFile($filePath, $relativePath);
 		}
 	}
 
-	// Zip archive will be created only after closing object
 	$zip->close();
+	}else{
+		unlink($zip_file);
 
+		$rootPath = realpath($dir);
+
+	$zip = new ZipArchive();
+	$zip->open($zip_file, ZipArchive::CREATE | ZipArchive::OVERWRITE);
+
+	/** @var SplFileInfo[] $files */
+	$files = new RecursiveIteratorIterator(
+		new RecursiveDirectoryIterator($rootPath),
+		RecursiveIteratorIterator::LEAVES_ONLY
+	);
+
+	foreach ($files as $name => $file)
+	{
+
+		if (!$file->isDir())
+		{
+
+			$filePath = $file->getRealPath();
+			$relativePath = substr($filePath, strlen($rootPath) + 1);
+
+			$zip->addFile($filePath, $relativePath);
+		}
+	}
+
+	$zip->close();
+	}
 
 	$file_url = $zip_file;
 		header('Content-Type: application/octet-stream');
 		header("Content-Transfer-Encoding: Binary"); 
-		header("Content-disposition: attachment; filename=\"" . basename($file_url) . "\""); 
+		header("Content-disposition: attachment; filename=\"" . $file_url . "\""); 
 		readfile($file_url); 
 }
 
+
+function son_islem_kayit($name){
+	if(!file_exists("Editor/Son_Islem")) {
+		$olustur = mkdir("Editor/Son_Islem");
+	  }
+	  if(!file_exists("Editor/Son_Islem/kullanicisayfalari_".$name)) {
+		$olustur = mkdir("Editor/Son_Islem/kullanicisayfalari_".$name);
+	  }
+	$dir = "Editor/kullanicisayfalari_".$name; 
+	$zip_file = "Editor/Son_Islem/kullanicisayfalari_".$name."/wos.zip";
+	
+	if(!is_file($zip_file)){
+	
+	$rootPath = realpath($dir);
+
+	$zip = new ZipArchive();
+	$zip->open($zip_file, ZipArchive::CREATE | ZipArchive::OVERWRITE);
+
+	/** @var SplFileInfo[] $files */
+	$files = new RecursiveIteratorIterator(
+		new RecursiveDirectoryIterator($rootPath),
+		RecursiveIteratorIterator::LEAVES_ONLY
+	);
+
+	foreach ($files as $name => $file)
+	{
+
+		if (!$file->isDir())
+		{
+
+			$filePath = $file->getRealPath();
+			$relativePath = substr($filePath, strlen($rootPath) + 1);
+
+			$zip->addFile($filePath, $relativePath);
+		}
+	}
+
+	$zip->close();
+	}else{
+		unlink($zip_file);
+
+		$rootPath = realpath($dir);
+
+	$zip = new ZipArchive();
+	$zip->open($zip_file, ZipArchive::CREATE | ZipArchive::OVERWRITE);
+
+	/** @var SplFileInfo[] $files */
+	$files = new RecursiveIteratorIterator(
+		new RecursiveDirectoryIterator($rootPath),
+		RecursiveIteratorIterator::LEAVES_ONLY
+	);
+
+	foreach ($files as $name => $file)
+	{
+
+		if (!$file->isDir())
+		{
+
+			$filePath = $file->getRealPath();
+			$relativePath = substr($filePath, strlen($rootPath) + 1);
+
+			$zip->addFile($filePath, $relativePath);
+		}
+	}
+
+	$zip->close();
+	}
+}
 ?>
 

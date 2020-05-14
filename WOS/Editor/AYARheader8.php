@@ -99,6 +99,21 @@ if($deger7 == 1){
   setcookie("sayfaEkle[header8_button]","#555555",time()+3600);
 }
 
+$deger45=$_POST["header8_yazim_fontu"];
+$deger155=$_POST["header8_baslikrenk"];
+$deger65=$_POST["header8_resim_genislik"];
+$deger75=$_POST["header8_resim_yükseklik"];
+
+if($_POST["header8_resim_daire"] == null)
+      $deger51=" ";
+else
+      $deger51=$_POST["header8_resim_daire"];
+
+if($_POST["header8_resim_golge"] == null)
+      $deger81=" ";
+else
+      $deger81=$_POST["header8_resim_golge"];
+
 setcookie("sayfaEkle[header8_yazi]",$deger1,time()+3600);
 
 setcookie("sayfaEkle[header8_1yazi]",$deger2,time()+3600);
@@ -108,8 +123,12 @@ setcookie("sayfaEkle[header8_1link]",$deger22,time()+3600);
 setcookie("sayfaEkle[header8_2link]",$deger33,time()+3600);
 setcookie("sayfaEkle[header8_3link]",$deger44,time()+3600);
 
-
-
+setcookie("sayfaEkle[header8_yazim_fontu]",$deger45,time()+3600);
+setcookie("sayfaEkle[header8_baslikrenk]",$deger155,time()+3600);
+setcookie("sayfaEkle[header8_resim_genislik]",$deger65,time()+3600);
+setcookie("sayfaEkle[header8_resim_yükseklik]",$deger75,time()+3600);
+setcookie("sayfaEkle[header8_resim_daire]",$deger51,time()+3600);
+setcookie("sayfaEkle[header8_resim_golge]",$deger81,time()+3600);
 
 setcookie("sayfaEkle[header8_arkaplan]",$deger6,time()+3600);
 setcookie("sayfaEkle[header8_resim]",$fileName,time()+3600);

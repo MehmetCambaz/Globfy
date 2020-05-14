@@ -35,6 +35,11 @@ height:100;
 width:80%;
 height:28;
 }
+.ayar_textbox_number{
+width:50%;
+font-family:Calibri;
+font-size:16;	
+}
 
 
 

@@ -274,10 +274,34 @@ foreach (array_rand($seed, 5) as $k) $kelime .= $seed[$k];
 $deger7="'$kelime'";
 $deger8="$kelime";
 
+$deger1=$_POST["content4_resim_genislik"];
+$deger2=$_POST["content4_resim_yükseklik"];
+
+if($_POST["content4_resim_daire"] == null)
+      $deger3=" ";
+else
+      $deger3=$_POST["content4_resim_daire"];
+
+if($_POST["content4_resim_golge"] == null)
+      $deger4=" ";
+else
+      $deger4=$_POST["content4_resim_golge"];
+      
+$deger11=$_POST["content4_arkaplanbuton"];
+$deger12=$_POST["content4_buton"];
 
 setcookie("sayfaEkle[content4_arkaplan]",$deger6,time()+3600);
 setcookie("sayfaEkle[content4_resimidhazir]",$deger7,time()+3600);
 setcookie("sayfaEkle[content4_resimidhazir2]",$deger8,time()+3600);
+
+setcookie("sayfaEkle[content4_resim_genislik]",$deger1,time()+3600);
+setcookie("sayfaEkle[content4_resim_yükseklik]",$deger2,time()+3600);
+setcookie("sayfaEkle[content4_resim_daire]",$deger3,time()+3600);
+setcookie("sayfaEkle[content4_resim_golge]",$deger4,time()+3600);
+setcookie("sayfaEkle[content4_arkaplanbuton]",$deger11,time()+3600);
+setcookie("sayfaEkle[content4_buton]",$deger12,time()+3600);
+
+
 setcookie("galeriEkleme",$kelime2,time()+3600);
 
 

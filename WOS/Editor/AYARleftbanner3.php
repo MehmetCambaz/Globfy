@@ -77,9 +77,26 @@
 $deger2=$_POST["leftbanner3_arkaplan"];
 $deger3=$_POST["leftbanner3_resim"];
 
+$deger9=$_POST["leftbanner3_resim_genislik"];
+$deger7=$_POST["leftbanner3_resim_yükseklik"];
+
+if($_POST["leftbanner3_resim_daire"] == null)
+      $deger5=" ";
+else
+      $deger5=$_POST["leftbanner3_resim_daire"];
+
+if($_POST["leftbanner3_resim_golge"] == null)
+      $deger8=" ";
+else
+      $deger8=$_POST["leftbanner3_resim_golge"];
+
 
 setcookie("sayfaEkle[leftbanner3_arkaplan]",$deger2,time()+3600);
 setcookie("sayfaEkle[leftbanner3_resim]",$fileName,time()+3600);
+setcookie("sayfaEkle[leftbanner3_resim_genislik]",$deger9,time()+3600);
+setcookie("sayfaEkle[leftbanner3_resim_yükseklik]",$deger7,time()+3600);
+setcookie("sayfaEkle[leftbanner3_resim_daire]",$deger5,time()+3600);
+setcookie("sayfaEkle[leftbanner3_resim_golge]",$deger8,time()+3600);
 
 header("Location: editor.php?KompanentEkle=31");//sayfayı yenileyip veritabanından hangi id li kompanentin kodlarını
 // çekeceğini anasayfaya 'KompanentEkle' ile gönderiyorum! 

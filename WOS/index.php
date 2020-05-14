@@ -3,6 +3,9 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="Desing/general.css" media="screen" rel="stylesheet" type="text/css">
 <link rel="icon" href="Desing\Pictures\logo.ico" type="image/icon type">
+<link rel="stylesheet" href="Desing/styles_menu.css">
+   <script src="Desing/script_menu.js" type="text/javascript"></script>
+   <script src="Desing/script_menu2.js"></script>
 <title>WoS | Web Site Oluşturma Sistemi</title>
 <script language="JavaScript">
 

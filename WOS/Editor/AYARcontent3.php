@@ -191,13 +191,29 @@ if(isset($_POST['sayfa_ekle'])){
 
 
 $deger6=$_POST["content3_arkaplan"];
+$deger9=$_POST["content3_resim_genislik"];
+$deger7=$_POST["content3_resim_yükseklik"];
 
+if($_POST["content3_resim_daire"] == null)
+      $deger5=" ";
+else
+      $deger5=$_POST["content3_resim_daire"];
+
+if($_POST["content3_resim_golge"] == null)
+      $deger8=" ";
+else
+      $deger8=$_POST["content3_resim_golge"];
 
 
 setcookie("sayfaEkle[content3_2resim]",$fileName2,time()+3600);
 setcookie("sayfaEkle[content3_3resim]",$fileName3,time()+3600);
 setcookie("sayfaEkle[content3_4resim]",$fileName4,time()+3600);
 setcookie("sayfaEkle[content3_arkaplan]",$deger6,time()+3600);
+
+setcookie("sayfaEkle[content3_resim_genislik]",$deger9,time()+3600);
+setcookie("sayfaEkle[content3_resim_yükseklik]",$deger7,time()+3600);
+setcookie("sayfaEkle[content3_resim_daire]",$deger5,time()+3600);
+setcookie("sayfaEkle[content3_resim_golge]",$deger8,time()+3600);
 
 
 header("Location: editor.php?KompanentEkle=36");//sayfayı yenileyip veritabanından hangi id li kompanentin kodlarını
