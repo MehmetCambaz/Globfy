@@ -64,7 +64,7 @@
     }
 ?>
     <form method="post" enctype="multipart/form-data">
-<div style="width:50%;margin:auto; height:600;">
+<div style="width:56.4%;margin:auto; height:600;">
 <div style="width:100%; float:left;">
 <div style="float:left; width:30%;">
 <?php 
@@ -72,7 +72,7 @@ $resim_file="Kullanici_Profil/".$name.".png";
 if(is_file($resim_file)){
     echo '
     <div class="container">
-  <img src="'.$resim_file.'" alt="Avatar" class="image" style="width:250; height:250;">
+  <img src="'.$resim_file.'" alt="Avatar" class="image" id="image" style="width:250; height:250;">
   <div class="middle">
   <input type="file" name="file" value="Resim Seç" style="margin:0 0 0 35;">
   </div>
@@ -85,7 +85,7 @@ if(is_file($resim_file)){
     ?>
     <div class="container">
 
-  <img src="Desing\Pictures\profil_pic.png" alt="Avatar" class="image" style="width:250; height:250;">
+  <img src="Desing\Pictures\profil_pic.png" alt="Avatar" class="image" id="image" style="width:250; height:250;">
   <div class="middle">
   <input type="file" name="file" value="Resim Seç">
 
@@ -93,7 +93,7 @@ if(is_file($resim_file)){
 
 
 </div>
-<input type="submit" name="submit" value="Resmi Yükle" style="padding:10; cursor:pointer;background-color:black; border:1px solid black; color:white; font-family:Calibri; margin:5 0 0 152;">
+<input type="submit" name="submit" value="Resmi Yükle" onclick="resimekle();" style="padding:10; cursor:pointer;background-color:black; border:1px solid black; color:white; font-family:Calibri; margin:5 0 0 152;">
  <?php
 }
 
@@ -126,6 +126,10 @@ echo '<b style="margin:35 0 0 15;">► '.date ("F d Y H:i:s", filemtime($dosya))
 echo '</td><td>';
 echo '<input type="submit" name="son_file" value="İNDİR" style="background-color:green; border:1px solid green; color:white; padding:10; margin:0 0 0 40; cursor:pointer;"/>';
 echo '</td></tr></table>';
+}else{
+  echo '<table><tr><td>';
+  echo '<b style="margin:35 0 0 15; color:#880000;">Son işleminiz bulunmamaktadır.</b>';
+  echo '</td></tr></table>';
 }
 ?>
 </div>
@@ -163,9 +167,20 @@ if(isset($_POST['submit'])) {
     }
      if(empty($errors)==true){
         move_uploaded_file($temp_name,"Kullanici_Profil/".$name.".png");
+        clearstatcache();
         header ("Refresh: 0; url=?sayfa=profil");
      }
+     clearstatcache();
      header ("Refresh: 0; url=?sayfa=profil");
+
+
+     /*header("Last-Modified: " . gmdate("D, d M Y H:i:s") . " GMT");
+header("Cache-Control: no-store, no-cache, must-revalidate"); // HTTP/1.1
+header("Cache-Control: post-check=0, pre-check=0", false);
+header("Pragma: no-cache"); // HTTP/1.0
+header("Expires: Sat, 26 Jul 1997 05:00:00 GMT"); // Date in the past
+header("Cache-Control: no-cache, must-revalidate"); // HTTP/1.1
+header("Expires: Sat, 26 Jul 1997 05:00:00 GMT"); */
  }else{
   echo "<script type='text/javascript'>alert('Resim Seçiniz');</script>";
  }
@@ -173,3 +188,18 @@ if(isset($_POST['submit'])) {
    
 
 ?>
+
+<script>
+function resimekle(){
+
+      document.querySelector('input[type="file"]').addEventListener('change', function() {
+          if (this.files && this.files[0]) {
+            document.getElementById("image").src = "url('"+URL.createObjectURL(this.files[0])+"')";
+        
+          }
+      });
+  
+}
+
+
+</script>

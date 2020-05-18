@@ -107,15 +107,15 @@ setcookie("sayfaEkle[header4_1yazi]",$deger1,time()+3600);
 setcookie("sayfaEkle[header4_2yazi]",$deger2,time()+3600);
 setcookie("sayfaEkle[header4_3yazi]",$deger3,time()+3600);
 setcookie("sayfaEkle[header4_1link]",$deger1,time()+3600);
-setcookie("sayfaEkle[header4_2link]",$deger2,time()+3600);
-setcookie("sayfaEkle[header4_3link]",$deger3,time()+3600);
+setcookie("sayfaEkle[header4_2link]",$deger22,time()+3600);
+setcookie("sayfaEkle[header4_3link]",$deger33,time()+3600);
 setcookie("sayfaEkle[header4_yazim_fontu]",$deger48,time()+3600);
 setcookie("sayfaEkle[header4_yaziboyutu]",$deger57,time()+3600);
 
 setcookie("sayfaEkle[header4_yazirenk]",$deger4,time()+3600);
 setcookie("sayfaEkle[header4_resim]","'resimler/".$fileName."'",time()+3600);
 
-setcookie("iceriksayfasi[header4_1link]",$deger11,time()+3600*60);
+
 setcookie("iceriksayfasi[header4_2link]",$deger22,time()+3600*60);
 setcookie("iceriksayfasi[header4_3link]",$deger33,time()+3600*60);
 

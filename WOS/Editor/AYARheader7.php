@@ -65,7 +65,7 @@ setcookie("sayfaEkle[header7_link4]",$deger66,time()+3600*60);
 setcookie("sayfaEkle[header7_link5]",$deger77,time()+3600*60);
 setcookie("sayfaEkle[header7_yaziboyutu]",$deger12,time()+3600*60);
 
-setcookie("iceriksayfasi[header7_link]",$deger11,time()+3600*60);
+
 setcookie("iceriksayfasi[header7_link2]",$deger22,time()+3600*60);
 setcookie("iceriksayfasi[header7_link3]",$deger33,time()+3600*60);
 setcookie("iceriksayfasi[header7_link4]",$deger66,time()+3600*60);

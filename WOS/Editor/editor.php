@@ -162,6 +162,17 @@ $gelenkullaniciemail=$_SESSION["Kullaniciadi"];
 </html>
 
 <?php
+$ilkgiriskontrol=$_SESSION["IlkGirisKontrol"];
+if($ilkgiriskontrol=="1"){
+  $_SESSION["IlkGirisKontrol"]="2";
+  if(!empty($_COOKIE['iceriksayfasi'])){
+  foreach ($_COOKIE['iceriksayfasi'] as $name => $value) {
+
+    setcookie('iceriksayfasi['.$name.']',$name,time()-3600); 
+ 
+  }
+}
+}
 $gelenkullaniciemail=$_SESSION["Kullaniciadi"];
   if(isset($_GET['AyarGecis'])){ //kompanentlere tıklanmışsa o kompanentin ayar sayfasını açıyor!
     ayarSayfasi_yonlendirme();
@@ -175,7 +186,7 @@ $gelenkullaniciemail=$_SESSION["Kullaniciadi"];
     
     kullaniciTeslim_sayfalari($secilenBolum); //kullanici sayfalari oluşturan fonksiyon.
 
-    if( $secilenBolum == "header" || $secilenBolum == "footer") { //Tek bölüm olan sayfaları bu if in altında ki işlemler uygulanacak!
+    if( $secilenBolum == "header" || $secilenBolum == "footer" || $secilenBolum == "header1") { //Tek bölüm olan sayfaları bu if in altında ki işlemler uygulanacak!
     
       $dt = fopen('editorsayfalari_'.$gelenkullaniciemail.'/'.$secilenBolum.'.php', 'w+'); //sayfayı w+ ile açıyorum, içeriği silip yeniden yazmak için. Tek sayfa olduğu için!
       $dt_onizleme = fopen('kullanicisayfalari_'.$gelenkullaniciemail.'/'.$secilenBolum.'.php', 'w+');
@@ -192,7 +203,7 @@ $gelenkullaniciemail=$_SESSION["Kullaniciadi"];
             opacity:0.8;
             font-size:24px;
             position:absolute;
-            margin-top:10%;
+            margin-top:5%;
             margin-left: calc( 100% - 70% );
             text-align:center;
             font-size:35px;
@@ -292,7 +303,7 @@ $gelenkullaniciemail=$_SESSION["Kullaniciadi"];
     
       header('Location:'.$_SERVER['HTTP_REFERER']);
 
-    }else if($secilenBolum == "littleheader" || $secilenBolum == "bar1"){
+    }else if($secilenBolum == "littleheader" || $secilenBolum == "bar1" || $secilenBolum == "littleheader1"){
       $dt = fopen('editorsayfalari_'.$gelenkullaniciemail.'/'.$secilenBolum.'.php', 'w+'); //sayfayı w+ ile açıyorum, içeriği silip yeniden yazmak için. Tek sayfa olduğu için!
       $dt_onizleme = fopen('kullanicisayfalari_'.$gelenkullaniciemail.'/'.$secilenBolum.'.php', 'w+');
       $sorgu = $baglanti->query('select id,kompanent_icerik,tur,komp_ayar,komp_kod from kompanentler where id='.$secilenKompanent_ID.'');
@@ -669,7 +680,7 @@ $gelenkullaniciemail=$_SESSION["Kullaniciadi"];
       }
     }
    setcookie("secilmissunakikomp",$secilenBolum,time()+12154);
-    if($secilenBolum=="header" || $secilenBolum=="littleheader" || $secilenBolum=="bar1" || $secilenBolum=="bar2" || $secilenBolum=="bar3" || $secilenBolum=="bar4" || $secilenBolum=="bar5" || $secilenBolum=="footer"){
+    if($secilenBolum=="header" || $secilenBolum=="footer" || $secilenBolum=="header1"){
       $kodlar=' <div style="position:relative; width:100%; cursor:point;">
       <div style="width:40%;
       padding:10 0 10 0;
@@ -678,7 +689,7 @@ $gelenkullaniciemail=$_SESSION["Kullaniciadi"];
       opacity:0.8;
       font-size:24px;
       position:absolute;
-      margin-top:-30;
+      margin-top:1.5%;
       margin-left: calc( 100% - 70% );
       text-align:center;
       font-size:35px;
@@ -687,6 +698,68 @@ $gelenkullaniciemail=$_SESSION["Kullaniciadi"];
       color:white;cursor:pointer;
       ">Tıkla ve Düzenle</div>';
          
+      $okuAnasayfa=file_get_contents("editorsayfalari_'.$gelenkullaniciemail.'/'.$secilenBolum.'.php"); //anasayfam!
+      $anasayfa=fopen('editorsayfalari_'.$gelenkullaniciemail.'/'.$secilenBolum.'.php','w');
+     // $okuAnasayfa=str_replace("$kodlar","",$okuAnasayfa);
+      fwrite($anasayfa,$kodlar);
+      
+      //$onizlemeokuAnasayfa=file_get_contents("kullanicisayfalari/header.php"); //onizleme anasayfam!
+      $onizlemeanasayfa=fopen('kullanicisayfalari_'.$gelenkullaniciemail.'/'.$secilenBolum.'.php','w');
+
+      /*$onizlemeokuAnasayfa=str_replace("$kodlar","",$onizlemeokuAnasayfa);
+      fwrite($onizlemeanasayfa,$onizlemeokuAnasayfa);*/
+    }else if( $secilenBolum=="bar1" || $secilenBolum=="bar2" || $secilenBolum=="bar3" || $secilenBolum=="bar4" || $secilenBolum=="bar5" ){
+      $kodlar='<div style="position:relative; width:100%;">
+      <div style="width:60%;
+      
+      padding:10 0 10 0;
+      border-radius:20px;
+      background-color:#5C5C5C; 
+      opacity:0.8;
+      font-size:24px;
+      position:absolute;
+      
+      margin-top:20%;
+      margin-left: calc( 100% - 80% );
+      
+      text-align:center;
+      font-size:30px;
+      font-weight:bold;
+      font-family:calibri;
+      color:white;
+      cursor:pointer;
+      ">Tıkla ve Düzenle</div></div>';
+
+              $okuAnasayfa=file_get_contents("editorsayfalari_'.$gelenkullaniciemail.'/'.$secilenBolum.'.php"); //anasayfam!
+      $anasayfa=fopen('editorsayfalari_'.$gelenkullaniciemail.'/'.$secilenBolum.'.php','w');
+     // $okuAnasayfa=str_replace("$kodlar","",$okuAnasayfa);
+      fwrite($anasayfa,$kodlar);
+      
+      //$onizlemeokuAnasayfa=file_get_contents("kullanicisayfalari/header.php"); //onizleme anasayfam!
+      $onizlemeanasayfa=fopen('kullanicisayfalari_'.$gelenkullaniciemail.'/'.$secilenBolum.'.php','w');
+
+      /*$onizlemeokuAnasayfa=str_replace("$kodlar","",$onizlemeokuAnasayfa);
+      fwrite($onizlemeanasayfa,$onizlemeokuAnasayfa);*/
+
+    }else if($secilenBolum=="littleheader" || $secilenBolum=="littleheader1"){
+      $kodlar='<div style="position:relative; width:100%; cursor:point;">
+      <div style="width:40%;
+      padding:10 0 10 0;
+      border-radius:20px;
+      background-color:#5C5C5C; 
+      opacity:0.8;
+      font-size:24px;
+      position:absolute;
+      margin-top:1.5%;
+      margin-left: calc( 100% - 70% );
+      text-align:center;
+      font-size:30px;
+      font-weight:bold;
+      font-family:calibri;
+      color:white;cursor:pointer;
+      word-wrap: break-word;
+      ">Tıkla ve Düzenle</div></div>';
+
       $okuAnasayfa=file_get_contents("editorsayfalari_'.$gelenkullaniciemail.'/'.$secilenBolum.'.php"); //anasayfam!
       $anasayfa=fopen('editorsayfalari_'.$gelenkullaniciemail.'/'.$secilenBolum.'.php','w');
      // $okuAnasayfa=str_replace("$kodlar","",$okuAnasayfa);
@@ -875,7 +948,7 @@ $gelenkullaniciemail=$_SESSION["Kullaniciadi"];
       //setcookie('iceriksayfasi['.$name.']',$value,time()-3600*60);
 
     }
-    
+  
     echo "<script>window.location='../index.php?sayfa=dosyateslimi'</script>";
     
   }

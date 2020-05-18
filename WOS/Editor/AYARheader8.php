@@ -133,7 +133,7 @@ setcookie("sayfaEkle[header8_resim_golge]",$deger81,time()+3600);
 setcookie("sayfaEkle[header8_arkaplan]",$deger6,time()+3600);
 setcookie("sayfaEkle[header8_resim]",$fileName,time()+3600);
 
-setcookie("iceriksayfasi[header8_1link]",$deger22,time()+3600*60);
+
 setcookie("iceriksayfasi[header8_2link]",$deger33,time()+3600*60);
 setcookie("iceriksayfasi[header8_3link]",$deger44,time()+3600*60);
 

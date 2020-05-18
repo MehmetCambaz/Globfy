@@ -41,14 +41,14 @@ body{
 	width:110px;
 	height:110px;
 	float:right;
-	margin:0 160 20 0;
+	margin:0 190 20 0;
 }
 .header_Text{
 	font-size:42px;
 	float:left;
 	width:520px;
 	font-family:Calibri;
-	margin:27 0 0 -150;
+	margin:27 0 0 -180;
 }
 .header_line{
 	width:50%;
@@ -60,7 +60,7 @@ body{
 }
 .header_Button{
 	width:100%;
-	margin:14px;
+	margin:0;
 }
 .header_Button a{
 	padding-top:10px;
@@ -130,15 +130,16 @@ body{
 	border-radius:10px;
 }
 .body_Resim{
-	width:250px;
-	height:250px;
+	width:200px;
+	height:200px;
 	float:left;
-	margin:0 0 0 40px;
+	margin:10 10 10 40px;
 }
 .body_Yazi{
 	float:left;
 	width:600px;
 	margin:0 0 0 25px;
+	font-size:28;
 }
 .body_Button1{
 	float:left;
@@ -148,9 +149,14 @@ body{
 	text-decoration: none;	
 	font-family:Calibri;
 	color:black;
+	font-size:21;
 	font-weight:bold;
-	font-size:20px;
+	text-align:center;
+	width:65;
 	border-radius: 30px;
+}
+.body_button1:hover{
+	opacity: 0.8;
 }
 
 .footer_Bolumler{
@@ -161,7 +167,7 @@ body{
 	text-align:center;
 }
 .sablonSecim_Ekran{
-	width:86%;
+	width:85.5%;
 	margin:auto;
 }
 .sablonSecim_Ust{

@@ -27,7 +27,7 @@ window.onload = function() {
 <table border="0px">
 <tr>
 <td> <img src="Desing/Pictures/Create.png" class="body_Resim"/> </td>
-<td> <h1 class="body_Yazi">Ücretsiz Web Sitenizi Hemen Yapmaya Başlayabilirsiniz...</h1> </td>
+<td> <h1 class="body_Yazi">Ücretsiz Web Sitenizi Hemen Yapmaya Başlayın </h1> </td>
 <td> <?php
 include 'mysql_connect.php';
     if(!empty($_SESSION["Kullaniciadi"])){
@@ -44,7 +44,7 @@ include 'mysql_connect.php';
 <table border="0px">
 <tr>
 <td> <img src="Desing/Pictures/Komp.png" class="body_Resim"/> </td>
-<td> <h1 class="body_Yazi">Sizlere Sunduğumuz Web Site Panellerini Kendinize Göre Optimize Edip Kaynak Kodlarına Alabilirsiniz...</h1> </td>
+<td> <h1 class="body_Yazi">Web Bileşeni Üretme İşlemine Hemen Başlayın </h1> </td>
 <td> <?php
 include 'mysql_connect.php';
     if(!empty($_SESSION["Kullaniciadi"])){
@@ -55,8 +55,8 @@ include 'mysql_connect.php';
     ?>        
 </td></tr>
 </table>
-</div>
-<div class="body_Bolum"> <!--  style="background-color:#E1F0FF;"-->
+</div><!--
+<div class="body_Bolum">  style="background-color:#E1F0FF;"
 <table border="0px">
 <tr>
 <td> <img src="Desing/Pictures/Why.png" class="body_Resim"/> </td>
@@ -66,12 +66,12 @@ include 'mysql_connect.php';
 <div id="neden" style="margin-left:270px; margin-top:-30px; width:70%; height:150px;" style={{visibility: this.state.visibility }}>
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
 </div>
-</div>
-<div class="body_Bolum" > <!-- style="background-color:#F0E1FF;" -->
+</div>-->
+<div class="body_Bolum" style="margin-bottom:50;" > <!-- style="background-color:#F0E1FF;" -->
 <table border="0px">
 <tr>
 <td> <img src="Desing/Pictures/How.png" class="body_Resim"/> </td>
-<td> <h1 class="body_Yazi">Web Site Oluşturma Sistemi Nasıl Kullanılıyor...</h1> </td>
+<td> <h1 class="body_Yazi">Web Site Oluşturma Sistemi Nasıl Kullanılıyor? </h1> </td>
 <td> <a href="index.php?sayfa=nasilkullanilir" class="body_Button1" style="background-color:#6900D2; color:white; border:1px solid #6900D2;">ÖĞREN</a> </td></tr>
 </table>
 </div>

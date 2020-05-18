@@ -67,24 +67,26 @@ if(isset($_POST['EditorGecis_Hazirlik'])){
               $yaz=fwrite($dosya,$sonuc["kod"]);
               fclose($dosya);
           }else{
-          if($sayfa=="header" || $sayfa=="footer" || $sayfa=="bar1" || $sayfa=="bar2" || $sayfa=="bar3" || $sayfa=="bar5" || $sayfa=="bar4" || $sayfa=="littleheader"){
-              $code='<div style="position:relative; width:100%; cursor:point;">
-              <div style="width:40%;
-              padding:10 0 10 0;
-              border-radius:20px;
-              background-color:#5C5C5C; 
-              opacity:0.8;
-              font-size:24px;
-              position:absolute;
-              margin-top:-30;
-              margin-left: calc( 100% - 70% );
-              text-align:center;
-              font-size:30px;
-              font-weight:bold;
-              font-family:calibri;
-              color:white;cursor:pointer;
-              ">Tıkla ve Düzenle</div></div>';
-          }else if($sayfa=="content1" || $sayfa=="content2"|| $sayfa=="content3"){
+          if($sayfa=="header" && $id != 5 && $id != 13 || $sayfa=="footer" || $sayfa=="header1" ){
+            $code='<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:3%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:30px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;cursor:pointer;
+            word-wrap: break-word;
+            ">Tıkla ve Düzenle</div></div>';
+          }else if($sayfa=="content1" || $sayfa=="content2"|| $sayfa=="content3" || $sayfa=="bar1" || $sayfa=="bar2" || $sayfa=="bar3" || $sayfa=="bar5" || $sayfa=="bar4"){
+          
               $code='<div style="position:relative; width:100%;">
               <div style="width:60%;
               
@@ -95,7 +97,7 @@ if(isset($_POST['EditorGecis_Hazirlik'])){
               font-size:24px;
               position:absolute;
               
-              margin-top:20%;
+              margin-top:15%;
               margin-left: calc( 100% - 80% );
               
               text-align:center;
@@ -105,6 +107,61 @@ if(isset($_POST['EditorGecis_Hazirlik'])){
               color:white;
               cursor:pointer;
               ">Tıkla ve Düzenle</div></div>';
+         
+          }else if( $id==5 && $sayfa=="header"){
+            $code='<div style="position:relative; width:100%; cursor:point;">
+              <div style="width:40%;
+              padding:10 0 10 0;
+              border-radius:20px;
+              background-color:#5C5C5C; 
+              opacity:0.8;
+              font-size:24px;
+              position:absolute;
+              margin-top:10%;
+              margin-left: calc( 100% - 70% );
+              text-align:center;
+              font-size:30px;
+              font-weight:bold;
+              font-family:calibri;
+              color:white;cursor:pointer;
+              word-wrap: break-word;
+              ">Tıkla ve Düzenle</div></div>';
+          }else if( $id==13 && $sayfa=="header"){
+            $code='<div style="position:relative; width:100%; cursor:point;">
+              <div style="width:40%;
+              padding:10 0 10 0;
+              border-radius:20px;
+              background-color:#5C5C5C; 
+              opacity:0.8;
+              font-size:24px;
+              position:absolute;
+              margin-top:3%;
+              margin-left: calc( 100% - 70% );
+              text-align:center;
+              font-size:30px;
+              font-weight:bold;
+              font-family:calibri;
+              color:white;cursor:pointer;
+              word-wrap: break-word;
+              ">Tıkla ve Düzenle</div></div>';
+          }else if($sayfa=="littleheader" || $sayfa=="littleheader1"){
+            $code='<div style="position:relative; width:100%; cursor:point;">
+            <div style="width:40%;
+            padding:10 0 10 0;
+            border-radius:20px;
+            background-color:#5C5C5C; 
+            opacity:0.8;
+            font-size:24px;
+            position:absolute;
+            margin-top:1.5%;
+            margin-left: calc( 100% - 70% );
+            text-align:center;
+            font-size:30px;
+            font-weight:bold;
+            font-family:calibri;
+            color:white;cursor:pointer;
+            word-wrap: break-word;
+            ">Tıkla ve Düzenle</div></div>';
           }else{
               $code='<div style="position:relative; width:100%;">
               <div style="width:60%;
@@ -116,7 +173,7 @@ if(isset($_POST['EditorGecis_Hazirlik'])){
               font-size:24px;
               position:absolute;
               
-              margin-top:30%;
+              margin-top:20%;
               margin-left: calc( 100% - 80% );
               
               text-align:center;
@@ -225,7 +282,7 @@ if(isset($_POST['EditorGecis_Hazirlik'])){
         $yaz=fwrite($dosya,$code);
         fclose($dosya);
         kullaniciTeslim_sayfalari();
-
+    $_SESSION["IlkGirisKontrol"]="1";
     header ("Refresh: 0; url=Editor/editor.php");
 }
 
@@ -244,6 +301,7 @@ if(isset($_POST['EditorGecis_Hazirlik'])){
 function boyut_degis() {
   var x = document.getElementById("sablonDuzenle_ekran_boyut").value;
   document.getElementById("sablonDuzenle_gelen_resim").style.width = x; 
+  konum_degis();
 }
 function konum_degis() {
   var x = document.getElementById("sablonDuzenle_ekran_konum").value;

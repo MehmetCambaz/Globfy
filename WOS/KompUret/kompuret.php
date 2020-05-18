@@ -32,9 +32,12 @@
       $veri.=" ?>\n";
       }
 	  $dt= fopen('Olusturulan/'.$gelenkullaniciemail.'.php', 'w');
-	  fwrite($dt,$veri);
-	  
-	  $yeni='<textarea style="width:100%; height:calc(100% - 70px);">'.$gelentasarim.'</textarea>';
+    fwrite($dt,$veri);
+
+    $gelentasarim=preg_replace('/href="\?sayfa=.*?"/', 'href="#"', $gelentasarim);
+    $gelentasarim=str_replace('src="resimler/','src="',$gelentasarim);
+    $gelentasarim='<div style="width:100%; height:400px;">'."\n".$gelentasarim."\n</div>";
+	  $yeni='<textarea spellcheck="false" style="resize:none; width:100%; height:100%; font-size:15; ">'.$gelentasarim.'</textarea>';
 	  
 	  $dt2= fopen('Olusturulan/'.$gelenkullaniciemail.'.php','a');
 	  fwrite($dt2,$yeni);
@@ -91,13 +94,34 @@ $(document).ready(function() {
 <div class="bilesen" style="margin:auto;">
 
 <div class="bilesen_ust">
-			<h2 style="font-family:Calibri;">Bileşen Üret</h2>
+<div class="bilesen_ust_sol">
+<a href="../index.php"><img src="../Desing/Pictures/logo.png"  width="50" height="50" style="margin:10 0 0 0;"/></a>
+</div>
+<div class="bilesen_ust_orta">
+<h1><a href="../index.php" style="text-decoration:none; color:black;"><b style="text-shadow: 0 0 3px yellow, 0 0 5px blue; font-family:Calibri;">Web Site Oluşturma Sistemi</b></a></h1>
+</div>
+<div class="bilesen_ust_sag">
+<a href="../index.php"><img src="../Desing/Pictures/logo.png" width="50" height="50" style="margin:10 0 0 0;"/></a>
+</div>
+
+</div>
+<div style="width:100%; height:64px; float:left;">
+<div style="text-align:center; float:left; width:30%; background-color:#4d4d4d; color:white;">
+<p style="font-family:Calibri; font-weight:bold; font-size:20;">Bileşen Seçimi</p>
+</div>
+<div style="text-align:center; float:left; width:35%; background-color:#4d4d4d; color:white;">
+<p style="font-family:Calibri; font-weight:bold; font-size:20;">Ayar Sayfası</p>
+</div>
+<div style="text-align:center; float:left; width:35%; background-color:#4d4d4d; color:white;">
+<p style="font-family:Calibri; font-weight:bold; font-size:20;">Kaynak Kodunuz</p>
+</div>
 </div>
 <div class="bilesen_icerik">
-<div style="width:30%; float:left; height:calc(100% - 70px); overflow-y:scroll;">
+<div style="width:30%; float:left; height:calc(100% - 134px); overflow-y:scroll;">
 <div id='cssmenu'>
+  
 <ul>
-   <li class='active has-sub'><a href='#'>Header</a>
+   <li class='active has-sub'><a href='#'>Bileşenler 1.Seviye</a>
    <ul>
    <?php
    include 'mysql_connect.php';
@@ -106,7 +130,7 @@ $(document).ready(function() {
   }
   
   
-   $sql4 = "SELECT id,tur,kompanent_icerik,komp_pic FROM kompanentler where tur='header'";
+   $sql4 = "SELECT id,tur,kompanent_icerik,komp_pic FROM kompanentler where id='2' || id='5' || id='6' || id='7' || id='31' || id='32' || id='92'";
 			$sorgu4 = $baglanti->query($sql4);
 			    
 while($sonuc4=mysqli_fetch_assoc($sorgu4) )
@@ -121,11 +145,11 @@ while($sonuc4=mysqli_fetch_assoc($sorgu4) )
 
       </ul>
    </li>
-   <li class='has-sub'><a href='#'>Content</a>
+   <li class='has-sub'><a href='#'>Bileşenler 2.Seviye</a>
    <ul>
   <?php
    include 'mysql_connect.php';
-   $sql4 = "SELECT id,tur,kompanent_icerik,komp_pic FROM kompanentler where tur='content1'";
+   $sql4 = "SELECT id,tur,kompanent_icerik,komp_pic FROM kompanentler where id='9' || id='10' || id='44' || id='91' || id='93' || id='95'";
 			$sorgu4 = $baglanti->query($sql4);
 			    
 while($sonuc4=mysqli_fetch_assoc($sorgu4) )
@@ -139,11 +163,11 @@ while($sonuc4=mysqli_fetch_assoc($sorgu4) )
    ?>
    </ul>
    </li>
-      <li class='has-sub'><a href='#'>Bar</a>
+      <li class='has-sub'><a href='#'>Bileşenler 3.Seviye</a>
    <ul>
       <?php
    include 'mysql_connect.php';
-   $sql4 = "SELECT id,tur,kompanent_icerik,komp_pic FROM kompanentler where tur='bar1'";
+   $sql4 = "SELECT id,tur,kompanent_icerik,komp_pic FROM kompanentler where id='39' || id='43' || id='63'";
 			$sorgu4 = $baglanti->query($sql4);
 			    
 while($sonuc4=mysqli_fetch_assoc($sorgu4) )
@@ -157,11 +181,11 @@ while($sonuc4=mysqli_fetch_assoc($sorgu4) )
    ?>
    </ul>
    </li>
-      <li class='has-sub'><a href='#'>Footer</a>
+      <li class='has-sub'><a href='#'>Hazır İçerikler</a>
    <ul>
       <?php
    include 'mysql_connect.php';
-   $sql4 = "SELECT id,tur,kompanent_icerik,komp_pic FROM kompanentler where tur='footer'";
+   $sql4 = "SELECT id,tur,kompanent_icerik,komp_pic FROM kompanentler where id='65' || id='68' || id='69' || id='81' || id='83' || id='89' || id='90'";
 			$sorgu4 = $baglanti->query($sql4);
 			    
 while($sonuc4=mysqli_fetch_assoc($sorgu4) )
@@ -175,31 +199,13 @@ while($sonuc4=mysqli_fetch_assoc($sorgu4) )
    ?>
    </ul>
    </li>
-      <li class='has-sub'><a href='#'>Leftbanner</a>
-   <ul>
-      <?php
-   include 'mysql_connect.php';
-   $sql4 = "SELECT id,tur,kompanent_icerik,komp_pic FROM kompanentler where tur='leftbanner'";
-			$sorgu4 = $baglanti->query($sql4);
-			    
-while($sonuc4=mysqli_fetch_assoc($sorgu4) )
-			{
-				  echo '<li><a href="?AyarGecis='.$sonuc4['id'].'" style="text-decoration:none; color:white;">
-				<img src="'.$sonuc4['komp_pic'].'" width="100%" style="margin:0 0 0 0;"/>
-				</a></li>';
-			}
-   
-   
-   ?>
-   </ul>
-   </li>
-
+    
 </ul>
 </div>
 </div>
-<div style="float:left;width:70%; " >
-<div style="float:left; width:50%;" id="Ayar" name="Ayar" style="background-color:#FAFAFA;">
-Ayar.php
+<div style="float:left;width:70%; height:calc(100% - 135px);" >
+<div style="float:left; width:50%;" id="Ayar" name="Ayar" style="background-color:#FAFAFA; ">
+
 </div>
 <div style="float:left; width:50%; " id="Kod" name="Kod">
 

@@ -22,6 +22,8 @@ font-size:16;
 font-family:Calibri;
 background-color:#FAFAFA;
 border-spacing:0;
+width:90%;
+margin:10 0 0 0 ;
 }
 .ayar_table td{
 border-bottom:1px solid black;
@@ -44,12 +46,7 @@ font-size:16;
 
 
 </style>
-<div style="margin:auto; width:100%;  height:calc(100% - 70px);overflow:auto; background-color:#FAFAFA;">
-<div style="text-align:center; float:left; width:100%; background-color:gray; color:white;">
-<h1>Ayar Sayfası</h1>
-</div>
-<div style="width:100%;">
-
+<div style="width:100%; height:calc(100% - 10px);  background-color:#FAFAFA;">
 <center>
 <?php
 include 'mysql_connect.php';
@@ -62,5 +59,4 @@ $sorgu = $baglanti->query('select id,kompanent_icerik,tur,komp_ayar,komp_kod fro
 }
 ?>
 </center>
-</div>
 </div>

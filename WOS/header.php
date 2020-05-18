@@ -17,7 +17,7 @@ function Alert() {
 <div class="header_Bolum">
 <h1 class="header_Text">Web Site Oluşturma Sistemi</h1>
 </div>
-<div style="float:left; width:100%; margin:0 0 20 15;">
+<div style="float:left; width:100%; margin:0 0 20 0;">
 <hr class="header_line"/>
 </div>
 

@@ -114,9 +114,9 @@ $deger14=$_POST["header6_resim_genislik"];
 $deger12=$_POST["header6_resim_yükseklik"];
 
 setcookie("sayfaEkle[header6_yazi]",$deger7,time()+3600);
-setcookie("sayfaEkle[header6_yazi2]",$deger1,time()+3600);
-setcookie("sayfaEkle[header6_yazi4]",$deger2,time()+3600);
-setcookie("sayfaEkle[header6_yazi5]",$deger3,time()+3600);
+setcookie("sayfaEkle[header6_yazi2]",$deger22,time()+3600);
+setcookie("sayfaEkle[header6_yazi4]",$deger33,time()+3600);
+setcookie("sayfaEkle[header6_yazi5]",$deger66,time()+3600);
 
 setcookie("sayfaEkle[header6_arkaplan]",$deger4,time()+3600);
 setcookie("sayfaEkle[header6_resim]",$fileName,time()+3600);
@@ -128,7 +128,7 @@ setcookie("sayfaEkle[header6_resim_golge]",$deger10,time()+3600);
 setcookie("iceriksayfasi[header6_yazi2]",$deger22,time()+3600*60);
 setcookie("iceriksayfasi[header6_yazi4]",$deger33,time()+3600*60);
 setcookie("iceriksayfasi[header6_yazi5]",$deger66,time()+3600*60);
-setcookie("iceriksayfasi[header6_yazi]",$deger11,time()+3600*60);
+
 
 
 

@@ -129,7 +129,7 @@ setcookie("sayfaEkle[header3_5link]",$deger77,time()+3600);
 setcookie("sayfaEkle[header3_arkaplan]",$deger4,time()+3600);
 setcookie("sayfaEkle[header3_resim]",$fileName,time()+3600);
 
-setcookie("iceriksayfasi[header3_yazi]",$deger11,time()+3600*60);
+
 setcookie("iceriksayfasi[header3_yazi2]",$deger22,time()+3600*60);
 setcookie("iceriksayfasi[header3_yazi3]",$deger33,time()+3600*60);
 setcookie("iceriksayfasi[header3_yazi4]",$deger66,time()+3600*60);

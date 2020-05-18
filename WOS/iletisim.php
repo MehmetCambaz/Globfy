@@ -9,7 +9,7 @@
 <body>
 <?php include 'mysql_connect.php'; ?>
 <div class="hakkimizda_Bolumler">
-<form style="margin-left:300px;" method="POST">
+<form style="margin:0 0 200 300;" method="POST">
 <table>
     <tr>
             <td colspan="2" style="text-align:center; font-weight:bold; font-size:30;">Bizimle İletişime Geçiniz</td>
