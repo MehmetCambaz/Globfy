@@ -9,25 +9,10 @@ $kelime2 = '';
 foreach (array_rand($seed, 5) as $k) $kelime2 .= $seed[$k];
 
 
-$dosyaAdiEditor="editorsayfalari_$gelenkullaniciemail";
-$dosyaAdiKullanici="kullanicisayfalari_$gelenkullaniciemail";
-$dosyaAdiEditorResim="editorsayfalari_$gelenkullaniciemail/resimler/galeri_$kelime2";
-$dosyaAdiKullaniciResim="kullanicisayfalari_$gelenkullaniciemail/resimler/galeri_$kelime2";
-
-$dosyaAdiEditorResim2="editorsayfalari_$gelenkullaniciemail/resimler";
-$dosyaAdiKullaniciResim2="kullanicisayfalari_$gelenkullaniciemail/resimler";
-
 foreach ($_COOKIE['sayfaEkle'] as $name => $value) {
 
   setcookie('sayfaEkle['.$name.']',$name,time()-3600); 
 
-}
-if(!file_exists($dosyaAdiEditorResim2)) {
-  $olustur = mkdir($dosyaAdiEditorResim2);
-}
-
-if(!file_exists($dosyaAdiKullaniciResim2)) {
-  $olustur = mkdir($dosyaAdiKullaniciResim2);
 }
 
 
@@ -141,21 +126,7 @@ if(isset($_POST['sayfa_ekle'])){
              $fileNameNew = uniqid('', true).".".$fileActualExt;
              $fileDestination = "ajk3.png";
       
-           
-           if(!file_exists($dosyaAdiEditorResim)) {
-             $olustur = mkdir($dosyaAdiEditorResim);
-           }
-           
-           
-           if(!file_exists($dosyaAdiKullanici)) {
-             $olustur = mkdir($dosyaAdiKullanici);
-           }
-           if(!file_exists($dosyaAdiKullaniciResim)) {
-             $olustur = mkdir($dosyaAdiKullaniciResim);
-           }
 
-           move_uploaded_file($fileTmpName, $dosyaAdiEditorResim."/".$fileDestination);
-           copy($dosyaAdiEditorResim."/".$fileDestination,$dosyaAdiKullaniciResim."/".$fileDestination);
 
          }else{
              echo "Resim fazla büyük !";
@@ -199,21 +170,7 @@ if(isset($_POST['sayfa_ekle'])){
                 $fileNameNew = uniqid('', true).".".$fileActualExt;
                 $fileDestination = "ajk4.png";
          
-              
-              if(!file_exists($dosyaAdiEditorResim)) {
-                $olustur = mkdir($dosyaAdiEditorResim);
-              }
-              
-              
-              if(!file_exists($dosyaAdiKullanici)) {
-                $olustur = mkdir($dosyaAdiKullanici);
-              }
-              if(!file_exists($dosyaAdiKullaniciResim)) {
-                $olustur = mkdir($dosyaAdiKullaniciResim);
-              }
-   
-              move_uploaded_file($fileTmpName, $dosyaAdiEditorResim."/".$fileDestination);
-              copy($dosyaAdiEditorResim."/".$fileDestination,$dosyaAdiKullaniciResim."/".$fileDestination);
+           
    
             }else{
                 echo "Resim fazla büyük !";
@@ -274,10 +231,7 @@ setcookie("sayfaEkle[content4_arkaplanbuton]",$deger11,time()+3600);
 setcookie("sayfaEkle[content4_buton]",$deger12,time()+3600);
 
 
-setcookie("galeriEkleme",$kelime2,time()+3600);
 
+header("Location: kompuret.php?KompanentEkle=39");
 
-header("Location: kompuret.php?KompanentEkle=39");//sayfayı yenileyip veritabanından hangi id li kompanentin kodlarını
-// çekeceğini anasayfaya 'KompanentEkle' ile gönderiyorum! 
-//index3.php de de bunu okuyup işlem yapıyorum!
 ?>

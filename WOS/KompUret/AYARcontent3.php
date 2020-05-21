@@ -3,10 +3,6 @@
 include 'mysql_connect.php';
 $gelenkullaniciemail=$_SESSION["Kullaniciadi"];
 
-$dosyaAdiEditor="editorsayfalari_$gelenkullaniciemail";
-$dosyaAdiKullanici="kullanicisayfalari_$gelenkullaniciemail";
-$dosyaAdiEditorResim="editorsayfalari_$gelenkullaniciemail/resimler";
-$dosyaAdiKullaniciResim="kullanicisayfalari_$gelenkullaniciemail/resimler";
 
 foreach ($_COOKIE['sayfaEkle'] as $name => $value) {
 
@@ -37,21 +33,7 @@ if(isset($_POST['sayfa_ekle'])){
               $fileNameNew = uniqid('', true).".".$fileActualExt;
               $fileDestination = $fileName2;
        
-            
-            if(!file_exists($dosyaAdiEditorResim)) {
-              $olustur = mkdir($dosyaAdiEditorResim);
-            }
-            
-            
-            if(!file_exists($dosyaAdiKullanici)) {
-              $olustur = mkdir($dosyaAdiKullanici);
-            }
-            if(!file_exists($dosyaAdiKullaniciResim)) {
-              $olustur = mkdir($dosyaAdiKullaniciResim);
-            }
- 
-            move_uploaded_file($fileTmpName, $dosyaAdiEditorResim."/".$fileDestination);
-            copy($dosyaAdiEditorResim."/".$fileDestination,$dosyaAdiKullaniciResim."/".$fileDestination);
+   
  
           }else{
               echo "Resim fazla büyük !";
@@ -94,22 +76,7 @@ if(isset($_POST['sayfa_ekle'])){
          if($fileSize < 1024*1024*10000){
              $fileNameNew = uniqid('', true).".".$fileActualExt;
              $fileDestination = $fileName3;
-      
-           
-           if(!file_exists($dosyaAdiEditorResim)) {
-             $olustur = mkdir($dosyaAdiEditorResim);
-           }
-           
-           
-           if(!file_exists($dosyaAdiKullanici)) {
-             $olustur = mkdir($dosyaAdiKullanici);
-           }
-           if(!file_exists($dosyaAdiKullaniciResim)) {
-             $olustur = mkdir($dosyaAdiKullaniciResim);
-           }
-
-           move_uploaded_file($fileTmpName, $dosyaAdiEditorResim."/".$fileDestination);
-           copy($dosyaAdiEditorResim."/".$fileDestination,$dosyaAdiKullaniciResim."/".$fileDestination);
+     
 
          }else{
              echo "Resim fazla büyük !";
@@ -152,22 +119,7 @@ if(isset($_POST['sayfa_ekle'])){
          if($fileSize < 1024*1024*10000){
              $fileNameNew = uniqid('', true).".".$fileActualExt;
              $fileDestination = $fileName4;
-      
-           
-           if(!file_exists($dosyaAdiEditorResim)) {
-             $olustur = mkdir($dosyaAdiEditorResim);
-           }
-           
-           
-           if(!file_exists($dosyaAdiKullanici)) {
-             $olustur = mkdir($dosyaAdiKullanici);
-           }
-           if(!file_exists($dosyaAdiKullaniciResim)) {
-             $olustur = mkdir($dosyaAdiKullaniciResim);
-           }
-
-           move_uploaded_file($fileTmpName, $dosyaAdiEditorResim."/".$fileDestination);
-           copy($dosyaAdiEditorResim."/".$fileDestination,$dosyaAdiKullaniciResim."/".$fileDestination);
+   
 
          }else{
              echo "Resim fazla büyük !";

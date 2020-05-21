@@ -303,7 +303,7 @@ $gelenkullaniciemail=$_SESSION["Kullaniciadi"];
     
       header('Location:'.$_SERVER['HTTP_REFERER']);
 
-    }else if($secilenBolum == "littleheader" || $secilenBolum == "bar1" || $secilenBolum == "littleheader1"){
+    }else if($secilenBolum == "littleheader" || $secilenBolum == "bar1" || $secilenBolum == "littleheader1" || $secilenBolum == "bar2" || $secilenBolum == "bar3"  || $secilenBolum == "bar4" || $secilenBolum == "bar5"  ){
       $dt = fopen('editorsayfalari_'.$gelenkullaniciemail.'/'.$secilenBolum.'.php', 'w+'); //sayfayı w+ ile açıyorum, içeriği silip yeniden yazmak için. Tek sayfa olduğu için!
       $dt_onizleme = fopen('kullanicisayfalari_'.$gelenkullaniciemail.'/'.$secilenBolum.'.php', 'w+');
       $sorgu = $baglanti->query('select id,kompanent_icerik,tur,komp_ayar,komp_kod from kompanentler where id='.$secilenKompanent_ID.'');

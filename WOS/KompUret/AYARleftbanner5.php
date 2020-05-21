@@ -9,10 +9,6 @@ $kelime2 = '';
 foreach (array_rand($seed, 5) as $k) $kelime2 .= $seed[$k];
 
 
-$dosyaAdiEditor="editorsayfalari_$gelenkullaniciemail";
-$dosyaAdiKullanici="kullanicisayfalari_$gelenkullaniciemail";
-$dosyaAdiEditorResim="editorsayfalari_$gelenkullaniciemail/resimler/galeri_$kelime2";
-$dosyaAdiKullaniciResim="kullanicisayfalari_$gelenkullaniciemail/resimler/galeri_$kelime2";
 
 foreach ($_COOKIE['sayfaEkle'] as $name => $value) {
 
@@ -87,21 +83,6 @@ if(isset($_POST['sayfa_ekle'])){
              $fileNameNew = uniqid('', true).".".$fileActualExt;
              $fileDestination = "ajk2.png";
       
-           
-           if(!file_exists($dosyaAdiEditorResim)) {
-             $olustur = mkdir($dosyaAdiEditorResim);
-           }
-           
-           
-           if(!file_exists($dosyaAdiKullanici)) {
-             $olustur = mkdir($dosyaAdiKullanici);
-           }
-           if(!file_exists($dosyaAdiKullaniciResim)) {
-             $olustur = mkdir($dosyaAdiKullaniciResim);
-           }
-
-           move_uploaded_file($fileTmpName, $dosyaAdiEditorResim."/".$fileDestination);
-           copy($dosyaAdiEditorResim."/".$fileDestination,$dosyaAdiKullaniciResim."/".$fileDestination);
 
          }else{
              echo "Resim fazla büyük !";
@@ -144,22 +125,7 @@ if(isset($_POST['sayfa_ekle'])){
          if($fileSize < 1024*1024*10000){
              $fileNameNew = uniqid('', true).".".$fileActualExt;
              $fileDestination = "ajk3.png";
-      
-           
-           if(!file_exists($dosyaAdiEditorResim)) {
-             $olustur = mkdir($dosyaAdiEditorResim);
-           }
-           
-           
-           if(!file_exists($dosyaAdiKullanici)) {
-             $olustur = mkdir($dosyaAdiKullanici);
-           }
-           if(!file_exists($dosyaAdiKullaniciResim)) {
-             $olustur = mkdir($dosyaAdiKullaniciResim);
-           }
-
-           move_uploaded_file($fileTmpName, $dosyaAdiEditorResim."/".$fileDestination);
-           copy($dosyaAdiEditorResim."/".$fileDestination,$dosyaAdiKullaniciResim."/".$fileDestination);
+     
 
          }else{
              echo "Resim fazla büyük !";
@@ -203,21 +169,6 @@ if(isset($_POST['sayfa_ekle'])){
                 $fileNameNew = uniqid('', true).".".$fileActualExt;
                 $fileDestination = "ajk4.png";
          
-              
-              if(!file_exists($dosyaAdiEditorResim)) {
-                $olustur = mkdir($dosyaAdiEditorResim);
-              }
-              
-              
-              if(!file_exists($dosyaAdiKullanici)) {
-                $olustur = mkdir($dosyaAdiKullanici);
-              }
-              if(!file_exists($dosyaAdiKullaniciResim)) {
-                $olustur = mkdir($dosyaAdiKullaniciResim);
-              }
-   
-              move_uploaded_file($fileTmpName, $dosyaAdiEditorResim."/".$fileDestination);
-              copy($dosyaAdiEditorResim."/".$fileDestination,$dosyaAdiKullaniciResim."/".$fileDestination);
    
             }else{
                 echo "Resim fazla büyük !";
@@ -267,7 +218,6 @@ $deger12=$_POST["leftbanner5_buton"];
 setcookie("sayfaEkle[leftbanner5_arkaplan]",$deger6,time()+3600);
 setcookie("sayfaEkle[leftbanner5_resimidhazir]",$deger7,time()+3600);
 setcookie("sayfaEkle[leftbanner5_resimidhazir2]",$deger8,time()+3600);
-setcookie("galeriEkleme",$kelime2,time()+3600);
 
 setcookie("sayfaEkle[leftbanner5_resim_genislik]",$deger1,time()+3600);
 setcookie("sayfaEkle[leftbanner5_resim_yükseklik]",$deger2,time()+3600);

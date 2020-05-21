@@ -76,10 +76,35 @@
 $deger1=$_POST["bar1_yazi"];
 $deger2=$_POST["bar1_arkaplan"];
 $deger3=$_POST["bar1_resim"];
+$deger4=$_POST["bar1_yazim_rengi"];
+
+$deger9=$_POST["bar1_yazim_fontu"];
+$deger6=$_POST["bar1_resim_genislik"];
+$deger7=$_POST["bar1_resim_yükseklik"];
+
+if($_POST["bar1_resim_daire"] == null)
+      $deger5=" ";
+else
+      $deger5=$_POST["bar1_resim_daire"];
+
+if($_POST["bar1_resim_golge"] == null)
+      $deger8=" ";
+else
+      $deger8=$_POST["bar1_resim_golge"];
+      
+$deger11=$_POST["bar1_yaziboyutu"];
 
 setcookie("sayfaEkle[bar1_yazi]",$deger1,time()+3600);
 setcookie("sayfaEkle[bar1_arkaplan]",$deger2,time()+3600);
 setcookie("sayfaEkle[bar1_resim]",$fileName,time()+3600);
+
+setcookie("sayfaEkle[bar1_yazim_rengi]",$deger4,time()+3600);
+setcookie("sayfaEkle[bar1_yazim_fontu]",$deger9,time()+3600);
+setcookie("sayfaEkle[bar1_resim_genislik]",$deger6,time()+3600);
+setcookie("sayfaEkle[bar1_resim_yükseklik]",$deger7,time()+3600);
+setcookie("sayfaEkle[bar1_resim_daire]",$deger5,time()+3600);
+setcookie("sayfaEkle[bar1_resim_golge]",$deger8,time()+3600);
+setcookie("sayfaEkle[bar1_yaziboyutu]",$deger11,time()+3600);
 
 header("Location: editor.php?KompanentEkle=27");//sayfayı yenileyip veritabanından hangi id li kompanentin kodlarını
 // çekeceğini anasayfaya 'KompanentEkle' ile gönderiyorum! 

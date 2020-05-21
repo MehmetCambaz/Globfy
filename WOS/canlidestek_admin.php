@@ -151,3 +151,8 @@ if(isset($_GET['oturum']))
 }
 
 ?>
+
+<script>
+$("#canliDestekAdmin_Pencere_cevap").animate({ scrollTop: 10000}, 3000);
+
+</script>

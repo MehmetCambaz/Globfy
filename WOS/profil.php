@@ -122,7 +122,7 @@ echo '</div>';
 if(is_file($dosya)) {
 echo '<div style="width:100%; float:left;">';
 echo '<table><tr><td>';
-echo '<b style="margin:35 0 0 15;">► '.date ("F d Y H:i:s", filemtime($dosya)).'</b>';
+echo '<b style="margin:35 0 0 15;">► '.date ("F d Y H:i:s",  fileatime($dosya)).'</b>';
 echo '</td><td>';
 echo '<input type="submit" name="son_file" value="İNDİR" style="background-color:green; border:1px solid green; color:white; padding:10; margin:0 0 0 40; cursor:pointer;"/>';
 echo '</td></tr></table>';

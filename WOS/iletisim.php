@@ -44,16 +44,16 @@
 	<tr>
 		<td colspan="2" >
 		
-		<h3 style="color:green; margin:0 0 0 30;">
+		<h3 style="color:green; text-align:center;">
 			<?php
 				if(isset($_POST['mesaj_gonder'])){
 					$adsoyad= $_POST['adsoyad'];
-					$telefon= $_POST['konu'];
+					$konu= $_POST['konu'];
 					$email = $_POST['email'];
 					$mesaj = $_POST['mesaj'];
 
-					if($adsoyad=="" || $telefon=="" || $email=="" || $mesaj==""){
-						echo 'Eksik veya hatalı bölüm var! Mesaj Gönderilemedi!';
+					if($adsoyad=="" || $konu=="" || $email=="" || $mesaj==""){
+						echo '<a style="color:red;">Eksik veya hatalı bölüm var!</a>';
 					}else{
 						$icerik = 'Ad Soyad:'.$adsoyad.'    Konu:'.$konu.'    E-Mail:'.$email.'    Mesaj:'.$mesaj;
 						$icerik=wordwrap($icerik, 70, "\r\n");
@@ -73,8 +73,8 @@
 							'X-Mailer: PHP/' . phpversion();
 	
 						if(mail("enesdongez@gmail.com",$konu,$message,$headers)){
-                            echo "Mesajınız alınmıştır, en kısa zamanda dönüş yapılacaktır.";
-                            header ("Refresh: 1; url=index.php");
+                            echo "Mesajınız alınmıştır.";
+                           // header ("Refresh: 1; url=index.php");
 						}else{
 							
 						}

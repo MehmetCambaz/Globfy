@@ -72,7 +72,7 @@ if(empty($_SESSION["Kullaniciadi"])){
 <div class="canliDestek_Yazi">
 
 <input type="text" name="kullanici_yazi" class="canliDestek_Yazi_textbox"/>
-<input type="submit" id="gonder" name="gonder" value="Gönder" class="canliDestek_Yazi_button"/>
+<input type="submit" id="gonder" name="gonder" value="Gönder" onclick="scroll()" class="canliDestek_Yazi_button"/>
 
 </div>
 </div>
@@ -146,6 +146,9 @@ if(isset($_POST['gonder'])){
 <script>
 $("#canliDestek_Pencere").animate({ scrollTop: 10000}, 3000);
 
+function scroll(){
+	$("#canliDestek_Pencere").animate({ scrollTop: 10000}, 3000);
+}
 </script>
 
 

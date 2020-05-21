@@ -35,14 +35,14 @@
   font-size: 16px;
   text-decoration: none;
   color: #ffffff;
-  background: #7D7D7D;
+  background: #5c5c5c;
   -webkit-transition: color .2s ease;
   -o-transition: color .2s ease;
   transition: color .2s ease;
 }
 #cssmenu > ul > li > a:hover {
   color: #ffffff;
-  background:#5c5c5c;
+  background:#4d4d4d;
 }
 #cssmenu ul > li.has-sub > a:after {
   position: absolute;

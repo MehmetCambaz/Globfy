@@ -3,10 +3,6 @@
   include 'mysql_connect.php';
   $gelenkullaniciemail=$_SESSION["Kullaniciadi"];
 
-  $dosyaAdiEditor="editorsayfalari_$gelenkullaniciemail";
-  $dosyaAdiKullanici="kullanicisayfalari_$gelenkullaniciemail";
-  $dosyaAdiEditorResim="editorsayfalari_$gelenkullaniciemail/resimler";
-  $dosyaAdiKullaniciResim="kullanicisayfalari_$gelenkullaniciemail/resimler";
 
     foreach ($_COOKIE['sayfaEkle'] as $name => $value) {
 

@@ -37,7 +37,7 @@
     $gelentasarim=preg_replace('/href="\?sayfa=.*?"/', 'href="#"', $gelentasarim);
     $gelentasarim=str_replace('src="resimler/','src="',$gelentasarim);
     $gelentasarim='<div style="width:100%; height:400px;">'."\n".$gelentasarim."\n</div>";
-	  $yeni='<textarea spellcheck="false" style="resize:none; width:100%; height:100%; font-size:15; ">'.$gelentasarim.'</textarea>';
+	  $yeni='<textarea spellcheck="false" style="resize:none; width:100%; height:100%; font-size:15; padding:10;">'.$gelentasarim.'</textarea>';
 	  
 	  $dt2= fopen('Olusturulan/'.$gelenkullaniciemail.'.php','a');
 	  fwrite($dt2,$yeni);
@@ -130,7 +130,7 @@ $(document).ready(function() {
   }
   
   
-   $sql4 = "SELECT id,tur,kompanent_icerik,komp_pic FROM kompanentler where id='2' || id='5' || id='6' || id='7' || id='31' || id='32' || id='92'";
+   $sql4 = "SELECT id,tur,kompanent_icerik,komp_pic FROM kompanentler where id='2' || id='5' || id='6' || id='7' || id='31' || id='32' || id='92'|| id='103' || id='125'";
 			$sorgu4 = $baglanti->query($sql4);
 			    
 while($sonuc4=mysqli_fetch_assoc($sorgu4) )
@@ -149,7 +149,7 @@ while($sonuc4=mysqli_fetch_assoc($sorgu4) )
    <ul>
   <?php
    include 'mysql_connect.php';
-   $sql4 = "SELECT id,tur,kompanent_icerik,komp_pic FROM kompanentler where id='9' || id='10' || id='44' || id='91' || id='93' || id='95'";
+   $sql4 = "SELECT id,tur,kompanent_icerik,komp_pic FROM kompanentler where id='9' || id='10' || id='44' || id='91' || id='93' || id='95'|| id='104' || id='105' ";
 			$sorgu4 = $baglanti->query($sql4);
 			    
 while($sonuc4=mysqli_fetch_assoc($sorgu4) )
@@ -167,7 +167,7 @@ while($sonuc4=mysqli_fetch_assoc($sorgu4) )
    <ul>
       <?php
    include 'mysql_connect.php';
-   $sql4 = "SELECT id,tur,kompanent_icerik,komp_pic FROM kompanentler where id='39' || id='43' || id='63'";
+   $sql4 = "SELECT id,tur,kompanent_icerik,komp_pic FROM kompanentler where id='39' || id='43' || id='63'  ";
 			$sorgu4 = $baglanti->query($sql4);
 			    
 while($sonuc4=mysqli_fetch_assoc($sorgu4) )
