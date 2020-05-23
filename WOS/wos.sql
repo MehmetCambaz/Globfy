@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Anamakine: 127.0.0.1
--- Üretim Zamanı: 21 May 2020, 15:58:35
+-- Üretim Zamanı: 23 May 2020, 18:21:41
 -- Sunucu sürümü: 10.4.11-MariaDB
--- PHP Sürümü: 7.4.4
+-- PHP Sürümü: 7.4.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -20,6 +20,52 @@ SET time_zone = "+00:00";
 --
 -- Veritabanı: `wos`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Tablo için tablo yapısı `anket`
+--
+
+CREATE TABLE `anket` (
+  `id` int(11) NOT NULL,
+  `kullanici_adi` varchar(500) NOT NULL,
+  `haber_alma` varchar(500) NOT NULL,
+  `tarayici` varchar(500) NOT NULL,
+  `ihtiyac` varchar(500) NOT NULL,
+  `tavsiye` varchar(500) NOT NULL,
+  `bulunma_durumu` varchar(500) NOT NULL,
+  `kullanici_gorusu` mediumtext NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Tablo döküm verisi `anket`
+--
+
+INSERT INTO `anket` (`id`, `kullanici_adi`, `haber_alma`, `tarayici`, `ihtiyac`, `tavsiye`, `bulunma_durumu`, `kullanici_gorusu`) VALUES
+(1, 'enes döngez', 'Reklam', 'Google Chrome', 'Evet karsiliyor', '', 'Cok Memnunum', ''),
+(2, 'enes döngez', 'Reklam', 'Google Chrome', 'Evet karsiliyor', '', 'Cok Memnunum', 'Çok teşekürlerr....'),
+(3, 'enes döngez', 'Sosyal Medya', 'Google Chrome', 'Evet karsiliyor', 'Evet', 'Cok Memnunum', 'Teşşekürler '),
+(4, 'enes döngez', 'Sosyal Medya', 'Google Chrome', 'Evet karsiliyor', 'Evet', 'Cok Memnunum', 'Teşşekürler '),
+(5, 'enes döngez', 'Sosyal Medya', 'Google Chrome', 'Evet karsiliyor', 'Evet', 'Cok Memnunum', 'asdasdasd'),
+(6, 'enes döngez', 'Sosyal Medya', 'Google Chrome', 'Evet karsiliyor', 'Evet', 'Cok Memnunum', 'asdasdasd'),
+(7, 'enes döngez', 'Sosyal Medya', 'Firefox', 'Birkac duzenlemeden sonra karsilayacak', 'Evet', 'Memnunum', 'asdasdasd'),
+(8, 'enes döngez', 'Sosyal Medya', 'Firefox', 'Birkac duzenlemeden sonra karsilayacak', 'Evet', 'Memnunum', 'asdasdasd'),
+(9, 'enes döngez', 'Sosyal Medya', 'Firefox', 'Birkac duzenlemeden sonra karsilayacak', 'Evet', 'Memnunum', 'asdasdasd'),
+(10, 'enes döngez', 'Arama Motoru', 'Safari', 'Hayir karsilamiyor', 'Hayir', 'Cok Memnunum', 'asdasd'),
+(11, 'enes döngez', '', '', '', '', '', ''),
+(12, 'enes döngez', '', '', '', '', '', ''),
+(13, 'enes döngez', '', '', '', '', '', ''),
+(14, 'enes döngez', '', '', '', '', '', ''),
+(15, 'enes döngez', '', '', '', '', '', ''),
+(16, 'enes döngez', 'Sosyal Medya', 'Google Chrome', 'Evet karsiliyor', 'Evet', 'Cok Memnunum', 'asdasd'),
+(17, 'enes döngez', '', '', '', '', '', ''),
+(18, 'enes döngez', '', '', '', '', '', ''),
+(19, 'enes döngez', '', '', '', '', '', ''),
+(20, 'enes döngez', 'Arama Motoru', 'IE', 'Birkac duzenlemeden sonra karsilayacak', 'Hayir', 'Memnunum', 'aswefw'),
+(21, 'enes döngez', 'Arama Motoru', 'IE', 'Birkac duzenlemeden sonra karsilayacak', 'Hayir', 'Memnunum', 'aswefw'),
+(22, 'enes döngez', 'Reklam', 'Opera', 'Birkac duzenlemeden sonra karsilayacak', 'Hayir', 'Memnunum', 'asdasdasdasdasdasd'),
+(23, 'enes döngez', 'Reklam', 'Google Chrome', 'Evet karsiliyor', 'Evet', 'Kararsizim', 'Geliştirilebilir.....');
 
 -- --------------------------------------------------------
 
@@ -85,7 +131,11 @@ INSERT INTO `canli_destek` (`id`, `kullanici_adi`, `kullanici_yazi`, `tarih`, `o
 (248, 'enes döngez', 'asdasd', '2020-05-19 14:06:03', 1),
 (249, 'enes döngez', 'asdasd', '2020-05-19 14:12:31', 1),
 (250, 'enes döngez', 'asdads', '2020-05-19 14:15:54', 1),
-(251, 'enes döngez', 'asdasdasd', '2020-05-19 14:18:47', 1);
+(251, 'enes döngez', 'asdasdasd', '2020-05-19 14:18:47', 1),
+(252, 'enes döngez', 'asdasdasdasd', '2020-05-23 01:45:57', 1),
+(253, 'enes döngez', 'assssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss Merhaba ben enes dngz nbr', '2020-05-23 01:46:38', 1),
+(254, 'enes döngez', 'asssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssdasdasd abc abc abc abc Merhaba ben enes dngz nbr', '2020-05-23 01:47:15', 1),
+(255, 'enes döngez', 'asssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssdasdasdasdasdasdasdasdasdasdasd abc abc abc abc Merhaba ben enes dngz nbr', '2020-05-23 01:47:42', 1);
 
 -- --------------------------------------------------------
 
@@ -468,6 +518,12 @@ INSERT INTO `sablon_sayfalari` (`id`, `sablon_id`, `sayfa_adi`, `kod`, `kod_kull
 --
 
 --
+-- Tablo için indeksler `anket`
+--
+ALTER TABLE `anket`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Tablo için indeksler `canli_destek`
 --
 ALTER TABLE `canli_destek`
@@ -520,10 +576,16 @@ ALTER TABLE `sablon_sayfalari`
 --
 
 --
+-- Tablo için AUTO_INCREMENT değeri `anket`
+--
+ALTER TABLE `anket`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+
+--
 -- Tablo için AUTO_INCREMENT değeri `canli_destek`
 --
 ALTER TABLE `canli_destek`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=252;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=256;
 
 --
 -- Tablo için AUTO_INCREMENT değeri `canli_destek_cevap`

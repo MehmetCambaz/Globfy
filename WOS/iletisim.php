@@ -9,10 +9,10 @@
 <body>
 <?php include 'mysql_connect.php'; ?>
 <div class="hakkimizda_Bolumler">
-<form style="margin:0 0 200 300;" method="POST">
+<form style="margin:50 0 100 300;" method="POST">
 <table>
     <tr>
-            <td colspan="2" style="text-align:center; font-weight:bold; font-size:30;">Bizimle İletişime Geçiniz</td>
+            <td colspan="2" style="text-align:center; font-weight:bold; font-size:33;">Bizimle İletişime Geçiniz</td>
     </tr>
 	<tr>
 		<td>
@@ -32,8 +32,7 @@
 	<tr>
 		<td>
 			Mesaj: <br>
-				<textarea name="mesaj" id="mesaj" rows="10" cols="57" >
-				</textarea>
+				<textarea name="mesaj" id="mesaj" rows="10" style="padding:5; width:420px; font-size:17;"></textarea>
 			
 		</td>
 	</tr>

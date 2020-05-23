@@ -598,23 +598,30 @@ textarea {
 	color:white;
 	border:1px solid green;
 	border-radius:5px;
+	cursor:pointer;
+}
+.iletisim_button:hover{
+	background-color:rgb(2, 94, 2);
+
+	border:1px solid rgb(2, 94, 2);
 }
 .dosyateslim{
 	width:100%;
 	height:600px;
-	float:left;
+margin:auto;
 }
 .dosyateslim_ic{
 	margin:auto;
 }
 .dosyateslim_yazi{
-	float:left;
+	margin:10 0 0 0;
 	width:100%;
 	font-family:Calibri;
 }
 .dosyateslim_button{
-	float:left;
+text-align:center;
 	width:100%;
+	
 }
 .dosyateslim_button_tasarim{
 	padding:10;
@@ -623,8 +630,67 @@ textarea {
 	border:1px solid #007500;
 	font-size:24;
 	font-family:Calibri;
+	margin:10 0 0 0;
+	
 }
+.dosyateslim_button_tasarim:hover{
+	background-color:#005000 ;
+	border:1px solid #005000;
+}
+.dosyateslimi_anket_button{
+	width:100%;
+}
+.dosyateslimi_anket_button_ic{
+	padding:10;
+	background-color:transparent;
+	color:rgb(63,74,84);
+	border:1px solid transparent;
+	font-size:24;
+	font-family:Calibri;
+	margin:10 0 0 0;
+	cursor:pointer;
+}
+.dosyateslimi_anket_button_ic:hover{
+	background-color:rgb(50, 58, 66);
+	color:white;
+	border:1px solid rgb(50, 58, 66);
+}
+.dosyateslimi_anket_yap{
+	margin:10 0 0 0;
+	width:100%;
+	font-family:Calibri;
+}
+.li_ana{
+	list-style:none;
+	margin-top:10;
+	margin-bottom:25;
+	width:100%;
 
+	}
+	.li_alt{
+	list-style:none;
+	float:left;
+	width:100%;
+
+	margin-top:10;
+	}
+
+	.gonder_anket{
+		background-color:rgb(87, 87, 87); 
+		color:white; 
+		padding:8; 
+		font-size:17; 
+		border:1px solid rgb(87, 87, 87);
+		 cursor:pointer;
+		 font-family:calibri;
+	}
+	
+.gonder_anket:hover{
+	background-color:rgb(56, 56, 56); 
+	color:white; 
+	border:1px solid rgb(56, 56, 56);
+	}
+	
 #sablonDuzenle_gelen_resim{
 	width:100%;
 	height:100%;
