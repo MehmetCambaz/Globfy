@@ -17,8 +17,8 @@
     </p>
     <table border="0px">
     <tr>
-    <td> <img src="Desing/Pictures/enes.jpg" class="hakkimizda_Resim"/> </td>
-    <td> <img src="Desing/Pictures/mehmet.jpg" class="hakkimizda_Resim"/> </td>
+    <td> <img src="Desing/Pictures/enes.jpg" class="hakkimizda_Resim_yeni"/> </td>
+    <td> <img src="Desing/Pictures/mehmet.jpg" class="hakkimizda_Resim_yeni"/> </td>
     </tr>
     </table> </br>
     <a style="margin-left:210px;"> Enes Döngez </a>

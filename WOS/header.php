@@ -39,7 +39,9 @@ include 'mysql_connect.php';
     if(empty($_SESSION["Kullaniciadi"])){
         echo '<a href="index.php?sayfa=girisislem">Giriş & Kayıt Ol</a>';
     }else{
+        if($_SESSION["Kullaniciadi"]!="ADMIN"){
         echo '<a class="profil" href="index.php?sayfa=profil"">Profil</a>';
+        }
         echo '<a class="cikis" href="index.php?sayfa=cikisislem"">Çıkış Yap</a>';
     }
 ?>

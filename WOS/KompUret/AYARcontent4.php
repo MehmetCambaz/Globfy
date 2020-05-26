@@ -221,7 +221,7 @@ $deger12=$_POST["content4_buton"];
 
 setcookie("sayfaEkle[content4_arkaplan]",$deger6,time()+3600);
 setcookie("sayfaEkle[content4_resimidhazir]",$deger7,time()+3600);
-setcookie("sayfaEkle[content4_resimidhazir2]",$deger8,time()+3600);
+setcookie("sayfaEkle[content4_2resimidhazir]",$deger8,time()+3600);
 
 setcookie("sayfaEkle[content4_resim_genislik]",$deger1,time()+3600);
 setcookie("sayfaEkle[content4_resim_yükseklik]",$deger2,time()+3600);

@@ -1,6 +1,7 @@
 <html>
 <head>
 <title>WoS | Web Site Oluşturma Sistemi</title>
+
 <script language="JavaScript">
 function Alert() {
   alert("Giriş Yapmanız Gerekmektedir!");

@@ -1,5 +1,10 @@
+
 <link href="page3.css" rel="stylesheet" type="text/css"> 
+
 <script src="jscolor.js"></script>
+<script>
+
+</script>
 <style>
 .ayar_button{
 background-color:#7D7D7D;
@@ -44,6 +49,7 @@ font-size:16;
 
 
 </style>
+
 <?php
 include 'mysql_connect.php';
 
@@ -54,4 +60,3 @@ $sorgu = $baglanti->query('select id,kompanent_icerik,tur,komp_ayar,komp_kod fro
 	}
 
 ?>
-

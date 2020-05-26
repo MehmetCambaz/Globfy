@@ -1,144 +1,154 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="Desing/general.css" media="screen" rel="stylesheet" type="text/css">
 <title>WoS | Web Site Oluşturma Sistemi</title>
 <script language="JavaScript">
-function Alert() {
-  alert("Giriş Yapmanız Gerekmektedir!");
-}
+
 </script>
 
 </head>
 <body>
-<div class="nasilkullanilir" >
-  <div class="nasilkullanilir_yazi" style="border:0 solid black; width:100%;">
-    <h3 style="text-shadow:0 0 1.3px black; text-align:center; font-size:22;">Merhabalar, web site oluşturma sistemimizde sizlere hiçbir kod yazmadan kendinize özel bir web site yapmanızı sağlayacağız.
-    Bunun için hazırladığımız bu panelin kullanımına gelin hep beraber aşağıdaki maddeleri inceleyelim.</h3>
-  </div>
+<div class="hakkimizda_Bolumler">
+<div class="hakkimizda_Bolum">
+    <h3>Web Site Nasıl Oluşturulur?</h3>
+    <p style="font-size:18; text-align:justify;">
+        Merhabalar, web site oluşturma sistemimizde sizlere hiçbir kod yazmadan kendinize özel bir web site yapmanızı sağlayacağız. Bunun için hazırladığımız bu panelin kullanımına gelin hep beraber aşağıdaki maddeleri inceleyelim.
+    </p>
+    <center>
+    <table border="0px" cellpadding="10">
+    <tr>
+    <td><a href="Desing/Pictures/NasilKullanilir/anasayfa.png"> <img src="Desing/Pictures/NasilKullanilir/anasayfa.png" class="hakkimizda_Resim"/></a> </td>
+    <td> <img src="Desing/Pictures/logo.png" class="hakkimizda_Resim2"/> </td>
+    <td><a href="Desing/Pictures/NasilKullanilir/editor_ana.png"> <img src="Desing/Pictures/NasilKullanilir/editor_ana.png" class="hakkimizda_Resim"/> </a></td>
+    </tr>
+    </table> 
+    </center>
+    
+    </br>
 
-    <table class="nasilkullanilir_table" style="background-color:#B1B1B1;">
+</div>
 
+<div class="hakkimizda_Bolum">
+    <p style="font-size:18; text-align:justify;">
+    ◐ Kullanışlı ve sade anasayfamızda bulunan 3 ana bölümden birincisinde BAŞLA butonuna basarak şablon seçim ekranına yönlendirilecek ve bu aşamadan kendi web sitenizi yapmaya başlayacaksınız.
+    İkinci bölümde bulunan ÜRET butonuna tıklayarak sistem içinde sizlere sunmuş olduğumuz web bileşenlerini kendinize göre optimize edip, istediğiniz web bileşenini üretebilirsiniz.
+    Üçüncü bölümden de şuanda bulunduğumuz sayfaya yönlendirilmiştiniz.
+    </p>
+    <center>
+    <table border="0px">
     <tr>
-        <td class="nasilkullanilir_sag"><p><ul><li style="list-style-type: circle;">Kullanışlı ve sade anasayfamızda bulunan aşağıda resmide bulunan bölümden web siteni oluşturmak için başlangıç sayfasına girebilirsiniz.</li></ul></p></td>
-        <td><img src="Desing/Pictures/NasilKullanilir/resim1.png"/></td>
-    </tr>
-</table>
-<table class="nasilkullanilir_table">
-    <tr>
-        <td class="nasilkullanilir_sag"><p><ul><li style="list-style-type: circle;">Web site oluşturmaya başlaya tıkladıktan sonra yapmanız gereken diğer önemli adım aşağıda da örnek olarak verdiğimiz şablon örneklerinden birinin üstüne tıklayıp seçmektir. Tıkladıktan
-        sonra sağ altta çıkan 'Sonraki Adıma Geçiniz' butonuna tıklamalısınız. </li></ul></p>
-        </td>
-        <td><img src="Desing/Pictures/NasilKullanilir/resim2.png"/></td>
-    </tr>
-    </table>
-<table class="nasilkullanilir_table" style="background-color:#B1B1B1;">
-    <tr>
-        <td class="nasilkullanilir_sag"><p><ul><li style="list-style-type: circle;">Seçilen şablonun tasarım ekranına yönlendirildiniz bile, bu ekranda da "Tıkla ve Düzenle" yazan bölümlere tıklayarak o bölüme eklenebilecek olan komponentleri
-    sağ tarafta bulunan komponent bölümünden seçip, seçtiğiniz komponentin yine aynı bölümde açılacak olan Ayar sayfassından gerekli eklemeleri yaptıktan sonra sizde seçtiğiniz komponentin
-    sayfanıza eklendiğiniz görebileceksiniz.</li></ul></p></td>
-        <td><img src="Desing/Pictures/NasilKullanilir/resim3.png"/></td>
-    </tr>
+    <td> <a href="Desing/Pictures/NasilKullanilir/anasayfa.png"> <img src="Desing/Pictures/NasilKullanilir/anasayfa.png" class="hakkimizda_Resim_1"/></a> </td>
 
-    <tr>
-        <td colspan="2"><img src="Desing/Pictures/NasilKullanilir/resim3B.png" style="margin:0 45 0 0;"/><img src="Desing/Pictures/NasilKullanilir/resim3.2.png"/></td>
     </tr>
     </table>
-<table class="nasilkullanilir_table">
+</center>
+</div>
+
+<div class="hakkimizda_Bolum">
+    <p style="font-size:18; text-align:justify;">
+    ◐ Web site oluşturmaya başlaya tıkladıktan sonra yapmanız gereken diğer önemli adım aşağıda da örnek olarak verdiğimiz şablon örneklerinden birinin üstüne tıklayıp seçmektir. Tıkladıktan
+        sonra sağ altta çıkan 'Sonraki Adıma Geçiniz' butonuna tıklarsanız seçilen şablonun düzenleme ekranına gidebilirsiniz. Eğer sol altta çıkan şablon önizleme butonuna tıklarsanız seçili şablonun ayrıntılarına ulaşabilirsiniz.
+    </p>
+    <center>
+    <table border="0px">
     <tr>
-        <td class="nasilkullanilir_sag"><p><ul><li style="list-style-type: circle;">Her bölüm için seçtiğiniz komponenti eklerken yanlış veya değiştirmek istediğiniz bir bölüm olursa o bölüme tıklayıp üstte bulunan Geri Al butonuna tıklamanız yeterlidir.</li></ul></p></td>
-        <td><img src="Desing/Pictures/NasilKullanilir/resim4.png"/></td>
+    <td><a href="Desing/Pictures/NasilKullanilir/sablonsecim.png"> <img src="Desing/Pictures/NasilKullanilir/sablonsecim.png" class="hakkimizda_Resim_1"/> </a></td>
+    <td><a href="Desing/Pictures/NasilKullanilir/sablonsecim_sonrakiadim.png"> <img src="Desing/Pictures/NasilKullanilir/sablonsecim_sonrakiadim.png" class="hakkimizda_Resim_1"/> </a></td>
+    <td><a href="Desing/Pictures/NasilKullanilir/sablonsecim_onizleme.png"> <img src="Desing/Pictures/NasilKullanilir/sablonsecim_onizleme.png" class="hakkimizda_Resim_1"/> </a></td>
     </tr>
     </table>
-<table class="nasilkullanilir_table" style="background-color:#B1B1B1;">
+</center>
+    
+</div>
+
+<div class="hakkimizda_Bolum">
+    <p style="font-size:18; text-align:justify;">
+    ◐ Şablon düzenlme ekranında seçilmiş şablonun genel boyut ve arkaplan seçenekleri ayarlama işlemleri yapılmaktadır. Resimlerde de görüldüğü gibi seçilmiş şablonun genel sayfa boyutu, sayfa konumu, arkaplan rengi ve arkaplan resmi gibi ayarlamalara
+    olanak sağlamaktadır.
+    </p>
+    <center>
+    <table border="0px">
     <tr>
-        <td class="nasilkullanilir_sag"><p><ul><li style="list-style-type: circle;">İşlemler sırasında sayfanın o anki durumunu görmek için ister editör sayfasının içerisinde bulunan Kılavuz Çizgi Kaldır butonuna tıklayıp görebilir veya üst bölümde bulunan
-    Önizleme butonuna basarak yeni sekmede açılacak olan sizin sayfanızı tam halini görebilirsiniz.</li></ul></p></td>
-        <td><img src="Desing/Pictures/NasilKullanilir/resim5.png"/></td>
+    <td><a href="Desing/Pictures/NasilKullanilir/sablonsecim_duzenle.png">  <img src="Desing/Pictures/NasilKullanilir/sablonsecim_duzenle.png" class="hakkimizda_Resim_1"/></a> </td>
+    <td><a href="Desing/Pictures/NasilKullanilir/sablonsecim_duzenle_kullanim.png">  <img src="Desing/Pictures/NasilKullanilir/sablonsecim_duzenle_kullanim.png" class="hakkimizda_Resim_1"/> </a></td>
     </tr>
     </table>
-<table class="nasilkullanilir_table">
+</center>
+    
+</div>
+
+
+<div class="hakkimizda_Bolum">
+    <p style="font-size:18; text-align:justify;">
+    ◐ Seçilen şablonun tasarım ekranına yönlendirildiniz bile, bu ekranda da "Tıkla ve Düzenle" yazan bölümlere tıklayarak o bölüme eklenebilecek olan bileşenleri
+    sağ tarafta bulunan Bileşenler bölümünden seçip, seçtiğiniz komponentin yine aynı bölümde açılacak olan Ayarlar sayfasından gerekli eklemeleri yaptıktan sonra sizde seçtiğiniz bileşenin
+    sayfanıza eklendiğini görebileceksiniz.
+    </p>
+  
+    <center>
+    <table border="0px">
     <tr>
-        <td class="nasilkullanilir_sag"> <p><ul><li style="list-style-type: circle;">Sistemimizde çoklu sayfalı web sayfalarınızın tasarımıda mevcuttur. Buton veya yönlendirme linki içeren komponentlerimizden eklerseniz ayar sayfasında bulunan yönlendirileceğ
+    <td><a href="Desing/Pictures/NasilKullanilir/editor_ana.png"> <img src="Desing/Pictures/NasilKullanilir/editor_ana.png" class="hakkimizda_Resim_1"/></a></td>
+    <td><a href="Desing/Pictures/NasilKullanilir/editor_headersablon.png"> <img src="Desing/Pictures/NasilKullanilir/editor_headersablon.png" class="hakkimizda_Resim_1"/></a> </td>
+    <td><a href="Desing/Pictures/NasilKullanilir/editor_headersablon_eklendi.png"> <img src="Desing/Pictures/NasilKullanilir/editor_headersablon_eklendi.png" class="hakkimizda_Resim_1"/> </a></td>
+    </tr>
+    </table>
+</center>
+<p style="font-size:18; text-align:justify;">
+    ◐ Sistemimizde çoklu sayfalı web sayfalarınızın tasarımıda mevcuttur. Buton veya yönlendirme linki içeren komponentlerimizden eklerseniz ayar sayfasında bulunan yönlendirileceğ
     sayfayı ve yönlerileceği buton veya linkin adı bölümünde belirtip o an bulunduğunuz sayfanın tasarımı bittikten sonra üst bölümde bulunan Sonraki Adıma Geç butonuna basarak eklemiş
-    olduğunuz sayfaların tasarımlarını da tek tek yapabilirsiniz.</li></ul></p></td>
-        <td><img src="Desing/Pictures/NasilKullanilir/resim6.png"/></td>
+    olduğunuz sayfaların tasarımlarını da tek tek yapabilirsiniz. Ayrıca üst resimde görülen Sonraki Adıma Geç butonu, eğer tasarım için belirtilmiş başka sayfa yoksa size oluşturmuş olduğunuz sayfanızın sistem kodlarını indirebileceğiniz
+    sayfaya yönlendirme işleminizi gerçekleştirir.
+    </p>
+</div>
+
+
+<div class="hakkimizda_Bolum">
+    <p style="font-size:18; text-align:justify; margin:0 0 0 0;">
+    ◐ Editor sayfasında işlemleriniz bittiği zaman, oluşturmuş olduğunuz web sitenin kaynak kodlarına erişim imkanı sağlayan dosya teslimi sayfana yönlendirileceksiniz. Bu sayfada bulunan Kaynak Kodları İndir butonu ile web sitenizin kaynak kodlarını indirebilirsiniz. Ayrıca yine bu ekranda bulunan Ankete Katıl butonuna tıklayarak
+    sistemi ve bizi değerlendirebileceğiniz bir ankete katılabilirsiniz.
+    </p>
+    <center>
+    <table border="0px">
+    <tr>
+    <td><a href="Desing/Pictures/NasilKullanilir/dosyateslim.png">  <img src="Desing/Pictures/NasilKullanilir/dosyateslim.png" class="hakkimizda_Resim_1"/></a> </td>
+    <td><a href="Desing/Pictures/NasilKullanilir/anket_yapilis.png">  <img src="Desing/Pictures/NasilKullanilir/anket_yapilis.png" class="hakkimizda_Resim_1"/> </a></td>
     </tr>
     </table>
-<table class="nasilkullanilir_table" style="background-color:#B1B1B1;">
+</center>
+    
+</div>
+
+
+<div class="hakkimizda_Bolum">
+    <h3>Web Bileşen Nasıl Üretilir?</h3>
+    <p style="font-size:18; text-align:justify;">
+        Merhabalar, tek bir satır kod yazmadan kendi web bileşeninizi oluşturmanız için bu sistemi kullanabilirsiniz.
+    </p>
+    <p style="font-size:18; text-align:justify;">
+    ◐ Sistem içerisinde sizlere sunduğumuz web bileşenleri kategorisinden istediğiniz bir web bileşeninin üzerine tıklayıp orta bölümde çıkan ayar sayfasını kendi ayarlarınıza göre optimitize ederek resimde görmüş olduğunuz web bileşeninin tasarım kodunu bir satır kod yazmadan elde edebilirsiniz.
+</p>
+    <center>
+    <table border="0px" cellpadding="10">
     <tr>
-        <td class="nasilkullanilir_sag"><p><ul><li style="list-style-type: circle;">Ayrıca üst resimde görülen Sonraki Adıma Geç butonu, eğer tasarım için belirtilmiş başka sayfa yoksa size oluşturmuş olduğunuz sayfanızın sistem kodlarını indirebileceğiniz
-    sayfaya yönlendirme işleminizi gerçekleştirir.</li></ul></p></td>
-        <td><img src="Desing/Pictures/NasilKullanilir/resim7.png"/></td>
+    <td><a href="Desing/Pictures/NasilKullanilir/kompuret.png">  <img src="Desing/Pictures/NasilKullanilir/kompuret.png" class="hakkimizda_Resim"/></a> </td>
+    <td><a href="Desing/Pictures/NasilKullanilir/kompuret_iki.png">  <img src="Desing/Pictures/NasilKullanilir/kompuret_iki.png" class="hakkimizda_Resim"/></a> </td>
     </tr>
-    </table>
-<table class="nasilkullanilir_table">
-    <tr>
-        <td colspan="2" class="nasilkullanilir_sag"><p><ul><li style="list-style-type: circle;">Yukarıda resmini gördüğünüz sayfadan da bizlere Web Site oluşturma Sistemimizle ilgili bizlere geri bildirimde bulunabilirsiniz.</li></ul></p></td>    
-    </tr>
-    </table>
-<table class="nasilkullanilir_table" style="background-color:#FF9D9D;">
-    <tr>
-        <td colspan="2" class="nasilkullanilir_sag">
-        <?php
+    </table> 
+    </center>
+    <p style="font-size:18; text-align:justify; margin:0 0 0 0;">
+    ◐ Sistem içerisinde nasıl içerikler olduğunuz yukarıda belirttik ancak hala sorularınız varsa bizlere Canlı Destek hattından veya iletişim bölümüden bizlere mesaj gönderebilirsiniz.
+    </p>
+    </br>
+    <?php
             include 'mysql_connect.php';
             if(!empty($_SESSION["Kullaniciadi"])){
-                echo '<p><ul><li style="list-style-type: none; background-color:#FF9D9D; text-align:center; margin:15 0 0 0; font-weight:bold;">Website oluşturma sistemimizde kullanımla alakalı yukarıdaki bilgiler hariç bir sorunuz varsa bize <a  href="index.php?sayfa=canlidestek">canlı destek</a> hattımızdan ulaşabilirsiniz.</li></ul></p>';
+                echo '<p><ul><li style="list-style-type: none; font-size:17; background-color:#FF9D9D; text-align:center; margin:15 0 0 0; font-weight:bold;">Sistem içerisinde nasıl içerikler olduğunuz yukarıda belirttik ancak hala sorularınız varsa bizlere <a  href="index.php?sayfa=canlidestek">canlı destek</a> hattımızdan veya <a href="?sayfa=iletisim">iletişim</a> bölümüden bizlere mesaj gönderebilirsiniz.</li></ul></p>';
             }else{
-                echo '<p><ul><li style="list-style-type: none; background-color:#FF9D9D; text-align:center; margin:15 0 0 0; font-weight:bold;">Website oluşturma sistemimizde kullanımla alakalı yukarıdaki bilgiler hariç bir sorunuz varsa bize <a  href="index.php?sayfa=girisislem" onclick="Alert()">canlı destek</a> hattımızdan ulaşabilirsiniz.</li></ul></p>';
+                echo '<p><ul><li style="list-style-type: none; font-size:17; background-color:#FF9D9D; text-align:center; margin:15 0 0 0; font-weight:bold;">Sistem içerisinde nasıl içerikler olduğunuz yukarıda belirttik ancak hala sorularınız varsa bizlere <a  href="index.php?sayfa=girisislem" onclick="Alert()">canlı destek</a> hattımızdan veya <a href="?sayfa=iletisim">iletişim</a> bölümüden bizlere mesaj gönderebilirsiniz.</li></ul></p>';
             }
-        ?>         
-       </td>    
-    </tr>
-    </table>
-
-    
-  <!--<div class="nasilkullanilir_yazi">
-    <p><ul><li style="list-style-type: circle;">Kullanışlı ve sade anasayfamızda bulunan aşağıda resmide bulunan bölümden web siteni oluşturmak için başlangıç sayfasına girebilirsiniz.</li></ul></p>
-  </div> 
-  <div class="nasilkullanilir_resim">
-    <img src="Desing/Pictures/NasilKullanilir/resim1.png"/>
-  </div>
-
-  <div class="nasilkullanilir_yazi">
-    <p><ul><li style="list-style-type: circle;">Web site oluşturmaya başlaya tıkladıktan sonra yapmanız gereken diğer önemli adım aşağıda da örnek olarak verdiğimiz şablon örneklerinden birini seçmektir.</li></ul></p>
-  </div> 
-  <div class="nasilkullanilir_resim">
-    <img src="Desing/Pictures/NasilKullanilir/resim2.png"/>
-  </div>
-  <div class="nasilkullanilir_yazi">
-    <p><ul><li style="list-style-type: circle;">Seçilen şablonun tasarım ekranına yönlendirildiniz bile, bu ekranda da "Tıkla ve Düzenle" yazan bölümlere tıklayarak o bölüme eklenebilecek olan komponentleri
-    sağ tarafta bulunan komponent bölümünden seçip, seçtiğiniz komponentin yine aynı bölümde açılacak olan Ayar sayfassından gerekli eklemeleri yaptıktan sonra sizde seçtiğiniz komponentin
-    sayfanıza eklendiğiniz görebileceksiniz.</li></ul></p>
-  </div> 
-    editör sayfası resmi
-
-  <div class="nasilkullanilir_yazi">
-    <p><ul><li style="list-style-type: circle;">Her bölüm için seçtiğiniz komponenti eklerken yanlış veya değiştirmek istediğiniz bir bölüm olursa o bölüme tıklayıp üstte bulunan Geri Al butonuna tıklamanız yeterlidir.</li></ul></p>
-  </div> 
-    geri al butonun 
-
-  <div class="nasilkullanilir_yazi">
-    <p><ul><li style="list-style-type: circle;">İşlemler sırasında sayfanın o anki durumunu görmek için ister editör sayfasının içerisinde bulunan Kılavuz Çizgi Kaldır butonuna tıklayıp görebilir veya üst bölümde bulunan
-    Önizleme butonuna basarak yeni sekmede açılacak olan sizin sayfanızı tam halini görebilirsiniz.</li></ul></p>
-  </div> 
-    önizleme ve kılavuz butonun resmi 
-
-  <div class="nasilkullanilir_yazi">
-    <p><ul><li style="list-style-type: circle;">Sistemimizde çoklu sayfalı web sayfalarınızın tasarımıda mevcuttur. Buton veya yönlendirme linki içeren komponentlerimizden eklerseniz ayar sayfasında bulunan yönlendirileceğ
-    sayfayı ve yönlerileceği buton veya linkin adı bölümünde belirtip o an bulunduğunuz sayfanın tasarımı bittikten sonra üst bölümde bulunan Sonraki Adıma Geç butonuna basarak eklemiş
-    olduğunuz sayfaların tasarımlarını da tek tek yapabilirsiniz.</li></ul></p>
-  </div> 
-    Sonraki Adım butonu resmi
-
-  <div class="nasilkullanilir_yazi">
-    <p><ul><li style="list-style-type: circle;">Ayrıca üst resimde görülen Sonraki Adıma Geç butonu, eğer tasarım için belirtilmiş başka sayfa yoksa size oluşturmuş olduğunuz sayfanızın sistem kodlarını indirebileceğiniz
-    sayfaya yönlendirme işleminizi gerçekleştirir.</li></ul></p>
-  </div> 
-    kodları indirme sayfası resmi
-  <div class="nasilkullanilir_yazi">
-    <p><ul><li style="list-style-type: circle;">Yukarıda resmini gördüğünüz sayfadan da bizlere Web Site oluşturma Sistemimizle ilgili bizlere geri bildirimde bulunabilirsiniz.</li></ul></p>
-  </div>-->
-<div>
+        ?> 
+</div>
+</div>
 </body>
 </html>

@@ -321,6 +321,7 @@ $gelenkullaniciemail=$_SESSION["Kullaniciadi"];
             position:absolute;
             margin-top:1.5%;
             margin-left: calc( 100% - 70% );
+            word-wrap:break-word;
             text-align:center;
             font-size:35px;
             font-weight:bold;
@@ -848,43 +849,43 @@ $gelenkullaniciemail=$_SESSION["Kullaniciadi"];
       $secilenSablon_ID=$_SESSION["secilenSablonID"];
 
       if($secilenSablon_ID == 2){
-      $code_onizleme='<td id="content_'.$value.'" colspan="5" valign="top" style="word-break:break-all; width:100%;">  
+      $code_onizleme='<td id="content_'.$value.'" colspan="5" valign="top" style="word-wrap:break-word; width:100%;">  
               <div id="content_'.$value.'">          
               '.$path.'
               </div>         
             </td>';
       }else if($secilenSablon_ID == 3 || $secilenSablon_ID == 6 || $secilenSablon_ID == 11){
-        $code_onizleme='<td id="content_'.$value.'" colspan="4" rowspan="4" valign="top" style="word-break:break-all; width:100%;">  
+        $code_onizleme='<td id="content_'.$value.'" colspan="4" rowspan="4" valign="top" style="word-wrap:break-word; width:100%;">  
               <div id="content_'.$value.'">          
               '.$path.'
               </div>         
             </td>';
       }else if($secilenSablon_ID == 4 || $secilenSablon_ID == 5 || $secilenSablon_ID == 8 ){
-        $code_onizleme='<td id="content_'.$value.'" colspan="6" valign="top" style="word-break:break-all; width:100%;">  
+        $code_onizleme='<td id="content_'.$value.'" colspan="6" valign="top" style="word-wrap:break-word; width:100%;">  
               <div id="content_'.$value.'">          
               '.$path.'
               </div>         
             </td>';
       }else if($secilenSablon_ID == 9){
-        $code_onizleme='<td id="content_'.$value.'" colspan="3" rowspan="4" valign="top" style="word-break:break-all; width:100%;">  
+        $code_onizleme='<td id="content_'.$value.'" colspan="3" rowspan="4" valign="top" style="word-wrap:break-word; width:100%;">  
               <div id="content_'.$value.'">          
               '.$path.'
               </div>         
             </td>';
       }else if($secilenSablon_ID == 10 || $secilenSablon_ID == 12 || $secilenSablon_ID == 13){
-        $code_onizleme='<td id="content_'.$value.'" colspan="2" rowspan="4" valign="top" style="word-break:break-all; width:100%;">  
+        $code_onizleme='<td id="content_'.$value.'" colspan="2" rowspan="4" valign="top" style="word-wrap:break-word; width:100%;">  
               <div id="content_'.$value.'">          
               '.$path.'
               </div>         
             </td>';
       }else if($secilenSablon_ID == 14 || $secilenSablon_ID == 15){
-        $code_onizleme='<td id="content_'.$value.'" rowspan="4" valign="top" style="word-break:break-all;">  
+        $code_onizleme='<td id="content_'.$value.'" rowspan="4" valign="top" style="word-wrap:break-word;">  
               <div id="content_'.$value.'">          
               '.$path.'
               </div>         
             </td>';
       }else{
-        $code_onizleme='<td id="content_'.$value.'"  valign="top" style="word-break:break-all; width:100%;">  
+        $code_onizleme='<td id="content_'.$value.'"  valign="top" style="word-wrap:break-word; width:100%;">  
         <div id="content_'.$value.'">          
         '.$path.'
         </div>         
@@ -896,7 +897,7 @@ $gelenkullaniciemail=$_SESSION["Kullaniciadi"];
       </head> 
       <body> 
       <table class="data" border="1px" id="data" cellspacing="0" height="100%" width="100%">         
-      <td id="content_'.$value.'" colspan="4" rowspan="4" valign="top" style="word-break:break-all; width:100%;">  
+      <td id="content_'.$value.'" colspan="4" rowspan="4" valign="top" style="word-wrap:break-word; width:100%;">  
                     <div id="content_'.$value.'">          
                     '.$path.'
                     </div>         
@@ -917,7 +918,7 @@ $gelenkullaniciemail=$_SESSION["Kullaniciadi"];
       opacity:0.8;
       font-size:24px;
       position:absolute;
-      
+      word-wrap:break-word;
       margin-top:30%;
       margin-left: calc( 100% - 80% );
       

@@ -36,7 +36,8 @@
 
     $gelentasarim=preg_replace('/href="\?sayfa=.*?"/', 'href="#"', $gelentasarim);
     $gelentasarim=str_replace('src="resimler/','src="',$gelentasarim);
-    $gelentasarim='<div style="width:100%; height:400px;">'."\n".$gelentasarim."\n</div>";
+    $gelentasarim=str_replace("color:","color:#",$gelentasarim);
+    $gelentasarim='<div style="width:100%; height:auto;">'."\n".$gelentasarim."\n</div>";
 	  $yeni='<textarea spellcheck="false" style="resize:none; width:100%; height:100%; font-size:15; padding:10;">'.$gelentasarim.'</textarea>';
 	  
 	  $dt2= fopen('Olusturulan/'.$gelenkullaniciemail.'.php','a');

@@ -8,6 +8,7 @@
    <script src="Desing/script_menu.js" type="text/javascript"></script>
    <script src="Desing/script_menu2.js"></script>
 <title>WoS | Web Site Oluşturma Sistemi</title>
+<script data-ad-client="ca-pub-3191787238536537" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script language="JavaScript">
 
 </script>
@@ -32,6 +33,7 @@ body{
 	include('header.php');
 ?>
 </div>
+
 <div class="anasayfa_Body">
 <?php
 

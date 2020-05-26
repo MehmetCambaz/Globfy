@@ -179,6 +179,7 @@ input:checked + .label_secim {
 }
 
 </style>
+<script data-ad-client="ca-pub-3191787238536537" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script>
 	$(document).ready(function() {
     $('label').click(function() {

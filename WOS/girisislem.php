@@ -2,6 +2,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>WoS | Web Site Oluşturma Sistemi</title>
+
 <script language="JavaScript">
 
 </script>

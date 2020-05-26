@@ -15,7 +15,6 @@ setInterval(function() {$("#canliDestek_Pencere").load('ajax.kullanicimesaj.php'
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-
 </head>
 <body>
 <form method="POST">
@@ -77,6 +76,7 @@ if(empty($_SESSION["Kullaniciadi"])){
 </div>
 </div>
 </div>
+
 </form>
 </body>
 </html>

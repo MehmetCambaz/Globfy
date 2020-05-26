@@ -61,6 +61,7 @@ body{
 .header_Button{
 	width:100%;
 	margin:0;
+
 }
 .header_Button a{
 	padding-top:10px;
@@ -245,8 +246,10 @@ body{
     padding: 6px 12px;
 }
 .canliDestek_Ekran{
-	width:90%;
-	margin:auto;
+	width:78%;
+margin:auto;
+
+
 }
 .canliDestek_Konusma{
 	width:100%;
@@ -404,7 +407,7 @@ body{
 		overflow-x: auto;
 	}
 	  .anasayfa_Main{
-		width:1200px;
+		width:1100px;
 	
 	  }
 	  .header_Bolum {
@@ -552,10 +555,8 @@ body{
 
 
 .hakkimizda_Bolumler{
-	width:1100px;
-	margin-right:auto;
-	margin-left:auto;
-	margin-top:20px;
+	width:100%;
+
 	font-family:Calibri;
 }
 
@@ -565,17 +566,29 @@ body{
 	margin-left:auto;
 	margin-top:20px;
 	font-family:Calibri;
-	height:400px;
-}
 
-.hakkimizda_Resim{
+}
+.hakkimizda_Resim_yeni{
 	width:250px;
 	height:250px;
 	float:left;
 	margin:0 0 0 140px;
 	border-radius: 10px;
 }
+.hakkimizda_Resim{
+	width:250px;
+	height:250px;
+	float:left;
 
+	border-radius: 10px;
+}
+.hakkimizda_Resim2{
+	width:150px;
+	height:150px;
+	float:left;
+margin:0 25 0 25;
+	border-radius: 10px;
+}
 .hakkimizda_Resim_1{
 	width:250px;
 	height:250px;

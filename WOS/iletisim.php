@@ -1,5 +1,6 @@
 <html>
 <head>
+
 <title>WoS | Web Site Oluşturma Sistemi</title>
 <script language="JavaScript">
 
@@ -9,7 +10,8 @@
 <body>
 <?php include 'mysql_connect.php'; ?>
 <div class="hakkimizda_Bolumler">
-<form style="margin:50 0 100 300;" method="POST">
+<center>
+<form style="margin:50 0 10 0;" method="POST">
 <table>
     <tr>
             <td colspan="2" style="text-align:center; font-weight:bold; font-size:33;">Bizimle İletişime Geçiniz</td>
@@ -88,6 +90,39 @@
 	</tr>
 	</table>
 	</form>
+			</div>
 </div>
+<div style="width:100%; margin:auto;">
+<center>
+<table border="0" cellpadding="10">
+<tr>
+<td style="text-align:center;">
+<p style="text-align:center; font-weight:bold; font-size:33; font-family:Calibri;">Arge Ofisi</p>
+</td>
+<td style="text-align:center;">
+<p style="text-align:center; font-weight:bold; font-size:33; font-family:Calibri;">Ana Ofisi</p>
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+<div style="height:auto;">
+<div style="background-color:transparent;">
+<iframe width="510" height="450" id="gmap_canvas" src="https://maps.google.com/maps?q=Aşağı dudullu mahallesi / Galata sokak / No:40&t=k&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+</div>
+<style>.mapouter{position:relative;text-align:left;height:400px;width:475px;}.gmap_canvas {overflow:hidden;background:none!important;height:400px;width:475px;}</style>
+</div>
+</td>
+<td>
+<div style="width:100%; height:auto;">
+<div style="background-color:transparent;">
+<iframe width="510" height="450" id="gmap_canvas" src="https://maps.google.com/maps?q=Kıbrıs&t=k&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+<style>.mapouter{position:relative;text-align:right;height:500px;width:575px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:575px;}</style>
+</div></div>
+</td>
+</tr>
+</table>
+</center>
+</div>
+
 </body>
 </html>

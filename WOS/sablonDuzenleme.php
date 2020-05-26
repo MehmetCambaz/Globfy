@@ -96,7 +96,7 @@ if(isset($_POST['EditorGecis_Hazirlik'])){
               opacity:0.8;
               font-size:24px;
               position:absolute;
-              
+              word-wrap:break-word;
               margin-top:15%;
               margin-left: calc( 100% - 80% );
               
@@ -329,6 +329,7 @@ window.addEventListener('load', function() {
 </script>
 </head>
 <body>
+
 <?php 
 $sorgu = $baglanti->query('select * from sablonlar where sablon_id='.$id.'');
 while($sonuc=mysqli_fetch_assoc($sorgu) )
