@@ -11,7 +11,7 @@
 	
 	 $secilenKompanent_ID=$_GET["KompanentEkle"];
 	 
-	 $sorgu = $baglanti->query('select id,kompanent_icerik,tur,komp_ayar,komp_kod from kompanentler where id='.$secilenKompanent_ID.'');
+	 $sorgu = $baglanti->query('select id,kompanent_icerik,tur,komp_ayar,komp_kod from kompanentler2 where id='.$secilenKompanent_ID.'');
         while($sonuc=mysqli_fetch_assoc($sorgu) )
         {
           $gelentasarim=$sonuc["komp_kod"]; //veritabanından gelen kompanent tasarim kodu!
@@ -131,7 +131,7 @@ $(document).ready(function() {
   }
   
   
-   $sql4 = "SELECT id,tur,kompanent_icerik,komp_pic FROM kompanentler where id='2' || id='5' || id='6' || id='7' || id='31' || id='32' || id='92'|| id='103' || id='125'";
+   $sql4 = "SELECT id,tur,kompanent_icerik,komp_pic FROM kompanentler2 where id='2' || id='5' || id='6' || id='7' || id='31' || id='32' || id='92'|| id='103' || id='125'";
 			$sorgu4 = $baglanti->query($sql4);
 			    
 while($sonuc4=mysqli_fetch_assoc($sorgu4) )
@@ -150,7 +150,7 @@ while($sonuc4=mysqli_fetch_assoc($sorgu4) )
    <ul>
   <?php
    include 'mysql_connect.php';
-   $sql4 = "SELECT id,tur,kompanent_icerik,komp_pic FROM kompanentler where id='9' || id='10' || id='44' || id='91' || id='93' || id='95'|| id='104' || id='105' ";
+   $sql4 = "SELECT id,tur,kompanent_icerik,komp_pic FROM kompanentler2 where id='9' || id='10' || id='44' || id='91' || id='93' || id='95'|| id='104' || id='105' ";
 			$sorgu4 = $baglanti->query($sql4);
 			    
 while($sonuc4=mysqli_fetch_assoc($sorgu4) )
@@ -168,7 +168,7 @@ while($sonuc4=mysqli_fetch_assoc($sorgu4) )
    <ul>
       <?php
    include 'mysql_connect.php';
-   $sql4 = "SELECT id,tur,kompanent_icerik,komp_pic FROM kompanentler where id='39' || id='43' || id='63'  ";
+   $sql4 = "SELECT id,tur,kompanent_icerik,komp_pic FROM kompanentler2 where id='39' || id='43' || id='63'  ";
 			$sorgu4 = $baglanti->query($sql4);
 			    
 while($sonuc4=mysqli_fetch_assoc($sorgu4) )
@@ -186,7 +186,7 @@ while($sonuc4=mysqli_fetch_assoc($sorgu4) )
    <ul>
       <?php
    include 'mysql_connect.php';
-   $sql4 = "SELECT id,tur,kompanent_icerik,komp_pic FROM kompanentler where id='65' || id='68' || id='69' || id='81' || id='83' || id='89' || id='90'";
+   $sql4 = "SELECT id,tur,kompanent_icerik,komp_pic FROM kompanentler2 where id='65' || id='68' || id='69' || id='81' || id='83' || id='89' || id='90'";
 			$sorgu4 = $baglanti->query($sql4);
 			    
 while($sonuc4=mysqli_fetch_assoc($sorgu4) )

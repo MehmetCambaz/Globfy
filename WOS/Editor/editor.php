@@ -247,8 +247,8 @@ $gelenkullaniciemail=$_SESSION["Kullaniciadi"];
           $yazilacakicerik='$'.$name.$_SESSION["yapilan_islemler"].'="'.$value.'";'; // dosyaya yazdırmak için açtığım değişken,
                                                                                      // içeriği örnek olarak '  $content2_arkaplan3="blue" ' gibi..
 
-          $degisecekicerik=$name.'.';
-          $yenigelecek=$name.$_SESSION["yapilan_islemler"].'.';
+          $degisecekicerik=$name." &nbsp;";
+          $yenigelecek=$name.$_SESSION["yapilan_islemler"];
           $eski_onizleme= str_replace($degisecekicerik,$yenigelecek, $eski_onizleme);
           $eski= str_replace($degisecekicerik,$yenigelecek, $eski); //Bu 3 satırdada dosyanın içindeki veritabanından gelen örnek değişken adını
                                                                     //alıp yerine son işlem değeri ile birleştirdiğim değişken adını yazdırıyorum!
@@ -259,7 +259,21 @@ $gelenkullaniciemail=$_SESSION["Kullaniciadi"];
 
       $veri.=" ?>\n";//döngüden çıkıp bütün değişkenleri de içinde bulunduran php satırını tamamlıyorum! 
       }
+      $editor_degisken="editorsayfalari_".$gelenkullaniciemail."/editor_degisken_tut.php";
+      $editor_kod="editorsayfalari_".$gelenkullaniciemail."/editor_kod_tut.php";
 
+      $editor_degisken_file=fopen($editor_degisken,"w");
+      fwrite($editor_degisken_file,$veri);
+      
+      $editor_kod_file=fopen($editor_kod,"w");
+      fwrite($editor_kod_file,$eski);
+
+      include $editor_degisken;
+      include $editor_kod;
+
+      $resimlerkalsoru='src="resimler/';
+      $yeniresimlerklasoru='src="editorsayfalari_'.$gelenkullaniciemail.'/resimler/';
+      $yazilacak_kod_editor=str_replace($resimlerkalsoru,$yeniresimlerklasoru,$yazilacak_kod); 
 
       $yeni=$veri.$eski; //yeni değişkeninin başına php değişken satırını ekleyip altınada veritabanından gelen değeri ekleyorum!
       $yeni_onizleme=$veri.$eski_onizleme;
@@ -273,10 +287,10 @@ $gelenkullaniciemail=$_SESSION["Kullaniciadi"];
       fclose($logKayit);
 
       $dt3=fopen($dosya,"w");
-      $yaz=fwrite($dt3, $yeni); //dosyayı yazdırıyorum!
+      $yaz=fwrite($dt3, $tiklaveduzenlekodu.$yazilacak_kod_editor); //dosyayı yazdırıyorum!
       fclose($dt3);
       $dt3_onizleme=fopen($dosya_onizleme,"w");
-      $yaz_onizleme=fwrite($dt3_onizleme, $yeni_onizleme); 
+      $yaz_onizleme=fwrite($dt3_onizleme, $yazilacak_kod); 
       fclose($dt3_onizleme);
 
       $sayfa=$secilenBolum;
@@ -364,8 +378,8 @@ $gelenkullaniciemail=$_SESSION["Kullaniciadi"];
           $yazilacakicerik='$'.$name.$_SESSION["yapilan_islemler"].'="'.$value.'";'; // dosyaya yazdırmak için açtığım değişken,
                                                                                      // içeriği örnek olarak '  $content2_arkaplan3="blue" ' gibi..
 
-          $degisecekicerik=$name.'.';
-          $yenigelecek=$name.$_SESSION["yapilan_islemler"].'.';
+          $degisecekicerik=$name." &nbsp;";
+          $yenigelecek=$name.$_SESSION["yapilan_islemler"];
           $eski_onizleme= str_replace($degisecekicerik,$yenigelecek, $eski_onizleme);
           $eski= str_replace($degisecekicerik,$yenigelecek, $eski); //Bu 3 satırdada dosyanın içindeki veritabanından gelen örnek değişken adını
                                                                     //alıp yerine son işlem değeri ile birleştirdiğim değişken adını yazdırıyorum!
@@ -377,6 +391,21 @@ $gelenkullaniciemail=$_SESSION["Kullaniciadi"];
       $veri.=" ?>\n";//döngüden çıkıp bütün değişkenleri de içinde bulunduran php satırını tamamlıyorum! 
       }
 
+      $editor_degisken="editorsayfalari_".$gelenkullaniciemail."/editor_degisken_tut.php";
+      $editor_kod="editorsayfalari_".$gelenkullaniciemail."/editor_kod_tut.php";
+
+      $editor_degisken_file=fopen($editor_degisken,"w");
+      fwrite($editor_degisken_file,$veri);
+      
+      $editor_kod_file=fopen($editor_kod,"w");
+      fwrite($editor_kod_file,$eski);
+
+      include $editor_degisken;
+      include $editor_kod;
+
+      $resimlerkalsoru='src="resimler/';
+      $yeniresimlerklasoru='src="editorsayfalari_'.$gelenkullaniciemail.'/resimler/';
+      $yazilacak_kod_editor=str_replace($resimlerkalsoru,$yeniresimlerklasoru,$yazilacak_kod); 
 
       $yeni=$veri.$eski; //yeni değişkeninin başına php değişken satırını ekleyip altınada veritabanından gelen değeri ekleyorum!
       $yeni_onizleme=$veri.$eski_onizleme;
@@ -390,10 +419,10 @@ $gelenkullaniciemail=$_SESSION["Kullaniciadi"];
       fclose($logKayit);
 
       $dt3=fopen($dosya,"w");
-      $yaz=fwrite($dt3, $yeni); //dosyayı yazdırıyorum!
+      $yaz=fwrite($dt3, $tiklaveduzenlekodu.$yazilacak_kod_editor); //dosyayı yazdırıyorum!
       fclose($dt3);
       $dt3_onizleme=fopen($dosya_onizleme,"w");
-      $yaz_onizleme=fwrite($dt3_onizleme, $yeni_onizleme); 
+      $yaz_onizleme=fwrite($dt3_onizleme, $yazilacak_kod); 
       fclose($dt3_onizleme);
 
       $sayfa=$secilenBolum;
@@ -455,15 +484,15 @@ $gelenkullaniciemail=$_SESSION["Kullaniciadi"];
           $value = htmlspecialchars($value);
           $yazilacakicerik='$'.$name.$_SESSION["yapilan_islemler"].'="'.$value.'";'; //ayar sayfasından gelen cookieleri sayfaya ekle
 
-          $degisecekicerik=$name.'.';
-          $yenigelecek=$name.$_SESSION["yapilan_islemler"].'.';
+          $degisecekicerik=$name." &nbsp;";
+          $yenigelecek=$name.$_SESSION["yapilan_islemler"];
           /*$eski_onizleme= str_replace($degisecekicerik,$yenigelecek, $eski_onizleme);
           $eski= str_replace($degisecekicerik,$yenigelecek, $eski);//Bu 3 satırdada dosyanın içindeki veritabanından gelen örnek değişken adını
                                                                    //alıp yerine son işlem değeri ile birleştirdiğim değişken adını yazdırıyorum!
                                                                    //dosyanın içini açıp bul ve değiştir yapıyorum!*/
           $gelentasarim2=str_replace($degisecekicerik,$yenigelecek, $gelentasarim2);
-          $resimlerkalsoru='src="resimler/';
-          $yeniresimlerklasoru='src="editorsayfalari_'.$gelenkullaniciemail.'/resimler/';
+          $resimlerkalsoru='src=\"resimler/';
+          $yeniresimlerklasoru='src=\"editorsayfalari_'.$gelenkullaniciemail.'/resimler/';
           $gelentasarimedit=str_replace($resimlerkalsoru,$yeniresimlerklasoru,$gelentasarim2); 
  
           $veri.= $yazilacakicerik;
@@ -474,10 +503,10 @@ $gelenkullaniciemail=$_SESSION["Kullaniciadi"];
       if(isset($_COOKIE['galeriEkleme'])){
         $gelenOturum=$_COOKIE['galeriEkleme'];
 
-        $degisbir='src="resimler/';
-        $degisiki='src="editorsayfalari_'.$gelenkullaniciemail.'/resimler/';
-        $gelenbir='src="resimler/galeri_'.$gelenOturum.'/';
-        $geleniki='src="editorsayfalari_'.$gelenkullaniciemail.'/resimler/galeri_'.$gelenOturum.'/';
+        $degisbir='src=\"resimler/';
+        $degisiki='src=\"editorsayfalari_'.$gelenkullaniciemail.'/resimler/';
+        $gelenbir='src=\"resimler/galeri_'.$gelenOturum.'/';
+        $geleniki='src=\"editorsayfalari_'.$gelenkullaniciemail.'/resimler/galeri_'.$gelenOturum.'/';
 
         $gelentasarim2=str_replace($degisbir,$gelenbir, $gelentasarim2);
         $gelentasarimedit=str_replace($degisiki,$geleniki,$gelentasarimedit); 
@@ -491,19 +520,31 @@ $gelenkullaniciemail=$_SESSION["Kullaniciadi"];
         setcookie("galeriEkleme","asd",time()-3600);
       }
       
-      $yeni=$eski.$veri.$gelentasarimedit; //yeni değişkeninin başına php değişken satırını ekleyip altınada veritabanından gelen değeri ekleyorum!
- 
+      $editor_degisken="editorsayfalari_".$gelenkullaniciemail."/editor_degisken_tut.php";
+      $editor_kod="editorsayfalari_".$gelenkullaniciemail."/editor_kod_tut.php";
+      $editor_kod_onizleme="editorsayfalari_".$gelenkullaniciemail."/editor_kod_onizleme_tut.php";
 
-      $yeni_onizleme=$eski_onizleme.$veri.$gelentasarim2;
+      $editor_degisken_file=fopen($editor_degisken,"w");
+      fwrite($editor_degisken_file,$veri);
+      
+      $editor_kod_file=fopen($editor_kod,"w");
+      fwrite($editor_kod_file,$gelentasarimedit);
+
+      $editor_kod_onizleme_file=fopen($editor_kod_onizleme,"w");
+      fwrite($editor_kod_onizleme_file,$gelentasarim2);
+
+      include $editor_degisken;
+      include $editor_kod;
+    
+      $yeni=$eski.$yazilacak_kod; //yeni değişkeninin başına php değişken satırını ekleyip altınada veritabanından gelen değeri ekleyorum!
+ 
 
       $dt5=fopen($dosya,"w");
       $yaz=fwrite($dt5, $yeni);
       fclose($dt5);
-      $dt5_onizleme=fopen($dosya_onizleme,"w");
-      $yaz_onizleme=fwrite($dt5_onizleme, $yeni_onizleme);
-      fclose($dt5_onizleme);
+     
 
-      $logVeri=$veri.$gelentasarimedit;
+      $logVeri=$yazilacak_kod;
       $logKayit = fopen('editorsayfalari_'.$gelenkullaniciemail.'/log.txt', 'a');
       fwrite($logKayit,"|--|");
       fwrite($logKayit,$komp."|**|");
@@ -511,6 +552,13 @@ $gelenkullaniciemail=$_SESSION["Kullaniciadi"];
     
       fclose($logKayit);
       header('Location:'.$_SERVER['HTTP_REFERER']);
+
+      include $editor_kod_onizleme;
+      $yeni_onizleme=$eski_onizleme.$yazilacak_kod;
+
+      $dt5_onizleme=fopen($dosya_onizleme,"w");
+      $yaz_onizleme=fwrite($dt5_onizleme, $yeni_onizleme);
+      fclose($dt5_onizleme);
 
 
     }else{ //sayfa tek bölümlü değile bu aşağıdaki işlemleri yapıyorum!
@@ -563,15 +611,15 @@ $gelenkullaniciemail=$_SESSION["Kullaniciadi"];
        
           $yazilacakicerik='$'.$name.$_SESSION["yapilan_islemler"].'="'.$value.'";'; //ayar sayfasından gelen cookieleri sayfaya ekle
 
-          $degisecekicerik=$name.'.';
-          $yenigelecek=$name.$_SESSION["yapilan_islemler"].'.';
+          $degisecekicerik=$name." &nbsp;";
+          $yenigelecek=$name.$_SESSION["yapilan_islemler"];
           /*$eski_onizleme= str_replace($degisecekicerik,$yenigelecek, $eski_onizleme);
           $eski= str_replace($degisecekicerik,$yenigelecek, $eski);//Bu 3 satırdada dosyanın içindeki veritabanından gelen örnek değişken adını
                                                                    //alıp yerine son işlem değeri ile birleştirdiğim değişken adını yazdırıyorum!
                                                                    //dosyanın içini açıp bul ve değiştir yapıyorum!*/
           $gelentasarim2=str_replace($degisecekicerik,$yenigelecek, $gelentasarim2);
-          $resimlerkalsoru='src="resimler/';
-          $yeniresimlerklasoru='src="editorsayfalari_'.$gelenkullaniciemail.'/resimler/';
+          $resimlerkalsoru='src=\"resimler/';
+          $yeniresimlerklasoru='src=\"editorsayfalari_'.$gelenkullaniciemail.'/resimler/';
           $gelentasarimedit=str_replace($resimlerkalsoru,$yeniresimlerklasoru,$gelentasarim2); 
           $veri.= $yazilacakicerik;
         }
@@ -581,10 +629,10 @@ $gelenkullaniciemail=$_SESSION["Kullaniciadi"];
       if(isset($_COOKIE['galeriEkleme'])){
         $gelenOturum=$_COOKIE['galeriEkleme'];
 
-        $degisbir='src="resimler/';
-        $degisiki='src="editorsayfalari_'.$gelenkullaniciemail.'/resimler/';
-        $gelenbir='src="resimler/galeri_'.$gelenOturum.'/';
-        $geleniki='src="editorsayfalari_'.$gelenkullaniciemail.'/resimler/galeri_'.$gelenOturum.'/';
+        $degisbir='src=\"resimler/';
+        $degisiki='src=\"editorsayfalari_'.$gelenkullaniciemail.'/resimler/';
+        $gelenbir='src=\"resimler/galeri_'.$gelenOturum.'/';
+        $geleniki='src=\"editorsayfalari_'.$gelenkullaniciemail.'/resimler/galeri_'.$gelenOturum.'/';
 
         $gelentasarim2=str_replace($degisbir,$gelenbir, $gelentasarim2);
         $gelentasarimedit=str_replace($degisiki,$geleniki,$gelentasarimedit); 
@@ -598,17 +646,31 @@ $gelenkullaniciemail=$_SESSION["Kullaniciadi"];
         setcookie("galeriEkleme","asd",time()-3600);
       }
 
-      $yeni=$eski.$veri.$gelentasarimedit; //yeni değişkeninin başına php değişken satırını ekleyip altınada veritabanından gelen değeri ekleyorum!
-      $yeni_onizleme=$eski_onizleme.$veri.$gelentasarim2;
+      $editor_degisken="editorsayfalari_".$gelenkullaniciemail."/editor_degisken_tut.php";
+      $editor_kod="editorsayfalari_".$gelenkullaniciemail."/editor_kod_tut.php";
+      $editor_kod_onizleme="editorsayfalari_".$gelenkullaniciemail."/editor_kod_onizleme_tut.php";
+
+      $editor_degisken_file=fopen($editor_degisken,"w");
+      fwrite($editor_degisken_file,$veri);
+      
+      $editor_kod_file=fopen($editor_kod,"w");
+      fwrite($editor_kod_file,$gelentasarimedit);
+
+      $editor_kod_onizleme_file=fopen($editor_kod_onizleme,"w");
+      fwrite($editor_kod_onizleme_file,$gelentasarim2);
+
+      include $editor_degisken;
+      include $editor_kod;
+    
+      $yeni=$eski.$yazilacak_kod; //yeni değişkeninin başına php değişken satırını ekleyip altınada veritabanından gelen değeri ekleyorum!
+      
 
       $dt5=fopen($dosya,"w");
       $yaz=fwrite($dt5, $yeni);
       fclose($dt5);
-      $dt5_onizleme=fopen($dosya_onizleme,"w");
-      $yaz_onizleme=fwrite($dt5_onizleme, $yeni_onizleme);
-      fclose($dt5_onizleme);
+    
 
-      $logVeri=$veri.$gelentasarimedit;
+      $logVeri=$yazilacak_kod;
       $logKayit = fopen('editorsayfalari_'.$gelenkullaniciemail.'/log.txt', 'a');
       fwrite($logKayit,"|--|");
       fwrite($logKayit,$secilenBolum."|**|");
@@ -616,6 +678,12 @@ $gelenkullaniciemail=$_SESSION["Kullaniciadi"];
     
       fclose($logKayit);
 
+      include $editor_kod_onizleme;
+      $yeni_onizleme=$eski_onizleme.$yazilacak_kod;
+
+      $dt5_onizleme=fopen($dosya_onizleme,"w");
+      $yaz_onizleme=fwrite($dt5_onizleme, $yeni_onizleme);
+      fclose($dt5_onizleme);
       /*$kodlar = '<script type="text/javascript">
           $(document).ready(function() {
               $("#'.$secilenBolum.'").load("'.$secilenBolum.'.php");

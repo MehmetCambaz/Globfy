@@ -271,7 +271,7 @@ shuffle($seed);
 $kelime = '';
 foreach (array_rand($seed, 5) as $k) $kelime .= $seed[$k];
 
-$deger7="'$kelime'";
+$deger7="'$kelime '";
 $deger8="$kelime";
 
 $deger1=$_POST["content4_resim_genislik"];
