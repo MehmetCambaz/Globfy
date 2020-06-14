@@ -17,10 +17,10 @@ if(empty($_SESSION["Kullaniciadi"]) || empty($_COOKIE["Oturum_Bilgisi"])){
 			while($sonuc4=mysqli_fetch_assoc($sorgu4) )
 			{		
 				if($sonuc4['ad']=="Admin"){
-					echo '<tr><td style="background-color:red; color:white;"><div style=" vertical-align: middle; text-align:center;">'.$sonuc4['ad'].'</div></td><td><div style="width:90%; word-break:break-all;height:auto; padding:10 10 10 10; border:1px solid black; ">'.$sonuc4['yazi'].'</div></td></tr>';
+					echo '<tr><td style="background-color:red; color:white;"><div style=" vertical-align: middle; text-align:center;">'.ucwords($sonuc4['ad']).'</div></td><td><div style="width:90%; word-break:break-all;height:auto; padding:10 10 10 10; border:1px solid black; ">'.$sonuc4['yazi'].'</div></td></tr>';
 					}
 					else{
-					echo '<tr><td style="background-color:blue; color:white;"><div style="vertical-align: middle; text-align:center;">'.$sonuc4['ad'].'</div></td><td><div style="width:90%; word-break:break-all;height:auto; padding:10 10 10 10; border:1px solid black; ">'.$sonuc4['yazi'].'</div></td></tr>';
+					echo '<tr><td style="background-color:blue; color:white;"><div style="vertical-align: middle; text-align:center;">'.ucwords($sonuc4['ad']).'</div></td><td><div style="width:90%; word-break:break-all;height:auto; padding:10 10 10 10; border:1px solid black; ">'.$sonuc4['yazi'].'</div></td></tr>';
 					}
 			}
 		echo '</table>';

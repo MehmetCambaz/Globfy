@@ -274,13 +274,15 @@ margin:auto;
 }
 .canliDestek_Yazi_textbox{
 	margin:10 5 0 10;
-	width:87%;
+	width:80%;
 	height:60px;
 }
 .canliDestek_Yazi_button{
 	margin:10 10 0 0;
-	width:9%;
+	width:calc(100%-25px);
 	height:60px;
+	padding:15;
+	text-align:center;
 }
 .canliDestek_Kullanici{
 	width:80%;
@@ -360,7 +362,7 @@ margin:auto;
 	border:1px solid gray;
 	font-family:Calibri;
 	font-size:20;
-	margin:0 0 0 90;
+	margin:0 0 0 0;
 }
 .girisislem_giris table td{
 	border:0px;
@@ -394,7 +396,7 @@ margin:auto;
 	border:1px solid gray;
 	font-family:Calibri;
 	font-size:20;
-	margin:0 90 0 0;
+	margin:0 0 0 0;
 
 }
 .girisislem_kayit table td{
@@ -434,7 +436,9 @@ margin:auto;
 	  }
 	  .girisislem{
 		width:100%;
-		margin:auto;
+	}
+	.girisislem_text{
+		width:390;
 	}
 	}
 .ayar_button{
